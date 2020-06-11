@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/ai" android:focusable="true" android:focusableInTouchMode="true" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/x" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?attr/k" android:layout_above="@+id/at" android:layout_below="@+id/bk" android:layout_alignWithParentIfMissing="true"/>
+    <ProgressBar android:id="@+id/ae" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="2.5dp" android:max="100" android:indeterminate="false" android:indeterminateOnly="false" android:progressDrawable="@drawable/a0" android:layout_below="@+id/bk"/>
+    <ImageView android:id="@+id/f" android:background="@drawable/z" android:padding="10dp" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/c" android:layout_height="@dimen/c" android:layout_marginLeft="25dp" android:layout_marginRight="25dp" android:layout_marginBottom="79dp" android:src="@drawable/ao" android:tint="@color/f" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/gt" android:layout_alignParentEnd="true"/>
+    <ImageView android:id="@+id/d" android:background="@drawable/d" android:padding="10dp" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="@dimen/c" android:layout_height="@dimen/c" android:layout_marginBottom="@dimen/b" android:src="@drawable/ah" android:tint="@color/f" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="@string/is"/>
+    <FrameLayout android:id="@+id/bk" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/f"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/at" android:background="?attr/b" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include layout="@layout/e"/>
+    </FrameLayout>
+    <ImageView android:id="@+id/e" android:background="@drawable/z" android:padding="30dp" android:visibility="visible" android:layout_width="@dimen/u" android:layout_height="@dimen/u" android:layout_marginLeft="@dimen/t" android:src="@drawable/a6" android:tint="@android:color/white" android:layout_centerVertical="true" android:contentDescription="@string/hg" android:layout_marginStart="@dimen/t"/>
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="20201023" android:versionName="4.0.8" android:installLocation="auto" android:compileSdkVersion="30" android:compileSdkVersionCodename="11" package="mark.via.gp" platformBuildVersionCode="30" platformBuildVersionName="11">
+    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="30"/>
+    <uses-permission android:name="mark.via.permission.BROADCAST"/>
+    <permission android:name="mark.via.permission.BROADCAST" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <queries>
+        <package android:name="com.dv.adm.pay"/>
+        <package android:name="com.dv.adm"/>
+        <package android:name="idm.internet.download.manager.plus"/>
+        <package android:name="idm.internet.download.manager"/>
+        <package android:name="com.vanda_adm.vanda"/>
+        <package android:name="mark.qrcode"/>
+    </queries>
+    <application android:theme="@style/b" android:label="@string/b3" android:icon="@mipmap/a" android:name="mark.via.BrowserApp" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustPan" android:allowBackup="true" android:hardwareAccelerated="true" android:supportsRtl="true" android:fullBackupContent="@xml/a" android:usesCleartextTraffic="true" android:resizeableActivity="true" android:roundIcon="@mipmap/a">
+        <meta-data android:name="android.max_aspect" android:value="2.5"/>
+        <activity android:label="@string/b3" android:name="mark.via.ui.activity.BrowserActivity" android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:alwaysRetainTaskState="true" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/d"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.APP_BROWSER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="about"/>
+                <data android:scheme="javascript"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="inline"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="text/html"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="application/xhtml+xml"/>
+                <data android:mimeType="application/vnd.wap.xhtml+xml"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.WEB_SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="mark.via.ui.settings.SettingsCatalog"/>
+        <activity android:name="mark.via.ui.settings.PrivacySettings"/>
+        <activity android:name="mark.via.ui.settings.AdvancedSettings"/>
+        <activity android:name="mark.via.ui.settings.AdBlockUI"/>
+        <activity android:name="mark.via.ui.settings.ScriptSettings"/>
+        <activity android:name="mark.via.ui.settings.SkinSettings"/>
+        <activity android:name="mark.via.ui.settings.GeneralSettings"/>
+        <activity android:name="mark.via.ui.settings.AccountSettings"/>
+        <activity android:name="mark.via.ui.settings.SubscribedFiltersUI"/>
+        <activity android:name="mark.via.ui.settings.CustomFiltersUI"/>
+        <activity android:name="mark.via.ui.settings.ViewFiltersUI"/>
+        <activity android:name="mark.via.ui.settings.OperationSettings"/>
+        <service android:name="mark.via.services.BlockerService"/>
+        <provider android:label="@string/g" android:name="mark.via.provider.BookmarksProvider" android:exported="true" android:multiprocess="false" android:authorities="mark.via.gp.database"/>
+        <provider android:name="mark.lib.frogsupport.FileProvider" android:exported="false" android:authorities="mark.via.gp.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/b"/>
+        </provider>
+    </application>
+</manifest>

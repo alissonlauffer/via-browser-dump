@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="e" parent="@android:style/Theme.Material.Light">
+        <item name="android:statusBarColor">@color/f</item>
+        <item name="android:navigationBarColor">@color/f</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:navigationBarDividerColor">@android:color/transparent</item>
+        <item name="android:isLightTheme">true</item>
+    </style>
+    <style name="u" parent="@android:style/Theme.Material">
+        <item name="android:statusBarColor">@color/g</item>
+        <item name="android:navigationBarColor">@color/g</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:navigationBarDividerColor">@android:color/transparent</item>
+        <item name="android:isLightTheme">false</item>
+    </style>
+    <style name="f" parent="@android:style/Theme.Material">
+        <item name="android:statusBarColor">@color/i</item>
+        <item name="android:navigationBarColor">@color/i</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:navigationBarDividerColor">@android:color/transparent</item>
+        <item name="android:isLightTheme">false</item>
+    </style>
+</resources>

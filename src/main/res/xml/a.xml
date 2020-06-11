@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <include domain="database" path="via"/>
+    <include domain="database" path="siteconfs.db"/>
+    <include domain="sharedpref" path="settings.xml"/>
+    <include domain="external" path="filters/custom.txt"/>
+</full-backup-content>

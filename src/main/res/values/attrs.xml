@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="a" format="reference|color">
+    </attr>
+    <attr name="b" format="reference|color">
+    </attr>
+    <attr name="c" format="reference|color">
+    </attr>
+    <attr name="d" format="reference|color">
+    </attr>
+    <attr name="e" format="reference|color">
+    </attr>
+    <attr name="f" format="reference|color">
+    </attr>
+    <attr name="g" format="reference|color">
+    </attr>
+    <attr name="h" format="reference|color">
+    </attr>
+    <attr name="i" format="reference|color">
+    </attr>
+    <attr name="j" format="reference|color">
+    </attr>
+    <attr name="k" format="reference|color">
+    </attr>
+</resources>

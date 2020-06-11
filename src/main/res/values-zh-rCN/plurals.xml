@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="a">
+        <item quantity="other">%d 天前</item>
+    </plurals>
+    <plurals name="b">
+        <item quantity="other">%d 条规则</item>
+    </plurals>
+    <plurals name="c">
+        <item quantity="other">%d 小时前</item>
+    </plurals>
+    <plurals name="d">
+        <item quantity="other">%d 分钟前</item>
+    </plurals>
+</resources>

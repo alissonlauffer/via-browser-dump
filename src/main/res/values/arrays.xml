@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="a">
+        <item>@string/cd</item>
+        <item>@string/gn</item>
+    </array>
+    <array name="b">
+        <item>@string/dy</item>
+        <item>@string/bl</item>
+    </array>
+    <array name="c">
+        <item>@string/c6</item>
+        <item>@string/ca</item>
+        <item>@string/cb</item>
+        <item>@string/cc</item>
+        <item>@string/c8</item>
+    </array>
+    <array name="d">
+        <item>@string/dt</item>
+        <item>@string/du</item>
+        <item>@string/dv</item>
+    </array>
+    <array name="e">
+        <item>@string/cd</item>
+        <item>@string/d</item>
+        <item>@string/g</item>
+        <item>@string/am</item>
+    </array>
+    <array name="f">
+        <item>@string/i1</item>
+        <item>@string/i0</item>
+        <item>@string/i6</item>
+    </array>
+    <array name="g">
+        <item>@string/cd</item>
+        <item>@string/gn</item>
+        <item>@string/ie</item>
+        <item>@string/eb</item>
+        <item>@string/fu</item>
+    </array>
+    <array name="h">
+        <item>@string/g_</item>
+        <item>@string/gc</item>
+        <item>@string/gd</item>
+        <item>@string/g0</item>
+        <item>@string/g6</item>
+        <item>@string/g8</item>
+        <item>@string/fz</item>
+        <item>@string/ga</item>
+        <item>@string/gb</item>
+        <item>@string/g1</item>
+        <item>@string/g7</item>
+        <item>@string/g9</item>
+        <item>@string/g3</item>
+        <item>@string/g4</item>
+        <item>@string/g2</item>
+    </array>
+    <array name="i">
+        <item>@string/cv</item>
+        <item>@string/b2</item>
+        <item>@string/b4</item>
+    </array>
+    <array name="j">
+        <item>@string/gi</item>
+        <item>@string/gf</item>
+        <item>@string/gh</item>
+        <item>@string/gg</item>
+    </array>
+    <array name="k">
+        <item>@string/c5</item>
+        <item>@string/b7</item>
+        <item>@string/dz</item>
+        <item>@string/b8</item>
+        <item>@string/jr</item>
+        <item>@string/i8</item>
+        <item>@string/d8</item>
+    </array>
+    <array name="l">
+        <item>@string/hv</item>
+        <item>@string/hu</item>
+        <item>@string/hw</item>
+        <item>@string/hx</item>
+        <item>@string/hy</item>
+    </array>
+    <array name="m">
+        <item>@string/ix</item>
+        <item>@string/j2</item>
+        <item>@string/j1</item>
+        <item>@string/j0</item>
+    </array>
+    <array name="n">
+        <item>@string/jg</item>
+        <item>@string/jh</item>
+        <item>@string/jf</item>
+    </array>
+    <array name="o">
+        <item>@string/cd</item>
+        <item>@string/au</item>
+        <item>@string/aw</item>
+        <item>@string/ax</item>
+        <item>@string/ay</item>
+        <item>@string/av</item>
+    </array>
+</resources>
