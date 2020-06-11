@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="k">
+        <item>@string/c0</item>
+        <item>@string/b6</item>
+        <item>@string/dk</item>
+        <item>@string/b7</item>
+        <item>@string/h4</item>
+        <item>@string/dl</item>
+        <item>@string/hl</item>
+    </array>
+</resources>

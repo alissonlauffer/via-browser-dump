@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="e" parent="@android:style/Theme.Material.Light">
+        <item name="android:statusBarColor">@color/t</item>
+    </style>
+    <style name="t" parent="@android:style/Theme.Material">
+        <item name="android:statusBarColor">@color/i</item>
+    </style>
+    <style name="f" parent="@android:style/Theme.Material">
+        <item name="android:statusBarColor">@color/j</item>
+    </style>
+</resources>

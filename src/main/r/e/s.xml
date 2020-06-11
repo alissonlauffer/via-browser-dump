@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="@dimen/e" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/a3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/b2" style="@style/k"/>
+    <TextView android:textSize="@dimen/m" android:id="@+id/a0" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/b2" android:maxLines="4" android:layout_below="@+id/a3" style="@style/j"/>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="e" parent="@android:style/Theme.Material.Light">
+        <item name="android:statusBarColor">@color/h</item>
+        <item name="android:navigationBarColor">@color/h</item>
+        <item name="?0x10104e0">true</item>
+        <item name="?0x101056c">true</item>
+        <item name="?0x101056d">@android:color/transparent</item>
+        <item name="?0x1010590">true</item>
+    </style>
+    <style name="t" parent="@android:style/Theme.Material">
+        <item name="android:statusBarColor">@color/i</item>
+        <item name="android:navigationBarColor">@color/i</item>
+        <item name="?0x10104e0">false</item>
+        <item name="?0x101056c">false</item>
+        <item name="?0x101056d">@android:color/transparent</item>
+        <item name="?0x1010590">false</item>
+    </style>
+    <style name="f" parent="@android:style/Theme.Material">
+        <item name="android:statusBarColor">@color/j</item>
+        <item name="android:navigationBarColor">@color/j</item>
+        <item name="?0x10104e0">false</item>
+        <item name="?0x101056c">false</item>
+        <item name="?0x101056d">@android:color/transparent</item>
+        <item name="?0x1010590">false</item>
+    </style>
+</resources>

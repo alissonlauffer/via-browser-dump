@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:id="@+id/aw" android:layout_width="match_parent" android:layout_height="@dimen/a">
+    <ImageView android:id="@+id/ay" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/a7" android:layout_weight="1" android:contentDescription="@string/ca" style="@style/r"/>
+    <ImageView android:id="@+id/az" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/t" android:layout_weight="1" android:contentDescription="@string/cc" style="@style/r"/>
+    <ImageView android:id="@+id/b0" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/af" android:layout_weight="1" android:contentDescription="@string/cd" style="@style/r"/>
+    <FrameLayout android:id="@+id/al" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="11dp" android:textColor="?attr/f" android:gravity="center" android:id="@+id/b2" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/b3" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/az" android:contentDescription="@string/ci" style="@style/r"/>
+    </FrameLayout>
+    <ImageView android:id="@+id/b1" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/ai" android:layout_weight="1" android:contentDescription="@string/ce" style="@style/r"/>
+</LinearLayout>

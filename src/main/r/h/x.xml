@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/a" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?attr/k"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ap" android:background="@color/d" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_alignParentBottom="true">
+        <TextView android:id="@+id/ab" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/hh" android:layout_weight="1" style="@style/q"/>
+        <TextView android:id="@+id/c" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/hd" android:layout_weight="1" style="@style/q"/>
+        <TextView android:id="@+id/ar" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/hj" android:layout_weight="1" style="@style/q"/>
+        <TextView android:id="@+id/an" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/hi" android:layout_weight="1" style="@style/q"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/aq" android:background="@color/e" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/ap">
+        <TextView android:textSize="14sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@+id/ae" android:paddingLeft="8dp" android:paddingTop="10dp" android:paddingRight="8dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/gm" android:layout_toLeftOf="@+id/ao" android:layout_toStartOf="@+id/ao"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/p" android:id="@+id/ao" android:background="@drawable/e" android:paddingLeft="18dp" android:paddingTop="10dp" android:paddingRight="18dp" android:paddingBottom="10dp" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/ok" android:layout_alignParentRight="true" android:onClick="onSettingsItemClick" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</RelativeLayout>

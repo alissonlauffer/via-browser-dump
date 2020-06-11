@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/f" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/a4" android:padding="8dp" android:layout_width="@dimen/t" android:layout_height="wrap_content" android:src="@drawable/ac" android:layout_alignTop="@+id/b_" android:layout_alignBottom="@+id/bh"/>
+    <TextView android:ellipsize="middle" android:id="@+id/b_" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t" android:layout_marginRight="8dp" android:text="@string/b2" android:singleLine="true" android:layout_marginStart="@dimen/t" android:layout_marginEnd="8dp" style="@style/k"/>
+    <TextView android:textSize="@dimen/m" android:id="@+id/bh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/t" android:layout_marginRight="8dp" android:text="@string/b2" android:layout_below="@+id/b_" android:layout_marginStart="@dimen/t" android:layout_marginEnd="8dp" style="@style/j"/>
+    <ProgressBar android:id="@+id/ag" android:layout_width="25dp" android:layout_height="wrap_content" android:indeterminate="false" android:indeterminateDrawable="@drawable/a3" android:layout_toRightOf="@+id/bh" android:layout_below="@+id/b_" android:layout_alignTop="@+id/bh" android:layout_alignBottom="@+id/bh" android:layout_toEndOf="@+id/bh"/>
+</RelativeLayout>

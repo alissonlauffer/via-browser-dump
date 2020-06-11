@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="@dimen/e" android:paddingRight="@dimen/e" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/i" android:textStyle="bold" android:textColor="?attr/h" android:id="@+id/p" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="@string/bv" android:layout_above="@+id/o"/>
+    <ScrollView android:scrollbarSize="@dimen/h" android:scrollbarThumbVertical="@color/s" android:id="@+id/o" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:layout_centerInParent="true" android:overScrollMode="never">
+        <TextView android:textSize="@dimen/k" android:textColor="?attr/h" android:id="@+id/n" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="100dp" android:text="@string/il" android:lineSpacingExtra="5dp" android:lineSpacingMultiplier="1"/>
+    </ScrollView>
+    <TextView android:id="@+id/q" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bx" android:layout_below="@+id/o" android:layout_alignParentRight="true" android:onClick="onBtnClick" style="@style/g"/>
+    <TextView android:textColor="?attr/i" android:id="@+id/m" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bt" android:layout_toLeftOf="@+id/q" android:layout_alignTop="@+id/q" android:onClick="onBtnClick" style="@style/g"/>
+</RelativeLayout>

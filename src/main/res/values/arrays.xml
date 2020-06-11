@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="a">
+        <item>@string/c8</item>
+        <item>@string/g4</item>
+    </array>
+    <array name="b">
+        <item>@string/dj</item>
+        <item>@string/bj</item>
+    </array>
+    <array name="c">
+        <item>@string/c1</item>
+        <item>@string/c5</item>
+        <item>@string/c6</item>
+        <item>@string/c7</item>
+        <item>@string/c3</item>
+    </array>
+    <array name="d">
+        <item>@string/de</item>
+        <item>@string/df</item>
+        <item>@string/dg</item>
+    </array>
+    <array name="e">
+        <item>@string/c8</item>
+        <item>@string/d</item>
+        <item>@string/g</item>
+        <item>@string/am</item>
+    </array>
+    <array name="f">
+        <item>@string/hf</item>
+        <item>@string/he</item>
+        <item>@string/hk</item>
+    </array>
+    <array name="g">
+        <item>@string/c8</item>
+        <item>@string/g4</item>
+        <item>@string/ht</item>
+        <item>@string/dv</item>
+        <item>@string/fa</item>
+    </array>
+    <array name="h">
+        <item>@string/fq</item>
+        <item>@string/ft</item>
+        <item>@string/fu</item>
+        <item>@string/fg</item>
+        <item>@string/fm</item>
+        <item>@string/fo</item>
+        <item>@string/ff</item>
+        <item>@string/fr</item>
+        <item>@string/fs</item>
+        <item>@string/fh</item>
+        <item>@string/fn</item>
+        <item>@string/fp</item>
+        <item>@string/fj</item>
+        <item>@string/fk</item>
+        <item>@string/fi</item>
+    </array>
+    <array name="i">
+        <item>@string/co</item>
+        <item>@string/b1</item>
+        <item>@string/b3</item>
+    </array>
+    <array name="j">
+        <item>@string/fz</item>
+        <item>@string/fw</item>
+        <item>@string/fy</item>
+        <item>@string/fx</item>
+    </array>
+    <array name="k">
+        <item>@string/c0</item>
+        <item>@string/b6</item>
+        <item>@string/dk</item>
+        <item>@string/b7</item>
+        <item>@string/j0</item>
+        <item>@string/hm</item>
+        <item>@string/d0</item>
+    </array>
+    <array name="l">
+        <item>@string/h_</item>
+        <item>@string/h9</item>
+        <item>@string/ha</item>
+        <item>@string/hb</item>
+        <item>@string/hc</item>
+    </array>
+    <array name="m">
+        <item>@string/ib</item>
+        <item>@string/ig</item>
+        <item>@string/if</item>
+        <item>@string/ie</item>
+    </array>
+    <array name="n">
+        <item>@string/iq</item>
+        <item>@string/ir</item>
+        <item>@string/ip</item>
+    </array>
+    <array name="o">
+        <item>@string/c8</item>
+        <item>@string/at</item>
+        <item>@string/av</item>
+        <item>@string/aw</item>
+        <item>@string/ax</item>
+        <item>@string/au</item>
+    </array>
+</resources>
