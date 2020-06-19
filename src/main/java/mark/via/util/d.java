@@ -9,8 +9,8 @@ public final class d {
     /* access modifiers changed from: private */
 
     /* renamed from: a  reason: collision with root package name */
-    public static c f480a = null;
-    private static boolean b = false;
+    public static c f480a;
+    private static boolean b;
 
     /* compiled from: CrashGot */
     class a implements Runnable {

@@ -8,7 +8,7 @@ public final class s1 {
     /* renamed from: a  reason: collision with root package name */
     private static boolean f191a = false;
     private static int b = 5;
-    private static boolean c = false;
+    private static boolean c;
 
     public static void a() {
         f191a = true;

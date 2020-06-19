@@ -10,8 +10,8 @@ import android.text.TextUtils;
 public class e1 {
     private static final String g = "e1";
     @SuppressLint({"StaticFieldLeak"})
-    private static e1 h = null;
-    private static boolean i = false;
+    private static e1 h;
+    private static boolean i;
 
     /* renamed from: a  reason: collision with root package name */
     public final Context f110a;

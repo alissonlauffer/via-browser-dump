@@ -12,7 +12,7 @@ import org.json.JSONObject;
 
 public class c0 {
     private static final String h = "c0";
-    private static boolean i = false;
+    private static boolean i;
     /* access modifiers changed from: private */
 
     /* renamed from: a  reason: collision with root package name */
