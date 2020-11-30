@@ -49,8 +49,6 @@ public class C0284v3 {
         }
     }
 
-    /* JADX WARNING: Exception block dominator not found, dom blocks: [] */
-    /* JADX WARNING: Missing exception handler attribute for start block: B:33:0x003b */
     /* renamed from: a */
     public static synchronized void m747a(Context context, String str) {
         synchronized (C0284v3.class) {
@@ -80,7 +78,10 @@ public class C0284v3 {
                         }
                     } catch (Throwable th) {
                         if (fileOutputStream != null) {
-                            fileOutputStream.close();
+                            try {
+                                fileOutputStream.close();
+                            } catch (IOException unused3) {
+                            }
                         }
                         throw th;
                     }
@@ -173,11 +174,9 @@ public class C0284v3 {
         }
     }
 
-    /* JADX WARNING: Exception block dominator not found, dom blocks: [] */
-    /* JADX WARNING: Missing exception handler attribute for start block: B:13:0x002a */
-    /* JADX WARNING: Removed duplicated region for block: B:25:0x0042 A[SYNTHETIC, Splitter:B:25:0x0042] */
-    /* JADX WARNING: Removed duplicated region for block: B:35:0x0051 A[SYNTHETIC, Splitter:B:35:0x0051] */
-    /* JADX WARNING: Removed duplicated region for block: B:42:0x0059 A[SYNTHETIC, Splitter:B:42:0x0059] */
+    /* JADX WARNING: Removed duplicated region for block: B:26:0x0042 A[SYNTHETIC, Splitter:B:26:0x0042] */
+    /* JADX WARNING: Removed duplicated region for block: B:36:0x0051 A[SYNTHETIC, Splitter:B:36:0x0051] */
+    /* JADX WARNING: Removed duplicated region for block: B:43:0x0059 A[SYNTHETIC, Splitter:B:43:0x0059] */
     /* renamed from: h */
     public static synchronized String m754h(Context context) {
         FileInputStream fileInputStream;
@@ -197,15 +196,18 @@ public class C0284v3 {
                         sb.append(readLine);
                     }
                     if (fileInputStream != null) {
-                        fileInputStream.close();
+                        try {
+                            fileInputStream.close();
+                        } catch (IOException unused) {
+                        }
                     }
                     return sb.toString();
-                } catch (FileNotFoundException unused) {
+                } catch (FileNotFoundException unused2) {
                     C0260s1.m701r(f788a, "File not found!");
                     if (fileInputStream != null) {
                         try {
                             fileInputStream.close();
-                        } catch (IOException unused2) {
+                        } catch (IOException unused3) {
                         }
                     }
                     return null;
@@ -216,7 +218,7 @@ public class C0284v3 {
                         if (fileInputStream != null) {
                             try {
                                 fileInputStream.close();
-                            } catch (IOException unused3) {
+                            } catch (IOException unused4) {
                             }
                         }
                         return null;
@@ -225,13 +227,13 @@ public class C0284v3 {
                         if (fileInputStream != null) {
                             try {
                                 fileInputStream.close();
-                            } catch (IOException unused4) {
+                            } catch (IOException unused5) {
                             }
                         }
                         throw th;
                     }
                 }
-            } catch (FileNotFoundException unused5) {
+            } catch (FileNotFoundException unused6) {
                 fileInputStream = null;
                 C0260s1.m701r(f788a, "File not found!");
                 if (fileInputStream != null) {

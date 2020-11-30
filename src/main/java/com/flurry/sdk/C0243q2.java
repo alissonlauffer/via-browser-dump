@@ -171,19 +171,21 @@ public class C0243q2 {
         /* renamed from: a */
         static final /* synthetic */ int[] f705a;
 
-        /* JADX WARNING: Can't wrap try/catch for region: R(8:0|1|2|3|4|5|6|8) */
-        /* JADX WARNING: Code restructure failed: missing block: B:9:?, code lost:
-            return;
-         */
-        /* JADX WARNING: Failed to process nested try/catch */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:3:0x000f */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:5:0x0017 */
         static {
             int[] iArr = new int[C0082cn.EnumC0083a.m312a().length];
             f705a = iArr;
-            iArr[C0082cn.EnumC0083a.f252e - 1] = 1;
-            f705a[C0082cn.EnumC0083a.f253f - 1] = 2;
-            f705a[C0082cn.EnumC0083a.f249b - 1] = 3;
+            try {
+                iArr[C0082cn.EnumC0083a.f252e - 1] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                f705a[C0082cn.EnumC0083a.f253f - 1] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+            try {
+                f705a[C0082cn.EnumC0083a.f249b - 1] = 3;
+            } catch (NoSuchFieldError unused3) {
+            }
         }
     }
 

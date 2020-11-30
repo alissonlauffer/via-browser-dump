@@ -90,9 +90,10 @@ public class C0088d {
 
         /*  JADX ERROR: StackOverflowError in pass: MarkFinallyVisitor
             java.lang.StackOverflowError
-            	at jadx.core.dex.visitors.MarkFinallyVisitor.sameInsns(MarkFinallyVisitor.java:451)
-            	at jadx.core.dex.visitors.MarkFinallyVisitor.compareBlocks(MarkFinallyVisitor.java:436)
-            	at jadx.core.dex.visitors.MarkFinallyVisitor.checkBlocksTree(MarkFinallyVisitor.java:408)
+            	at java.base/java.util.ArrayList.indexOfRange(ArrayList.java:299)
+            	at java.base/java.util.ArrayList.indexOf(ArrayList.java:286)
+            	at java.base/java.util.ArrayList.contains(ArrayList.java:275)
+            	at jadx.core.dex.visitors.MarkFinallyVisitor.checkBlocksTree(MarkFinallyVisitor.java:407)
             	at jadx.core.dex.visitors.MarkFinallyVisitor.checkBlocksTree(MarkFinallyVisitor.java:411)
             */
         public final void run() {
@@ -197,20 +198,24 @@ public class C0088d {
         /* renamed from: a */
         static final /* synthetic */ int[] f293a;
 
-        /* JADX WARNING: Can't wrap try/catch for region: R(8:0|1|2|3|4|5|6|(3:7|8|10)) */
-        /* JADX WARNING: Failed to process nested try/catch */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:3:0x0012 */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:5:0x001d */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:7:0x0028 */
         static {
             int[] iArr = new int[EnumC0089a.values().length];
             f293a = iArr;
-            iArr[EnumC0089a.None.ordinal()] = 1;
-            f293a[EnumC0089a.Complete.ordinal()] = 2;
-            f293a[EnumC0089a.CompleteNoChange.ordinal()] = 3;
+            try {
+                iArr[EnumC0089a.None.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                f293a[EnumC0089a.Complete.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+            try {
+                f293a[EnumC0089a.CompleteNoChange.ordinal()] = 3;
+            } catch (NoSuchFieldError unused3) {
+            }
             try {
                 f293a[EnumC0089a.Fail.ordinal()] = 4;
-            } catch (NoSuchFieldError unused) {
+            } catch (NoSuchFieldError unused4) {
             }
         }
     }

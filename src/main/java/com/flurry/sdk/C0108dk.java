@@ -131,23 +131,29 @@ public class C0108dk extends AbstractC0075c3 {
         /* renamed from: a */
         static final /* synthetic */ int[] f350a;
 
-        /* JADX WARNING: Can't wrap try/catch for region: R(12:0|1|2|3|4|5|6|7|8|9|10|12) */
-        /* JADX WARNING: Code restructure failed: missing block: B:13:?, code lost:
-            return;
-         */
-        /* JADX WARNING: Failed to process nested try/catch */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:3:0x0012 */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:5:0x001d */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:7:0x0028 */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:9:0x0033 */
         static {
             int[] iArr = new int[EnumC0109a.values().length];
             f350a = iArr;
-            iArr[EnumC0109a.kPost.ordinal()] = 1;
-            f350a[EnumC0109a.kPut.ordinal()] = 2;
-            f350a[EnumC0109a.kDelete.ordinal()] = 3;
-            f350a[EnumC0109a.kHead.ordinal()] = 4;
-            f350a[EnumC0109a.kGet.ordinal()] = 5;
+            try {
+                iArr[EnumC0109a.kPost.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                f350a[EnumC0109a.kPut.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+            try {
+                f350a[EnumC0109a.kDelete.ordinal()] = 3;
+            } catch (NoSuchFieldError unused3) {
+            }
+            try {
+                f350a[EnumC0109a.kHead.ordinal()] = 4;
+            } catch (NoSuchFieldError unused4) {
+            }
+            try {
+                f350a[EnumC0109a.kGet.ordinal()] = 5;
+            } catch (NoSuchFieldError unused5) {
+            }
         }
     }
 

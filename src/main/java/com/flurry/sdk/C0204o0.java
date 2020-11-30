@@ -514,21 +514,24 @@ public class C0204o0 implements C0275u2.AbstractC0276a {
         /* renamed from: a */
         static final /* synthetic */ int[] f655a;
 
-        /* JADX WARNING: Can't wrap try/catch for region: R(10:0|1|2|3|4|5|6|7|8|10) */
-        /* JADX WARNING: Can't wrap try/catch for region: R(8:0|1|2|3|4|5|6|(3:7|8|10)) */
-        /* JADX WARNING: Failed to process nested try/catch */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:3:0x000f */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:5:0x0017 */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:7:0x001f */
         static {
             int[] iArr = new int[C0127ec.EnumC0128a.m408a().length];
             f655a = iArr;
-            iArr[C0127ec.EnumC0128a.f387a - 1] = 1;
-            f655a[C0127ec.EnumC0128a.f388b - 1] = 2;
-            f655a[C0127ec.EnumC0128a.f389c - 1] = 3;
+            try {
+                iArr[C0127ec.EnumC0128a.f387a - 1] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                f655a[C0127ec.EnumC0128a.f388b - 1] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+            try {
+                f655a[C0127ec.EnumC0128a.f389c - 1] = 3;
+            } catch (NoSuchFieldError unused3) {
+            }
             try {
                 f655a[C0127ec.EnumC0128a.f390d - 1] = 4;
-            } catch (NoSuchFieldError unused) {
+            } catch (NoSuchFieldError unused4) {
             }
         }
     }

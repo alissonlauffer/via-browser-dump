@@ -67,106 +67,110 @@ public final class C0154h0 {
         }
     }
 
-    /* JADX WARNING: Failed to process nested try/catch */
-    /* JADX WARNING: Missing exception handler attribute for start block: B:52:0x0188 */
     /* renamed from: b */
     public final byte[] mo214b() {
         Throwable th;
         byte[] bArr;
         DataOutputStream dataOutputStream = null;
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        DataOutputStream dataOutputStream2 = new DataOutputStream(byteArrayOutputStream);
         try {
-            dataOutputStream2.writeShort(this.f460a);
-            dataOutputStream2.writeLong(this.f461b);
-            dataOutputStream2.writeUTF(this.f462c);
-            dataOutputStream2.writeUTF(this.f463d);
-            dataOutputStream2.writeUTF(this.f464e);
-            dataOutputStream2.writeShort(this.f466g.size());
-            for (Map.Entry<String, String> entry : this.f466g.entrySet()) {
-                dataOutputStream2.writeUTF(entry.getKey());
-                dataOutputStream2.writeUTF(entry.getValue());
-            }
-            dataOutputStream2.writeShort(this.f467h.size());
-            for (Map.Entry<String, String> entry2 : this.f467h.entrySet()) {
-                dataOutputStream2.writeUTF(entry2.getKey());
-                dataOutputStream2.writeUTF(entry2.getValue());
-            }
-            if (this.f465f != null) {
-                if ("uncaught".equals(this.f462c)) {
-                    dataOutputStream2.writeByte(3);
-                } else {
+            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+            DataOutputStream dataOutputStream2 = new DataOutputStream(byteArrayOutputStream);
+            try {
+                dataOutputStream2.writeShort(this.f460a);
+                dataOutputStream2.writeLong(this.f461b);
+                dataOutputStream2.writeUTF(this.f462c);
+                dataOutputStream2.writeUTF(this.f463d);
+                dataOutputStream2.writeUTF(this.f464e);
+                dataOutputStream2.writeShort(this.f466g.size());
+                for (Map.Entry<String, String> entry : this.f466g.entrySet()) {
+                    dataOutputStream2.writeUTF(entry.getKey());
+                    dataOutputStream2.writeUTF(entry.getValue());
+                }
+                dataOutputStream2.writeShort(this.f467h.size());
+                for (Map.Entry<String, String> entry2 : this.f467h.entrySet()) {
+                    dataOutputStream2.writeUTF(entry2.getKey());
+                    dataOutputStream2.writeUTF(entry2.getValue());
+                }
+                if (this.f465f != null) {
+                    if ("uncaught".equals(this.f462c)) {
+                        dataOutputStream2.writeByte(3);
+                    } else {
+                        dataOutputStream2.writeByte(2);
+                    }
                     dataOutputStream2.writeByte(2);
-                }
-                dataOutputStream2.writeByte(2);
-                StringBuilder sb = new StringBuilder("");
-                String property = System.getProperty("line.separator");
-                for (StackTraceElement stackTraceElement : this.f465f.getStackTrace()) {
-                    sb.append(stackTraceElement);
-                    sb.append(property);
-                }
-                if (this.f465f.getCause() != null) {
-                    sb.append(property);
-                    sb.append("Caused by: ");
-                    for (StackTraceElement stackTraceElement2 : this.f465f.getCause().getStackTrace()) {
-                        sb.append(stackTraceElement2);
+                    StringBuilder sb = new StringBuilder("");
+                    String property = System.getProperty("line.separator");
+                    for (StackTraceElement stackTraceElement : this.f465f.getStackTrace()) {
+                        sb.append(stackTraceElement);
                         sb.append(property);
                     }
+                    if (this.f465f.getCause() != null) {
+                        sb.append(property);
+                        sb.append("Caused by: ");
+                        for (StackTraceElement stackTraceElement2 : this.f465f.getCause().getStackTrace()) {
+                            sb.append(stackTraceElement2);
+                            sb.append(property);
+                        }
+                    }
+                    byte[] bytes = sb.toString().getBytes();
+                    dataOutputStream2.writeInt(bytes.length);
+                    dataOutputStream2.write(bytes);
+                } else if (mo215c()) {
+                    dataOutputStream2.writeByte(3);
+                    if (TextUtils.isEmpty(this.f470k)) {
+                        dataOutputStream2.writeByte(0);
+                    } else {
+                        dataOutputStream2.writeByte(3);
+                        byte[] bytes2 = this.f470k.getBytes();
+                        dataOutputStream2.writeInt(bytes2.length);
+                        dataOutputStream2.write(bytes2);
+                    }
+                } else {
+                    dataOutputStream2.writeByte(1);
+                    dataOutputStream2.writeByte(0);
                 }
-                byte[] bytes = sb.toString().getBytes();
-                dataOutputStream2.writeInt(bytes.length);
-                dataOutputStream2.write(bytes);
-            } else if (mo215c()) {
-                dataOutputStream2.writeByte(3);
-                if (TextUtils.isEmpty(this.f470k)) {
+                if (TextUtils.isEmpty(this.f469j)) {
                     dataOutputStream2.writeByte(0);
                 } else {
-                    dataOutputStream2.writeByte(3);
-                    byte[] bytes2 = this.f470k.getBytes();
-                    dataOutputStream2.writeInt(bytes2.length);
-                    dataOutputStream2.write(bytes2);
+                    dataOutputStream2.writeByte(1);
+                    byte[] bytes3 = this.f469j.getBytes();
+                    dataOutputStream2.writeInt(bytes3.length);
+                    dataOutputStream2.write(bytes3);
                 }
-            } else {
-                dataOutputStream2.writeByte(1);
-                dataOutputStream2.writeByte(0);
-            }
-            if (TextUtils.isEmpty(this.f469j)) {
-                dataOutputStream2.writeByte(0);
-            } else {
-                dataOutputStream2.writeByte(1);
-                byte[] bytes3 = this.f469j.getBytes();
-                dataOutputStream2.writeInt(bytes3.length);
-                dataOutputStream2.write(bytes3);
-            }
-            dataOutputStream2.writeShort(C0142f3.m438c());
-            List<C0124e3> list = this.f468i;
-            if (list != null) {
-                dataOutputStream2.writeShort(list.size());
-                for (C0124e3 e3Var : this.f468i) {
-                    dataOutputStream2.write(e3Var.mo194a());
+                dataOutputStream2.writeShort(C0142f3.m438c());
+                List<C0124e3> list = this.f468i;
+                if (list != null) {
+                    dataOutputStream2.writeShort(list.size());
+                    for (C0124e3 e3Var : this.f468i) {
+                        dataOutputStream2.write(e3Var.mo194a());
+                    }
+                } else {
+                    dataOutputStream2.writeShort(0);
                 }
-            } else {
-                dataOutputStream2.writeShort(0);
-            }
-            dataOutputStream2.flush();
-            bArr = byteArrayOutputStream.toByteArray();
-            C0328z2.m890e(dataOutputStream2);
-        } catch (IOException unused) {
-            dataOutputStream = dataOutputStream2;
-            try {
-                bArr = new byte[0];
-                C0328z2.m890e(dataOutputStream);
-                return bArr;
-            } catch (Throwable th2) {
-                th = th2;
+                dataOutputStream2.flush();
+                bArr = byteArrayOutputStream.toByteArray();
+                C0328z2.m890e(dataOutputStream2);
+            } catch (IOException unused) {
+                dataOutputStream = dataOutputStream2;
+                try {
+                    bArr = new byte[0];
+                    C0328z2.m890e(dataOutputStream);
+                    return bArr;
+                } catch (Throwable th2) {
+                    th = th2;
+                    C0328z2.m890e(dataOutputStream);
+                    throw th;
+                }
+            } catch (Throwable th3) {
+                th = th3;
+                dataOutputStream = dataOutputStream2;
                 C0328z2.m890e(dataOutputStream);
                 throw th;
             }
-        } catch (Throwable th3) {
-            th = th3;
-            dataOutputStream = dataOutputStream2;
+        } catch (IOException unused2) {
+            bArr = new byte[0];
             C0328z2.m890e(dataOutputStream);
-            throw th;
+            return bArr;
         }
         return bArr;
     }

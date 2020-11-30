@@ -160,25 +160,34 @@ public class C0044bs {
         /* renamed from: b */
         static final /* synthetic */ int[] f172b;
 
-        /* JADX WARNING: Can't wrap try/catch for region: R(15:0|1|2|3|4|5|6|7|8|9|10|11|13|14|16) */
-        /* JADX WARNING: Failed to process nested try/catch */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:3:0x0012 */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:5:0x001d */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:7:0x0028 */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:9:0x0033 */
         static {
             int[] iArr = new int[EnumC0045a.values().length];
             f172b = iArr;
-            iArr[EnumC0045a.NONE.ordinal()] = 1;
-            f172b[EnumC0045a.ADVERTISING.ordinal()] = 2;
-            f172b[EnumC0045a.INSTALL_ID.ordinal()] = 3;
-            f172b[EnumC0045a.DEVICE.ordinal()] = 4;
-            f172b[EnumC0045a.REPORTED_IDS.ordinal()] = 5;
+            try {
+                iArr[EnumC0045a.NONE.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                f172b[EnumC0045a.ADVERTISING.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+            try {
+                f172b[EnumC0045a.INSTALL_ID.ordinal()] = 3;
+            } catch (NoSuchFieldError unused3) {
+            }
+            try {
+                f172b[EnumC0045a.DEVICE.ordinal()] = 4;
+            } catch (NoSuchFieldError unused4) {
+            }
+            try {
+                f172b[EnumC0045a.REPORTED_IDS.ordinal()] = 5;
+            } catch (NoSuchFieldError unused5) {
+            }
             int[] iArr2 = new int[C0127ec.EnumC0128a.m408a().length];
             f171a = iArr2;
             try {
                 iArr2[C0127ec.EnumC0128a.f387a - 1] = 1;
-            } catch (NoSuchFieldError unused) {
+            } catch (NoSuchFieldError unused6) {
             }
         }
     }

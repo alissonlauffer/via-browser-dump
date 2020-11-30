@@ -71,21 +71,26 @@ public class C0329z3 implements AbstractC0282v1 {
         /* renamed from: b */
         static final /* synthetic */ int[] f911b;
 
-        /* JADX WARNING: Can't wrap try/catch for region: R(9:0|1|2|3|4|5|6|7|(3:9|10|12)) */
-        /* JADX WARNING: Failed to process nested try/catch */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:3:0x000f */
-        /* JADX WARNING: Missing exception handler attribute for start block: B:5:0x0017 */
         static {
             int[] iArr = new int[C0125eb.EnumC0126a.m407a().length];
             f911b = iArr;
-            iArr[C0125eb.EnumC0126a.f379a - 1] = 1;
-            f911b[C0125eb.EnumC0126a.f380b - 1] = 2;
-            f911b[C0125eb.EnumC0126a.f381c - 1] = 3;
+            try {
+                iArr[C0125eb.EnumC0126a.f379a - 1] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                f911b[C0125eb.EnumC0126a.f380b - 1] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+            try {
+                f911b[C0125eb.EnumC0126a.f381c - 1] = 3;
+            } catch (NoSuchFieldError unused3) {
+            }
             int[] iArr2 = new int[C0127ec.EnumC0128a.m408a().length];
             f910a = iArr2;
             try {
                 iArr2[C0127ec.EnumC0128a.f391e - 1] = 1;
-            } catch (NoSuchFieldError unused) {
+            } catch (NoSuchFieldError unused4) {
             }
         }
     }
