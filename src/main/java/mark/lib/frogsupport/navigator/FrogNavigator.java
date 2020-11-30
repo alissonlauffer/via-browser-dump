@@ -113,14 +113,14 @@ public class FrogNavigator {
         this.f1155d = relativeLayout;
         relativeLayout.setId(f1148f);
         this.f1155d.setLayoutParams(new LinearLayout.LayoutParams(-1, -2));
-        CompatUtils.m1340j(this.f1155d, C0365d.l);
+        CompatUtils.m1340j(this.f1155d, C0365d.c);
     }
 
     /* renamed from: f */
     private void m1260f() {
         TextView textView = new TextView(this.f1152a);
         this.f1153b = textView;
-        CompatUtils.m1345o(textView, C0368g.m);
+        CompatUtils.m1345o(textView, C0368g.f);
         this.f1153b.setId(f1149g);
         this.f1153b.setSingleLine();
         this.f1153b.setMaxLines(1);
@@ -128,7 +128,7 @@ public class FrogNavigator {
         this.f1153b.setGravity(16);
         this.f1153b.setEllipsize(TextUtils.TruncateAt.END);
         int a = FrogUtils.m1354a(this.f1152a, 0.0f);
-        CompatUtils.m1343m(this.f1153b, CompatUtils.m1333c(this.f1152a, C0364c.j), a);
+        CompatUtils.m1343m(this.f1153b, CompatUtils.m1333c(this.f1152a, C0364c.d), a);
         this.f1153b.setTypeface(Typeface.defaultFromStyle(1));
         m1264o();
         this.f1155d.addView(this.f1153b);
@@ -143,9 +143,9 @@ public class FrogNavigator {
     private ImageView m1262h(Drawable drawable) {
         ImageView imageView = new ImageView(this.f1152a);
         imageView.setImageDrawable(drawable);
-        imageView.setColorFilter(CompatUtils.m1332b(this.f1152a, C0361a.f));
-        CompatUtils.m1343m(imageView, CompatUtils.m1333c(this.f1152a, C0364c.k), CompatUtils.m1333c(this.f1152a, C0364c.l));
-        CompatUtils.m1340j(imageView, C0365d.e);
+        imageView.setColorFilter(CompatUtils.m1332b(this.f1152a, C0361a.a));
+        CompatUtils.m1343m(imageView, CompatUtils.m1333c(this.f1152a, C0364c.e), CompatUtils.m1333c(this.f1152a, C0364c.f));
+        CompatUtils.m1340j(imageView, C0365d.a);
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-2, -2);
         layoutParams.addRule(6, f1149g);
         layoutParams.addRule(8, f1149g);
@@ -171,13 +171,13 @@ public class FrogNavigator {
         }
         textView.setEllipsize(TextUtils.TruncateAt.END);
         if (i >= 23) {
-            textView.setTextAppearance(C0368g.l);
+            textView.setTextAppearance(C0368g.e);
         } else {
-            textView.setTextAppearance(this.f1152a, C0368g.l);
+            textView.setTextAppearance(this.f1152a, C0368g.e);
         }
         textView.setGravity(17);
-        CompatUtils.m1343m(textView, CompatUtils.m1333c(this.f1152a, C0364c.l), 0);
-        CompatUtils.m1340j(textView, C0365d.e);
+        CompatUtils.m1343m(textView, CompatUtils.m1333c(this.f1152a, C0364c.f), 0);
+        CompatUtils.m1340j(textView, C0365d.a);
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-2, -2);
         layoutParams.addRule(6, f1149g);
         layoutParams.addRule(8, f1149g);
@@ -250,7 +250,7 @@ public class FrogNavigator {
     /* renamed from: j */
     public FrogNavigator mo733j(String str, View.OnClickListener onClickListener) {
         if (this.f1154c == null) {
-            ImageView h = m1262h(CompatUtils.m1334d(this.f1152a, C0365d.a3));
+            ImageView h = m1262h(CompatUtils.m1334d(this.f1152a, C0365d.e));
             this.f1154c = h;
             h.setId(f1150h);
             this.f1154c.setContentDescription(str);

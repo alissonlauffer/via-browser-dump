@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/RES_2131230763" android:background="?attr/RES_2130903042" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/h" android:textColor="?attr/c" android:gravity="center" android:id="@+id/RES_2131230788" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/RES_2131558638"/>
+    <ListView android:scrollbarSize="@dimen/g" android:scrollbarThumbVertical="@color/RES_2131034146" android:scrollbarTrackVertical="@android:color/transparent" android:id="@+id/RES_2131230756" android:scrollbars="vertical" android:fadingEdge="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0dp" android:fastScrollEnabled="false" android:overScrollMode="never"/>
+</RelativeLayout>

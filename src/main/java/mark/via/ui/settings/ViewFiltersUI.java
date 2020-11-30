@@ -66,7 +66,7 @@ public class ViewFiltersUI extends BaseSettings {
     /* renamed from: b */
     private void m2886b(ViewHolder cVar, String str, int i) {
         if (cVar != null) {
-            cVar.mo689g(R.id.ba, str);
+            cVar.mo689g(R.id.o, str);
         }
     }
 
@@ -74,15 +74,15 @@ public class ViewFiltersUI extends BaseSettings {
     private View m2887c() {
         FrogNavigator g = FrogNavigator.m1261g(this.f1039b);
         g.mo737n(this.f1867h);
-        g.mo734k(R.string.cg);
+        g.mo734k(R.string.RES_2131558517);
         View p = g.mo738p();
-        TextView a = LayoutUtils.m1363a(this.f1039b, R.string.d_);
-        ListView listView = new ListView(new ContextThemeWrapper(this.f1039b, (int) R.style.j));
+        TextView a = LayoutUtils.m1363a(this.f1039b, R.string.RES_2131558547);
+        ListView listView = new ListView(new ContextThemeWrapper(this.f1039b, (int) R.style.d));
         this.f1863d = listView;
         listView.setDividerHeight(0);
         this.f1863d.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
         this.f1864e = new ArrayList();
-        C0607a aVar = new C0607a(this.f1039b, R.layout.o, this.f1864e);
+        C0607a aVar = new C0607a(this.f1039b, R.layout.RES_2131361806, this.f1864e);
         this.f1865f = aVar;
         aVar.mo670g(new C0686z1(this, a));
         this.f1863d.setOnItemClickListener(new C0680x1(this));
@@ -114,7 +114,7 @@ public class ViewFiltersUI extends BaseSettings {
     public /* synthetic */ void mo1557i(int i, AdapterView adapterView, View view, int i2, long j) {
         String str = this.f1864e.get(i);
         if (i2 == 0) {
-            QuickUtils.m1370b(this.f1039b, str, R.string.iq);
+            QuickUtils.m1370b(this.f1039b, str, R.string.RES_2131558749);
         }
     }
 
@@ -122,7 +122,7 @@ public class ViewFiltersUI extends BaseSettings {
     /* renamed from: j */
     public /* synthetic */ boolean mo1558k(AdapterView adapterView, View view, int i, long j) {
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo643u(new String[]{this.f1039b.getString(R.string.l)}, new C0683y1(this, i));
+        g.mo643u(new String[]{this.f1039b.getString(R.string.RES_2131558411)}, new C0683y1(this, i));
         g.mo624P(view);
         return true;
     }
@@ -159,14 +159,14 @@ public class ViewFiltersUI extends BaseSettings {
 
     /* renamed from: r */
     private void m2896r(int i) {
-        QuickUtils.m1379k(this.f1039b, R.string.a9, this.f1864e.get(i));
+        QuickUtils.m1379k(this.f1039b, R.string.RES_2131558435, this.f1864e.get(i));
     }
 
     /* access modifiers changed from: protected */
     @Override // mark.via.ui.settings.BaseSettings, mark.lib.frogsupport.activity.BaseActivity
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        this.f1867h = getString(R.string.a9);
+        this.f1867h = getString(R.string.RES_2131558435);
         Intent intent = getIntent();
         if (intent != null) {
             if (intent.hasExtra(f1861i)) {

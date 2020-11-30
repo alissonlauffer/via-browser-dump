@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <plurals name="a">
+    <plurals name="RES_2131492864">
         <item quantity="one">wczoraj</item>
         <item quantity="other">%d dni temu</item>
     </plurals>
-    <plurals name="b">
+    <plurals name="RES_2131492865">
         <item quantity="zero">Brak filtrów</item>
         <item quantity="one">1 filtr</item>
         <item quantity="few">%d filtry</item>
         <item quantity="other">%d filtrów</item>
     </plurals>
-    <plurals name="c">
+    <plurals name="RES_2131492866">
         <item quantity="one">godzinę temu</item>
         <item quantity="few">%d godziny temu</item>
         <item quantity="other">%d godzin temu</item>
     </plurals>
-    <plurals name="d">
+    <plurals name="RES_2131492867">
         <item quantity="one">minutę temu</item>
         <item quantity="few">%d minut temu</item>
         <item quantity="other">%d minut temu</item>

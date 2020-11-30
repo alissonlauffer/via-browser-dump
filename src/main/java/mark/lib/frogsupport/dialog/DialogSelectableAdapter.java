@@ -66,7 +66,7 @@ public class DialogSelectableAdapter extends BaseAdapter {
         public CheckBox f1054a;
 
         public C0372b(View view) {
-            this.f1054a = (CheckBox) view.findViewById(C0366e.k);
+            this.f1054a = (CheckBox) view.findViewById(C0366e.b);
         }
     }
 
@@ -180,7 +180,7 @@ public class DialogSelectableAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         C0372b bVar;
         if (view == null) {
-            view = LayoutInflater.from(viewGroup.getContext()).inflate(C0367f.k, viewGroup, false);
+            view = LayoutInflater.from(viewGroup.getContext()).inflate(C0367f.c, viewGroup, false);
             bVar = new C0372b(view);
             view.setTag(bVar);
         } else {

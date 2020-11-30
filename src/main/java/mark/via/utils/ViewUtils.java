@@ -78,7 +78,7 @@ public class ViewUtils {
             if (m2215B(activity, m2239q(i))) {
                 view2.setBackgroundColor(i);
             } else if (m2239q(i)) {
-                view2.setBackgroundColor(CompatUtils.m1331a(activity, R.color.a));
+                view2.setBackgroundColor(CompatUtils.m1331a(activity, R.color.RES_2131034112));
             }
             viewGroup.addView(view2);
         }
@@ -372,14 +372,14 @@ public class ViewUtils {
         int i = Build.VERSION.SDK_INT;
         if (i >= 19 && i < 21 && view != null) {
             Activity activity = (Activity) view.getContext();
-            m2214A(activity, view, CompatUtils.m1331a(activity, PreferenceManager.m1743M(activity).mo1129Z(activity) ? R.color.g : R.color.f));
+            m2214A(activity, view, CompatUtils.m1331a(activity, PreferenceManager.m1743M(activity).mo1129Z(activity) ? R.color.RES_2131034118 : R.color.RES_2131034117));
         }
     }
 
     /* renamed from: p */
     public static void m2238p(Activity activity, boolean z) {
         if (z) {
-            activity.setTheme(R.style.a);
+            activity.setTheme(R.style.RES_2131623936);
         }
     }
 

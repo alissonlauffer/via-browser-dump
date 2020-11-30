@@ -28,12 +28,12 @@ public class BookmarkHelper {
         DatabaseHandler v = DatabaseHandler.m1595v(context);
         String[] u = v.mo996u();
         TaoDialog g = TaoDialog.m1134g(context);
-        g.mo620L(R.string.a);
+        g.mo620L(R.string.RES_2131558400);
         g.mo636n(false);
-        g.mo628c(0, str2, R.string.e7, 1);
-        g.mo628c(1, str, R.string.e8, 1);
-        g.mo628c(2, "", R.string.e4, 1);
-        g.mo637o(R.string.b, false);
+        g.mo628c(0, str2, R.string.RES_2131558581, 1);
+        g.mo628c(1, str, R.string.RES_2131558582, 1);
+        g.mo628c(2, "", R.string.RES_2131558578, 1);
+        g.mo637o(R.string.RES_2131558401, false);
         g.mo614F(17039370, new C0451b(str3, v, context, mVar));
         g.mo648z(17039360, null);
         g.mo622N();
@@ -44,7 +44,7 @@ public class BookmarkHelper {
 
     /* renamed from: b */
     private static void m1708b(Context context, TaoDialog cVar, EditText editText, String[] strArr) {
-        String[] strArr2 = {"/", context.getString(R.string.a0)};
+        String[] strArr2 = {"/", context.getString(R.string.RES_2131558426)};
         editText.setFocusable(false);
         editText.setInputType(0);
         editText.setOnClickListener(new View$OnClickListenerC0455f(cVar, context, (String[]) ArrayUtils.m2069a(strArr2, strArr), editText));
@@ -58,7 +58,7 @@ public class BookmarkHelper {
 
     /* renamed from: d */
     public static void m1710d(Context context, String str, Callback mVar) {
-        QuickUtils.m1381m(context, context.getResources().getString(R.string.fj), CompatUtils.m1337g(context, R.string.ce, str), new C0456g(context, str, mVar));
+        QuickUtils.m1381m(context, context.getResources().getString(R.string.RES_2131558631), CompatUtils.m1337g(context, R.string.RES_2131558515, str), new C0456g(context, str, mVar));
     }
 
     /* renamed from: e */
@@ -68,11 +68,11 @@ public class BookmarkHelper {
         String g = q.mo941g();
         String[] u = v.mo996u();
         TaoDialog g2 = TaoDialog.m1134g(context);
-        g2.mo620L(R.string.ih);
+        g2.mo620L(R.string.RES_2131558740);
         g2.mo636n(false);
-        g2.mo628c(0, q.mo940f(), R.string.e7, 1);
-        g2.mo628c(1, q.mo941g(), R.string.e8, 1);
-        g2.mo626a(2, q.mo934b(), R.string.e4, u);
+        g2.mo628c(0, q.mo940f(), R.string.RES_2131558581, 1);
+        g2.mo628c(1, q.mo941g(), R.string.RES_2131558582, 1);
+        g2.mo626a(2, q.mo934b(), R.string.RES_2131558578, u);
         g2.mo614F(17039370, new C0453d(q, str2, v, g, mVar));
         g2.mo648z(17039360, null);
         g2.mo622N();
@@ -91,7 +91,7 @@ public class BookmarkHelper {
                 bVar.mo972H(bVar.mo992q(g), true);
                 DataChecker.m1181c().mo667h(1);
             }
-            QuickUtils.m1382n(context, R.string.f5);
+            QuickUtils.m1382n(context, R.string.RES_2131558616);
             DataChecker.m1181c().mo667h(2);
             if (mVar != null) {
                 mVar.mo1052a();
@@ -120,8 +120,8 @@ public class BookmarkHelper {
             cVar.mo622N();
         } else if (i == 1) {
             TaoDialog g = TaoDialog.m1134g(context);
-            g.mo620L(R.string.a0);
-            g.mo630e("", R.string.e4, 1);
+            g.mo620L(R.string.RES_2131558426);
+            g.mo630e("", R.string.RES_2131558578, 1);
             g.mo613E(new DialogInterface$OnDismissListenerC0457h(cVar));
             g.mo614F(17039370, new C0458i(editText));
             g.mo648z(17039360, null);
@@ -138,7 +138,7 @@ public class BookmarkHelper {
         Timber.m971a("Click edittext", new Object[0]);
         cVar.mo632i();
         TaoDialog g = TaoDialog.m1134g(context);
-        g.mo620L(R.string.e4);
+        g.mo620L(R.string.RES_2131558578);
         g.mo643u(strArr, new C0452c(editText, cVar, context, strArr));
         g.mo614F(17039360, new C0454e(cVar));
         g.mo612D(new DialogInterface$OnCancelListenerC0459j(cVar));
@@ -186,8 +186,8 @@ public class BookmarkHelper {
         DatabaseHandler v = DatabaseHandler.m1595v(context);
         String[] u = v.mo996u();
         TaoDialog g = TaoDialog.m1134g(context);
-        g.mo620L(R.string.ij);
-        g.mo626a(0, str, R.string.e4, u);
+        g.mo620L(R.string.RES_2131558742);
+        g.mo626a(0, str, R.string.RES_2131558578, u);
         g.mo614F(17039370, new C0450a(v, str, mVar));
         g.mo622N();
     }

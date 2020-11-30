@@ -27,8 +27,8 @@ public class LayoutUtils {
     /* renamed from: b */
     public static TextView m1364b(Context context, String str) {
         TextView textView = new TextView(context);
-        textView.setTextColor(CompatUtils.m1332b(context, C0361a.i));
-        textView.setTextSize(0, (float) CompatUtils.m1333c(context, C0364c.p));
+        textView.setTextColor(CompatUtils.m1332b(context, C0361a.c));
+        textView.setTextSize(0, (float) CompatUtils.m1333c(context, C0364c.h));
         textView.setLayoutParams(new ViewGroup.LayoutParams(-1, -2));
         textView.setGravity(17);
         textView.setText(str);
@@ -70,10 +70,10 @@ public class LayoutUtils {
 
     /* renamed from: e */
     public static ListView m1367e(Context context, boolean z) {
-        ListView listView = new ListView(new ContextThemeWrapper(context, C0368g.j));
+        ListView listView = new ListView(new ContextThemeWrapper(context, C0368g.d));
         listView.setId(77);
         listView.setDividerHeight(0);
-        listView.setSelector(C0365d.f);
+        listView.setSelector(C0365d.b);
         listView.setLayoutParams(new ViewGroup.LayoutParams(-1, z ? -1 : -2));
         listView.setOverScrollMode(2);
         return listView;

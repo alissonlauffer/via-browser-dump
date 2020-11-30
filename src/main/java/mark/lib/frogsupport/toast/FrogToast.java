@@ -74,10 +74,10 @@ public class FrogToast {
             ViewGroup viewGroup = (ViewGroup) activity.findViewById(16908290);
             this.f1173b = viewGroup;
             if (viewGroup != null) {
-                View inflate = LayoutInflater.from(activity).inflate(C0367f.s, this.f1173b, false);
+                View inflate = LayoutInflater.from(activity).inflate(C0367f.h, this.f1173b, false);
                 this.f1174c = inflate;
-                this.f1175d = (TextView) inflate.findViewById(C0366e.bi);
-                TextView textView = (TextView) this.f1174c.findViewById(C0366e.bh);
+                this.f1175d = (TextView) inflate.findViewById(C0366e.t);
+                TextView textView = (TextView) this.f1174c.findViewById(C0366e.s);
                 this.f1176e = textView;
                 if (Build.VERSION.SDK_INT >= 16) {
                     textView.setAllCaps(true);

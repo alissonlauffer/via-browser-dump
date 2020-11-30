@@ -27,7 +27,7 @@ public class DialogMenuAdapter extends ArrayAdapter<TaoDialog.C0381i> {
     }
 
     public DialogMenuAdapter(Context context, List<TaoDialog.C0381i> list) {
-        super(context, C0367f.l, list);
+        super(context, C0367f.d, list);
     }
 
     public long getItemId(int i) {
@@ -44,8 +44,8 @@ public class DialogMenuAdapter extends ArrayAdapter<TaoDialog.C0381i> {
         TaoDialog.C0381i iVar = (TaoDialog.C0381i) getItem(i);
         if (view == null) {
             bVar = new C0370b();
-            view2 = LayoutInflater.from(getContext()).inflate(C0367f.l, viewGroup, false);
-            bVar.f1046a = (TextView) view2.findViewById(C0366e.ba);
+            view2 = LayoutInflater.from(getContext()).inflate(C0367f.d, viewGroup, false);
+            bVar.f1046a = (TextView) view2.findViewById(C0366e.o);
             view2.setTag(bVar);
         } else {
             view2 = view;

@@ -69,7 +69,7 @@ public class AccountSettings extends BaseSettings {
 
     /* renamed from: A */
     private void m2566A() {
-        QuickUtils.m1374f(this.f1039b, R.string.cr, R.string.jc, new C0618d(this));
+        QuickUtils.m1374f(this.f1039b, R.string.RES_2131558528, R.string.RES_2131558772, new C0618d(this));
     }
 
     /* renamed from: B */
@@ -82,8 +82,8 @@ public class AccountSettings extends BaseSettings {
     /* renamed from: c */
     private View m2570c() {
         FrogNavigator g = FrogNavigator.m1261g(this.f1039b);
-        g.mo736m(R.string.he);
-        g.mo734k(R.string.cg);
+        g.mo736m(R.string.RES_2131558700);
+        g.mo734k(R.string.RES_2131558517);
         View p = g.mo738p();
         FrogSettings j = FrogSettings.m1279j(this.f1039b);
         j.mo748l(new C0627g(this));
@@ -99,13 +99,13 @@ public class AccountSettings extends BaseSettings {
         if (str.equalsIgnoreCase("0")) {
             this.f1803c.mo1183r1(true);
         } else if (str.equalsIgnoreCase("1")) {
-            QuickUtils.m1382n(this.f1039b, R.string.jq);
+            QuickUtils.m1382n(this.f1039b, R.string.RES_2131558786);
             this.f1803c.mo1183r1(false);
         } else if (str.equalsIgnoreCase("2")) {
-            QuickUtils.m1382n(this.f1039b, R.string.hq);
+            QuickUtils.m1382n(this.f1039b, R.string.RES_2131558712);
             this.f1803c.mo1183r1(true);
         } else {
-            QuickUtils.m1382n(this.f1039b, R.string.bp);
+            QuickUtils.m1382n(this.f1039b, R.string.RES_2131558489);
             this.f1803c.mo1183r1(false);
         }
         m2573f();
@@ -115,16 +115,16 @@ public class AccountSettings extends BaseSettings {
     /* renamed from: e */
     public void m2572e(FrogSettingsBean bVar, int i) {
         int b = bVar.mo754b();
-        if (b != R.string.bo) {
+        if (b != R.string.RES_2131558488) {
             switch (b) {
-                case R.string.jj /* 2131558779 */:
+                case R.string.RES_2131558779 /* 2131558779 */:
                     m2584x();
                     return;
-                case R.string.jk /* 2131558780 */:
+                case R.string.RES_2131558780 /* 2131558780 */:
                     FlurryHelper.m1681a().mo1040i("sync");
                     m2585y();
                     return;
-                case R.string.jl /* 2131558781 */:
+                case R.string.RES_2131558781 /* 2131558781 */:
                     FlurryHelper.m1681a().mo1040i("upload");
                     m2566A();
                     return;
@@ -133,9 +133,9 @@ public class AccountSettings extends BaseSettings {
             }
         } else {
             TaoDialog g = TaoDialog.m1134g(this.f1039b);
-            g.mo620L(R.string.bo);
-            g.mo640r(R.string.h5);
-            g.mo618J(R.array.b, this.f1793e, new C0633i(this, bVar, i));
+            g.mo620L(R.string.RES_2131558488);
+            g.mo640r(R.string.RES_2131558690);
+            g.mo618J(R.array.RES_2130837505, this.f1793e, new C0633i(this, bVar, i));
             g.mo622N();
         }
     }
@@ -143,19 +143,19 @@ public class AccountSettings extends BaseSettings {
     /* renamed from: f */
     private void m2573f() {
         if (this.f1794f.isEmpty()) {
-            this.f1794f.add(FrogSettingsBean.m1292k(this.f1039b, R.string.jj));
+            this.f1794f.add(FrogSettingsBean.m1292k(this.f1039b, R.string.RES_2131558779));
             List<FrogSettingsBean> list = this.f1794f;
             Context context = this.f1039b;
             int q = this.f1803c.mo1178q();
             this.f1793e = q;
-            list.add(FrogSettingsBean.m1295n(context, R.string.bo, CompatUtils.m1338h(context, R.array.b, q)));
+            list.add(FrogSettingsBean.m1295n(context, R.string.RES_2131558488, CompatUtils.m1338h(context, R.array.RES_2130837505, q)));
         }
         if (this.f1803c.mo1121V()) {
             this.f1794f.get(0).mo762j(this.f1803c.mo1191u0());
-            this.f1794f.add(1, FrogSettingsBean.m1292k(this.f1039b, R.string.jl));
-            this.f1794f.add(1, FrogSettingsBean.m1292k(this.f1039b, R.string.jk));
+            this.f1794f.add(1, FrogSettingsBean.m1292k(this.f1039b, R.string.RES_2131558781));
+            this.f1794f.add(1, FrogSettingsBean.m1292k(this.f1039b, R.string.RES_2131558780));
         } else {
-            this.f1794f.get(0).mo762j(CompatUtils.m1336f(this.f1039b, R.string.jj));
+            this.f1794f.get(0).mo762j(CompatUtils.m1336f(this.f1039b, R.string.RES_2131558779));
             if (this.f1794f.size() == 4) {
                 this.f1794f.remove(1);
                 this.f1794f.remove(1);
@@ -171,7 +171,7 @@ public class AccountSettings extends BaseSettings {
             this.f1803c.mo1183r1(false);
             m2573f();
             this.f1803c.mo1101N0(i2);
-            bVar.mo761i(CompatUtils.m1338h(this.f1039b, R.array.b, i2));
+            bVar.mo761i(CompatUtils.m1338h(this.f1039b, R.array.RES_2130837505, i2));
             this.f1792d.mo749m(i, bVar);
             this.f1793e = i2;
         }
@@ -222,7 +222,7 @@ public class AccountSettings extends BaseSettings {
         b.put("psw", this.f1803c.mo1194v0());
         if (b.get("bookmark").length() > 48000) {
             b.put("bookmark", "");
-            QuickUtils.m1374f(this.f1039b, R.string.cr, R.string.be, new C0630h(this, b));
+            QuickUtils.m1374f(this.f1039b, R.string.RES_2131558528, R.string.RES_2131558478, new C0630h(this, b));
             return;
         }
         m2567B(b);
@@ -231,15 +231,15 @@ public class AccountSettings extends BaseSettings {
     /* access modifiers changed from: private */
     /* renamed from: u */
     public /* synthetic */ void mo1460v() {
-        QuickUtils.m1380l(this.f1038a, this.f1039b.getResources().getString(R.string.cr), this.f1039b.getResources().getString(R.string.jd));
+        QuickUtils.m1380l(this.f1038a, this.f1039b.getResources().getString(R.string.RES_2131558528), this.f1039b.getResources().getString(R.string.RES_2131558773));
     }
 
     /* renamed from: w */
     private void m2583w(String str, String str2) {
         if (TextUtils.isEmpty(str)) {
-            QuickUtils.m1382n(this.f1039b, R.string.db);
+            QuickUtils.m1382n(this.f1039b, R.string.RES_2131558549);
         } else if (TextUtils.isEmpty(str2)) {
-            QuickUtils.m1382n(this.f1039b, R.string.da);
+            QuickUtils.m1382n(this.f1039b, R.string.RES_2131558548);
         } else {
             this.f1803c.mo1099M1(str);
             this.f1803c.mo1102N1(str2);
@@ -261,15 +261,15 @@ public class AccountSettings extends BaseSettings {
     private void m2584x() {
         if (this.f1803c.mo1121V()) {
             FlurryHelper.m1681a().mo1040i("logout");
-            QuickUtils.m1376h(this.f1039b, this.f1803c.mo1191u0(), getResources().getString(R.string.f2), new C0612b(this));
+            QuickUtils.m1376h(this.f1039b, this.f1803c.mo1191u0(), getResources().getString(R.string.RES_2131558613), new C0612b(this));
             return;
         }
         FlurryHelper.m1681a().mo1040i("login");
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo620L(R.string.jj);
-        g.mo628c(0, this.f1803c.mo1191u0(), R.string.e9, 1);
-        g.mo628c(1, "", R.string.e5, 1);
-        g.mo640r(R.string.ia);
+        g.mo620L(R.string.RES_2131558779);
+        g.mo628c(0, this.f1803c.mo1191u0(), R.string.RES_2131558583, 1);
+        g.mo628c(1, "", R.string.RES_2131558579, 1);
+        g.mo640r(R.string.RES_2131558733);
         g.mo614F(17039370, new C0621e(this));
         g.mo648z(17039360, null);
         if (Build.VERSION.SDK_INT >= 26) {
@@ -281,18 +281,18 @@ public class AccountSettings extends BaseSettings {
 
     /* renamed from: y */
     private void m2585y() {
-        QuickUtils.m1374f(this.f1039b, R.string.jk, R.string.ib, new C0608a(this));
+        QuickUtils.m1374f(this.f1039b, R.string.RES_2131558780, R.string.RES_2131558734, new C0608a(this));
     }
 
     /* access modifiers changed from: private */
     /* renamed from: z */
     public void m2586z(String str) {
         if (!str.isEmpty()) {
-            QuickUtils.m1380l(this.f1038a, getResources().getString(R.string.cr), getResources().getString(R.string.ic));
+            QuickUtils.m1380l(this.f1038a, getResources().getString(R.string.RES_2131558528), getResources().getString(R.string.RES_2131558735));
             BrowserApp.m1388b().execute(new RunnableC0582b(str));
             return;
         }
-        QuickUtils.m1380l(this.f1038a, getResources().getString(R.string.cr), getResources().getString(R.string.bp));
+        QuickUtils.m1380l(this.f1038a, getResources().getString(R.string.RES_2131558528), getResources().getString(R.string.RES_2131558489));
     }
 
     /* access modifiers changed from: protected */

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="e" parent="@android:style/Theme.Material.Light">
-        <item name="android:statusBarColor">@color/u</item>
+    <style name="RES_2131623940" parent="@android:style/Theme.Material.Light">
+        <item name="android:statusBarColor">@color/RES_2131034132</item>
     </style>
-    <style name="u" parent="@android:style/Theme.Material">
-        <item name="android:statusBarColor">@color/g</item>
+    <style name="RES_2131623941" parent="@android:style/Theme.Material">
+        <item name="android:statusBarColor">@color/RES_2131034118</item>
     </style>
-    <style name="f" parent="@android:style/Theme.Material">
-        <item name="android:statusBarColor">@color/i</item>
+    <style name="RES_2131623942" parent="@android:style/Theme.Material">
+        <item name="android:statusBarColor">@color/RES_2131034120</item>
     </style>
 </resources>

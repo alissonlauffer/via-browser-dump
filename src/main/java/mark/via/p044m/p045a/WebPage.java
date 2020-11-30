@@ -15,33 +15,33 @@ import mark.via.utils.ViewUtils;
 public class WebPage {
     /* renamed from: a */
     public static String m1949a(Context context) {
-        String f = CompatUtils.m1336f(context, R.string.cy);
+        String f = CompatUtils.m1336f(context, R.string.RES_2131558535);
         String str = "";
         if (AppUtils.m2060h()) {
             f = "我们利用有限的业余时间设计了 Via，虽然它并不那么美好，但正努力前行。\n如果你喜欢我们的作品，可以捐赠来支持我们" + str + "。\n\n所有的捐赠都将用来：提升我们的环境配置以及积极性。\n\n支付宝: 2376688759@qq.com\nPayPal: wiar1824@gmail.com";
         }
         StringBuilder sb = new StringBuilder();
         sb.append("<h1>");
-        sb.append(CompatUtils.m1336f(context, R.string.dx));
+        sb.append(CompatUtils.m1336f(context, R.string.RES_2131558571));
         sb.append("</h1><p>");
         sb.append(AppUtils.m2056d().replace("\n", "</p><p>"));
         sb.append("</p><h1>");
-        sb.append(CompatUtils.m1336f(context, R.string.bu));
+        sb.append(CompatUtils.m1336f(context, R.string.RES_2131558494));
         sb.append("</h1><p><a href=\"");
         sb.append("http://viayoo.com/");
         sb.append("\">");
-        sb.append(CompatUtils.m1336f(context, R.string.fv));
+        sb.append(CompatUtils.m1336f(context, R.string.RES_2131558643));
         sb.append("</a></p>");
         sb.append(AppUtils.m2060h() ? "<p><a href=\"http://viayoo.com/contact/qqgroup/\">官方鹅群</a></p>" : str);
         sb.append("<p><a href=\"https://t.me/viatg\">Telegram</a></p><p><a href=\"https://github.com/tuyafeng/Via\">");
-        sb.append(CompatUtils.m1336f(context, R.string.e3));
+        sb.append(CompatUtils.m1336f(context, R.string.RES_2131558577));
         sb.append("</a></p><p><a href=\"");
         sb.append(AppUtils.m2060h() ? "https://viayoo.com/zh-cn/privacy/" : "https://viayoo.com/en/privacy/");
         sb.append("\">");
-        sb.append(CompatUtils.m1336f(context, R.string.gp));
+        sb.append(CompatUtils.m1336f(context, R.string.RES_2131558674));
         sb.append("</a></p>");
         if (!ChannelUtils.m2108c()) {
-            str = "<h1>" + CompatUtils.m1336f(context, R.string.cx) + "</h1><p>" + f.replace("\n", "</p><p>") + "</p>";
+            str = "<h1>" + CompatUtils.m1336f(context, R.string.RES_2131558534) + "</h1><p>" + f.replace("\n", "</p><p>") + "</p>";
         }
         sb.append(str);
         sb.append("<br><br><br>");
@@ -160,7 +160,7 @@ public class WebPage {
 
     /* renamed from: k */
     public static String m1959k(Context context) {
-        return "<div class=\"search_part\"><a class=\"logo\" href=\"folder://\" title=\"" + context.getString(R.string.g) + "\">" + m1953e(context) + "</a><form onsubmit=\"return search()\" class=\"search_bar\" title=\"" + context.getString(R.string.h4) + "\"><button onclick=\"search()\" id=\"search_submit\" value=\"\" aria-label=\"" + context.getString(R.string.ci) + "\"><div class=\"search icon\"></div></button><span><input class=\"search\" onfocus=\"showButton()\" onblur=\"hideButton()\" type=\"text\" value=\"\" autocomplete=\"off\" id=\"search_input\" title=\"" + context.getString(R.string.h4) + "\"></span></form></div>";
+        return "<div class=\"search_part\"><a class=\"logo\" href=\"folder://\" title=\"" + context.getString(R.string.RES_2131558406) + "\">" + m1953e(context) + "</a><form onsubmit=\"return search()\" class=\"search_bar\" title=\"" + context.getString(R.string.RES_2131558689) + "\"><button onclick=\"search()\" id=\"search_submit\" value=\"\" aria-label=\"" + context.getString(R.string.RES_2131558519) + "\"><div class=\"search icon\"></div></button><span><input class=\"search\" onfocus=\"showButton()\" onblur=\"hideButton()\" type=\"text\" value=\"\" autocomplete=\"off\" id=\"search_input\" title=\"" + context.getString(R.string.RES_2131558689) + "\"></span></form></div>";
     }
 
     /* renamed from: l */

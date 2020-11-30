@@ -34,7 +34,7 @@ public class PageManager {
     /* renamed from: a */
     public static String m1937a(Context context) {
         if (DataChecker.m1181c().mo661a(4) || !FileUtils.m2160p(context, "about.html")) {
-            FileUtils.m2161q(WebPage.m1961m(CompatUtils.m1336f(context, R.string.hb)) + WebPage.m1962n(WebPage.m1960l(context, 5)) + "<body><div class='frosted-glass'></div><div id=\"content\">" + WebPage.m1949a(context) + "</div></body></html>", new File(context.getFilesDir(), "about.html"));
+            FileUtils.m2161q(WebPage.m1961m(CompatUtils.m1336f(context, R.string.RES_2131558697)) + WebPage.m1962n(WebPage.m1960l(context, 5)) + "<body><div class='frosted-glass'></div><div id=\"content\">" + WebPage.m1949a(context) + "</div></body></html>", new File(context.getFilesDir(), "about.html"));
             DataChecker.m1181c().mo664e(4);
         }
         return "file://" + context.getFilesDir().getPath() + "/about.html";
@@ -65,7 +65,7 @@ public class PageManager {
                     }
                 }
                 List<HistoryItem> r = z ? v.mo993r() : v.mo994s(str2, true);
-                bufferedWriter.write(WebPage.m1961m(z ? context.getString(R.string.g) : str2));
+                bufferedWriter.write(WebPage.m1961m(z ? context.getString(R.string.RES_2131558406) : str2));
                 bufferedWriter.write(WebPage.m1962n(WebPage.m1960l(context, 1)));
                 bufferedWriter.write("<body><div class='frosted-glass'></div><div id=\"content\">");
                 boolean z2 = false;
@@ -91,7 +91,7 @@ public class PageManager {
                 if (r.size() != 0) {
                     bufferedWriter.write(WebPage.m1951c(2));
                 } else if (z) {
-                    bufferedWriter.write(WebPage.m1956h(context.getString(R.string.d_) + "<br><br><br><br><input type='button' onclick='window.via.openSettings(0)' class='btn' style='background: #E75656' value='" + context.getString(R.string.ei) + "'></input><br><input type='button' onclick='window.via.openSettings(1)' class='btn' style='background: #6E8CC7' value='" + context.getString(R.string.he) + "'></input>"));
+                    bufferedWriter.write(WebPage.m1956h(context.getString(R.string.RES_2131558547) + "<br><br><br><br><input type='button' onclick='window.via.openSettings(0)' class='btn' style='background: #E75656' value='" + context.getString(R.string.RES_2131558593) + "'></input><br><input type='button' onclick='window.via.openSettings(1)' class='btn' style='background: #6E8CC7' value='" + context.getString(R.string.RES_2131558700) + "'></input>"));
                 }
                 bufferedWriter.write("</div></body></html>");
                 bufferedWriter.close();
@@ -118,14 +118,14 @@ public class PageManager {
     /* renamed from: d */
     private static List<HistoryItem> m1940d(Context context) {
         ArrayList arrayList = new ArrayList();
-        String[] strArr = {context.getString(R.string.g), context.getString(R.string.u), context.getString(R.string.fm), context.getString(R.string.ac), context.getString(R.string.ea), context.getString(R.string.hb)};
+        String[] strArr = {context.getString(R.string.RES_2131558406), context.getString(R.string.RES_2131558420), context.getString(R.string.RES_2131558634), context.getString(R.string.RES_2131558439), context.getString(R.string.RES_2131558585), context.getString(R.string.RES_2131558697)};
         String[] strArr2 = {"v://bookmark", "v://history", "v://log", "v://offline", "v://home", "v://about"};
         for (int i = 0; i < 6; i++) {
             HistoryItem bVar = new HistoryItem();
             bVar.mo944i(i);
             bVar.mo948m(strArr2[i]);
             bVar.mo947l(strArr[i]);
-            bVar.mo945j(R.drawable.ad);
+            bVar.mo945j(R.drawable.RES_2131165213);
             arrayList.add(bVar);
         }
         return arrayList;
@@ -135,7 +135,7 @@ public class PageManager {
     public static String m1941e(Context context) {
         if (DataChecker.m1181c().mo661a(5) || !FileUtils.m2160p(context, "catalog.html")) {
             StringBuilder sb = new StringBuilder();
-            sb.append(WebPage.m1961m(context.getString(R.string.bj)));
+            sb.append(WebPage.m1961m(context.getString(R.string.RES_2131558483)));
             sb.append(WebPage.m1962n(WebPage.m1960l(context, 1)));
             sb.append("<body><div class='frosted-glass'></div><div id=\"content\">");
             List<HistoryItem> d = m1940d(context);
@@ -143,7 +143,7 @@ public class PageManager {
                 sb.append(WebPage.m1954f(bVar.mo941g(), bVar.mo940f(), "tag"));
             }
             if (d.size() == 0) {
-                sb.append(WebPage.m1956h(context.getString(R.string.d_)));
+                sb.append(WebPage.m1956h(context.getString(R.string.RES_2131558547)));
             }
             sb.append("</div></body></html>");
             FileUtils.m2161q(sb.toString(), new File(context.getFilesDir(), "catalog.html"));
@@ -161,14 +161,14 @@ public class PageManager {
             try {
                 FileWriter fileWriter = new FileWriter(file);
                 BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-                bufferedWriter.write(WebPage.m1961m(context.getString(R.string.u)));
+                bufferedWriter.write(WebPage.m1961m(context.getString(R.string.RES_2131558420)));
                 bufferedWriter.write(WebPage.m1962n(WebPage.m1960l(context, 1)));
                 bufferedWriter.write("<body><div class='frosted-glass'></div><div id=\"content\">");
                 List<HistoryItem> k = m1947k(context);
                 if (k.size() == 0) {
-                    bufferedWriter.write(WebPage.m1956h(context.getString(R.string.d_)));
+                    bufferedWriter.write(WebPage.m1956h(context.getString(R.string.RES_2131558547)));
                 } else if (M.mo1095L()) {
-                    bufferedWriter.write(WebPage.m1956h(context.getString(R.string.e_)));
+                    bufferedWriter.write(WebPage.m1956h(context.getString(R.string.RES_2131558584)));
                 }
                 for (HistoryItem bVar : k) {
                     bufferedWriter.write(WebPage.m1954f(bVar.mo941g(), bVar.mo940f(), "clock"));
@@ -198,7 +198,7 @@ public class PageManager {
             try {
                 FileWriter fileWriter = new FileWriter(file);
                 BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-                bufferedWriter.write(WebPage.m1961m(context.getString(R.string.ea)));
+                bufferedWriter.write(WebPage.m1961m(context.getString(R.string.RES_2131558585)));
                 bufferedWriter.write(WebPage.m1962n(WebPage.m1960l(context, 4), M.mo1173o0()));
                 bufferedWriter.write("<body><div class='frosted-glass'></div><div id=\"content\">");
                 if (!M.mo1065B()) {
@@ -259,7 +259,7 @@ public class PageManager {
         try {
             FileWriter fileWriter = new FileWriter(file);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-            bufferedWriter.write(WebPage.m1961m(context.getString(z ? R.string.gt : R.string.fm)));
+            bufferedWriter.write(WebPage.m1961m(context.getString(z ? R.string.RES_2131558678 : R.string.RES_2131558634)));
             bufferedWriter.write(WebPage.m1962n(WebPage.m1960l(context, 6)));
             bufferedWriter.write("<body><div class='frosted-glass'></div><div id=\"content\">");
             StringBuilder sb = new StringBuilder();
@@ -280,14 +280,14 @@ public class PageManager {
             }
             if (i > 0) {
                 if (z) {
-                    str = context.getString(R.string.gs);
+                    str = context.getString(R.string.RES_2131558677);
                 } else {
-                    str = context.getString(R.string.f3, FileUtils.m2147c(context));
+                    str = context.getString(R.string.RES_2131558614, FileUtils.m2147c(context));
                 }
             } else if (z) {
-                str = context.getString(R.string.ft) + context.getString(R.string.gv).replace("\n", "<br>");
+                str = context.getString(R.string.RES_2131558641) + context.getString(R.string.RES_2131558680).replace("\n", "<br>");
             } else {
-                str = context.getString(R.string.d_);
+                str = context.getString(R.string.RES_2131558547);
             }
             bufferedWriter.write(WebPage.m1956h(str));
             if (!z && i > 0) {
@@ -313,14 +313,14 @@ public class PageManager {
         try {
             FileWriter fileWriter = new FileWriter(file);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-            bufferedWriter.write(WebPage.m1961m(context.getString(R.string.ac)));
+            bufferedWriter.write(WebPage.m1961m(context.getString(R.string.RES_2131558439)));
             bufferedWriter.write(WebPage.m1962n(WebPage.m1960l(context, 1)));
             bufferedWriter.write("<body><div class='frosted-glass'></div><div id=\"content\">");
             List<HistoryItem> j = m1946j(context);
             if (j.size() == 0) {
-                bufferedWriter.write(WebPage.m1956h(context.getString(R.string.d_)));
+                bufferedWriter.write(WebPage.m1956h(context.getString(R.string.RES_2131558547)));
             } else {
-                bufferedWriter.write(WebPage.m1956h(context.getString(R.string.fw)));
+                bufferedWriter.write(WebPage.m1956h(context.getString(R.string.RES_2131558644)));
             }
             for (HistoryItem bVar : j) {
                 bufferedWriter.write(WebPage.m1954f(bVar.mo941g(), bVar.mo940f(), "clock"));

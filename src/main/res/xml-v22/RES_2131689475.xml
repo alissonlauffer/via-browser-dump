@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/RES_2131165230" android:enabled="true" android:shortcutId="search" android:shortcutShortLabel="@string/RES_2131558689" android:shortcutLongLabel="@string/RES_2131558689" android:shortcutDisabledMessage="@string/RES_2131558689">
+        <intent android:targetPackage="mark.via.gp" android:action="mark.via.SEARCH" android:targetClass="mark.via.ui.activity.BrowserActivity"/>
+    </shortcut>
+    <shortcut android:icon="@drawable/RES_2131165229" android:enabled="true" android:shortcutId="history" android:shortcutShortLabel="@string/RES_2131558420" android:shortcutLongLabel="@string/RES_2131558420" android:shortcutDisabledMessage="@string/RES_2131558420">
+        <intent android:targetPackage="mark.via.gp" android:action="mark.via.HISTORY" android:targetClass="mark.via.ui.activity.BrowserActivity"/>
+    </shortcut>
+    <shortcut android:icon="@drawable/RES_2131165228" android:enabled="true" android:shortcutId="bookmark" android:shortcutShortLabel="@string/RES_2131558406" android:shortcutLongLabel="@string/RES_2131558406" android:shortcutDisabledMessage="@string/RES_2131558406">
+        <intent android:targetPackage="mark.via.gp" android:action="mark.via.BOOKMARK" android:targetClass="mark.via.ui.activity.BrowserActivity"/>
+    </shortcut>
+</shortcuts>

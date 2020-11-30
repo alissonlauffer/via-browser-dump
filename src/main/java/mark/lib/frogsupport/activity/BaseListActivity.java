@@ -46,13 +46,13 @@ public abstract class BaseListActivity extends BaseActivity {
     @Override // mark.lib.frogsupport.activity.BaseActivity
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
-        setContentView(C0367f.i);
-        this.f1040c = (ListView) findViewById(C0366e.aa);
-        this.f1041d = (TextView) findViewById(C0366e.bc);
+        setContentView(C0367f.a);
+        this.f1040c = (ListView) findViewById(C0366e.g);
+        this.f1041d = (TextView) findViewById(C0366e.q);
         CommonAdapter a = mo595a();
         this.f1042e = a;
         this.f1040c.setAdapter((ListAdapter) a);
-        this.f1040c.setSelector(C0365d.f);
+        this.f1040c.setSelector(C0365d.b);
         this.f1040c.setDividerHeight(0);
         this.f1042e.mo670g(new C0362a());
     }

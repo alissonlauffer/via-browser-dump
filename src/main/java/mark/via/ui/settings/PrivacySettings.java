@@ -22,14 +22,14 @@ public class PrivacySettings extends BaseSettings {
     /* renamed from: a */
     private List<FrogSettingsBean> m2760a() {
         ArrayList arrayList = new ArrayList();
-        arrayList.add(FrogSettingsBean.m1297p(this.f1039b, R.string.f0, this.f1803c.mo1119U()));
-        arrayList.add(FrogSettingsBean.m1297p(this.f1039b, R.string.cw, this.f1803c.mo1190u()));
+        arrayList.add(FrogSettingsBean.m1297p(this.f1039b, R.string.RES_2131558611, this.f1803c.mo1119U()));
+        arrayList.add(FrogSettingsBean.m1297p(this.f1039b, R.string.RES_2131558533, this.f1803c.mo1190u()));
         int i = Build.VERSION.SDK_INT;
         if (i < 19) {
-            arrayList.add(FrogSettingsBean.m1297p(this.f1039b, R.string.gm, this.f1803c.mo1143e0()));
+            arrayList.add(FrogSettingsBean.m1297p(this.f1039b, R.string.RES_2131558671, this.f1803c.mo1143e0()));
         }
         if (i >= 21) {
-            arrayList.add(FrogSettingsBean.m1297p(this.f1039b, R.string.b9, this.f1803c.mo1154i()));
+            arrayList.add(FrogSettingsBean.m1297p(this.f1039b, R.string.RES_2131558472, this.f1803c.mo1154i()));
         }
         return arrayList;
     }
@@ -37,8 +37,8 @@ public class PrivacySettings extends BaseSettings {
     /* renamed from: b */
     private View m2761b() {
         FrogNavigator g = FrogNavigator.m1261g(this.f1039b);
-        g.mo736m(R.string.hh);
-        g.mo734k(R.string.cg);
+        g.mo736m(R.string.RES_2131558703);
+        g.mo734k(R.string.RES_2131558517);
         View p = g.mo738p();
         FrogSettings j = FrogSettings.m1279j(this.f1039b);
         j.mo742d(m2760a());
@@ -51,15 +51,15 @@ public class PrivacySettings extends BaseSettings {
     /* renamed from: c */
     private void m2762c(FrogSettingsBean bVar) {
         switch (bVar.mo754b()) {
-            case R.string.b9 /* 2131558472 */:
+            case R.string.RES_2131558472 /* 2131558472 */:
                 this.f1803c.mo1078F0(bVar.mo757e());
                 DataChecker.m1181c().mo667h(158);
                 return;
-            case R.string.cw /* 2131558533 */:
+            case R.string.RES_2131558533 /* 2131558533 */:
                 this.f1803c.mo1110Q0(bVar.mo757e());
                 DataChecker.m1181c().mo667h(158);
                 return;
-            case R.string.f0 /* 2131558611 */:
+            case R.string.RES_2131558611 /* 2131558611 */:
                 if (bVar.mo757e()) {
                     this.f1803c.mo1180q1(true);
                     AppUtils.m2063k(this.f1039b);
@@ -68,7 +68,7 @@ public class PrivacySettings extends BaseSettings {
                 }
                 DataChecker.m1181c().mo667h(158);
                 return;
-            case R.string.gm /* 2131558671 */:
+            case R.string.RES_2131558671 /* 2131558671 */:
                 this.f1803c.mo1064A1(bVar.mo757e());
                 DataChecker.m1181c().mo667h(158);
                 return;
@@ -94,7 +94,7 @@ public class PrivacySettings extends BaseSettings {
         int i2;
         FrogSettingsBean h;
         super.onRequestPermissionsResult(i, strArr, iArr);
-        if (AppUtils.m2062j(this.f1039b, i, iArr) && strArr.length == 1 && "android.permission.ACCESS_FINE_LOCATION".equals(strArr[0]) && (h = this.f1823d.mo745h((i2 = this.f1823d.mo746i(R.string.f0)))) != null) {
+        if (AppUtils.m2062j(this.f1039b, i, iArr) && strArr.length == 1 && "android.permission.ACCESS_FINE_LOCATION".equals(strArr[0]) && (h = this.f1823d.mo745h((i2 = this.f1823d.mo746i(R.string.RES_2131558611)))) != null) {
             h.mo759g(false);
             this.f1823d.mo749m(i2, h);
             this.f1803c.mo1180q1(false);

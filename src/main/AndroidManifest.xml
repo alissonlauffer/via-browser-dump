@@ -26,10 +26,10 @@
         <package android:name="com.vanda_adm.vanda"/>
         <package android:name="mark.qrcode"/>
     </queries>
-    <application android:theme="@style/b" android:label="@string/b3" android:icon="@mipmap/a" android:name="mark.via.BrowserApp" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustPan" android:allowBackup="true" android:hardwareAccelerated="true" android:supportsRtl="true" android:fullBackupContent="@xml/a" android:usesCleartextTraffic="true" android:resizeableActivity="true" android:roundIcon="@mipmap/a">
+    <application android:theme="@style/RES_2131623937" android:label="@string/RES_2131558466" android:icon="@mipmap/RES_2131427328" android:name="mark.via.BrowserApp" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|layoutDirection" android:windowSoftInputMode="adjustPan" android:allowBackup="true" android:hardwareAccelerated="true" android:supportsRtl="true" android:fullBackupContent="@xml/RES_2131689472" android:usesCleartextTraffic="true" android:resizeableActivity="true" android:roundIcon="@mipmap/RES_2131427328">
         <meta-data android:name="android.max_aspect" android:value="2.5"/>
-        <activity android:label="@string/b3" android:name="mark.via.ui.activity.BrowserActivity" android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:alwaysRetainTaskState="true" android:windowSoftInputMode="adjustResize">
-            <meta-data android:name="android.app.shortcuts" android:resource="@xml/d"/>
+        <activity android:label="@string/RES_2131558466" android:name="mark.via.ui.activity.BrowserActivity" android:launchMode="singleTask" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection" android:alwaysRetainTaskState="true" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/RES_2131689475"/>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -83,9 +83,9 @@
         <activity android:name="mark.via.ui.settings.ViewFiltersUI"/>
         <activity android:name="mark.via.ui.settings.OperationSettings"/>
         <service android:name="mark.via.services.BlockerService"/>
-        <provider android:label="@string/g" android:name="mark.via.provider.BookmarksProvider" android:exported="true" android:multiprocess="false" android:authorities="mark.via.gp.database"/>
+        <provider android:label="@string/RES_2131558406" android:name="mark.via.provider.BookmarksProvider" android:exported="true" android:multiprocess="false" android:authorities="mark.via.gp.database"/>
         <provider android:name="mark.lib.frogsupport.FileProvider" android:exported="false" android:authorities="mark.via.gp.provider" android:grantUriPermissions="true">
-            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/b"/>
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/RES_2131689473"/>
         </provider>
     </application>
 </manifest>

@@ -243,9 +243,9 @@ public final class InfoUtils {
             return "";
         }
         if ("*".equals(str)) {
-            str = CompatUtils.m1336f(context, R.string.az);
+            str = CompatUtils.m1336f(context, R.string.RES_2131558462);
         }
-        return context.getResources().getString(R.string.hm, str, c);
+        return context.getResources().getString(R.string.RES_2131558708, str, c);
     }
 
     /* JADX WARNING: Removed duplicated region for block: B:105:? A[RETURN, SYNTHETIC] */

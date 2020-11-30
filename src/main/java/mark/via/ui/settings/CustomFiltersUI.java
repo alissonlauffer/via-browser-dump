@@ -120,25 +120,25 @@ public class CustomFiltersUI extends BaseSettings {
     /* renamed from: e */
     private void m2617e(ViewHolder cVar, String str, int i) {
         if (cVar != null) {
-            cVar.mo689g(R.id.ba, str);
+            cVar.mo689g(R.id.o, str);
         }
     }
 
     /* renamed from: f */
     private View m2618f() {
         FrogNavigator g = FrogNavigator.m1261g(this.f1039b);
-        g.mo736m(R.string.c3);
-        g.mo734k(R.string.cg);
-        g.mo729a(R.drawable.a4, new View$OnClickListenerC0666t(this));
-        g.mo732d(getString(R.string.e2), new View$OnClickListenerC0651o(this));
+        g.mo736m(R.string.RES_2131558503);
+        g.mo734k(R.string.RES_2131558517);
+        g.mo729a(R.drawable.RES_2131165200, new View$OnClickListenerC0666t(this));
+        g.mo732d(getString(R.string.RES_2131558576), new View$OnClickListenerC0651o(this));
         View p = g.mo738p();
-        TextView a = LayoutUtils.m1363a(this.f1039b, R.string.d_);
-        ListView listView = new ListView(new ContextThemeWrapper(this.f1039b, (int) R.style.j));
+        TextView a = LayoutUtils.m1363a(this.f1039b, R.string.RES_2131558547);
+        ListView listView = new ListView(new ContextThemeWrapper(this.f1039b, (int) R.style.d));
         this.f1804d = listView;
         listView.setDividerHeight(0);
         this.f1804d.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
         this.f1805e = new ArrayList();
-        C0584a aVar = new C0584a(this.f1039b, R.layout.o, this.f1805e);
+        C0584a aVar = new C0584a(this.f1039b, R.layout.RES_2131361806, this.f1805e);
         this.f1806f = aVar;
         aVar.mo670g(new C0660r(this, a));
         this.f1804d.setOnItemClickListener(new C0657q(this));
@@ -158,8 +158,8 @@ public class CustomFiltersUI extends BaseSettings {
         boolean z = i < 0;
         String str = z ? "" : this.f1805e.get(i);
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo620L(R.string.c2);
-        g.mo628c(1, str, R.string.c2, 3);
+        g.mo620L(R.string.RES_2131558502);
+        g.mo628c(1, str, R.string.RES_2131558502, 3);
         g.mo614F(17039370, new C0648n(this, z, str, i));
         g.mo648z(17039360, null);
         g.mo622N();
@@ -168,10 +168,10 @@ public class CustomFiltersUI extends BaseSettings {
     /* renamed from: h */
     private void m2620h() {
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo620L(R.string.e2);
-        g.mo644v(R.string.hr);
+        g.mo620L(R.string.RES_2131558576);
+        g.mo644v(R.string.RES_2131558713);
         g.mo614F(17039370, null);
-        g.mo610B(R.string.ey, new View$OnClickListenerC0669u(this));
+        g.mo610B(R.string.RES_2131558609, new View$OnClickListenerC0669u(this));
         g.mo622N();
     }
 
@@ -217,9 +217,9 @@ public class CustomFiltersUI extends BaseSettings {
     public /* synthetic */ void mo1471t(int i, AdapterView adapterView, View view, int i2, long j) {
         String str = this.f1805e.get(i);
         if (i2 == 0) {
-            QuickUtils.m1370b(this.f1039b, str, R.string.iq);
+            QuickUtils.m1370b(this.f1039b, str, R.string.RES_2131558749);
         } else if (i2 == 1) {
-            QuickUtils.m1375g(this.f1039b, R.string.m, str, new C0663s(this, i));
+            QuickUtils.m1375g(this.f1039b, R.string.RES_2131558412, str, new C0663s(this, i));
         }
     }
 
@@ -227,7 +227,7 @@ public class CustomFiltersUI extends BaseSettings {
     /* renamed from: u */
     public /* synthetic */ boolean mo1472v(AdapterView adapterView, View view, int i, long j) {
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo643u(new String[]{this.f1039b.getString(R.string.l), this.f1039b.getString(R.string.m)}, new C0639k(this, i));
+        g.mo643u(new String[]{this.f1039b.getString(R.string.RES_2131558411), this.f1039b.getString(R.string.RES_2131558412)}, new C0639k(this, i));
         g.mo624P(view);
         return true;
     }

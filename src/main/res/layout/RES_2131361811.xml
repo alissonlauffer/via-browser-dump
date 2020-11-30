@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="@dimen/d" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/RES_2131230747" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/RES_2131558466" style="@style/e"/>
+    <TextView android:textSize="@dimen/RES_2131099665" android:id="@+id/RES_2131230744" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/RES_2131558466" android:maxLines="4" android:layout_below="@+id/RES_2131230747" style="@style/RES_2131623947"/>
+</RelativeLayout>

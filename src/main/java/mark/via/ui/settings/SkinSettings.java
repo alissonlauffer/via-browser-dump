@@ -126,9 +126,9 @@ public class SkinSettings extends BaseSettings {
         /* renamed from: a */
         public void mo764a(FrogSettingsBean bVar, int i) {
             int b = bVar.mo754b();
-            if (b == R.string.c1) {
+            if (b == R.string.RES_2131558501) {
                 SkinSettings.this.m2816F();
-            } else if (b == R.string.i2) {
+            } else if (b == R.string.RES_2131558724) {
                 SkinSettings.this.f1803c.mo1133a1(bVar.mo757e());
                 DataChecker.m1181c().mo667h(1);
                 SkinSettings.this.f1842f = true;
@@ -161,7 +161,7 @@ public class SkinSettings extends BaseSettings {
     private void m2812B(boolean z) {
         String I = this.f1803c.mo1086I();
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo620L(z ? R.string.eb : R.string.ie);
+        g.mo620L(z ? R.string.RES_2131558586 : R.string.RES_2131558737);
         if ("<br>".equalsIgnoreCase(I)) {
             I = "";
         }
@@ -173,8 +173,8 @@ public class SkinSettings extends BaseSettings {
     /* renamed from: C */
     private void m2813C() {
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo620L(R.string.i3);
-        g.mo618J(R.array.g, this.f1803c.mo1123W(), new C0623e1(this));
+        g.mo620L(R.string.RES_2131558725);
+        g.mo618J(R.array.RES_2130837510, this.f1803c.mo1123W(), new C0623e1(this));
         g.mo622N();
     }
 
@@ -236,8 +236,8 @@ public class SkinSettings extends BaseSettings {
             cVar.mo632i();
         }
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo620L(R.string.c1);
-        g.mo630e(this.f1803c.mo1173o0(), R.string.c1, 8);
+        g.mo620L(R.string.RES_2131558501);
+        g.mo630e(this.f1803c.mo1173o0(), R.string.RES_2131558501, 8);
         g.mo636n(false);
         g.mo614F(17039370, new C0617c1(this));
         g.mo622N();
@@ -246,33 +246,33 @@ public class SkinSettings extends BaseSettings {
     /* renamed from: G */
     private void m2817G() {
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo620L(R.string.i5);
-        g.mo618J(R.array.f, this.f1803c.mo1083H(), new C0626f1(this));
+        g.mo620L(R.string.RES_2131558727);
+        g.mo618J(R.array.RES_2130837509, this.f1803c.mo1083H(), new C0626f1(this));
         g.mo622N();
     }
 
     /* renamed from: g */
     private void m2824g() {
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo620L(R.string.hz);
-        g.mo618J(R.array.a, !this.f1803c.mo1074E().isEmpty(), new C0629g1(this));
+        g.mo620L(R.string.RES_2131558721);
+        g.mo618J(R.array.RES_2130837504, !this.f1803c.mo1074E().isEmpty(), new C0629g1(this));
         g.mo622N();
     }
 
     /* renamed from: h */
     private View m2825h() {
         FrogNavigator g = FrogNavigator.m1261g(this.f1039b);
-        g.mo736m(R.string.hj);
-        g.mo734k(R.string.cg);
+        g.mo736m(R.string.RES_2131558705);
+        g.mo734k(R.string.RES_2131558517);
         View p = g.mo738p();
-        View inflate = ((LayoutInflater) this.f1039b.getSystemService("layout_inflater")).inflate(R.layout.y, (ViewGroup) this.f1038a.findViewById(16908290), false);
-        CompatUtils.m1346p(inflate.findViewById(R.id.am), !"about:home".equals(this.f1803c.mo1071D()));
-        this.f1840d = (FrameLayout) inflate.findViewById(R.id.a);
-        int b = CompatUtils.m1332b(this.f1039b, R.attr.j);
-        MenuUtils.m2185a(inflate, R.id.a8, R.drawable.ax, b);
-        MenuUtils.m2185a(inflate, R.id.c, R.drawable.am, b);
-        MenuUtils.m2185a(inflate, R.id.an, R.drawable.au, b);
-        MenuUtils.m2185a(inflate, R.id.aj, R.drawable.as, b);
+        View inflate = ((LayoutInflater) this.f1039b.getSystemService("layout_inflater")).inflate(R.layout.RES_2131361816, (ViewGroup) this.f1038a.findViewById(16908290), false);
+        CompatUtils.m1346p(inflate.findViewById(R.id.RES_2131230769), !"about:home".equals(this.f1803c.mo1071D()));
+        this.f1840d = (FrameLayout) inflate.findViewById(R.id.RES_2131230720);
+        int b = CompatUtils.m1332b(this.f1039b, R.attr.RES_2130903049);
+        MenuUtils.m2185a(inflate, R.id.RES_2131230754, R.drawable.RES_2131165241, b);
+        MenuUtils.m2185a(inflate, R.id.RES_2131230722, R.drawable.RES_2131165223, b);
+        MenuUtils.m2185a(inflate, R.id.RES_2131230770, R.drawable.RES_2131165236, b);
+        MenuUtils.m2185a(inflate, R.id.RES_2131230766, R.drawable.RES_2131165234, b);
         return LayoutUtils.m1365c(p, inflate);
     }
 
@@ -280,9 +280,9 @@ public class SkinSettings extends BaseSettings {
     private void m2826i(int i) {
         int i2;
         if (ViewUtils.m2239q(i) || this.f1803c.mo1129Z(this.f1039b)) {
-            i2 = CompatUtils.m1331a(this.f1039b, R.color.x);
+            i2 = CompatUtils.m1331a(this.f1039b, R.color.RES_2131034135);
         } else {
-            i2 = CompatUtils.m1331a(this.f1039b, R.color.y);
+            i2 = CompatUtils.m1331a(this.f1039b, R.color.RES_2131034136);
         }
         if (!this.f1803c.mo1129Z(this.f1039b)) {
             findViewById(FrogNavigator.f1148f).setBackgroundColor(i);
@@ -310,19 +310,19 @@ public class SkinSettings extends BaseSettings {
     private void m2827j() {
         if (this.f1845i == null) {
             FrogSettings j = FrogSettings.m1279j(this.f1039b);
-            j.mo743e(FrogSettingsBean.m1297p(this.f1039b, R.string.i2, this.f1803c.mo1065B()));
-            j.mo743e(FrogSettingsBean.m1292k(this.f1039b, R.string.c1));
+            j.mo743e(FrogSettingsBean.m1297p(this.f1039b, R.string.RES_2131558724, this.f1803c.mo1065B()));
+            j.mo743e(FrogSettingsBean.m1292k(this.f1039b, R.string.RES_2131558501));
             j.mo744g();
             j.mo748l(new C0603d());
             View o = j.mo750o();
             ListUtils.m1229b((ListView) o);
-            TextView textView = new TextView(new ContextThemeWrapper(this.f1039b, (int) R.style.k));
-            CompatUtils.m1343m(textView, CompatUtils.m1333c(this.f1039b, R.dimen.j), FrogUtils.m1354a(this.f1039b, 10.0f));
-            textView.setText(R.string.b6);
+            TextView textView = new TextView(new ContextThemeWrapper(this.f1039b, (int) R.style.RES_2131623947));
+            CompatUtils.m1343m(textView, CompatUtils.m1333c(this.f1039b, R.dimen.d), FrogUtils.m1354a(this.f1039b, 10.0f));
+            textView.setText(R.string.RES_2131558469);
             textView.setId(99);
-            SeekBar seekBar = new SeekBar(new ContextThemeWrapper(this.f1039b, (int) R.style.q));
+            SeekBar seekBar = new SeekBar(new ContextThemeWrapper(this.f1039b, (int) R.style.RES_2131623953));
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, -2);
-            int c = CompatUtils.m1333c(this.f1039b, R.dimen.j);
+            int c = CompatUtils.m1333c(this.f1039b, R.dimen.d);
             layoutParams.leftMargin = c;
             layoutParams.rightMargin = c;
             int a = FrogUtils.m1354a(this.f1039b, 12.0f);
@@ -332,8 +332,8 @@ public class SkinSettings extends BaseSettings {
             seekBar.setId(88);
             seekBar.setMax(80);
             seekBar.setProgress(Math.min(this.f1803c.mo1080G(), 80));
-            seekBar.setProgressDrawable(CompatUtils.m1334d(this.f1039b, R.drawable.x));
-            seekBar.setThumb(CompatUtils.m1334d(this.f1039b, R.drawable.y));
+            seekBar.setProgressDrawable(CompatUtils.m1334d(this.f1039b, R.drawable.RES_2131165233));
+            seekBar.setThumb(CompatUtils.m1334d(this.f1039b, R.drawable.RES_2131165238));
             seekBar.setMinimumHeight(FrogUtils.m1354a(this.f1039b, 2.0f));
             seekBar.setOnSeekBarChangeListener(new C0604e());
             TaoDialog g = TaoDialog.m1134g(this.f1039b);
@@ -359,7 +359,7 @@ public class SkinSettings extends BaseSettings {
         Intent intent = new Intent();
         intent.setAction("android.intent.action.PICK");
         intent.setType("image/*");
-        startActivityForResult(Intent.createChooser(intent, this.f1039b.getResources().getString(R.string.gn)), 177);
+        startActivityForResult(Intent.createChooser(intent, this.f1039b.getResources().getString(R.string.RES_2131558672)), 177);
     }
 
     /* access modifiers changed from: private */
@@ -394,7 +394,7 @@ public class SkinSettings extends BaseSettings {
             Intent intent = new Intent();
             intent.setAction("android.intent.action.PICK");
             intent.setType("image/*");
-            startActivityForResult(Intent.createChooser(intent, this.f1039b.getResources().getString(R.string.gn)), 176);
+            startActivityForResult(Intent.createChooser(intent, this.f1039b.getResources().getString(R.string.RES_2131558672)), 176);
         } else if (i == 2 || i == 3) {
             if (i > 2) {
                 z = true;
@@ -532,23 +532,23 @@ public class SkinSettings extends BaseSettings {
 
     public void onSettingsItemClick(View view) {
         switch (view.getId()) {
-            case R.id.c /* 2131230722 */:
+            case R.id.RES_2131230722 /* 2131230722 */:
                 FlurryHelper.m1681a().mo1043l("background");
                 m2824g();
                 return;
-            case R.id.a8 /* 2131230754 */:
+            case R.id.RES_2131230754 /* 2131230754 */:
                 FlurryHelper.m1681a().mo1043l("logo");
                 m2813C();
                 return;
-            case R.id.aj /* 2131230766 */:
+            case R.id.RES_2131230766 /* 2131230766 */:
                 FlurryHelper.m1681a().mo1043l("settings");
                 m2827j();
                 return;
-            case R.id.ak /* 2131230767 */:
+            case R.id.RES_2131230767 /* 2131230767 */:
                 this.f1803c.mo1139c1("about:home");
-                findViewById(R.id.am).setVisibility(8);
+                findViewById(R.id.RES_2131230769).setVisibility(8);
                 return;
-            case R.id.an /* 2131230770 */:
+            case R.id.RES_2131230770 /* 2131230770 */:
                 FlurryHelper.m1681a().mo1043l("style");
                 m2817G();
                 return;

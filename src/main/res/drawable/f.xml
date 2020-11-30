@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_enabled="true" android:state_pressed="true">
-        <shape>
-            <solid android:color="@color/l"/>
-        </shape>
-    </item>
-</selector>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android" android:fromDegrees="0" android:toDegrees="1080" android:pivotX="50%" android:pivotY="50%">
+    <shape android:shape="ring" android:useLevel="false" android:innerRadius="16dp" android:thickness="2dp">
+        <gradient android:startColor="@android:color/transparent" android:endColor="@color/a" android:useLevel="false" android:angle="0" android:type="sweep" android:centerY="0.5"/>
+    </shape>
+</rotate>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/RES_2131230720" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="?attr/RES_2130903050"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/RES_2131230768" android:background="@color/RES_2131034113" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_alignParentBottom="true">
+        <TextView android:id="@+id/RES_2131230754" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/RES_2131558725" android:layout_weight="1" style="@style/RES_2131623954"/>
+        <TextView android:id="@+id/RES_2131230722" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/RES_2131558721" android:layout_weight="1" style="@style/RES_2131623954"/>
+        <TextView android:id="@+id/RES_2131230770" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/RES_2131558727" android:layout_weight="1" style="@style/RES_2131623954"/>
+        <TextView android:id="@+id/RES_2131230766" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/RES_2131558726" android:layout_weight="1" style="@style/RES_2131623954"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/RES_2131230769" android:background="@color/RES_2131034114" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/RES_2131230768">
+        <TextView android:textSize="14sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@+id/RES_2131230758" android:paddingLeft="8dp" android:paddingTop="10dp" android:paddingRight="8dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/RES_2131558692" android:layout_toLeftOf="@+id/RES_2131230767" android:layout_toStartOf="@+id/RES_2131230767"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/a" android:id="@+id/RES_2131230767" android:background="@drawable/a" android:paddingLeft="18dp" android:paddingTop="10dp" android:paddingRight="18dp" android:paddingBottom="10dp" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/ok" android:layout_alignParentRight="true" android:onClick="onSettingsItemClick" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</RelativeLayout>

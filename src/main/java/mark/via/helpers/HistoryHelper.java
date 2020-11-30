@@ -77,7 +77,7 @@ public class HistoryHelper {
 
     /* renamed from: b */
     public static void m1735b(Context context, Callback mVar) {
-        QuickUtils.m1374f(context, R.string.n, R.string.ct, new C0460k(context, mVar));
+        QuickUtils.m1374f(context, R.string.RES_2131558413, R.string.RES_2131558530, new C0460k(context, mVar));
     }
 
     /* renamed from: c */

@@ -84,20 +84,20 @@ public class FrogSettings {
 
     /* renamed from: f */
     private void m1278f() {
-        ListView listView = new ListView(new ContextThemeWrapper(this.f1159a, C0368g.j));
+        ListView listView = new ListView(new ContextThemeWrapper(this.f1159a, C0368g.d));
         this.f1160b = listView;
         listView.setDividerHeight(0);
         this.f1160b.setId(77);
         this.f1160b.setOverScrollMode(2);
         this.f1160b.setCacheColorHint(0);
-        this.f1160b.setSelector(C0365d.f);
+        this.f1160b.setSelector(C0365d.b);
         if (Build.VERSION.SDK_INT >= 16) {
-            this.f1160b.setScrollBarSize(CompatUtils.m1333c(this.f1159a, C0364c.m));
+            this.f1160b.setScrollBarSize(CompatUtils.m1333c(this.f1159a, C0364c.g));
         }
         this.f1160b.setHorizontalScrollBarEnabled(true);
         this.f1160b.setVerticalScrollBarEnabled(false);
         this.f1160b.setLayoutParams(new ViewGroup.LayoutParams(-1, this.f1162d ? -1 : -2));
-        C0399a aVar = new C0399a(this.f1159a, C0367f.p, this.f1161c);
+        C0399a aVar = new C0399a(this.f1159a, C0367f.g, this.f1161c);
         this.f1164f = aVar;
         this.f1160b.setAdapter((ListAdapter) aVar);
         this.f1160b.setOnItemClickListener(new C0400b());
@@ -113,11 +113,11 @@ public class FrogSettings {
     /* renamed from: n */
     private void m1280n(ViewHolder cVar, FrogSettingsBean bVar) {
         if (cVar != null && bVar != null) {
-            cVar.mo689g(C0366e.ba, bVar.mo756d());
-            int i = C0366e.b9;
+            cVar.mo689g(C0366e.o, bVar.mo756d());
+            int i = C0366e.n;
             cVar.mo689g(i, bVar.mo755c());
             cVar.mo690h(i, !TextUtils.isEmpty(bVar.mo755c()));
-            int i2 = C0366e.l;
+            int i2 = C0366e.c;
             cVar.mo685c(i2, bVar.mo757e());
             cVar.mo690h(i2, bVar.mo753a());
             bVar.mo763q();

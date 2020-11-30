@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="a" parent="@style/o">
+    <style name="RES_2131623936" parent="@style/RES_2131623951">
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowFullscreen">false</item>
-        <item name="a">@drawable/b</item>
-        <item name="k">@color/aa</item>
+        <item name="RES_2130903040">@drawable/RES_2131165185</item>
+        <item name="RES_2130903050">@color/RES_2131034149</item>
     </style>
-    <style name="b" parent="@style/n">
+    <style name="RES_2131623937" parent="@style/RES_2131623950">
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowFullscreen">false</item>
-        <item name="a">@drawable/a</item>
-        <item name="k">@color/a_</item>
+        <item name="RES_2130903040">@drawable/RES_2131165184</item>
+        <item name="RES_2130903050">@color/RES_2131034148</item>
     </style>
-    <style name="c" parent="@android:style/Animation.Activity">
-        <item name="android:activityOpenEnterAnimation">@anim/a</item>
-        <item name="android:activityOpenExitAnimation">@anim/e</item>
-        <item name="android:activityCloseEnterAnimation">@anim/e</item>
-        <item name="android:activityCloseExitAnimation">@anim/b</item>
+    <style name="RES_2131623938" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/RES_2130771968</item>
+        <item name="android:activityOpenExitAnimation">@anim/RES_2130771972</item>
+        <item name="android:activityCloseEnterAnimation">@anim/RES_2130771972</item>
+        <item name="android:activityCloseExitAnimation">@anim/RES_2130771969</item>
     </style>
-    <style name="d" parent="@android:style/Animation.Dialog">
-        <item name="android:windowEnterAnimation">@anim/c</item>
-        <item name="android:windowExitAnimation">@anim/d</item>
+    <style name="a" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/RES_2130771970</item>
+        <item name="android:windowExitAnimation">@anim/RES_2130771971</item>
     </style>
-    <style name="e" parent="@android:style/Theme.Light">
+    <style name="RES_2131623940" parent="@android:style/Theme.Light">
     </style>
-    <style name="f" parent="@android:style/Theme">
+    <style name="RES_2131623942" parent="@android:style/Theme">
     </style>
-    <style name="g">
-        <item name="android:textSize">@dimen/p</item>
-        <item name="android:textColor">@color/q</item>
+    <style name="RES_2131623943">
+        <item name="android:textSize">@dimen/h</item>
+        <item name="android:textColor">@color/a</item>
         <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
-        <item name="android:background">@drawable/e</item>
-        <item name="android:paddingLeft">@dimen/g</item>
-        <item name="android:paddingTop">@dimen/j</item>
-        <item name="android:paddingRight">@dimen/g</item>
-        <item name="android:paddingBottom">@dimen/j</item>
+        <item name="android:background">@drawable/a</item>
+        <item name="android:paddingLeft">@dimen/b</item>
+        <item name="android:paddingTop">@dimen/d</item>
+        <item name="android:paddingRight">@dimen/b</item>
+        <item name="android:paddingBottom">@dimen/d</item>
         <item name="android:minWidth">56dp</item>
     </style>
-    <style name="h" parent="@android:style/Theme.Dialog">
+    <style name="b" parent="@android:style/Theme.Dialog">
         <item name="android:backgroundDimAmount">0.4</item>
-        <item name="android:windowBackground">?attr/d</item>
+        <item name="android:windowBackground">?attr/RES_2130903043</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsFloating">true</item>
@@ -47,77 +47,77 @@
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:backgroundDimEnabled">true</item>
     </style>
-    <style name="i">
-        <item name="android:textSize">@dimen/p</item>
-        <item name="android:textColor">?attr/h</item>
-        <item name="android:textColorHint">?attr/i</item>
+    <style name="c">
+        <item name="android:textSize">@dimen/h</item>
+        <item name="android:textColor">?attr/b</item>
+        <item name="android:textColorHint">?attr/c</item>
     </style>
-    <style name="j">
-        <item name="android:scrollbarSize">@dimen/m</item>
-        <item name="android:scrollbarThumbVertical">@color/t</item>
+    <style name="d">
+        <item name="android:scrollbarSize">@dimen/g</item>
+        <item name="android:scrollbarThumbVertical">@color/RES_2131034131</item>
     </style>
-    <style name="k">
-        <item name="android:textSize">@dimen/q</item>
-        <item name="android:textColor">?attr/i</item>
+    <style name="RES_2131623947">
+        <item name="android:textSize">@dimen/RES_2131099664</item>
+        <item name="android:textColor">?attr/c</item>
     </style>
-    <style name="l">
-        <item name="android:textSize">@dimen/p</item>
-        <item name="android:textColor">?attr/h</item>
+    <style name="e">
+        <item name="android:textSize">@dimen/h</item>
+        <item name="android:textColor">?attr/b</item>
     </style>
-    <style name="m">
-        <item name="android:textSize">@dimen/n</item>
-        <item name="android:textColor">?attr/h</item>
+    <style name="f">
+        <item name="android:textSize">@dimen/RES_2131099661</item>
+        <item name="android:textColor">?attr/b</item>
     </style>
-    <style name="n" parent="@style/e">
-        <item name="android:windowBackground">@color/f</item>
+    <style name="RES_2131623950" parent="@style/RES_2131623940">
+        <item name="android:windowBackground">@color/RES_2131034117</item>
         <item name="android:windowNoTitle">true</item>
-        <item name="android:windowAnimationStyle">@style/c</item>
-        <item name="b">@color/f</item>
-        <item name="c">@color/k</item>
-        <item name="d">@drawable/i</item>
-        <item name="f">@color/r</item>
-        <item name="g">@color/v</item>
-        <item name="h">@color/x</item>
-        <item name="i">@color/z</item>
-        <item name="j">@color/a2</item>
+        <item name="android:windowAnimationStyle">@style/RES_2131623938</item>
+        <item name="RES_2130903041">@color/RES_2131034117</item>
+        <item name="RES_2130903042">@color/RES_2131034122</item>
+        <item name="RES_2130903043">@drawable/RES_2131165192</item>
+        <item name="a">@color/RES_2131034129</item>
+        <item name="RES_2130903046">@color/RES_2131034133</item>
+        <item name="b">@color/RES_2131034135</item>
+        <item name="c">@color/RES_2131034137</item>
+        <item name="RES_2130903049">@color/RES_2131034140</item>
     </style>
-    <style name="o" parent="@style/u">
-        <item name="android:windowBackground">@color/g</item>
+    <style name="RES_2131623951" parent="@style/RES_2131623941">
+        <item name="android:windowBackground">@color/RES_2131034118</item>
         <item name="android:windowNoTitle">true</item>
-        <item name="android:windowAnimationStyle">@style/c</item>
-        <item name="b">@color/g</item>
-        <item name="c">@color/h</item>
-        <item name="d">@drawable/j</item>
-        <item name="f">@color/s</item>
-        <item name="g">@color/w</item>
-        <item name="h">@color/y</item>
-        <item name="i">@color/a0</item>
-        <item name="j">@color/a3</item>
+        <item name="android:windowAnimationStyle">@style/RES_2131623938</item>
+        <item name="RES_2130903041">@color/RES_2131034118</item>
+        <item name="RES_2130903042">@color/RES_2131034119</item>
+        <item name="RES_2130903043">@drawable/RES_2131165193</item>
+        <item name="a">@color/RES_2131034130</item>
+        <item name="RES_2130903046">@color/RES_2131034134</item>
+        <item name="b">@color/RES_2131034136</item>
+        <item name="c">@color/RES_2131034138</item>
+        <item name="RES_2130903049">@color/RES_2131034141</item>
     </style>
-    <style name="p" parent="@style/f">
-        <item name="android:windowBackground">@color/i</item>
+    <style name="RES_2131623952" parent="@style/RES_2131623942">
+        <item name="android:windowBackground">@color/RES_2131034120</item>
         <item name="android:windowNoTitle">true</item>
-        <item name="android:windowAnimationStyle">@style/c</item>
-        <item name="b">@color/i</item>
-        <item name="c">@color/j</item>
-        <item name="d">@drawable/k</item>
-        <item name="f">@color/s</item>
-        <item name="g">@color/w</item>
-        <item name="h">@color/y</item>
-        <item name="i">@color/a0</item>
-        <item name="j">@color/a3</item>
+        <item name="android:windowAnimationStyle">@style/RES_2131623938</item>
+        <item name="RES_2130903041">@color/RES_2131034120</item>
+        <item name="RES_2130903042">@color/RES_2131034121</item>
+        <item name="RES_2130903043">@drawable/RES_2131165194</item>
+        <item name="a">@color/RES_2131034130</item>
+        <item name="RES_2130903046">@color/RES_2131034134</item>
+        <item name="b">@color/RES_2131034136</item>
+        <item name="c">@color/RES_2131034138</item>
+        <item name="RES_2130903049">@color/RES_2131034141</item>
     </style>
-    <style name="q">
+    <style name="RES_2131623953">
         <item name="android:maxHeight">2dp</item>
         <item name="android:minHeight">2dp</item>
     </style>
-    <style name="r">
-        <item name="android:textSize">@dimen/v</item>
-        <item name="android:textColor">?attr/j</item>
+    <style name="RES_2131623954">
+        <item name="android:textSize">@dimen/RES_2131099669</item>
+        <item name="android:textColor">?attr/RES_2130903049</item>
         <item name="android:ellipsize">end</item>
         <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
         <item name="android:orientation">vertical</item>
-        <item name="android:background">@drawable/e</item>
+        <item name="android:background">@drawable/a</item>
         <item name="android:padding">4dp</item>
         <item name="android:focusable">true</item>
         <item name="android:clickable">true</item>
@@ -128,20 +128,20 @@
         <item name="android:drawablePadding">8dp</item>
         <item name="android:onClick">onSettingsItemClick</item>
     </style>
-    <style name="s">
+    <style name="RES_2131623955">
         <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
-        <item name="android:background">@drawable/e</item>
+        <item name="android:background">@drawable/a</item>
         <item name="android:padding">12dp</item>
         <item name="android:clickable">true</item>
-        <item name="android:tint">?attr/f</item>
+        <item name="android:tint">?attr/a</item>
         <item name="android:layout_weight">1</item>
     </style>
-    <style name="t">
-        <item name="android:background">@drawable/g</item>
+    <style name="RES_2131623956">
+        <item name="android:background">@drawable/RES_2131165190</item>
         <item name="android:padding">12dp</item>
         <item name="android:clickable">true</item>
-        <item name="android:tint">?attr/f</item>
-        <item name="android:layout_alignTop">@id/o</item>
-        <item name="android:layout_alignBottom">@id/o</item>
+        <item name="android:tint">?attr/a</item>
+        <item name="android:layout_alignTop">@id/RES_2131230734</item>
+        <item name="android:layout_alignBottom">@id/RES_2131230734</item>
     </style>
 </resources>

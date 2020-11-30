@@ -469,7 +469,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
 
             public void run() {
                 String str;
-                if (CompatUtils.m1336f(BrowserActivity.this.f1607b, R.string.g).equals(this.f1657a)) {
+                if (CompatUtils.m1336f(BrowserActivity.this.f1607b, R.string.RES_2131558406).equals(this.f1657a)) {
                     str = "";
                 } else {
                     str = this.f1657a;
@@ -495,11 +495,11 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                 int f = j.mo922f();
                 if (BrowserActivity.this.f1633o.mo967B(f)) {
                     BrowserActivity.this.f1633o.mo977d(f);
-                    QuickUtils.m1384p(BrowserActivity.this.f1607b, BrowserActivity.this.f1607b.getResources().getString(R.string.j4));
+                    QuickUtils.m1384p(BrowserActivity.this.f1607b, BrowserActivity.this.f1607b.getResources().getString(R.string.RES_2131558763));
                     return;
                 }
                 BrowserActivity.this.f1633o.mo970F(j);
-                QuickUtils.m1384p(BrowserActivity.this.f1607b, BrowserActivity.this.f1607b.getResources().getString(R.string.ev));
+                QuickUtils.m1384p(BrowserActivity.this.f1607b, BrowserActivity.this.f1607b.getResources().getString(R.string.RES_2131558606));
             }
         }
 
@@ -622,30 +622,30 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         public void mo727a(FrogMenuBean bVar, int i) {
             int b = bVar.mo716b();
             switch (b) {
-                case R.string.a /* 2131558400 */:
+                case R.string.RES_2131558400 /* 2131558400 */:
                     FlurryHelper.m1681a().mo1036d("add_bookmark", true);
                     BrowserActivity.this.m2399j1();
                     BrowserActivity.this.m2329P0();
                     return;
-                case R.string.g /* 2131558406 */:
+                case R.string.RES_2131558406 /* 2131558406 */:
                     FlurryHelper.m1681a().mo1036d("bookmark", true);
                     BrowserActivity.this.m2399j1();
                     BrowserActivity.this.m2372b3(2, null);
                     return;
-                case R.string.q /* 2131558416 */:
+                case R.string.RES_2131558416 /* 2131558416 */:
                     FlurryHelper.m1681a().mo1036d("download", true);
                     if (!BrowserActivity.this.f1616f0.mo385g(BrowserActivity.this.f1605a)) {
                         BrowserActivity.this.m2461z3(5);
                         return;
                     }
                     return;
-                case R.string.a2 /* 2131558428 */:
+                case R.string.RES_2131558428 /* 2131558428 */:
                     FlurryHelper.m1681a().mo1036d("night", true);
                     BrowserActivity.this.m2399j1();
                     BrowserActivity.this.f1635p.mo1195v1(BrowserActivity.this.f1607b, !BrowserActivity.this.f1635p.mo1129Z(BrowserActivity.this.f1607b));
                     BrowserActivity.this.m2298G3();
                     return;
-                case R.string.a6 /* 2131558432 */:
+                case R.string.RES_2131558432 /* 2131558432 */:
                     BrowserActivity.this.m2399j1();
                     boolean z = !BrowserActivity.this.f1635p.mo1138c0();
                     BrowserActivity.this.f1635p.mo1204y1(z);
@@ -659,24 +659,24 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                         return;
                     }
                     return;
-                case R.string.gu /* 2131558679 */:
+                case R.string.RES_2131558679 /* 2131558679 */:
                     FlurryHelper.m1681a().mo1036d("res", false);
                     BrowserActivity.this.m2399j1();
                     BrowserActivity.this.m2400j3();
                     return;
-                case R.string.ha /* 2131558696 */:
+                case R.string.RES_2131558696 /* 2131558696 */:
                     FlurryHelper.m1681a().mo1036d("settings", true);
                     BrowserActivity.this.m2399j1();
                     BrowserActivity.this.startActivity(new Intent(BrowserActivity.this.f1607b, SettingsCatalog.class));
                     return;
                 default:
                     switch (b) {
-                        case R.string.s /* 2131558418 */:
+                        case R.string.RES_2131558418 /* 2131558418 */:
                             FlurryHelper.m1681a().mo1036d("find_in_page", false);
                             BrowserActivity.this.m2399j1();
                             BrowserActivity.this.m2379d3(14);
                             return;
-                        case R.string.t /* 2131558419 */:
+                        case R.string.RES_2131558419 /* 2131558419 */:
                             BrowserActivity.this.m2399j1();
                             boolean z2 = !BrowserActivity.this.f1635p.mo1068C();
                             BrowserActivity.this.f1635p.mo1136b1(z2);
@@ -686,42 +686,42 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                             BrowserActivity.this.m2303H3();
                             bVar.mo721g(z2);
                             return;
-                        case R.string.u /* 2131558420 */:
+                        case R.string.RES_2131558420 /* 2131558420 */:
                             FlurryHelper.m1681a().mo1036d("history", true);
                             BrowserActivity.this.m2399j1();
                             BrowserActivity.this.m2372b3(3, null);
                             return;
-                        case R.string.v /* 2131558421 */:
+                        case R.string.RES_2131558421 /* 2131558421 */:
                             if (BrowserActivity.this.f1635p.mo1092K()) {
                                 BrowserActivity.this.f1635p.mo1156i1(false);
                                 BrowserActivity.this.f1635p.mo1081G0(false);
-                                bVar.mo725k(BrowserActivity.this.getResources().getString(R.string.ef));
-                                QuickUtils.m1384p(BrowserActivity.this.f1607b, BrowserActivity.this.getResources().getString(R.string.ef));
+                                bVar.mo725k(BrowserActivity.this.getResources().getString(R.string.RES_2131558590));
+                                QuickUtils.m1384p(BrowserActivity.this.f1607b, BrowserActivity.this.getResources().getString(R.string.RES_2131558590));
                             } else if (BrowserActivity.this.f1635p.mo1157j()) {
                                 BrowserActivity.this.f1635p.mo1156i1(true);
-                                bVar.mo725k(BrowserActivity.this.getResources().getString(R.string.ee));
-                                QuickUtils.m1384p(BrowserActivity.this.f1607b, BrowserActivity.this.getResources().getString(R.string.ee));
+                                bVar.mo725k(BrowserActivity.this.getResources().getString(R.string.RES_2131558589));
+                                QuickUtils.m1384p(BrowserActivity.this.f1607b, BrowserActivity.this.getResources().getString(R.string.RES_2131558589));
                             } else {
                                 FlurryHelper.m1681a().mo1036d("pic", false);
                                 BrowserActivity.this.f1635p.mo1081G0(true);
-                                bVar.mo725k(BrowserActivity.this.getResources().getString(R.string.eg));
-                                QuickUtils.m1384p(BrowserActivity.this.f1607b, BrowserActivity.this.getResources().getString(R.string.eg));
+                                bVar.mo725k(BrowserActivity.this.getResources().getString(R.string.RES_2131558591));
+                                QuickUtils.m1384p(BrowserActivity.this.f1607b, BrowserActivity.this.getResources().getString(R.string.RES_2131558591));
                             }
                             BrowserActivity.this.m2315K3();
                             return;
-                        case R.string.w /* 2131558422 */:
+                        case R.string.RES_2131558422 /* 2131558422 */:
                             BrowserActivity.this.m2399j1();
                             boolean z3 = !BrowserActivity.this.f1635p.mo1095L();
                             BrowserActivity.this.f1635p.mo1159j1(z3);
                             DataChecker.m1181c().mo667h(3);
                             if (z3) {
                                 FlurryHelper.m1681a().mo1036d("incognito", true);
-                                ViewUtils.m2241s(BrowserActivity.this.f1580K.findViewById(R.id.ah));
+                                ViewUtils.m2241s(BrowserActivity.this.f1580K.findViewById(R.id.RES_2131230764));
                             }
-                            QuickUtils.m1382n(BrowserActivity.this.f1607b, z3 ? R.string.et : R.string.es);
+                            QuickUtils.m1382n(BrowserActivity.this.f1607b, z3 ? R.string.RES_2131558604 : R.string.RES_2131558603);
                             bVar.mo721g(z3);
                             return;
-                        case R.string.x /* 2131558423 */:
+                        case R.string.RES_2131558423 /* 2131558423 */:
                             FlurryHelper.m1681a().mo1036d("net_log", false);
                             BrowserActivity.this.m2399j1();
                             if (!BrowserUtils.m2101v(BrowserActivity.this.f1607b, BrowserActivity.this.f1623j.mo817L())) {
@@ -731,7 +731,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                             BrowserActivity browserActivity2 = BrowserActivity.this;
                             int e1 = browserActivity2.m2381e1(browserActivity2.f1594R);
                             if (e1 == -1 || ((TabItem) BrowserActivity.this.f1609c.get(e1)).mo814I().isEmpty()) {
-                                QuickUtils.m1382n(BrowserActivity.this.f1607b, R.string.fs);
+                                QuickUtils.m1382n(BrowserActivity.this.f1607b, R.string.RES_2131558640);
                                 return;
                             } else {
                                 BrowserActivity.this.m2372b3(6, null);
@@ -739,19 +739,19 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                             }
                         default:
                             switch (b) {
-                                case R.string.ab /* 2131558438 */:
+                                case R.string.RES_2131558438 /* 2131558438 */:
                                     FlurryHelper.m1681a().mo1036d("save_page", false);
                                     BrowserActivity.this.m2399j1();
                                     BrowserActivity.this.m2379d3(18);
                                     return;
-                                case R.string.ac /* 2131558439 */:
+                                case R.string.RES_2131558439 /* 2131558439 */:
                                     FlurryHelper.m1681a().mo1036d("saved_pages", false);
                                     BrowserActivity.this.m2399j1();
                                     BrowserActivity.this.m2372b3(7, null);
                                     return;
                                 default:
                                     switch (b) {
-                                        case R.string.ae /* 2131558441 */:
+                                        case R.string.RES_2131558441 /* 2131558441 */:
                                             FlurryHelper.m1681a().mo1036d("share", true);
                                             BrowserActivity.this.m2399j1();
                                             if (BrowserActivity.this.f1623j == null || BrowserUtils.m2105z(BrowserActivity.this.f1623j.mo817L())) {
@@ -759,32 +759,32 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                                                 return;
                                             }
                                             String K = BrowserActivity.this.f1623j.mo816K();
-                                            if (CompatUtils.m1336f(BrowserActivity.this.f1607b, R.string.j5).equals(K) || K == null || K.isEmpty()) {
+                                            if (CompatUtils.m1336f(BrowserActivity.this.f1607b, R.string.RES_2131558764).equals(K) || K == null || K.isEmpty()) {
                                                 IntentUtils.m2179f(BrowserActivity.this.f1607b, BrowserActivity.this.f1623j.mo817L());
                                                 return;
                                             }
                                             IntentUtils.m2179f(BrowserActivity.this.f1607b, K + "\n" + BrowserActivity.this.f1623j.mo817L());
                                             return;
-                                        case R.string.af /* 2131558442 */:
+                                        case R.string.RES_2131558442 /* 2131558442 */:
                                             FlurryHelper.m1681a().mo1036d("sources", false);
                                             BrowserActivity.this.m2399j1();
                                             BrowserActivity.this.m2379d3(19);
                                             return;
-                                        case R.string.ag /* 2131558443 */:
+                                        case R.string.RES_2131558443 /* 2131558443 */:
                                             BrowserActivity.this.m2290E3();
                                             return;
-                                        case R.string.ah /* 2131558444 */:
+                                        case R.string.RES_2131558444 /* 2131558444 */:
                                             FlurryHelper.m1681a().mo1036d("translate", false);
                                             if (BrowserActivity.this.f1623j == null || !WebViewUtil.m2047g(BrowserActivity.this.f1623j.mo817L())) {
                                                 BrowserActivity.this.m2399j1();
-                                                QuickUtils.m1384p(BrowserActivity.this.f1607b, CompatUtils.m1336f(BrowserActivity.this.f1607b, R.string.bi));
+                                                QuickUtils.m1384p(BrowserActivity.this.f1607b, CompatUtils.m1336f(BrowserActivity.this.f1607b, R.string.RES_2131558482));
                                                 return;
                                             }
                                             BrowserActivity.this.m2399j1();
-                                            QuickUtils.m1382n(BrowserActivity.this.f1607b, R.string.iv);
+                                            QuickUtils.m1382n(BrowserActivity.this.f1607b, R.string.RES_2131558754);
                                             BrowserActivity.this.f1623j.mo828h0(JS.m1587a());
                                             return;
-                                        case R.string.ai /* 2131558445 */:
+                                        case R.string.RES_2131558445 /* 2131558445 */:
                                             BrowserActivity.this.m2448w3(bVar, i);
                                             return;
                                         default:
@@ -800,9 +800,9 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         public void mo728b(FrogMenuBean bVar, int i) {
             String L;
             switch (bVar.mo716b()) {
-                case R.string.q /* 2131558416 */:
+                case R.string.RES_2131558416 /* 2131558416 */:
                     String[][] d = Downloader.m919e(BrowserActivity.this.f1607b).mo384d(BrowserActivity.this.f1605a);
-                    d[1][0] = CompatUtils.m1336f(BrowserActivity.this.f1607b, R.string.id);
+                    d[1][0] = CompatUtils.m1336f(BrowserActivity.this.f1607b, R.string.RES_2131558736);
                     String w = BrowserActivity.this.f1635p.mo1196w();
                     int length = d[0].length;
                     int i2 = 0;
@@ -812,33 +812,33 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                         }
                     }
                     TaoDialog g = TaoDialog.m1134g(BrowserActivity.this.f1607b);
-                    g.mo620L(R.string.as);
+                    g.mo620L(R.string.RES_2131558455);
                     g.mo619K(d[1], i2, new C0540b(this, d));
                     g.mo624P(BrowserActivity.this.f1654y0.mo707e(i));
                     return;
-                case R.string.x /* 2131558423 */:
+                case R.string.RES_2131558423 /* 2131558423 */:
                     BrowserActivity.this.m2399j1();
                     BrowserActivity.this.startActivity(new Intent(BrowserActivity.this.f1607b, CustomFiltersUI.class));
                     return;
-                case R.string.a2 /* 2131558428 */:
+                case R.string.RES_2131558428 /* 2131558428 */:
                     if (Build.VERSION.SDK_INT < 29) {
                         boolean z = !BrowserActivity.this.f1635p.mo1127Y();
                         BrowserActivity.this.f1635p.mo1192u1(z);
-                        QuickUtils.m1382n(BrowserActivity.this.f1607b, z ? R.string.fo : R.string.fn);
+                        QuickUtils.m1382n(BrowserActivity.this.f1607b, z ? R.string.RES_2131558636 : R.string.RES_2131558635);
                         return;
                     }
                     return;
-                case R.string.a6 /* 2131558432 */:
+                case R.string.RES_2131558432 /* 2131558432 */:
                     BrowserActivity.this.m2448w3(bVar, i);
                     return;
-                case R.string.ae /* 2131558441 */:
+                case R.string.RES_2131558441 /* 2131558441 */:
                     BrowserActivity.this.m2399j1();
                     if (!(BrowserActivity.this.f1623j == null || (L = BrowserActivity.this.f1623j.mo817L()) == null || BrowserUtils.m2103x(BrowserActivity.this.f1607b, L, null))) {
                         IntentUtils.m2175b(BrowserActivity.this.f1605a, L);
                         return;
                     }
                     return;
-                case R.string.ag /* 2131558443 */:
+                case R.string.RES_2131558443 /* 2131558443 */:
                     BrowserActivity.this.m2399j1();
                     FlurryHelper.m1681a().mo1036d("res", false);
                     BrowserActivity.this.m2399j1();
@@ -943,7 +943,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         /* renamed from: b */
         public void mo399b(long j) {
             if (BrowserActivity.this.f1606a0 != 5) {
-                new FrogToast(BrowserActivity.this.f1605a, (int) R.string.d0, (int) R.string.jm, new C0519a()).mo773m();
+                new FrogToast(BrowserActivity.this.f1605a, (int) R.string.RES_2131558537, (int) R.string.RES_2131558782, new C0519a()).mo773m();
             }
         }
 
@@ -983,9 +983,9 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         /* renamed from: b */
         public void mo1296b(View view, int i) {
             if (i == 1) {
-                ((ImageView) view).setImageDrawable(CompatUtils.m1334d(BrowserActivity.this.f1607b, R.drawable.a6));
+                ((ImageView) view).setImageDrawable(CompatUtils.m1334d(BrowserActivity.this.f1607b, R.drawable.RES_2131165202));
             } else if (i == 2) {
-                ((ImageView) view).setImageDrawable(CompatUtils.m1334d(BrowserActivity.this.f1607b, R.drawable.r));
+                ((ImageView) view).setImageDrawable(CompatUtils.m1334d(BrowserActivity.this.f1607b, R.drawable.RES_2131165211));
             }
         }
 
@@ -1100,21 +1100,21 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         public void mo1286a(int i) {
             int i2;
             if (i == 0 && this.f1677a != 2) {
-                i2 = R.drawable.a6;
+                i2 = R.drawable.RES_2131165202;
                 this.f1677a = 2;
             } else if (i == 1 && this.f1677a != 1) {
-                i2 = R.drawable.r;
+                i2 = R.drawable.RES_2131165211;
                 this.f1677a = 1;
             } else if (i == 2 && this.f1677a != 3) {
-                i2 = R.drawable.ay;
+                i2 = R.drawable.RES_2131165242;
                 this.f1677a = 3;
             } else if (i == 3 && this.f1677a != 5) {
-                i2 = R.drawable.an;
+                i2 = R.drawable.RES_2131165225;
                 this.f1677a = 5;
             } else if (i != -1 || this.f1677a == 0) {
                 i2 = -1;
             } else {
-                i2 = R.drawable.ah;
+                i2 = R.drawable.RES_2131165217;
                 this.f1677a = 0;
             }
             if (i2 != -1) {
@@ -1131,7 +1131,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
             int[] iArr = new int[2];
             int j = ViewUtils.m2232j(BrowserActivity.this.f1607b);
             int k = ViewUtils.m2233k(BrowserActivity.this.f1607b);
-            int dimensionPixelSize = BrowserActivity.this.f1607b.getResources().getDimensionPixelSize(R.dimen.b);
+            int dimensionPixelSize = BrowserActivity.this.f1607b.getResources().getDimensionPixelSize(R.dimen.RES_2131099649);
             int width = view.getWidth();
             int height = view.getHeight();
             int i5 = k / 3;
@@ -1282,7 +1282,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                 BrowserActivity browserActivity = BrowserActivity.this;
                 browserActivity.f1581K0 = browserActivity.f1608b0.getRootView().getHeight() - BrowserActivity.this.f1608b0.getHeight();
             }
-            if ((BrowserActivity.this.f1608b0.getRootView().getHeight() - BrowserActivity.this.f1608b0.getHeight()) - BrowserActivity.this.f1581K0 >= BrowserActivity.this.f1607b.getResources().getDimensionPixelSize(R.dimen.a) * 2) {
+            if ((BrowserActivity.this.f1608b0.getRootView().getHeight() - BrowserActivity.this.f1608b0.getHeight()) - BrowserActivity.this.f1581K0 >= BrowserActivity.this.f1607b.getResources().getDimensionPixelSize(R.dimen.RES_2131099648) * 2) {
                 BrowserActivity.this.m2362Y2();
             } else {
                 BrowserActivity.this.m2344T2();
@@ -1317,8 +1317,8 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         public /* synthetic */ void mo1412d(View view, AdapterView adapterView, View view2, int i, long j) {
             if (i == 0) {
                 TaoDialog g = TaoDialog.m1134g(BrowserActivity.this.f1607b);
-                g.mo620L(R.string.c5);
-                g.mo628c(0, BrowserActivity.this.f1635p.mo1158j0(), R.string.c5, 2);
+                g.mo620L(R.string.RES_2131558505);
+                g.mo628c(0, BrowserActivity.this.f1635p.mo1158j0(), R.string.RES_2131558505, 2);
                 g.mo614F(17039370, new C0546e(this));
                 g.mo624P(view);
                 return;
@@ -1330,20 +1330,20 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
 
         public void onClick(View view) {
             switch (view.getId()) {
-                case R.id.b /* 2131230721 */:
+                case R.id.RES_2131230721 /* 2131230721 */:
                     BrowserActivity.this.m2334Q2(true, null);
                     return;
-                case R.id.d /* 2131230723 */:
+                case R.id.RES_2131230723 /* 2131230723 */:
                     BrowserActivity.this.m2274A3();
                     return;
-                case R.id.f /* 2131230725 */:
+                case R.id.RES_2131230725 /* 2131230725 */:
                     BrowserActivity.this.m2383e3();
                     return;
-                case R.id.aq /* 2131230773 */:
+                case R.id.RES_2131230773 /* 2131230773 */:
                     if (BrowserActivity.this.f1619h.hasFocus()) {
                         TaoDialog g = TaoDialog.m1134g(BrowserActivity.this.f1607b);
-                        g.mo620L(R.string.h2);
-                        g.mo618J(R.array.k, BrowserActivity.this.f1635p.mo1155i0(), new C0544d(this, view));
+                        g.mo620L(R.string.RES_2131558687);
+                        g.mo618J(R.array.RES_2130837514, BrowserActivity.this.f1635p.mo1155i0(), new C0544d(this, view));
                         g.mo624P(view);
                         return;
                     } else if (BrowserActivity.this.f1606a0 == 6) {
@@ -1355,7 +1355,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                     } else {
                         return;
                     }
-                case R.id.ar /* 2131230774 */:
+                case R.id.RES_2131230774 /* 2131230774 */:
                     int i = BrowserActivity.this.f1562B;
                     if (i == 1) {
                         BrowserActivity.this.f1623j.mo838t0();
@@ -1374,10 +1374,10 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                         BrowserActivity.this.m2399j1();
                         return;
                     }
-                case R.id.au /* 2131230777 */:
+                case R.id.RES_2131230777 /* 2131230777 */:
                     BrowserActivity.this.m2385f1();
                     return;
-                case R.id.av /* 2131230778 */:
+                case R.id.RES_2131230778 /* 2131230778 */:
                     if (BrowserActivity.this.f1606a0 != -1) {
                         BrowserActivity.this.m2399j1();
                         return;
@@ -1385,7 +1385,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                         BrowserActivity.this.m2388g1();
                         return;
                     }
-                case R.id.aw /* 2131230779 */:
+                case R.id.RES_2131230779 /* 2131230779 */:
                     if (!BrowserActivity.this.m2406l1()) {
                         if (BrowserActivity.this.f1623j != null) {
                             BrowserActivity.this.m2392h1();
@@ -1396,7 +1396,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                         return;
                     }
                     return;
-                case R.id.ax /* 2131230780 */:
+                case R.id.RES_2131230780 /* 2131230780 */:
                     if (BrowserActivity.this.f1606a0 != -1) {
                         BrowserActivity.this.m2399j1();
                         return;
@@ -1404,7 +1404,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                         BrowserActivity.this.m2461z3(3);
                         return;
                     }
-                case R.id.az /* 2131230782 */:
+                case R.id.RES_2131230782 /* 2131230782 */:
                     if (BrowserActivity.this.f1638q0 == 0) {
                         BrowserActivity.this.finish();
                         return;
@@ -1449,26 +1449,26 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
 
         public boolean onLongClick(View view) {
             int id = view.getId();
-            if (id == R.id.f) {
+            if (id == R.id.RES_2131230725) {
                 FlurryHelper.m1681a().mo1036d("res", false);
                 BrowserActivity.this.m2399j1();
                 BrowserActivity.this.m2400j3();
                 return true;
-            } else if (id != R.id.az) {
+            } else if (id != R.id.RES_2131230782) {
                 switch (id) {
-                    case R.id.au /* 2131230777 */:
+                    case R.id.RES_2131230777 /* 2131230777 */:
                         BrowserActivity browserActivity = BrowserActivity.this;
                         browserActivity.m2379d3(browserActivity.f1635p.mo1103O());
                         return true;
-                    case R.id.av /* 2131230778 */:
+                    case R.id.RES_2131230778 /* 2131230778 */:
                         BrowserActivity browserActivity2 = BrowserActivity.this;
                         browserActivity2.m2379d3(browserActivity2.f1635p.mo1106P());
                         return true;
-                    case R.id.aw /* 2131230779 */:
+                    case R.id.RES_2131230779 /* 2131230779 */:
                         BrowserActivity browserActivity3 = BrowserActivity.this;
                         browserActivity3.m2379d3(browserActivity3.f1635p.mo1109Q());
                         return true;
-                    case R.id.ax /* 2131230780 */:
+                    case R.id.RES_2131230780 /* 2131230780 */:
                         if (BrowserActivity.this.f1638q0 != -1) {
                             return true;
                         }
@@ -1543,7 +1543,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                 ObjectAnimator ofFloat2 = ObjectAnimator.ofFloat(BrowserActivity.this.f1621i, "translationY", (float) (-BrowserActivity.this.f1570F), 0.0f);
                 AnimatorSet animatorSet = new AnimatorSet();
                 animatorSet.playTogether(ofFloat, ofFloat2);
-                animatorSet.setDuration((long) ((BrowserActivity.this.f1607b.getResources().getInteger(R.integer.a) * 3) / 2));
+                animatorSet.setDuration((long) ((BrowserActivity.this.f1607b.getResources().getInteger(R.integer.RES_2131296256) * 3) / 2));
                 animatorSet.start();
                 return;
             }
@@ -1608,13 +1608,13 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
             View view = new View(this.f1607b);
             this.f1611d = view;
             view.setVisibility(8);
-            this.f1611d.setBackgroundColor(CompatUtils.m1331a(this.f1607b, R.color.a4));
+            this.f1611d.setBackgroundColor(CompatUtils.m1331a(this.f1607b, R.color.RES_2131034142));
             this.f1611d.setClickable(true);
             this.f1611d.setFocusable(true);
             this.f1611d.setOnClickListener(new View$OnClickListenerC0541b0(this));
             RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, -1);
-            layoutParams.addRule(2, R.id.at);
-            layoutParams.addRule(3, R.id.bk);
+            layoutParams.addRule(2, R.id.RES_2131230776);
+            layoutParams.addRule(3, R.id.RES_2131230804);
             layoutParams.alignWithParent = true;
             this.f1608b0.addView(this.f1611d, 2, layoutParams);
         }
@@ -1637,7 +1637,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         } else {
             str2 = null;
         }
-        QuickUtils.m1382n(this.f1605a, FileCompat.m1352f(this.f1607b, str, str2, lVar.f1091c[0]) ? R.string.d0 : R.string.d1);
+        QuickUtils.m1382n(this.f1605a, FileCompat.m1352f(this.f1607b, str, str2, lVar.f1091c[0]) ? R.string.RES_2131558537 : R.string.RES_2131558538);
     }
 
     /* access modifiers changed from: private */
@@ -1679,24 +1679,24 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         int i;
         boolean z = false;
         if (this.f1561A0.isEmpty()) {
-            this.f1561A0.add(FrogMenuBean.m1243l(this.f1607b, R.string.s, R.drawable.q));
-            this.f1561A0.add(FrogMenuBean.m1243l(this.f1607b, R.string.ab, R.drawable.ap));
-            this.f1561A0.add(FrogMenuBean.m1243l(this.f1607b, R.string.ac, R.drawable.ak));
-            this.f1561A0.add(FrogMenuBean.m1243l(this.f1607b, R.string.ah, R.drawable.aw));
-            this.f1561A0.add(FrogMenuBean.m1243l(this.f1607b, R.string.af, R.drawable.a8));
-            this.f1561A0.add(FrogMenuBean.m1244m(this.f1607b, R.string.t, R.drawable.ac, this.f1635p.mo1068C()));
-            FrogMenuBean l = FrogMenuBean.m1243l(this.f1607b, R.string.v, R.drawable.am);
+            this.f1561A0.add(FrogMenuBean.m1243l(this.f1607b, R.string.RES_2131558418, R.drawable.RES_2131165210));
+            this.f1561A0.add(FrogMenuBean.m1243l(this.f1607b, R.string.RES_2131558438, R.drawable.RES_2131165227));
+            this.f1561A0.add(FrogMenuBean.m1243l(this.f1607b, R.string.RES_2131558439, R.drawable.RES_2131165221));
+            this.f1561A0.add(FrogMenuBean.m1243l(this.f1607b, R.string.RES_2131558444, R.drawable.RES_2131165240));
+            this.f1561A0.add(FrogMenuBean.m1243l(this.f1607b, R.string.RES_2131558442, R.drawable.RES_2131165205));
+            this.f1561A0.add(FrogMenuBean.m1244m(this.f1607b, R.string.RES_2131558419, R.drawable.RES_2131165212, this.f1635p.mo1068C()));
+            FrogMenuBean l = FrogMenuBean.m1243l(this.f1607b, R.string.RES_2131558421, R.drawable.RES_2131165223);
             Context context = this.f1607b;
             if (this.f1635p.mo1092K()) {
-                i = R.string.ee;
+                i = R.string.RES_2131558589;
             } else {
-                i = this.f1635p.mo1157j() ? R.string.eg : R.string.ef;
+                i = this.f1635p.mo1157j() ? R.string.RES_2131558591 : R.string.RES_2131558590;
             }
             l.mo725k(CompatUtils.m1336f(context, i));
             this.f1561A0.add(l);
-            this.f1561A0.add(FrogMenuBean.m1243l(this.f1607b, R.string.gu, R.drawable.ao));
-            this.f1561A0.add(FrogMenuBean.m1244m(this.f1607b, R.string.ai, R.drawable.ax, this.f1635p.mo1185s0() != 1));
-            this.f1561A0.add(FrogMenuBean.m1243l(this.f1607b, R.string.x, R.drawable.ag));
+            this.f1561A0.add(FrogMenuBean.m1243l(this.f1607b, R.string.RES_2131558679, R.drawable.RES_2131165226));
+            this.f1561A0.add(FrogMenuBean.m1244m(this.f1607b, R.string.RES_2131558445, R.drawable.RES_2131165241, this.f1635p.mo1185s0() != 1));
+            this.f1561A0.add(FrogMenuBean.m1243l(this.f1607b, R.string.RES_2131558423, R.drawable.RES_2131165216));
         }
         Context context2 = this.f1607b;
         TabItem b0Var = this.f1623j;
@@ -1704,9 +1704,9 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         boolean z3 = WebViewUtil.m2047g(this.f1623j.mo817L()) || (Build.VERSION.SDK_INT >= 21 && URLUtil.isFileUrl(this.f1623j.mo817L()));
         for (FrogMenuBean bVar : this.f1561A0) {
             int b = bVar.mo716b();
-            if (b == R.string.af) {
+            if (b == R.string.RES_2131558442) {
                 bVar.mo723i(z3);
-            } else if (b == R.string.ah || b == R.string.ab) {
+            } else if (b == R.string.RES_2131558444 || b == R.string.RES_2131558438) {
                 bVar.mo723i(z2);
             }
         }
@@ -1728,11 +1728,11 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
             }
             long c = this.f1616f0.mo383c(str, lVar.f1091c[0], str2, strArr[1]);
             if (c == -1) {
-                QuickUtils.m1382n(this.f1607b, R.string.d1);
+                QuickUtils.m1382n(this.f1607b, R.string.RES_2131558538);
                 return;
             }
             this.f1628l0.mo1256i(c);
-            QuickUtils.m1383o(this.f1607b, R.string.d5, R.string.jm, new C0534w());
+            QuickUtils.m1383o(this.f1607b, R.string.RES_2131558542, R.string.RES_2131558782, new C0534w());
         }
     }
 
@@ -1748,21 +1748,21 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         this.f1630m0 = z;
         DataChecker.m1181c().mo668i(1, 2, 3, 4, 5);
         boolean Y = this.f1635p.mo1127Y();
-        this.f1605a.setTheme(z ? R.style.a : R.style.b);
+        this.f1605a.setTheme(z ? R.style.RES_2131623936 : R.style.RES_2131623937);
         this.f1563B0 = null;
         FrameLayout frameLayout = this.f1582L;
-        int i2 = R.color.f;
-        frameLayout.setBackgroundResource(z ? R.color.g : R.color.f);
+        int i2 = R.color.RES_2131034117;
+        frameLayout.setBackgroundResource(z ? R.color.RES_2131034118 : R.color.RES_2131034117);
         Window window = this.f1605a.getWindow();
         Context context = this.f1607b;
         if (z) {
-            i2 = R.color.g;
+            i2 = R.color.RES_2131034118;
         }
         window.setBackgroundDrawable(CompatUtils.m1334d(context, i2));
         View view = this.f1652x0;
-        int i3 = R.color.h;
+        int i3 = R.color.RES_2131034119;
         if (view != null) {
-            view.setBackgroundResource(z ? R.color.h : R.color.k);
+            view.setBackgroundResource(z ? R.color.RES_2131034119 : R.color.RES_2131034122);
             this.f1656z0.get(0).mo721g(z);
             this.f1654y0.mo710i(0, this.f1656z0.get(0));
         }
@@ -1770,15 +1770,15 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         this.f1626k0.mo1255f();
         View view2 = this.f1590P;
         if (view2 != null) {
-            View findViewById = view2.findViewById(R.id.r);
+            View findViewById = view2.findViewById(R.id.RES_2131230737);
             if (!z || Y) {
-                i3 = R.color.k;
+                i3 = R.color.RES_2131034122;
             }
             findViewById.setBackgroundResource(i3);
         }
-        this.f1615f.setForeground(CompatUtils.m1334d(this.f1607b, z ? R.color.aa : R.color.a_));
+        this.f1615f.setForeground(CompatUtils.m1334d(this.f1607b, z ? R.color.RES_2131034149 : R.color.RES_2131034148));
         if (z) {
-            i = CompatUtils.m1331a(this.f1607b, R.color.g);
+            i = CompatUtils.m1331a(this.f1607b, R.color.RES_2131034118);
         } else {
             i = this.f1635p.mo1179q0();
         }
@@ -1808,7 +1808,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     /* access modifiers changed from: private */
     /* renamed from: H1 */
     public /* synthetic */ void mo1348I1(String str, View view) {
-        QuickUtils.m1370b(this.f1607b, str, R.string.ir);
+        QuickUtils.m1370b(this.f1607b, str, R.string.RES_2131558750);
     }
 
     /* access modifiers changed from: private */
@@ -1824,7 +1824,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                 break;
             }
             FrogMenuBean next = it.next();
-            if (next.mo716b() == R.string.ai) {
+            if (next.mo716b() == R.string.RES_2131558445) {
                 next.mo721g(this.f1635p.mo1185s0() != 1);
             }
         }
@@ -1837,7 +1837,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
             }
         }
         Context context = this.f1607b;
-        QuickUtils.m1384p(context, CompatUtils.m1337g(context, R.string.h9, context.getResources().getStringArray(R.array.o)[i]));
+        QuickUtils.m1384p(context, CompatUtils.m1337g(context, R.string.RES_2131558694, context.getResources().getStringArray(R.array.RES_2130837518)[i]));
         m2399j1();
     }
 
@@ -1857,7 +1857,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         }
         if (this.f1601W != i4) {
             int h = ViewUtils.m2230h(this.f1605a);
-            int dimensionPixelSize = this.f1607b.getResources().getDimensionPixelSize(R.dimen.x);
+            int dimensionPixelSize = this.f1607b.getResources().getDimensionPixelSize(R.dimen.RES_2131099671);
             int i5 = Constants.f1301f;
             this.f1570F = dimensionPixelSize + ((i5 < 19 || i5 >= 21 || C) ? 0 : h);
             float f = 0.0f;
@@ -1911,7 +1911,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                 if (this.f1572G == null) {
                     this.f1572G = new View(this.f1605a);
                     this.f1572G.setLayoutParams(new LinearLayout.LayoutParams(-1, ViewUtils.m2230h(this.f1607b)));
-                    this.f1572G.setBackgroundColor(CompatUtils.m1331a(this.f1607b, R.color.a));
+                    this.f1572G.setBackgroundColor(CompatUtils.m1331a(this.f1607b, R.color.RES_2131034112));
                     viewGroup.addView(this.f1572G);
                 }
                 View view = this.f1572G;
@@ -1944,7 +1944,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                     g.mo621M("Logcat");
                     g.mo645w(d.mo1053e());
                     g.mo635m(false);
-                    g.mo614F(R.string.l, new C0550g(this, d));
+                    g.mo614F(R.string.RES_2131558411, new C0550g(this, d));
                     g.mo648z(17039360, null);
                     g.mo622N();
                     return;
@@ -1985,7 +1985,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         ListView listView = this.f1567D0;
         if (listView != null) {
             RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) listView.getLayoutParams();
-            int min = Math.min(this.f1565C0.getCount() * CompatUtils.m1333c(this.f1607b, R.dimen.w), ((this.f1608b0.getHeight() - this.f1586N.getHeight()) - this.f1582L.getHeight()) - CompatUtils.m1333c(this.f1607b, R.dimen.a));
+            int min = Math.min(this.f1565C0.getCount() * CompatUtils.m1333c(this.f1607b, R.dimen.RES_2131099670), ((this.f1608b0.getHeight() - this.f1586N.getHeight()) - this.f1582L.getHeight()) - CompatUtils.m1333c(this.f1607b, R.dimen.RES_2131099648));
             if (layoutParams.height != min) {
                 layoutParams.height = min;
                 this.f1567D0.setLayoutParams(layoutParams);
@@ -2038,7 +2038,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     /* access modifiers changed from: private */
     /* renamed from: N2 */
     public /* synthetic */ void mo1354O2(FileLoggingHelper nVar, View view, TaoDialog.C0384l lVar) {
-        QuickUtils.m1370b(this.f1607b, nVar.mo1053e(), R.string.iq);
+        QuickUtils.m1370b(this.f1607b, nVar.mo1053e(), R.string.RES_2131558749);
     }
 
     /* renamed from: O0 */
@@ -2046,7 +2046,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         if (aVar != null) {
             BrowserApp.m1388b().execute(new RunnableC0573s(this, aVar));
             Context context = this.f1607b;
-            QuickUtils.m1384p(context, context.getResources().getString(R.string.ev));
+            QuickUtils.m1384p(context, context.getResources().getString(R.string.RES_2131558606));
         }
     }
 
@@ -2082,24 +2082,24 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                 if (!TextUtils.isEmpty(str) || !TextUtils.isEmpty(str2)) {
                     ArrayList arrayList = new ArrayList();
                     if (WebViewUtil.m2047g(str)) {
-                        arrayList.add(new TaoDialog.C0381i(0, getString(R.string.a3)));
-                        arrayList.add(new TaoDialog.C0381i(1, getString(R.string.a4)));
+                        arrayList.add(new TaoDialog.C0381i(0, getString(R.string.RES_2131558429)));
+                        arrayList.add(new TaoDialog.C0381i(1, getString(R.string.RES_2131558430)));
                     }
                     if (k == -1) {
                         if (!TextUtils.isEmpty(str2)) {
-                            arrayList.add(new TaoDialog.C0381i(2, getString(R.string.al)));
-                            arrayList.add(new TaoDialog.C0381i(6, getString(R.string.aa)));
-                            arrayList.add(new TaoDialog.C0381i(7, getString(R.string.h3)));
+                            arrayList.add(new TaoDialog.C0381i(2, getString(R.string.RES_2131558448)));
+                            arrayList.add(new TaoDialog.C0381i(6, getString(R.string.RES_2131558437)));
+                            arrayList.add(new TaoDialog.C0381i(7, getString(R.string.RES_2131558688)));
                             if (this.f1635p.mo1100N()) {
-                                arrayList.add(new TaoDialog.C0381i(8, getString(R.string.a7)));
+                                arrayList.add(new TaoDialog.C0381i(8, getString(R.string.RES_2131558433)));
                             }
                         }
-                        arrayList.add(new TaoDialog.C0381i(22, getString(R.string.a5)));
+                        arrayList.add(new TaoDialog.C0381i(22, getString(R.string.RES_2131558431)));
                         if (this.f1635p.mo1100N()) {
-                            arrayList.add(new TaoDialog.C0381i(23, getString(R.string.y)));
+                            arrayList.add(new TaoDialog.C0381i(23, getString(R.string.RES_2131558424)));
                         }
                         if (!TextUtils.isEmpty(str3)) {
-                            arrayList.add(new TaoDialog.C0381i(29, getString(R.string.k)));
+                            arrayList.add(new TaoDialog.C0381i(29, getString(R.string.RES_2131558410)));
                         }
                     } else if (k != 1) {
                         int i = 11;
@@ -2107,7 +2107,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                             if (k != 3) {
                                 if (k != 6) {
                                     if (k == 7) {
-                                        arrayList.add(new TaoDialog.C0381i(18, getString(R.string.m)));
+                                        arrayList.add(new TaoDialog.C0381i(18, getString(R.string.RES_2131558412)));
                                     } else if (k != 10) {
                                     }
                                 }
@@ -2117,19 +2117,19 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                                         boolean b = this.f1632n0.mo6b(FilterUtils.m119x(str, true));
                                         boolean b2 = this.f1632n0.mo6b(FilterUtils.m119x(str, false));
                                         if (b || b2 || !this.f1632n0.mo16p(str, null)) {
-                                            arrayList.add(new TaoDialog.C0381i(b ? 25 : 24, getString(b ? R.string.aj : R.string.e)));
-                                            arrayList.add(new TaoDialog.C0381i(b2 ? 27 : 26, getString(b2 ? R.string.ak : R.string.f)));
+                                            arrayList.add(new TaoDialog.C0381i(b ? 25 : 24, getString(b ? R.string.RES_2131558446 : R.string.RES_2131558404)));
+                                            arrayList.add(new TaoDialog.C0381i(b2 ? 27 : 26, getString(b2 ? R.string.RES_2131558447 : R.string.RES_2131558405)));
                                         }
                                     }
                                 }
                                 if (k == 10) {
-                                    arrayList.add(new TaoDialog.C0381i(19, getString(R.string.a8)));
+                                    arrayList.add(new TaoDialog.C0381i(19, getString(R.string.RES_2131558434)));
                                 }
-                                arrayList.add(new TaoDialog.C0381i(20, getString(R.string.q)));
-                                arrayList.add(new TaoDialog.C0381i(21, getString(R.string.n)));
+                                arrayList.add(new TaoDialog.C0381i(20, getString(R.string.RES_2131558416)));
+                                arrayList.add(new TaoDialog.C0381i(21, getString(R.string.RES_2131558413)));
                             } else {
-                                arrayList.add(new TaoDialog.C0381i(16, getString(R.string.m)));
-                                arrayList.add(new TaoDialog.C0381i(17, getString(R.string.n)));
+                                arrayList.add(new TaoDialog.C0381i(16, getString(R.string.RES_2131558412)));
+                                arrayList.add(new TaoDialog.C0381i(17, getString(R.string.RES_2131558413)));
                             }
                         }
                         boolean z2 = str != null && str.startsWith("folder://");
@@ -2137,22 +2137,22 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                             z = false;
                         }
                         if (!z) {
-                            arrayList.add(new TaoDialog.C0381i(z2 ? 12 : 9, getString(R.string.r)));
+                            arrayList.add(new TaoDialog.C0381i(z2 ? 12 : 9, getString(R.string.RES_2131558417)));
                             if (!z2) {
-                                arrayList.add(new TaoDialog.C0381i(10, getString(R.string.b)));
+                                arrayList.add(new TaoDialog.C0381i(10, getString(R.string.RES_2131558401)));
                             }
                             if (z2) {
                                 i = 13;
                             }
-                            arrayList.add(new TaoDialog.C0381i(i, getString(R.string.m)));
+                            arrayList.add(new TaoDialog.C0381i(i, getString(R.string.RES_2131558412)));
                         }
                     } else if (str != null && !str.equals("folder://")) {
-                        arrayList.add(new TaoDialog.C0381i(14, getString(R.string.r)));
-                        arrayList.add(new TaoDialog.C0381i(15, getString(R.string.m)));
+                        arrayList.add(new TaoDialog.C0381i(14, getString(R.string.RES_2131558417)));
+                        arrayList.add(new TaoDialog.C0381i(15, getString(R.string.RES_2131558412)));
                     }
                     if (!TextUtils.isEmpty(str) && !str.startsWith("folder://") && !str.startsWith("javascript:") && !str.startsWith("file://")) {
-                        arrayList.add(new TaoDialog.C0381i(3, getString(R.string.i)));
-                        arrayList.add(new TaoDialog.C0381i(31, getString(R.string.ae)));
+                        arrayList.add(new TaoDialog.C0381i(3, getString(R.string.RES_2131558408)));
+                        arrayList.add(new TaoDialog.C0381i(31, getString(R.string.RES_2131558441)));
                     }
                     if (!arrayList.isEmpty()) {
                         TaoDialog g = TaoDialog.m1134g(this.f1607b);
@@ -2175,7 +2175,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         bVar.mo972H(bVar.mo992q(str), true);
         DataChecker.m1181c().mo667h(1);
         Context context = this.f1607b;
-        QuickUtils.m1384p(context, CompatUtils.m1336f(context, R.string.ar));
+        QuickUtils.m1384p(context, CompatUtils.m1336f(context, R.string.RES_2131558454));
     }
 
     /* access modifiers changed from: private */
@@ -2185,7 +2185,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         if (BrowserUtils.m2105z(L)) {
             return true;
         }
-        SupportUtils.m2195a(this.f1607b, L, R.string.ir);
+        SupportUtils.m2195a(this.f1607b, L, R.string.RES_2131558750);
         return true;
     }
 
@@ -2217,7 +2217,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         int size2 = this.f1609c.size();
         this.f1613e.setText(size2 <= 99 ? String.valueOf(size2) : ":)");
         if (size2 > 1) {
-            ViewUtils.m2241s(this.f1580K.findViewById(R.id.ah));
+            ViewUtils.m2241s(this.f1580K.findViewById(R.id.RES_2131230764));
         }
         if (z) {
             m2287D3(size, false);
@@ -2256,23 +2256,23 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     private void m2343T0(int i) {
         if (!(this.f1638q0 == i || this.f1603Y || this.f1605a.getResources().getConfiguration().orientation == 2)) {
             if (i == 0 || (i == 1 && this.f1638q0 != 0)) {
-                View[] viewArr = {this.f1580K.findViewById(R.id.au), this.f1580K.findViewById(R.id.av), this.f1580K.findViewById(R.id.aw), this.f1580K.findViewById(R.id.ay)};
+                View[] viewArr = {this.f1580K.findViewById(R.id.RES_2131230777), this.f1580K.findViewById(R.id.RES_2131230778), this.f1580K.findViewById(R.id.RES_2131230779), this.f1580K.findViewById(R.id.RES_2131230781)};
                 for (int i2 = 0; i2 < 4; i2++) {
                     ViewUtils.m2235m(viewArr[i2], AnimationHelper.m1121c(5));
                 }
                 if (this.f1600V != 1) {
-                    View[] viewArr2 = {this.f1584M.findViewById(R.id.o), this.f1584M.findViewById(R.id.aq), this.f1584M.findViewById(R.id.ar)};
+                    View[] viewArr2 = {this.f1584M.findViewById(R.id.RES_2131230734), this.f1584M.findViewById(R.id.RES_2131230773), this.f1584M.findViewById(R.id.RES_2131230774)};
                     for (int i3 = 0; i3 < 3; i3++) {
                         ViewUtils.m2235m(viewArr2[i3], AnimationHelper.m1121c(5));
                     }
                 }
-                ImageView imageView = (ImageView) this.f1580K.findViewById(R.id.ax);
-                imageView.setImageResource(R.drawable.s);
+                ImageView imageView = (ImageView) this.f1580K.findViewById(R.id.RES_2131230780);
+                imageView.setImageResource(R.drawable.RES_2131165218);
                 imageView.startAnimation(AnimationHelper.m1120b(5));
             }
-            ImageView imageView2 = (ImageView) this.f1580K.findViewById(R.id.az);
+            ImageView imageView2 = (ImageView) this.f1580K.findViewById(R.id.RES_2131230782);
             if (i == 0) {
-                imageView2.setImageResource(R.drawable.a_);
+                imageView2.setImageResource(R.drawable.RES_2131165207);
                 imageView2.startAnimation(AnimationHelper.m1120b(5));
             } else if (i == 1) {
                 ViewUtils.m2235m(imageView2, AnimationHelper.m1121c(5));
@@ -2304,19 +2304,19 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         Context context = this.f1607b;
         int i3 = 17170443;
         if (this.f1635p.mo1129Z(context)) {
-            i2 = R.color.y;
+            i2 = R.color.RES_2131034136;
         } else {
-            i2 = ViewUtils.m2239q(i) ? R.color.x : 17170443;
+            i2 = ViewUtils.m2239q(i) ? R.color.RES_2131034135 : 17170443;
         }
         int a = CompatUtils.m1331a(context, i2);
         Context context2 = this.f1607b;
         if (this.f1635p.mo1129Z(context2)) {
-            i3 = R.color.s;
+            i3 = R.color.RES_2131034130;
         } else if (ViewUtils.m2239q(i)) {
-            i3 = R.color.r;
+            i3 = R.color.RES_2131034129;
         }
         int a2 = CompatUtils.m1331a(context2, i3);
-        ViewUtils.m2245w(a2, (ImageView) this.f1584M.findViewById(R.id.aq), (ImageView) this.f1584M.findViewById(R.id.ar), (ImageView) this.f1580K.findViewById(R.id.au), (ImageView) this.f1580K.findViewById(R.id.av), (ImageView) this.f1580K.findViewById(R.id.aw), (ImageView) this.f1580K.findViewById(R.id.az), (ImageView) this.f1580K.findViewById(R.id.ax));
+        ViewUtils.m2245w(a2, (ImageView) this.f1584M.findViewById(R.id.RES_2131230773), (ImageView) this.f1584M.findViewById(R.id.RES_2131230774), (ImageView) this.f1580K.findViewById(R.id.RES_2131230777), (ImageView) this.f1580K.findViewById(R.id.RES_2131230778), (ImageView) this.f1580K.findViewById(R.id.RES_2131230779), (ImageView) this.f1580K.findViewById(R.id.RES_2131230782), (ImageView) this.f1580K.findViewById(R.id.RES_2131230780));
         this.f1613e.setTextColor(a2);
         this.f1619h.setTextColor(a);
         this.f1619h.setHintTextColor(a);
@@ -2329,7 +2329,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         if (Build.VERSION.SDK_INT >= 11) {
             ValueAnimator ofObject = ValueAnimator.ofObject(new ArgbEvaluator(), Integer.valueOf(this.f1566D), Integer.valueOf(i));
             ofObject.addUpdateListener(new C0527p(q, B, z));
-            ofObject.setDuration((long) this.f1607b.getResources().getInteger(R.integer.a));
+            ofObject.setDuration((long) this.f1607b.getResources().getInteger(R.integer.RES_2131296256));
             ofObject.start();
             this.f1566D = i;
             return;
@@ -2359,7 +2359,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                         m2350V0(i);
                     }
                 } else if (System.currentTimeMillis() - this.f1649w > 1500) {
-                    QuickUtils.m1384p(this.f1607b, getResources().getString(R.string.f_));
+                    QuickUtils.m1384p(this.f1607b, getResources().getString(R.string.RES_2131558621));
                     this.f1649w = System.currentTimeMillis();
                 } else {
                     finish();
@@ -2427,9 +2427,9 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         HistoryItem t = this.f1633o.mo995t(str);
         String g = t.mo941g();
         TaoDialog g2 = TaoDialog.m1134g(this.f1607b);
-        g2.mo620L(R.string.ii);
-        g2.mo628c(0, t.mo940f(), R.string.e7, 1);
-        g2.mo628c(1, t.mo941g(), R.string.e8, 1);
+        g2.mo620L(R.string.RES_2131558741);
+        g2.mo628c(0, t.mo940f(), R.string.RES_2131558581, 1);
+        g2.mo628c(1, t.mo941g(), R.string.RES_2131558582, 1);
         g2.mo635m(false);
         g2.mo614F(17039370, new C0580z(this, g, t));
         g2.mo648z(17039360, null);
@@ -2491,23 +2491,23 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         if (this.f1652x0 == null) {
             List<FrogMenuBean> list = this.f1656z0;
             Context context = this.f1607b;
-            list.add(FrogMenuBean.m1244m(context, R.string.a2, R.drawable.ai, this.f1635p.mo1129Z(context)));
-            this.f1656z0.add(FrogMenuBean.m1243l(this.f1607b, R.string.g, R.drawable.a7));
-            this.f1656z0.add(FrogMenuBean.m1243l(this.f1607b, R.string.u, R.drawable.ad));
-            this.f1656z0.add(FrogMenuBean.m1243l(this.f1607b, R.string.q, R.drawable.a9));
-            this.f1656z0.add(FrogMenuBean.m1244m(this.f1607b, R.string.w, R.drawable.aj, this.f1635p.mo1095L()));
-            this.f1656z0.add(FrogMenuBean.m1243l(this.f1607b, R.string.ae, R.drawable.at));
-            this.f1656z0.add(FrogMenuBean.m1243l(this.f1607b, R.string.a, R.drawable.a5));
-            this.f1656z0.add(FrogMenuBean.m1244m(this.f1607b, R.string.a6, R.drawable.al, this.f1635p.mo1138c0()));
-            this.f1656z0.add(FrogMenuBean.m1243l(this.f1607b, R.string.ag, R.drawable.av));
-            this.f1656z0.add(FrogMenuBean.m1243l(this.f1607b, R.string.ha, R.drawable.as));
+            list.add(FrogMenuBean.m1244m(context, R.string.RES_2131558428, R.drawable.RES_2131165219, this.f1635p.mo1129Z(context)));
+            this.f1656z0.add(FrogMenuBean.m1243l(this.f1607b, R.string.RES_2131558406, R.drawable.RES_2131165203));
+            this.f1656z0.add(FrogMenuBean.m1243l(this.f1607b, R.string.RES_2131558420, R.drawable.RES_2131165213));
+            this.f1656z0.add(FrogMenuBean.m1243l(this.f1607b, R.string.RES_2131558416, R.drawable.RES_2131165206));
+            this.f1656z0.add(FrogMenuBean.m1244m(this.f1607b, R.string.RES_2131558422, R.drawable.RES_2131165220, this.f1635p.mo1095L()));
+            this.f1656z0.add(FrogMenuBean.m1243l(this.f1607b, R.string.RES_2131558441, R.drawable.RES_2131165235));
+            this.f1656z0.add(FrogMenuBean.m1243l(this.f1607b, R.string.RES_2131558400, R.drawable.RES_2131165201));
+            this.f1656z0.add(FrogMenuBean.m1244m(this.f1607b, R.string.RES_2131558432, R.drawable.RES_2131165222, this.f1635p.mo1138c0()));
+            this.f1656z0.add(FrogMenuBean.m1243l(this.f1607b, R.string.RES_2131558443, R.drawable.RES_2131165239));
+            this.f1656z0.add(FrogMenuBean.m1243l(this.f1607b, R.string.RES_2131558696, R.drawable.RES_2131165234));
             FrogMenu f = FrogMenu.m1234f(this.f1607b);
             f.mo708g(this.f1656z0);
             f.mo709h(this.f1650w0);
             this.f1654y0 = f;
             View k = f.mo711k();
             this.f1652x0 = k;
-            k.setBackgroundColor(CompatUtils.m1332b(this.f1607b, R.attr.c));
+            k.setBackgroundColor(CompatUtils.m1332b(this.f1607b, R.attr.RES_2130903042));
             CompatUtils.m1343m(this.f1652x0, 0, FrogUtils.m1354a(this.f1607b, 15.0f));
             m2421p3(this.f1652x0);
         } else {
@@ -2558,12 +2558,12 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     /* renamed from: Z0 */
     private View m2364Z0() {
         if (this.f1590P == null) {
-            View inflate = this.f1598T.inflate(R.layout.b, (ViewGroup) this.f1605a.findViewById(16908290), false);
+            View inflate = this.f1598T.inflate(R.layout.RES_2131361793, (ViewGroup) this.f1605a.findViewById(16908290), false);
             this.f1590P = inflate;
             m2421p3(inflate);
-            ((EditText) this.f1590P.findViewById(R.id.u)).addTextChangedListener(new C0512b());
-            this.f1590P.findViewById(R.id.t).setOnClickListener(new View$OnClickListenerC0543c0(this));
-            this.f1590P.findViewById(R.id.s).setOnClickListener(new View$OnClickListenerC0552h(this));
+            ((EditText) this.f1590P.findViewById(R.id.RES_2131230740)).addTextChangedListener(new C0512b());
+            this.f1590P.findViewById(R.id.RES_2131230739).setOnClickListener(new View$OnClickListenerC0543c0(this));
+            this.f1590P.findViewById(R.id.RES_2131230738).setOnClickListener(new View$OnClickListenerC0552h(this));
         }
         return this.f1590P;
     }
@@ -2698,7 +2698,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                 i = 0;
             }
             frameLayout.setVisibility(i);
-            this.f1619h.setBackgroundResource(z ? 17170445 : R.drawable.c);
+            this.f1619h.setBackgroundResource(z ? 17170445 : R.drawable.RES_2131165186);
             this.f1619h.setPadding(ViewUtils.m2225c(this.f1607b, 42), ViewUtils.m2225c(this.f1607b, 10), ViewUtils.m2225c(this.f1607b, 42), ViewUtils.m2225c(this.f1607b, 10));
         }
     }
@@ -2715,11 +2715,11 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     private View m2378d1() {
         if (this.f1563B0 == null) {
             Context context = this.f1607b;
-            this.f1569E0 = CompatUtils.m1335e(context, R.drawable.ax, CompatUtils.m1332b(context, R.attr.f));
+            this.f1569E0 = CompatUtils.m1335e(context, R.drawable.RES_2131165241, CompatUtils.m1332b(context, R.attr.a));
             ListView d = LayoutUtils.m1366d(this.f1607b);
             this.f1567D0 = d;
             d.setStackFromBottom(this.f1600V != 2);
-            this.f1565C0 = new C0515e(this.f1607b, R.layout.x, this.f1609c);
+            this.f1565C0 = new C0515e(this.f1607b, R.layout.RES_2131361815, this.f1609c);
             this.f1567D0.setOnItemClickListener(new C0516f());
             this.f1567D0.setOnItemLongClickListener(new C0569p0(this));
             this.f1567D0.setAdapter((ListAdapter) this.f1565C0);
@@ -2729,17 +2729,17 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                 this.f1567D0.setOnScrollListener(aVar.mo695i());
             }
             ImageView imageView = new ImageView(this.f1607b);
-            imageView.setLayoutParams(new ViewGroup.LayoutParams(-1, CompatUtils.m1333c(this.f1607b, R.dimen.a)));
-            imageView.setContentDescription(CompatUtils.m1336f(this.f1607b, R.string.a1));
+            imageView.setLayoutParams(new ViewGroup.LayoutParams(-1, CompatUtils.m1333c(this.f1607b, R.dimen.RES_2131099648)));
+            imageView.setContentDescription(CompatUtils.m1336f(this.f1607b, R.string.RES_2131558427));
             CompatUtils.m1342l(imageView, FrogUtils.m1354a(this.f1607b, 10.0f));
-            imageView.setBackgroundResource(R.drawable.f);
+            imageView.setBackgroundResource(R.drawable.b);
             Context context2 = this.f1607b;
-            imageView.setImageDrawable(CompatUtils.m1335e(context2, R.drawable.a4, CompatUtils.m1332b(context2, R.attr.f)));
-            imageView.setId(R.id.b);
+            imageView.setImageDrawable(CompatUtils.m1335e(context2, R.drawable.RES_2131165200, CompatUtils.m1332b(context2, R.attr.a)));
+            imageView.setId(R.id.RES_2131230721);
             imageView.setOnClickListener(this.f1589O0);
             View c = LayoutUtils.m1365c(this.f1567D0, imageView);
             this.f1563B0 = c;
-            c.setBackgroundColor(CompatUtils.m1332b(this.f1607b, R.attr.c));
+            c.setBackgroundColor(CompatUtils.m1332b(this.f1607b, R.attr.RES_2130903042));
             m2386f3();
             m2421p3(this.f1563B0);
         }
@@ -2851,14 +2851,14 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                 TabItem b0Var3 = this.f1623j;
                 if (b0Var3 == null || !WebViewUtil.m2047g(b0Var3.mo817L())) {
                     Context context = this.f1607b;
-                    QuickUtils.m1384p(context, CompatUtils.m1336f(context, R.string.bi));
+                    QuickUtils.m1384p(context, CompatUtils.m1336f(context, R.string.RES_2131558482));
                     return;
                 }
                 FastView N3 = this.f1623j.mo818N();
                 if (N3 != null) {
                     TaoDialog g = TaoDialog.m1134g(this.f1607b);
-                    g.mo620L(R.string.ab);
-                    g.mo628c(0, WebViewUtil.m2043c(N3), R.string.e7, 1);
+                    g.mo620L(R.string.RES_2131558438);
+                    g.mo628c(0, WebViewUtil.m2043c(N3), R.string.RES_2131558581, 1);
                     g.mo614F(17039370, new C0559k0(this, N3));
                     g.mo648z(17039360, null);
                     g.mo622N();
@@ -2871,12 +2871,12 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                     return;
                 } else if (WebViewUtil.m2047g(this.f1623j.mo817L())) {
                     Context context2 = this.f1607b;
-                    QuickUtils.m1384p(context2, CompatUtils.m1336f(context2, R.string.iv));
+                    QuickUtils.m1384p(context2, CompatUtils.m1336f(context2, R.string.RES_2131558754));
                     this.f1623j.mo828h0("javascript:s=document.documentElement.outerHTML;a=window.open('');a.document.write(\"<html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no, minimal-ui'><title>Source</title><style type='text/css'>* {padding: 0; margin: 0} body{padding: 5px 10px;word-break:break-all;color: #666;line-height: 1.4;}</style></head><body></body></html>\");a.document.body.innerText=s;");
                     return;
                 } else {
                     Context context3 = this.f1607b;
-                    QuickUtils.m1384p(context3, CompatUtils.m1336f(context3, R.string.bi));
+                    QuickUtils.m1384p(context3, CompatUtils.m1336f(context3, R.string.RES_2131558482));
                     return;
                 }
             default:
@@ -2987,7 +2987,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     /* renamed from: g2 */
     public /* synthetic */ void mo1364h2(AdapterView adapterView, View view, int i, long j) {
         try {
-            m2414n3(((TextView) view.findViewById(R.id.bf)).getText().toString());
+            m2414n3(((TextView) view.findViewById(R.id.RES_2131230799)).getText().toString());
         } catch (Exception e) {
             Timber.m973c(e);
         }
@@ -3052,8 +3052,8 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     /* access modifiers changed from: public */
     /* renamed from: i3 */
     private void m2397i3() {
-        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(this.f1607b.getResources().getDimensionPixelSize(R.dimen.c), this.f1607b.getResources().getDimensionPixelSize(R.dimen.c));
-        int dimensionPixelSize = this.f1607b.getResources().getDimensionPixelSize(R.dimen.b);
+        RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(this.f1607b.getResources().getDimensionPixelSize(R.dimen.RES_2131099650), this.f1607b.getResources().getDimensionPixelSize(R.dimen.RES_2131099650));
+        int dimensionPixelSize = this.f1607b.getResources().getDimensionPixelSize(R.dimen.RES_2131099649);
         int y = this.f1635p.mo1202y();
         if (y == 4 || y == 1 || y == 6) {
             layoutParams.addRule(10, -1);
@@ -3117,7 +3117,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         int e1 = m2381e1(this.f1594R);
         if (e1 == -1 || !this.f1609c.get(e1).mo808A()) {
             Context context = this.f1607b;
-            QuickUtils.m1384p(context, getResources().getString(R.string.ft) + getResources().getString(R.string.gv));
+            QuickUtils.m1384p(context, getResources().getString(R.string.RES_2131558641) + getResources().getString(R.string.RES_2131558680));
             return;
         }
         m2372b3(10, null);
@@ -3131,10 +3131,10 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
             if (this.f1600V != 3) {
                 if (Build.VERSION.SDK_INT >= 11) {
                     ObjectAnimator ofFloat = ObjectAnimator.ofFloat(this.f1615f, "translationY", (float) this.f1570F, 0.0f);
-                    ofFloat.setDuration((long) this.f1607b.getResources().getInteger(R.integer.a));
+                    ofFloat.setDuration((long) this.f1607b.getResources().getInteger(R.integer.RES_2131296256));
                     ofFloat.start();
                     ObjectAnimator ofFloat2 = ObjectAnimator.ofFloat(this.f1621i, "translationY", (float) this.f1570F, 0.0f);
-                    ofFloat2.setDuration((long) this.f1607b.getResources().getInteger(R.integer.a));
+                    ofFloat2.setDuration((long) this.f1607b.getResources().getInteger(R.integer.RES_2131296256));
                     ofFloat2.start();
                 } else {
                     this.f1615f.setPadding(0, 0, 0, 0);
@@ -3171,7 +3171,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                 if (i == 6) {
                     str5 = str.substring(str.indexOf("://") + 3);
                 }
-                SupportUtils.m2195a(context, str5, R.string.ir);
+                SupportUtils.m2195a(context, str5, R.string.RES_2131558750);
                 return;
             case 4:
             case 5:
@@ -3241,7 +3241,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                     m2393h3(this.f1625k);
                     return;
                 }
-                QuickUtils.m1384p(this.f1607b, this.f1607b.getResources().getString(R.string.cf) + str6);
+                QuickUtils.m1384p(this.f1607b, this.f1607b.getResources().getString(R.string.RES_2131558516) + str6);
                 return;
             case 19:
                 int e1 = m2381e1(this.f1594R);
@@ -3256,10 +3256,10 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                 m2277B1(str, null, "attachment", null, -1);
                 return;
             case 21:
-                QuickUtils.m1374f(this.f1607b, R.string.n, R.string.ct, new C0561l0(this));
+                QuickUtils.m1374f(this.f1607b, R.string.RES_2131558413, R.string.RES_2131558530, new C0561l0(this));
                 return;
             case 22:
-                QuickUtils.m1379k(this.f1607b, R.string.a5, CompatUtils.m1336f(this.f1607b, R.string.gk) + "\n" + this.f1623j.mo816K() + "\n\n" + CompatUtils.m1336f(this.f1607b, R.string.gl) + "\n" + this.f1623j.mo817L() + "\n\n" + CompatUtils.m1336f(this.f1607b, R.string.gj) + "\n" + str);
+                QuickUtils.m1379k(this.f1607b, R.string.RES_2131558431, CompatUtils.m1336f(this.f1607b, R.string.RES_2131558669) + "\n" + this.f1623j.mo816K() + "\n\n" + CompatUtils.m1336f(this.f1607b, R.string.RES_2131558670) + "\n" + this.f1623j.mo817L() + "\n\n" + CompatUtils.m1336f(this.f1607b, R.string.RES_2131558668) + "\n" + str);
                 return;
             case 23:
                 this.f1623j.mo828h0(JS.m1588b(this.f1607b, str));
@@ -3271,12 +3271,12 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                 if (i3 == 24) {
                     this.f1632n0.mo5a(x);
                     Context context2 = this.f1607b;
-                    QuickUtils.m1384p(context2, CompatUtils.m1337g(context2, R.string.ba, n));
+                    QuickUtils.m1384p(context2, CompatUtils.m1337g(context2, R.string.RES_2131558474, n));
                     return;
                 }
                 this.f1632n0.mo12l(x);
                 Context context3 = this.f1607b;
-                QuickUtils.m1384p(context3, CompatUtils.m1337g(context3, R.string.j3, n));
+                QuickUtils.m1384p(context3, CompatUtils.m1337g(context3, R.string.RES_2131558762, n));
                 return;
             case 26:
             case 27:
@@ -3285,15 +3285,15 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                 if (i3 == 26) {
                     this.f1632n0.mo5a(x2);
                     Context context4 = this.f1607b;
-                    QuickUtils.m1384p(context4, CompatUtils.m1337g(context4, R.string.ba, substring2));
+                    QuickUtils.m1384p(context4, CompatUtils.m1337g(context4, R.string.RES_2131558474, substring2));
                     return;
                 }
                 this.f1632n0.mo12l(x2);
                 Context context5 = this.f1607b;
-                QuickUtils.m1384p(context5, CompatUtils.m1337g(context5, R.string.j3, substring2));
+                QuickUtils.m1384p(context5, CompatUtils.m1337g(context5, R.string.RES_2131558762, substring2));
                 return;
             case 29:
-                QuickUtils.m1370b(this.f1607b, str3, R.string.iq);
+                QuickUtils.m1370b(this.f1607b, str3, R.string.RES_2131558749);
                 return;
             case 31:
                 IntentUtils.m2179f(this.f1607b, str);
@@ -3358,28 +3358,28 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         int i = this.f1638q0;
         if (i != -1) {
             if (i == 0 || i == 1) {
-                View[] viewArr = {this.f1580K.findViewById(R.id.au), this.f1580K.findViewById(R.id.av), this.f1580K.findViewById(R.id.aw), this.f1580K.findViewById(R.id.ay)};
+                View[] viewArr = {this.f1580K.findViewById(R.id.RES_2131230777), this.f1580K.findViewById(R.id.RES_2131230778), this.f1580K.findViewById(R.id.RES_2131230779), this.f1580K.findViewById(R.id.RES_2131230781)};
                 for (int i2 = 0; i2 < 4; i2++) {
                     ViewUtils.m2221H(viewArr[i2], AnimationHelper.m1120b(5));
                 }
                 if (this.f1600V != 1) {
-                    View[] viewArr2 = {this.f1584M.findViewById(R.id.o), this.f1584M.findViewById(R.id.aq), this.f1584M.findViewById(R.id.ar)};
+                    View[] viewArr2 = {this.f1584M.findViewById(R.id.RES_2131230734), this.f1584M.findViewById(R.id.RES_2131230773), this.f1584M.findViewById(R.id.RES_2131230774)};
                     for (int i3 = 0; i3 < 3; i3++) {
                         ViewUtils.m2221H(viewArr2[i3], AnimationHelper.m1120b(5));
                     }
                 }
-                ImageView imageView = (ImageView) this.f1580K.findViewById(R.id.ax);
-                imageView.setImageResource(R.drawable.ah);
+                ImageView imageView = (ImageView) this.f1580K.findViewById(R.id.RES_2131230780);
+                imageView.setImageResource(R.drawable.RES_2131165217);
                 imageView.startAnimation(AnimationHelper.m1120b(5));
             }
-            ImageView imageView2 = (ImageView) this.f1580K.findViewById(R.id.az);
+            ImageView imageView2 = (ImageView) this.f1580K.findViewById(R.id.RES_2131230782);
             int i4 = this.f1638q0;
             if (i4 == 0 || i4 == 1) {
-                imageView2.setImageResource(R.drawable.ay);
+                imageView2.setImageResource(R.drawable.RES_2131165242);
                 imageView2.startAnimation(AnimationHelper.m1120b(5));
             }
             if (this.f1638q0 == 1) {
-                ViewUtils.m2221H(this.f1580K.findViewById(R.id.az), AnimationHelper.m1120b(5));
+                ViewUtils.m2221H(this.f1580K.findViewById(R.id.RES_2131230782), AnimationHelper.m1120b(5));
             }
             this.f1638q0 = -1;
         }
@@ -3414,7 +3414,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
             this.f1610c0 = true;
             if (this.f1635p.mo1166m() != 0 && this.f1635p.mo1062A(18) && this.f1635p.mo1125X().isEmpty()) {
                 this.f1635p.mo1130Z0(18);
-                new FrogToast(this.f1605a, (int) R.string.h6, 17039370, new C0526o()).mo773m();
+                new FrogToast(this.f1605a, (int) R.string.RES_2131558691, 17039370, new C0526o()).mo773m();
             }
             this.f1635p.mo1090J0(20201023);
         }
@@ -3518,7 +3518,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     /* access modifiers changed from: private */
     /* renamed from: o2 */
     public /* synthetic */ void mo1382p2(String str, View view) {
-        QuickUtils.m1371c(this.f1607b, str, getResources().getString(R.string.iq));
+        QuickUtils.m1371c(this.f1607b, str, getResources().getString(R.string.RES_2131558749));
     }
 
     /* renamed from: o3 */
@@ -3547,8 +3547,8 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                     this.f1568E.addView(this.f1580K);
                 }
                 int i7 = 8;
-                this.f1580K.findViewById(R.id.au).setVisibility((p0 == 1 || z3) ? 0 : 8);
-                View findViewById = this.f1580K.findViewById(R.id.av);
+                this.f1580K.findViewById(R.id.RES_2131230777).setVisibility((p0 == 1 || z3) ? 0 : 8);
+                View findViewById = this.f1580K.findViewById(R.id.RES_2131230778);
                 if (p0 == 1 || i5 != 0) {
                     i7 = 0;
                 }
@@ -3577,11 +3577,11 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
             if (p0 == 2) {
                 i2 = 0;
             } else {
-                i2 = this.f1607b.getResources().getDimensionPixelSize(R.dimen.a);
+                i2 = this.f1607b.getResources().getDimensionPixelSize(R.dimen.RES_2131099648);
             }
             layoutParams3.height = i2;
             this.f1582L.setLayoutParams(layoutParams3);
-            this.f1619h.setBackgroundResource(p0 == 1 ? 17170445 : R.drawable.c);
+            this.f1619h.setBackgroundResource(p0 == 1 ? 17170445 : R.drawable.RES_2131165186);
             this.f1619h.setPadding(ViewUtils.m2225c(this.f1607b, 42), ViewUtils.m2225c(this.f1607b, 10), ViewUtils.m2225c(this.f1607b, 42), ViewUtils.m2225c(this.f1607b, 10));
             m2399j1();
             if (!this.f1603Y || this.f1600V == 1) {
@@ -3613,7 +3613,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         String[] split = X.split("\\|\\$\\|SEPARATOR\\|\\$\\|");
         boolean z2 = d0 == 0 || d0 == 2 || !m2404k3(split);
         if (d0 == 2 && !X.isEmpty() && !X.equals("|$|SEPARATOR|$|") && split.length > 0) {
-            QuickUtils.m1383o(this.f1607b, R.string.gx, 17039370, new C0524m(split));
+            QuickUtils.m1383o(this.f1607b, R.string.RES_2131558682, 17039370, new C0524m(split));
         }
         if ((!ChannelUtils.m2107b("vmos")) && m2440v()) {
             z = true;
@@ -3645,11 +3645,11 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     /* renamed from: q1 */
     private void m2423q1() {
         if (this.f1580K == null) {
-            View findViewById = findViewById(R.id.as);
+            View findViewById = findViewById(R.id.RES_2131230775);
             this.f1580K = findViewById;
-            this.f1613e = (TextView) findViewById.findViewById(R.id.ay);
-            ViewUtils.m2217D(this.f1589O0, this.f1580K.findViewById(R.id.au), this.f1580K.findViewById(R.id.av), this.f1580K.findViewById(R.id.aw), this.f1580K.findViewById(R.id.ax), this.f1580K.findViewById(R.id.az));
-            ViewUtils.m2218E(this.f1597S0, this.f1580K.findViewById(R.id.au), this.f1580K.findViewById(R.id.av), this.f1580K.findViewById(R.id.aw), this.f1580K.findViewById(R.id.ax), this.f1580K.findViewById(R.id.az));
+            this.f1613e = (TextView) findViewById.findViewById(R.id.RES_2131230781);
+            ViewUtils.m2217D(this.f1589O0, this.f1580K.findViewById(R.id.RES_2131230777), this.f1580K.findViewById(R.id.RES_2131230778), this.f1580K.findViewById(R.id.RES_2131230779), this.f1580K.findViewById(R.id.RES_2131230780), this.f1580K.findViewById(R.id.RES_2131230782));
+            ViewUtils.m2218E(this.f1597S0, this.f1580K.findViewById(R.id.RES_2131230777), this.f1580K.findViewById(R.id.RES_2131230778), this.f1580K.findViewById(R.id.RES_2131230779), this.f1580K.findViewById(R.id.RES_2131230780), this.f1580K.findViewById(R.id.RES_2131230782));
         }
     }
 
@@ -3658,11 +3658,11 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     public /* synthetic */ void mo1383r2(int i) {
         if (i > 0) {
             Context context = this.f1607b;
-            QuickUtils.m1384p(context, i + " " + R.string.fd);
+            QuickUtils.m1384p(context, i + " " + R.string.RES_2131558625);
             DataChecker.m1181c().mo667h(2);
             return;
         }
-        QuickUtils.m1382n(this.f1607b, R.string.ej);
+        QuickUtils.m1382n(this.f1607b, R.string.RES_2131558594);
     }
 
     /* renamed from: q3 */
@@ -3681,19 +3681,19 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     /* renamed from: r1 */
     private void m2427r1() {
         if (this.f1584M == null) {
-            View findViewById = findViewById(R.id.bj);
+            View findViewById = findViewById(R.id.RES_2131230803);
             this.f1584M = findViewById;
-            this.f1647v = (ImageView) findViewById.findViewById(R.id.aq);
+            this.f1647v = (ImageView) findViewById.findViewById(R.id.RES_2131230773);
             this.f1566D = -1;
-            AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) this.f1584M.findViewById(R.id.o);
+            AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) this.f1584M.findViewById(R.id.RES_2131230734);
             this.f1619h = autoCompleteTextView;
             autoCompleteTextView.addTextChangedListener(new C0523l(this));
-            this.f1560A = (ImageView) this.f1584M.findViewById(R.id.ar);
+            this.f1560A = (ImageView) this.f1584M.findViewById(R.id.RES_2131230774);
             this.f1619h.setOnFocusChangeListener(new View$OnFocusChangeListenerC0542c(this));
             this.f1619h.setOnKeyListener(new View$OnKeyListenerC0555i0(this));
             this.f1619h.setOnItemClickListener(new C0549f0(this));
             this.f1619h.setAdapter(new SearchAdapter(this.f1607b));
-            this.f1568E = (FrameLayout) this.f1584M.findViewById(R.id.ac);
+            this.f1568E = (FrameLayout) this.f1584M.findViewById(R.id.RES_2131230759);
             ViewUtils.m2217D(this.f1589O0, this.f1647v, this.f1560A);
         }
     }
@@ -3745,14 +3745,14 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
 
     /* renamed from: s1 */
     private void m2430s1() {
-        this.f1608b0 = (ViewGroup) findViewById(R.id.ai);
-        this.f1586N = (FrameLayout) findViewById(R.id.bk);
-        this.f1582L = (FrameLayout) findViewById(R.id.at);
-        this.f1615f = (FrameLayout) findViewById(R.id.x);
-        this.f1621i = (ProgressBar) findViewById(R.id.ae);
-        this.f1576I = (ImageView) findViewById(R.id.d);
-        this.f1578J = (ImageView) findViewById(R.id.f);
-        this.f1588O = (ImageView) findViewById(R.id.e);
+        this.f1608b0 = (ViewGroup) findViewById(R.id.RES_2131230765);
+        this.f1586N = (FrameLayout) findViewById(R.id.RES_2131230804);
+        this.f1582L = (FrameLayout) findViewById(R.id.RES_2131230776);
+        this.f1615f = (FrameLayout) findViewById(R.id.RES_2131230743);
+        this.f1621i = (ProgressBar) findViewById(R.id.RES_2131230761);
+        this.f1576I = (ImageView) findViewById(R.id.RES_2131230723);
+        this.f1578J = (ImageView) findViewById(R.id.RES_2131230725);
+        this.f1588O = (ImageView) findViewById(R.id.RES_2131230724);
         this.f1592Q = new SmoothProgressBar(this.f1621i);
         int i = Build.VERSION.SDK_INT;
         if (i >= 11) {
@@ -3829,13 +3829,13 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     private void m2439u3(int i) {
         if (this.f1562B != i) {
             if (i == 1) {
-                this.f1560A.setImageResource(R.drawable.p);
+                this.f1560A.setImageResource(R.drawable.RES_2131165204);
             } else if (i == 2) {
-                this.f1560A.setImageResource(R.drawable.r);
+                this.f1560A.setImageResource(R.drawable.RES_2131165211);
             } else if (i != 3) {
-                this.f1560A.setImageResource(R.drawable.an);
+                this.f1560A.setImageResource(R.drawable.RES_2131165225);
             } else {
-                this.f1560A.setImageResource(R.drawable.aq);
+                this.f1560A.setImageResource(R.drawable.RES_2131165231);
             }
             this.f1562B = i;
         }
@@ -3856,22 +3856,22 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     /* renamed from: v3 */
     private void m2443v3(ViewHolder cVar, TabItem b0Var, int i) {
         if (cVar != null && b0Var != null) {
-            TextView textView = (TextView) cVar.mo684b(R.id.b_);
+            TextView textView = (TextView) cVar.mo684b(R.id.RES_2131230793);
             textView.setText(b0Var.mo816K());
             if (b0Var.mo821S()) {
                 textView.setTypeface(Typeface.defaultFromStyle(1));
-                textView.setTextColor(CompatUtils.m1331a(this.f1607b, R.color.q));
+                textView.setTextColor(CompatUtils.m1331a(this.f1607b, R.color.a));
             } else {
                 textView.setTypeface(Typeface.defaultFromStyle(0));
-                textView.setTextColor(CompatUtils.m1332b(this.f1607b, R.attr.h));
+                textView.setTextColor(CompatUtils.m1332b(this.f1607b, R.attr.b));
             }
             Bitmap G = b0Var.mo812G();
             if (G != null) {
-                cVar.mo686d(R.id.a4, G);
+                cVar.mo686d(R.id.RES_2131230750, G);
             } else {
-                cVar.mo687e(R.id.a4, this.f1569E0);
+                cVar.mo687e(R.id.RES_2131230750, this.f1569E0);
             }
-            cVar.mo688f(R.id.a3, new View$OnClickListenerC0514d(i));
+            cVar.mo688f(R.id.RES_2131230749, new View$OnClickListenerC0514d(i));
         }
     }
 
@@ -3896,7 +3896,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     /* renamed from: w3 */
     private void m2448w3(FrogMenuBean bVar, int i) {
         TaoDialog g = TaoDialog.m1134g(this.f1607b);
-        g.mo618J(R.array.o, this.f1635p.mo1185s0() - 1, new C0577w(this));
+        g.mo618J(R.array.RES_2130837518, this.f1635p.mo1185s0() - 1, new C0577w(this));
         g.mo624P(this.f1654y0.mo707e(i));
     }
 
@@ -3969,7 +3969,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                     if (ChannelUtils.m2107b("vmos") && a.endsWith(".apk")) {
                         strArr[1] = "application/vnd.android.package-archive";
                     }
-                    this.f1605a.runOnUiThread(new RunnableC0553h0(CompatUtils.m1336f(this.f1605a, R.string.dj) + ": " + l, cVar, editText, a));
+                    this.f1605a.runOnUiThread(new RunnableC0553h0(CompatUtils.m1336f(this.f1605a, R.string.RES_2131558557) + ": " + l, cVar, editText, a));
                 }
                 if (httpURLConnection2 != null) {
                     httpURLConnection2.disconnect();
@@ -4002,7 +4002,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     /* renamed from: z2 */
     public /* synthetic */ void mo1341A2(WebView webView, View view, TaoDialog.C0384l lVar) {
         if (!CompatUtils.m1339i(lVar.f1091c, 1) && WebViewUtil.m2051k(webView, FileUtil.m2143b(FileUtils.m2159o(this.f1607b), lVar.f1091c[0], ".mht"))) {
-            QuickUtils.m1382n(this.f1607b, R.string.gz);
+            QuickUtils.m1382n(this.f1607b, R.string.RES_2131558684);
         }
     }
 
@@ -4019,8 +4019,8 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                 this.f1617g = relativeLayout2;
                 relativeLayout2.setVisibility(8);
                 RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(-1, -2);
-                layoutParams.addRule(2, R.id.at);
-                layoutParams.addRule(3, R.id.bk);
+                layoutParams.addRule(2, R.id.RES_2131230776);
+                layoutParams.addRule(3, R.id.RES_2131230804);
                 layoutParams.alignWithParent = true;
                 ViewGroup viewGroup = this.f1608b0;
                 viewGroup.addView(this.f1617g, viewGroup.getChildCount() - 3, layoutParams);
@@ -4045,7 +4045,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                 TabItem b0Var = this.f1623j;
                 if (!(b0Var == null || b0Var.mo818N() == null)) {
                     this.f1617g.addView(m2364Z0());
-                    m2357X0(((EditText) m2364Z0().findViewById(R.id.u)).getText().toString());
+                    m2357X0(((EditText) m2364Z0().findViewById(R.id.RES_2131230740)).getText().toString());
                 }
             } else if (i == 3) {
                 m2279B3();
@@ -4113,7 +4113,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         Intent intent = new Intent("android.intent.action.GET_CONTENT");
         intent.addCategory("android.intent.category.OPENABLE");
         intent.setType("*/*");
-        startActivityForResult(Intent.createChooser(intent, getString(R.string.ik)), 111);
+        startActivityForResult(Intent.createChooser(intent, getString(R.string.RES_2131558743)), 111);
     }
 
     @Override // mark.via.browser.TabItem.AbstractC0409b
@@ -4129,7 +4129,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
             if (!this.f1635p.mo1160k() || z) {
                 m2376c3(message);
             } else if (webView != null && webView.isShown()) {
-                new FrogToast(this.f1605a, (int) R.string.bc, (int) R.string.b0, new C0533v(message)).mo773m();
+                new FrogToast(this.f1605a, (int) R.string.RES_2131558476, (int) R.string.RES_2131558463, new C0533v(message)).mo773m();
             }
         }
     }
@@ -4185,7 +4185,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                 }
                 String str = (String) fileChooserParams.getTitle();
                 if (TextUtils.isEmpty(str)) {
-                    str = getString(R.string.ik);
+                    str = getString(R.string.RES_2131558743);
                 }
                 startActivityForResult(Intent.createChooser(createIntent, str), 111);
             } catch (Exception unused) {
@@ -4218,16 +4218,16 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         }
         String[] strArr = {str3, str6};
         TaoDialog g = TaoDialog.m1134g(this.f1605a);
-        g.mo620L(R.string.cq);
+        g.mo620L(R.string.RES_2131558527);
         g.mo636n(false);
         g.mo629d(0, str5, "", 1);
         g.mo614F(17039370, new C0578x(this, c, str, str2, strArr));
         g.mo648z(17039360, null);
-        g.mo610B(R.string.i, new View$OnClickListenerC0574t(this, str));
+        g.mo610B(R.string.RES_2131558408, new View$OnClickListenerC0574t(this, str));
         EditText j2 = g.mo633j(0);
         j2.setOnFocusChangeListener(new View$OnFocusChangeListenerC0557j0(j2));
         if (j >= 0 || c) {
-            g.mo641s(CompatUtils.m1336f(this.f1605a, R.string.dj) + ": " + BrowserUtils.m2091l(j));
+            g.mo641s(CompatUtils.m1336f(this.f1605a, R.string.RES_2131558557) + ": " + BrowserUtils.m2091l(j));
         } else {
             BrowserApp.m1389c().execute(new RunnableC0538a(this, str, strArr, g, j2));
         }
@@ -4287,7 +4287,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
             }
             boolean startsWith = L.startsWith("https://");
             if (this.f1640r0.compareAndSet(!startsWith, startsWith)) {
-                this.f1647v.setImageResource(startsWith ? R.drawable.af : R.drawable.ar);
+                this.f1647v.setImageResource(startsWith ? R.drawable.RES_2131165215 : R.drawable.RES_2131165232);
             }
         }
     }
@@ -4362,12 +4362,12 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
             if (intent != null && intent.hasExtra("data")) {
                 String stringExtra = intent.getStringExtra("data");
                 TaoDialog g = TaoDialog.m1134g(this.f1607b);
-                g.mo620L(R.string.cr);
+                g.mo620L(R.string.RES_2131558528);
                 g.mo645w(stringExtra);
                 g.mo636n(false);
                 g.mo614F(17039370, new C0545d0(this, stringExtra));
                 g.mo648z(17039360, null);
-                g.mo610B(R.string.l, new View$OnClickListenerC0563m0(this, stringExtra));
+                g.mo610B(R.string.RES_2131558411, new View$OnClickListenerC0563m0(this, stringExtra));
                 g.mo622N();
             }
         } else if (i == 101) {
@@ -4422,7 +4422,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         boolean Z = this.f1635p.mo1129Z(this.f1607b);
         this.f1630m0 = Z;
         ViewUtils.m2238p(activity, Z);
-        setContentView(R.layout.c);
+        setContentView(R.layout.RES_2131361794);
         GlobalConf.m1915a(this.f1607b);
         m2413n1();
         m2434t1();
@@ -4905,9 +4905,9 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         } else {
             if (str.startsWith("https://greasyfork.org/scripts/") && str.endsWith("user.js")) {
                 TaoDialog g = TaoDialog.m1134g(this.f1607b);
-                g.mo620L(R.string.aq);
-                g.mo628c(0, "", R.string.h1, 1);
-                g.mo628c(1, JS.m1589c(str), R.string.h0, 1);
+                g.mo620L(R.string.RES_2131558453);
+                g.mo628c(0, "", R.string.RES_2131558686, 1);
+                g.mo628c(1, JS.m1589c(str), R.string.RES_2131558685, 1);
                 g.mo636n(false);
                 g.mo614F(17039370, new C0566o(this));
                 g.mo622N();

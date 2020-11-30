@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <plurals name="a">
+    <plurals name="RES_2131492864">
         <item quantity="one">hace 1 día</item>
         <item quantity="other">hace %d días</item>
     </plurals>
-    <plurals name="b">
+    <plurals name="RES_2131492865">
         <item quantity="zero">0 filtros</item>
         <item quantity="one">1 filtro</item>
         <item quantity="other">%d filtros</item>
     </plurals>
-    <plurals name="c">
+    <plurals name="RES_2131492866">
         <item quantity="one">hace 1 hora</item>
         <item quantity="other">hace %d horas</item>
     </plurals>
-    <plurals name="d">
+    <plurals name="RES_2131492867">
         <item quantity="one">hace 1 minuto</item>
         <item quantity="other">hace %d minutos</item>
     </plurals>

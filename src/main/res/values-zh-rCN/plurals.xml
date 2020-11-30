@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <plurals name="a">
+    <plurals name="RES_2131492864">
         <item quantity="other">%d 天前</item>
     </plurals>
-    <plurals name="b">
+    <plurals name="RES_2131492865">
         <item quantity="other">%d 条规则</item>
     </plurals>
-    <plurals name="c">
+    <plurals name="RES_2131492866">
         <item quantity="other">%d 小时前</item>
     </plurals>
-    <plurals name="d">
+    <plurals name="RES_2131492867">
         <item quantity="other">%d 分钟前</item>
     </plurals>
 </resources>

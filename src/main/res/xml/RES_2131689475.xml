@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@drawable/RES_2131165230" android:enabled="true">
+        <intent android:targetPackage="mark.via.gp" android:action="mark.via.SEARCH" android:targetClass="mark.via.ui.activity.BrowserActivity"/>
+    </shortcut>
+    <shortcut android:icon="@drawable/RES_2131165229" android:enabled="true">
+        <intent android:targetPackage="mark.via.gp" android:action="mark.via.HISTORY" android:targetClass="mark.via.ui.activity.BrowserActivity"/>
+    </shortcut>
+    <shortcut android:icon="@drawable/RES_2131165228" android:enabled="true">
+        <intent android:targetPackage="mark.via.gp" android:action="mark.via.BOOKMARK" android:targetClass="mark.via.ui.activity.BrowserActivity"/>
+    </shortcut>
+</shortcuts>
