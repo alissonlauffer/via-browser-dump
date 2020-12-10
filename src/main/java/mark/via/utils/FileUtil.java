@@ -11,10 +11,9 @@ public class FileUtil {
         if (str != null && str.length() > 0) {
             File file = new File(str);
             try {
-                if (!file.isFile() || !file.exists() || !file.delete()) {
-                    return false;
+                if (file.isFile() && file.exists() && file.delete()) {
+                    return true;
                 }
-                return true;
             } catch (SecurityException e) {
                 e.printStackTrace();
             }

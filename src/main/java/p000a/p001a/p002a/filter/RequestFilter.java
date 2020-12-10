@@ -371,10 +371,9 @@ public class RequestFilter implements Filter {
                 return true;
             }
             Boolean bool = this.f21d;
-            if (bool == null || !bool.equals(dVar.mo41d())) {
-                return false;
+            if (bool != null && bool.equals(dVar.mo41d())) {
+                return true;
             }
-            return true;
         }
         return false;
     }

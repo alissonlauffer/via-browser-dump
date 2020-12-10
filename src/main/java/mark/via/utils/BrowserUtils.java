@@ -434,10 +434,9 @@ public final class BrowserUtils {
                 return 1;
             }
             NetworkInfo networkInfo2 = connectivityManager.getNetworkInfo(0);
-            if (networkInfo2 == null || !networkInfo2.isConnected()) {
-                return 0;
+            if (networkInfo2 != null && networkInfo2.isConnected()) {
+                return 2;
             }
-            return 2;
         }
         return 0;
     }
@@ -588,10 +587,9 @@ public final class BrowserUtils {
             }
             if (!D.startsWith("about:")) {
                 if (!str.equalsIgnoreCase(D)) {
-                    if (str.equalsIgnoreCase(D + "/")) {
-                        return true;
+                    if (!str.equalsIgnoreCase(D + "/")) {
+                        return false;
                     }
-                    return false;
                 }
                 return true;
             } else if (substring == null) {

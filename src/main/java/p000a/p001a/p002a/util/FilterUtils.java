@@ -30,6 +30,9 @@ public class FilterUtils {
     /* renamed from: a */
     private static final char[] f38a = {'@', '|', '*', '^'};
 
+    /* JADX WARNING: Code restructure failed: missing block: B:25:0x0057, code lost:
+        r5 = false;
+     */
     /* renamed from: a */
     public static String m96a(String str, String str2) {
         if (str2 == null || str2.isEmpty()) {
@@ -58,10 +61,9 @@ public class FilterUtils {
                     int i4 = indexOf2 - 1;
                     int length2 = substring.length() + indexOf2;
                     if ((i4 < 0 || str.charAt(i4) == ',') && (length2 >= str.length() || str.charAt(length2) == ',')) {
-                        z = false;
-                    } else {
-                        i3 = indexOf2 + 1;
+                        break;
                     }
+                    i3 = indexOf2 + 1;
                 }
                 if (z) {
                     str = str + "," + substring;
@@ -74,6 +76,9 @@ public class FilterUtils {
 
     /* renamed from: b */
     public static FilterSubscription m97b(FilterSubscription cVar) {
+        LineNumberReader lineNumberReader;
+        int i;
+        String[] strArr;
         String readLine;
         System.out.println("Try complete filter");
         if (!(cVar == null || cVar.mo24a() == null)) {
@@ -81,36 +86,10 @@ public class FilterUtils {
             if (file.exists()) {
                 System.out.println("Complete filter");
                 try {
-                    LineNumberReader lineNumberReader = new LineNumberReader(new FileReader(file));
-                    int i = 20;
+                    lineNumberReader = new LineNumberReader(new FileReader(file));
+                    i = 20;
                     try {
-                        String[] strArr = {"Title:", "Homepage:", "License:"};
-                        while (true) {
-                            int i2 = i - 1;
-                            if (i <= 0 || (readLine = lineNumberReader.readLine()) == null) {
-                                lineNumberReader.skip(Long.MAX_VALUE);
-                                cVar.mo35k(lineNumberReader.getLineNumber() + 1);
-                            } else {
-                                if (!readLine.isEmpty()) {
-                                    if (readLine.charAt(0) == '!') {
-                                        for (int i3 = 0; i3 < 3; i3++) {
-                                            int indexOf = readLine.indexOf(strArr[i3]);
-                                            if (indexOf >= 0) {
-                                                readLine = readLine.substring(indexOf + strArr[i3].length()).trim();
-                                                if (i3 == 0) {
-                                                    cVar.mo36l(readLine);
-                                                } else if (i3 == 1) {
-                                                    cVar.mo33i(readLine);
-                                                } else if (i3 == 2) {
-                                                    cVar.mo34j(readLine);
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                i = i2;
-                            }
-                        }
+                        strArr = new String[]{"Title:", "Homepage:", "License:"};
                         lineNumberReader.skip(Long.MAX_VALUE);
                         cVar.mo35k(lineNumberReader.getLineNumber() + 1);
                         lineNumberReader.close();
@@ -120,6 +99,30 @@ public class FilterUtils {
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
+                }
+                while (true) {
+                    int i2 = i - 1;
+                    if (i <= 0 || (readLine = lineNumberReader.readLine()) == null) {
+                        break;
+                    }
+                    if (!readLine.isEmpty()) {
+                        if (readLine.charAt(0) == '!') {
+                            for (int i3 = 0; i3 < 3; i3++) {
+                                int indexOf = readLine.indexOf(strArr[i3]);
+                                if (indexOf >= 0) {
+                                    readLine = readLine.substring(indexOf + strArr[i3].length()).trim();
+                                    if (i3 == 0) {
+                                        cVar.mo36l(readLine);
+                                    } else if (i3 == 1) {
+                                        cVar.mo33i(readLine);
+                                    } else if (i3 == 2) {
+                                        cVar.mo34j(readLine);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    i = i2;
                 }
             }
         }
@@ -599,6 +602,21 @@ public class FilterUtils {
         return (str.contains("##") || str.contains("#@#")) ? ElementFilter.m16c(str) : RequestFilter.m37g(str);
     }
 
+    /* JADX WARNING: Code restructure failed: missing block: B:25:0x0056, code lost:
+        if (r5 != 0) goto L_0x006d;
+     */
+    /* JADX WARNING: Code restructure failed: missing block: B:27:0x005c, code lost:
+        if (r7 < r9.length()) goto L_0x0061;
+     */
+    /* JADX WARNING: Code restructure failed: missing block: B:28:0x005e, code lost:
+        r9 = "";
+     */
+    /* JADX WARNING: Code restructure failed: missing block: B:29:0x0061, code lost:
+        r9 = r9.substring((r5 + r2.length()) + 1);
+     */
+    /* JADX WARNING: Code restructure failed: missing block: B:30:0x006d, code lost:
+        r9 = r9.substring(0, r6) + r9.substring(r5 + r2.length());
+     */
     /* renamed from: u */
     public static String m116u(String str, String str2) {
         if (str != null && !str.isEmpty() && str2 != null && !str2.isEmpty()) {
@@ -620,13 +638,10 @@ public class FilterUtils {
                         }
                         int i4 = indexOf2 - 1;
                         int length2 = substring.length() + indexOf2;
-                        if ((i4 >= 0 && str.charAt(i4) != ',') || (length2 < str.length() && str.charAt(length2) != ',')) {
-                            i3 = indexOf2 + 1;
-                        } else if (indexOf2 == 0) {
-                            str = length2 >= str.length() ? "" : str.substring(indexOf2 + substring.length() + 1);
-                        } else {
-                            str = str.substring(0, i4) + str.substring(indexOf2 + substring.length());
+                        if ((i4 < 0 || str.charAt(i4) == ',') && (length2 >= str.length() || str.charAt(length2) == ',')) {
+                            break;
                         }
+                        i3 = indexOf2 + 1;
                     }
                 }
                 i = i2;

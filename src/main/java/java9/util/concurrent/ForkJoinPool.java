@@ -402,6 +402,7 @@ public class ForkJoinPool extends AbstractExecutorService {
                 z = false;
                 i2 = countedCompleter.status;
                 if (i2 < 0 || !z || (i != 0 && i - 1 == 0)) {
+                    break;
                 }
             }
             return i2;
@@ -958,10 +959,9 @@ public class ForkJoinPool extends AbstractExecutorService {
                                                 int i10 = gVar.f1006d;
                                                 int i11 = gVar.f1008f;
                                                 if (i11 != gVar.f1009g || ((i10 & 1) == i6 && (i8 >= 0 || i9 >= 0))) {
-                                                    i6 = 1;
-                                                } else {
-                                                    j2 += (((long) i8) << c) + (((long) i9) << 32) + (((long) i11) << 16) + ((long) i10);
+                                                    break;
                                                 }
+                                                j2 += (((long) i8) << c) + (((long) i9) << 32) + (((long) i11) << 16) + ((long) i10);
                                             }
                                             i7++;
                                             c = '0';
@@ -1037,7 +1037,7 @@ public class ForkJoinPool extends AbstractExecutorService {
                     }
                 }
             } else if (!z2 || this == f971n) {
-                return false;
+                break;
             } else {
                 f975r.compareAndSwapInt(this, f977t, i3, i3 | 262144);
             }
@@ -1244,7 +1244,6 @@ public class ForkJoinPool extends AbstractExecutorService {
         return cls.isAssignableFrom(forkJoinTask.getClass());
     }
 
-    /* JADX WARNING: Removed duplicated region for block: B:28:0x0049  */
     /* renamed from: u */
     public static void m1033u(AbstractC0351e eVar) {
         ForkJoinWorkerThread bVar;
@@ -1253,11 +1252,6 @@ public class ForkJoinPool extends AbstractExecutorService {
         Thread currentThread = Thread.currentThread();
         if (!(currentThread instanceof ForkJoinWorkerThread) || (aVar = (bVar = (ForkJoinWorkerThread) currentThread).f1013a) == null || (gVar = bVar.f1014b) == null) {
             while (!eVar.isReleasable() && !eVar.block()) {
-                while (!eVar.isReleasable()) {
-                    while (!eVar.isReleasable()) {
-                    }
-                }
-                return;
             }
             return;
         }
@@ -1918,8 +1912,6 @@ public class ForkJoinPool extends AbstractExecutorService {
         }
         i = 0;
         if (i == 1073741824) {
-            if (gVar != null) {
-            }
         }
         if (gVar != null) {
         }
@@ -1990,78 +1982,79 @@ public class ForkJoinPool extends AbstractExecutorService {
         while (true) {
             int i = this.f986f;
             C0353g[] gVarArr = this.f987g;
-            if ((i & 262144) == 0 && gVarArr != null && (length = gVarArr.length) > 0) {
-                C0353g gVar = gVarArr[(length - 1) & c & 126];
-                if (gVar == null) {
-                    String str = this.f988h;
-                    int i2 = (c | 1073741824) & -65538;
-                    C0353g gVar2 = new C0353g(this, null);
-                    gVar2.f1006d = i2;
-                    gVar2.f1007e = 1073741824;
-                    gVar2.f1003a = 1;
-                    if (str != null) {
-                        synchronized (str) {
-                            C0353g[] gVarArr2 = this.f987g;
-                            if (gVarArr2 != null && (length4 = gVarArr2.length) > 0) {
-                                int i3 = i2 & (length4 - 1) & 126;
-                                if (gVarArr2[i3] == null) {
-                                    gVarArr2[i3] = gVar2;
-                                    z2 = true;
-                                    z = true;
-                                }
+            if ((i & 262144) != 0 || gVarArr == null || (length = gVarArr.length) <= 0) {
+                break;
+            }
+            C0353g gVar = gVarArr[(length - 1) & c & 126];
+            if (gVar == null) {
+                String str = this.f988h;
+                int i2 = (c | 1073741824) & -65538;
+                C0353g gVar2 = new C0353g(this, null);
+                gVar2.f1006d = i2;
+                gVar2.f1007e = 1073741824;
+                gVar2.f1003a = 1;
+                if (str != null) {
+                    synchronized (str) {
+                        C0353g[] gVarArr2 = this.f987g;
+                        if (gVarArr2 != null && (length4 = gVarArr2.length) > 0) {
+                            int i3 = i2 & (length4 - 1) & 126;
+                            if (gVarArr2[i3] == null) {
+                                gVarArr2[i3] = gVar2;
+                                z2 = true;
+                                z = true;
                             }
-                            z2 = false;
-                            z = false;
                         }
-                    } else {
                         z2 = false;
                         z = false;
                     }
-                    gVar = gVar2;
-                } else if (gVar.mo567n()) {
-                    int i4 = gVar.f1008f;
-                    int i5 = gVar.f1009g;
-                    ForkJoinTask<?>[] forkJoinTaskArr = gVar.f1010h;
-                    if (forkJoinTaskArr != null && (length3 = forkJoinTaskArr.length) > 0) {
-                        int i6 = length3 - 1;
-                        int i7 = i4 - i5;
-                        if (i6 + i7 > 0) {
-                            forkJoinTaskArr[i6 & i5] = forkJoinTask;
-                            gVar.f1009g = i5 + 1;
-                            gVar.f1003a = 0;
-                            if (i7 >= 0 || gVar.f1008f - i5 >= -1) {
-                                z = false;
-                                z2 = true;
-                            } else {
-                                return;
-                            }
-                        }
-                    }
-                    z = true;
-                    z2 = true;
                 } else {
                     z2 = false;
                     z = false;
                 }
-                if (z2) {
-                    if (z) {
-                        try {
-                            gVar.mo555b();
-                            int i8 = gVar.f1009g;
-                            ForkJoinTask<?>[] forkJoinTaskArr2 = gVar.f1010h;
-                            if (forkJoinTaskArr2 != null && (length2 = forkJoinTaskArr2.length) > 0) {
-                                forkJoinTaskArr2[(length2 - 1) & i8] = forkJoinTask;
-                                gVar.f1009g = i8 + 1;
-                            }
-                        } finally {
-                            gVar.f1003a = 0;
+                gVar = gVar2;
+            } else if (gVar.mo567n()) {
+                int i4 = gVar.f1008f;
+                int i5 = gVar.f1009g;
+                ForkJoinTask<?>[] forkJoinTaskArr = gVar.f1010h;
+                if (forkJoinTaskArr != null && (length3 = forkJoinTaskArr.length) > 0) {
+                    int i6 = length3 - 1;
+                    int i7 = i4 - i5;
+                    if (i6 + i7 > 0) {
+                        forkJoinTaskArr[i6 & i5] = forkJoinTask;
+                        gVar.f1009g = i5 + 1;
+                        gVar.f1003a = 0;
+                        if (i7 >= 0 || gVar.f1008f - i5 >= -1) {
+                            z = false;
+                            z2 = true;
+                        } else {
+                            return;
                         }
                     }
-                    mo519D();
-                    return;
                 }
-                c = TLRandom.m1084a(c);
+                z = true;
+                z2 = true;
+            } else {
+                z2 = false;
+                z = false;
             }
+            if (z2) {
+                if (z) {
+                    try {
+                        gVar.mo555b();
+                        int i8 = gVar.f1009g;
+                        ForkJoinTask<?>[] forkJoinTaskArr2 = gVar.f1010h;
+                        if (forkJoinTaskArr2 != null && (length2 = forkJoinTaskArr2.length) > 0) {
+                            forkJoinTaskArr2[(length2 - 1) & i8] = forkJoinTask;
+                            gVar.f1009g = i8 + 1;
+                        }
+                    } finally {
+                        gVar.f1003a = 0;
+                    }
+                }
+                mo519D();
+                return;
+            }
+            c = TLRandom.m1084a(c);
         }
         throw new RejectedExecutionException();
     }

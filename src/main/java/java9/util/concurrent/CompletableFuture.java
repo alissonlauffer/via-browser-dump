@@ -405,25 +405,24 @@ public class CompletableFuture<T> implements Future<T> {
         boolean z = false;
         while (true) {
             completion = this.f955b;
-            if (completion != null && !completion.isLive()) {
-                z = mo441c(completion, completion.next);
-            } else if (completion != null && !z) {
-                Completion completion2 = completion.next;
-                Completion completion3 = completion;
-                while (completion2 != null) {
-                    Completion completion4 = completion2.next;
-                    if (completion2.isLive()) {
-                        completion3 = completion2;
-                        completion2 = completion4;
-                    } else {
-                        m991b(completion3, completion2, completion4);
-                        return;
-                    }
-                }
-                return;
+            if (completion == null || completion.isLive()) {
+                break;
             }
+            z = mo441c(completion, completion.next);
         }
-        if (completion != null) {
+        if (completion != null && !z) {
+            Completion completion2 = completion.next;
+            Completion completion3 = completion;
+            while (completion2 != null) {
+                Completion completion4 = completion2.next;
+                if (completion2.isLive()) {
+                    completion3 = completion2;
+                    completion2 = completion4;
+                } else {
+                    m991b(completion3, completion2, completion4);
+                    return;
+                }
+            }
         }
     }
 

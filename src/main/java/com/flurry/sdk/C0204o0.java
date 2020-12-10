@@ -719,23 +719,27 @@ public class C0204o0 implements C0275u2.AbstractC0276a {
 
     /* renamed from: s */
     private static String m549s() {
+        BufferedReader bufferedReader;
+        StringBuilder sb;
+        int i;
         try {
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec("logcat -d").getInputStream()));
-            StringBuilder sb = new StringBuilder();
-            int i = 0;
-            while (true) {
-                String readLine = bufferedReader.readLine();
-                if (readLine != null && i < 1000) {
-                    sb.append(readLine);
-                    sb.append("\n");
-                    i++;
-                }
-            }
+            bufferedReader = new BufferedReader(new InputStreamReader(Runtime.getRuntime().exec("logcat -d").getInputStream()));
+            sb = new StringBuilder();
+            i = 0;
             return sb.toString();
         } catch (IOException e) {
             String str = f591E;
             C0260s1.m686c(6, str, "There was an issue grabbing logcat. " + e.getMessage());
             return "";
+        }
+        while (true) {
+            String readLine = bufferedReader.readLine();
+            if (readLine == null || i >= 1000) {
+                break;
+            }
+            sb.append(readLine);
+            sb.append("\n");
+            i++;
         }
     }
 

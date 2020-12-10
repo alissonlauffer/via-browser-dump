@@ -123,7 +123,7 @@ public class WebAdressUtils {
                     }
                     String substring2 = str.substring(i, indexOf);
                     if (substring2.isEmpty() || !CharUtils.m2112d(substring2, 2) || Integer.parseInt(substring2) > 255) {
-                        return false;
+                        break;
                     }
                     i = indexOf + 1;
                 }
