@@ -90,8 +90,6 @@ public class C0088d {
 
         /*  JADX ERROR: StackOverflowError in pass: MarkFinallyVisitor
             java.lang.StackOverflowError
-            	at java.base/java.util.Objects.equals(Objects.java:78)
-            	at jadx.core.dex.instructions.IndexInsnNode.isSame(IndexInsnNode.java:40)
             	at jadx.core.dex.visitors.MarkFinallyVisitor.sameInsns(MarkFinallyVisitor.java:451)
             	at jadx.core.dex.visitors.MarkFinallyVisitor.compareBlocks(MarkFinallyVisitor.java:436)
             	at jadx.core.dex.visitors.MarkFinallyVisitor.checkBlocksTree(MarkFinallyVisitor.java:408)
