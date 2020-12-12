@@ -176,13 +176,14 @@ public final class AppUtils {
     public static boolean m2065m(Context context, int i) {
         if (Build.VERSION.SDK_INT < 26) {
             return m2064l(context, "android.permission.WRITE_EXTERNAL_STORAGE");
-        } else if (i == 0) {
-            return m2064l(context, "android.permission.READ_EXTERNAL_STORAGE");
-        } else if (i != 1) {
-            return m2064l(context, "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE");
-        } else {
-            return m2064l(context, "android.permission.WRITE_EXTERNAL_STORAGE");
         }
+        if (i == 0) {
+            return m2064l(context, "android.permission.READ_EXTERNAL_STORAGE");
+        }
+        if (i != 1) {
+            return m2064l(context, "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.READ_EXTERNAL_STORAGE");
+        }
+        return m2064l(context, "android.permission.WRITE_EXTERNAL_STORAGE");
     }
 
     /* renamed from: n */

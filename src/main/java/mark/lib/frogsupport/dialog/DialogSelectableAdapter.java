@@ -143,17 +143,17 @@ public class DialogSelectableAdapter extends BaseAdapter {
     /* renamed from: d */
     public int[] mo601d() {
         int i = 0;
-        if (this.f1050d) {
-            int[] iArr = new int[this.f1049c.size()];
-            Iterator<Integer> it = this.f1049c.iterator();
-            while (it.hasNext()) {
-                iArr[i] = it.next().intValue();
-                i++;
-            }
-            Arrays.sort(iArr);
-            return iArr;
+        if (!this.f1050d) {
+            return new int[]{this.f1048b};
         }
-        return new int[]{this.f1048b};
+        int[] iArr = new int[this.f1049c.size()];
+        Iterator<Integer> it = this.f1049c.iterator();
+        while (it.hasNext()) {
+            iArr[i] = it.next().intValue();
+            i++;
+        }
+        Arrays.sort(iArr);
+        return iArr;
     }
 
     /* renamed from: f */

@@ -184,10 +184,9 @@ public final class FileUtils {
     /* renamed from: m */
     private static String m2157m(Context context, Uri uri) {
         String str;
-        String str2 = DocumentsContract.getDocumentId(uri).split(":")[1];
         try {
             String[] strArr = {"_data"};
-            Cursor query = context.getContentResolver().query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, strArr, "_id=?", new String[]{str2}, null);
+            Cursor query = context.getContentResolver().query(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, strArr, "_id=?", new String[]{DocumentsContract.getDocumentId(uri).split(":")[1]}, null);
             if (query != null) {
                 try {
                     int columnIndexOrThrow = query.getColumnIndexOrThrow(strArr[0]);

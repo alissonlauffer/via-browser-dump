@@ -85,6 +85,7 @@ public class FlurryRemoteConfig {
         }
     }
 
+    /* JADX DEBUG: Can't convert new array creation: APUT found in different block: 0x000d: APUT  (r0v1 java.lang.Object[]), (0 ??[int, short, byte, char]), (r3v1 java.lang.String) */
     /* renamed from: b */
     public String mo1045b(int i) {
         Object[] objArr = new Object[1];
@@ -92,6 +93,7 @@ public class FlurryRemoteConfig {
         return String.format("https://m.baidu.com/s?from=%s&word=", objArr);
     }
 
+    /* JADX DEBUG: Can't convert new array creation: APUT found in different block: 0x000d: APUT  (r0v1 java.lang.Object[]), (0 ??[int, short, byte, char]), (r3v1 java.lang.String) */
     /* renamed from: d */
     public String mo1046d(int i) {
         Object[] objArr = new Object[1];

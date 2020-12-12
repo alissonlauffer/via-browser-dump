@@ -150,18 +150,12 @@ public class FileProvider extends ContentProvider {
 
     /* renamed from: d */
     public static File[] m1106d(Context context) {
-        if (Build.VERSION.SDK_INT >= 19) {
-            return context.getExternalCacheDirs();
-        }
-        return new File[]{context.getExternalCacheDir()};
+        return Build.VERSION.SDK_INT >= 19 ? context.getExternalCacheDirs() : new File[]{context.getExternalCacheDir()};
     }
 
     /* renamed from: e */
     private static File[] m1107e(Context context, String str) {
-        if (Build.VERSION.SDK_INT >= 19) {
-            return context.getExternalFilesDirs(str);
-        }
-        return new File[]{context.getExternalFilesDir(str)};
+        return Build.VERSION.SDK_INT >= 19 ? context.getExternalFilesDirs(str) : new File[]{context.getExternalFilesDir(str)};
     }
 
     /* renamed from: f */

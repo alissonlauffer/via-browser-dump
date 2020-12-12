@@ -472,6 +472,11 @@ public class ViewUtils {
         return false;
     }
 
+    /* JADX DEBUG: Can't convert new array creation: APUT found in different block: 0x0038: APUT  
+      (r3v3 java.lang.Object[])
+      (0 ??[int, short, byte, char])
+      (wrap: java.lang.Integer : 0x0034: INVOKE  (r9v2 java.lang.Integer) = (r9v1 int) type: STATIC call: java.lang.Integer.valueOf(int):java.lang.Integer)
+     */
     /* renamed from: y */
     private static boolean m2247y(Activity activity, boolean z) {
         Class<?> cls = activity.getWindow().getClass();
