@@ -18,6 +18,7 @@ public final /* synthetic */ class View$OnClickListenerC0417g implements View.On
         this.f1240b = str;
     }
 
+    @Override // android.view.View.OnClickListener
     public final void onClick(View view) {
         this.f1239a.invoke(this.f1240b, false, true);
     }

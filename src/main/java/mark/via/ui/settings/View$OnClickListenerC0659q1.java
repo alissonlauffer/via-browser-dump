@@ -13,6 +13,7 @@ public final /* synthetic */ class View$OnClickListenerC0659q1 implements View.O
         this.f1966a = subscribedFiltersUI;
     }
 
+    @Override // android.view.View.OnClickListener
     public final void onClick(View view) {
         this.f1966a.mo1545m(view);
     }

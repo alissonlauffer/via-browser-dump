@@ -39,6 +39,7 @@ public class QuickUtils {
             this.f1189d = cVar;
         }
 
+        @Override // java.lang.Runnable
         public void run() {
             QuickUtils.m1372d(this.f1186a, this.f1187b, this.f1188c, this.f1189d);
         }

@@ -40,9 +40,10 @@ public class DownloaderSlice extends Slice {
     /* renamed from: f */
     private TasksAdapter f1441f;
 
+    /* access modifiers changed from: package-private */
     /* renamed from: mark.via.m.b.h$a */
     /* compiled from: DownloaderSlice */
-    class C0479a extends TasksAdapter {
+    public class C0479a extends TasksAdapter {
         C0479a(int i) {
             super(i);
         }
@@ -70,9 +71,10 @@ public class DownloaderSlice extends Slice {
         }
     }
 
+    /* access modifiers changed from: package-private */
     /* renamed from: mark.via.m.b.h$b */
     /* compiled from: DownloaderSlice */
-    class C0480b implements TasksAdapter.AbstractC0338a {
+    public class C0480b implements TasksAdapter.AbstractC0338a {
 
         /* renamed from: a */
         final /* synthetic */ TextView f1443a;
@@ -98,9 +100,10 @@ public class DownloaderSlice extends Slice {
         }
     }
 
+    /* access modifiers changed from: package-private */
     /* renamed from: mark.via.m.b.h$c */
     /* compiled from: DownloaderSlice */
-    class C0481c implements SwipeDismissListViewTouchListener.AbstractC0391e {
+    public class C0481c implements SwipeDismissListViewTouchListener.AbstractC0391e {
         C0481c() {
         }
 

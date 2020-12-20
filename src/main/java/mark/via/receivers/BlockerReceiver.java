@@ -29,6 +29,7 @@ public class BlockerReceiver extends BroadcastReceiver {
         this.f1391a = aVar;
     }
 
+    @Override // android.content.BroadcastReceiver
     public void onReceive(Context context, Intent intent) {
         String action;
         if (intent != null && this.f1391a != null && (action = intent.getAction()) != null) {

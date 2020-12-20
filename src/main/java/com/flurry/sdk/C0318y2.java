@@ -23,6 +23,7 @@ public final class C0318y2 {
             this.f873a = pattern;
         }
 
+        @Override // java.io.FilenameFilter
         public final boolean accept(File file, String str) {
             return this.f873a.matcher(str).matches();
         }

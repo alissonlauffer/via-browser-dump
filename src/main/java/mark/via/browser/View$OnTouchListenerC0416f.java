@@ -14,6 +14,7 @@ public final /* synthetic */ class View$OnTouchListenerC0416f implements View.On
         this.f1238a = b0Var;
     }
 
+    @Override // android.view.View.OnTouchListener
     public final boolean onTouch(View view, MotionEvent motionEvent) {
         return this.f1238a.mo825a0(view, motionEvent);
     }

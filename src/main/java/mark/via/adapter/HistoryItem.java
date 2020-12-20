@@ -50,6 +50,7 @@ public class HistoryItem implements Comparable<HistoryItem> {
         return this.f1282f;
     }
 
+    @Override // java.lang.Object
     public boolean equals(Object obj) {
         if (this == obj) {
             return true;
@@ -81,6 +82,7 @@ public class HistoryItem implements Comparable<HistoryItem> {
         this.f1280d = str;
     }
 
+    @Override // java.lang.Object
     public int hashCode() {
         return (((((this.f1277a * 31) + this.f1278b.hashCode()) * 31) + this.f1279c.hashCode()) * 31) + this.f1281e;
     }
@@ -110,6 +112,7 @@ public class HistoryItem implements Comparable<HistoryItem> {
         this.f1278b = str;
     }
 
+    @Override // java.lang.Object
     public String toString() {
         return this.f1279c + "\n" + this.f1278b;
     }

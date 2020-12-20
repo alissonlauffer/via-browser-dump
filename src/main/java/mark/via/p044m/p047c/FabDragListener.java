@@ -75,6 +75,7 @@ public class FabDragListener implements View.OnTouchListener {
         RunnableC0484a() {
         }
 
+        @Override // java.lang.Runnable
         public void run() {
             FabDragListener.this.f1466d = true;
             if (FabDragListener.this.f1467e) {
@@ -100,6 +101,7 @@ public class FabDragListener implements View.OnTouchListener {
             this.f1482a = view;
         }
 
+        @Override // android.animation.ValueAnimator.AnimatorUpdateListener
         @TargetApi(11)
         public void onAnimationUpdate(ValueAnimator valueAnimator) {
             int intValue = ((Integer) valueAnimator.getAnimatedValue("tX")).intValue();
@@ -115,16 +117,20 @@ public class FabDragListener implements View.OnTouchListener {
         C0486c() {
         }
 
+        @Override // android.animation.Animator.AnimatorListener
         public void onAnimationCancel(Animator animator) {
         }
 
+        @Override // android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
             FabDragListener.this.m2012i();
         }
 
+        @Override // android.animation.Animator.AnimatorListener
         public void onAnimationRepeat(Animator animator) {
         }
 
+        @Override // android.animation.Animator.AnimatorListener
         public void onAnimationStart(Animator animator) {
         }
     }
@@ -298,6 +304,7 @@ public class FabDragListener implements View.OnTouchListener {
         return this;
     }
 
+    @Override // android.view.View.OnTouchListener
     public boolean onTouch(View view, MotionEvent motionEvent) {
         int action = motionEvent.getAction();
         if (action == 0) {

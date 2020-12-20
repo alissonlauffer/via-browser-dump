@@ -76,15 +76,18 @@ public class SwipeDismissListViewTouchListener implements View.OnTouchListener {
     /* renamed from: r */
     private boolean f1122r = false;
 
+    /* access modifiers changed from: package-private */
     /* renamed from: mark.lib.frogsupport.k.e.a$a */
     /* compiled from: SwipeDismissListViewTouchListener */
-    class C0387a implements AbsListView.OnScrollListener {
+    public class C0387a implements AbsListView.OnScrollListener {
         C0387a() {
         }
 
+        @Override // android.widget.AbsListView.OnScrollListener
         public void onScroll(AbsListView absListView, int i, int i2, int i3) {
         }
 
+        @Override // android.widget.AbsListView.OnScrollListener
         public void onScrollStateChanged(AbsListView absListView, int i) {
             SwipeDismissListViewTouchListener aVar = SwipeDismissListViewTouchListener.this;
             boolean z = true;
@@ -110,6 +113,7 @@ public class SwipeDismissListViewTouchListener implements View.OnTouchListener {
             this.f1125b = i;
         }
 
+        @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
             SwipeDismissListViewTouchListener.this.m1222j(this.f1124a, this.f1125b);
         }
@@ -127,6 +131,7 @@ public class SwipeDismissListViewTouchListener implements View.OnTouchListener {
             this.f1127a = i;
         }
 
+        @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
             SwipeDismissListViewTouchListener.this.f1122r = false;
             SwipeDismissListViewTouchListener.m1217d(SwipeDismissListViewTouchListener.this);
@@ -168,6 +173,7 @@ public class SwipeDismissListViewTouchListener implements View.OnTouchListener {
             this.f1130b = view;
         }
 
+        @Override // android.animation.ValueAnimator.AnimatorUpdateListener
         public void onAnimationUpdate(ValueAnimator valueAnimator) {
             this.f1129a.height = ((Integer) valueAnimator.getAnimatedValue()).intValue();
             this.f1130b.setLayoutParams(this.f1129a);
@@ -246,6 +252,7 @@ public class SwipeDismissListViewTouchListener implements View.OnTouchListener {
         this.f1121q = !z;
     }
 
+    @Override // android.view.View.OnTouchListener
     public boolean onTouch(View view, MotionEvent motionEvent) {
         boolean z;
         boolean z2;

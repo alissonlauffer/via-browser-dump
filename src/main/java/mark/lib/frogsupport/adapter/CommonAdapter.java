@@ -14,9 +14,10 @@ public abstract class CommonAdapter<T> extends MultiItemTypeAdapter<T> {
     /* renamed from: e */
     private AbstractC0386b f1096e;
 
+    /* access modifiers changed from: package-private */
     /* renamed from: mark.lib.frogsupport.k.a$a */
     /* compiled from: CommonAdapter */
-    class C0385a implements ItemViewDelegate<T> {
+    public class C0385a implements ItemViewDelegate<T> {
 
         /* renamed from: a */
         final /* synthetic */ int f1097a;
@@ -73,6 +74,7 @@ public abstract class CommonAdapter<T> extends MultiItemTypeAdapter<T> {
         }
     }
 
+    @Override // android.widget.BaseAdapter
     public void notifyDataSetChanged() {
         super.notifyDataSetChanged();
         boolean z = getCount() == 0;

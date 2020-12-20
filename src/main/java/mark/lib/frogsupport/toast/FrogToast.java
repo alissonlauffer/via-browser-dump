@@ -47,6 +47,7 @@ public class FrogToast {
         View$OnClickListenerC0401a() {
         }
 
+        @Override // android.view.View.OnClickListener
         public void onClick(View view) {
             if (FrogToast.this.f1177f != null) {
                 FrogToast.this.f1179h = true;

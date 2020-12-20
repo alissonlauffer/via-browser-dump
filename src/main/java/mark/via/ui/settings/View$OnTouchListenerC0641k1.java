@@ -13,6 +13,7 @@ public final /* synthetic */ class View$OnTouchListenerC0641k1 implements View.O
     private /* synthetic */ View$OnTouchListenerC0641k1() {
     }
 
+    @Override // android.view.View.OnTouchListener
     public final boolean onTouch(View view, MotionEvent motionEvent) {
         return SkinSettings.m2833u(view, motionEvent);
     }

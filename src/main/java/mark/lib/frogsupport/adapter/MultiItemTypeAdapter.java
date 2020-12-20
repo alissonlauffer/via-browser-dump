@@ -48,18 +48,22 @@ public class MultiItemTypeAdapter<T> extends BaseAdapter {
     public void mo676c(ViewHolder cVar, View view) {
     }
 
+    @Override // android.widget.Adapter
     public int getCount() {
         return this.f1099b.size();
     }
 
+    @Override // android.widget.Adapter
     public T getItem(int i) {
         return this.f1099b.get(i);
     }
 
+    @Override // android.widget.Adapter
     public long getItemId(int i) {
         return (long) i;
     }
 
+    @Override // android.widget.BaseAdapter, android.widget.Adapter
     public int getItemViewType(int i) {
         if (m1196d()) {
             return this.f1100c.mo694d(this.f1099b.get(i), i);
@@ -67,6 +71,7 @@ public class MultiItemTypeAdapter<T> extends BaseAdapter {
         return super.getItemViewType(i);
     }
 
+    @Override // android.widget.Adapter
     public View getView(int i, View view, ViewGroup viewGroup) {
         ViewHolder cVar;
         int a = this.f1100c.mo692b(this.f1099b.get(i), i).mo672a();
@@ -81,6 +86,7 @@ public class MultiItemTypeAdapter<T> extends BaseAdapter {
         return cVar.mo683a();
     }
 
+    @Override // android.widget.BaseAdapter, android.widget.Adapter
     public int getViewTypeCount() {
         if (m1196d()) {
             return this.f1100c.mo693c();

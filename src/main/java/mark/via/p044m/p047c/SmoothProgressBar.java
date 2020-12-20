@@ -44,6 +44,7 @@ public class SmoothProgressBar {
             this.f1506a = i;
         }
 
+        @Override // android.animation.ValueAnimator.AnimatorUpdateListener
         public void onAnimationUpdate(ValueAnimator valueAnimator) {
             if (Build.VERSION.SDK_INT >= 12) {
                 (SmoothProgressBar.this.f1505f ? SmoothProgressBar.this.f1501b : SmoothProgressBar.this.f1500a).setProgress((int) (((float) this.f1506a) + (((float) (SmoothProgressBar.this.f1502c - this.f1506a)) * valueAnimator.getAnimatedFraction())));
@@ -58,6 +59,7 @@ public class SmoothProgressBar {
         C0490b() {
         }
 
+        @Override // android.animation.AnimatorListenerAdapter, android.animation.Animator.AnimatorListener
         public void onAnimationEnd(Animator animator) {
             (SmoothProgressBar.this.f1505f ? SmoothProgressBar.this.f1501b : SmoothProgressBar.this.f1500a).setVisibility(8);
             (SmoothProgressBar.this.f1505f ? SmoothProgressBar.this.f1501b : SmoothProgressBar.this.f1500a).setProgress(0);

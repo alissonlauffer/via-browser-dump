@@ -11,7 +11,7 @@ public class BaseSettings extends BaseActivity {
     protected PreferenceManager f1803c;
 
     /* access modifiers changed from: protected */
-    @Override // mark.lib.frogsupport.activity.BaseActivity
+    @Override // mark.lib.frogsupport.activity.BaseActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         PreferenceManager M = PreferenceManager.m1743M(this.f1039b);

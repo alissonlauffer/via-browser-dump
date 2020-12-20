@@ -15,6 +15,7 @@ public final /* synthetic */ class RunnableC0414d implements Runnable {
         this.f1236b = str;
     }
 
+    @Override // java.lang.Runnable
     public final void run() {
         this.f1235a.loadUrl(this.f1236b);
     }

@@ -18,6 +18,7 @@ public final /* synthetic */ class C0476e implements CompoundButton.OnCheckedCha
         this.f1435b = dVar;
     }
 
+    @Override // android.widget.CompoundButton.OnCheckedChangeListener
     public final void onCheckedChanged(CompoundButton compoundButton, boolean z) {
         this.f1434a.mo1265i(this.f1435b, compoundButton, z);
     }

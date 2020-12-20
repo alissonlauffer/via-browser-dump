@@ -46,8 +46,9 @@ public class C0243q2 {
     /* renamed from: i */
     private AbstractC0192m1<C0082cn> f695i = new C0245b();
 
+    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.q2$a */
-    class C0244a implements AbstractC0192m1<C0261s2> {
+    public class C0244a implements AbstractC0192m1<C0261s2> {
         C0244a() {
         }
 
@@ -59,8 +60,9 @@ public class C0243q2 {
         }
     }
 
+    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.q2$b */
-    class C0245b implements AbstractC0192m1<C0082cn> {
+    public class C0245b implements AbstractC0192m1<C0082cn> {
         C0245b() {
         }
 
@@ -102,6 +104,7 @@ public class C0243q2 {
             this.f698a = context;
         }
 
+        @Override // java.lang.Runnable
         public final void run() {
             C0243q2.this.m657l(this.f698a);
         }

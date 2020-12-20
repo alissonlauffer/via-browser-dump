@@ -23,6 +23,6 @@ public final /* synthetic */ class C0492b implements TaoDialog.AbstractC0382j {
     @Override // mark.lib.frogsupport.dialog.TaoDialog.AbstractC0382j
     /* renamed from: a */
     public final void mo659a(View view, TaoDialog.C0384l lVar) {
-        this.f1511a.startActivity(this.f1512b);
+        BrowserUtils.m2073D(this.f1511a, this.f1512b, view, lVar);
     }
 }

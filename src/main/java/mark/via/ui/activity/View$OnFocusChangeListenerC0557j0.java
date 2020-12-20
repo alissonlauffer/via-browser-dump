@@ -14,6 +14,7 @@ public final /* synthetic */ class View$OnFocusChangeListenerC0557j0 implements 
         this.f1743a = editText;
     }
 
+    @Override // android.view.View.OnFocusChangeListener
     public final void onFocusChange(View view, boolean z) {
         BrowserActivity.m2309J1(this.f1743a, view, z);
     }

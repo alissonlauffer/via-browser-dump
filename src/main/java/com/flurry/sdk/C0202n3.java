@@ -62,6 +62,7 @@ public final class C0202n3 implements Comparable<C0202n3> {
         return this.f585b - n3Var2.f585b;
     }
 
+    @Override // java.lang.Object
     public final boolean equals(Object obj) {
         if (obj == this) {
             return true;
@@ -73,10 +74,12 @@ public final class C0202n3 implements Comparable<C0202n3> {
         return this.f584a == n3Var.f584a && this.f585b == n3Var.f585b;
     }
 
+    @Override // java.lang.Object
     public final int hashCode() {
         return (this.f584a.hashCode() * 31) + this.f585b;
     }
 
+    @Override // java.lang.Object
     public final String toString() {
         return this.f584a + ":" + this.f585b + ":" + this.f586c;
     }

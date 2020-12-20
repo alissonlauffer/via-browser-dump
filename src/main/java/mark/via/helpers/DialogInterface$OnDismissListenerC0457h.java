@@ -14,6 +14,7 @@ public final /* synthetic */ class DialogInterface$OnDismissListenerC0457h imple
         this.f1367a = cVar;
     }
 
+    @Override // android.content.DialogInterface.OnDismissListener
     public final void onDismiss(DialogInterface dialogInterface) {
         this.f1367a.mo622N();
     }

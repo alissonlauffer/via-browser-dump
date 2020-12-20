@@ -36,6 +36,7 @@ public class C0058c {
             this.f194d = str;
         }
 
+        @Override // java.lang.Enum, java.lang.Object
         public final String toString() {
             return this.f194d;
         }

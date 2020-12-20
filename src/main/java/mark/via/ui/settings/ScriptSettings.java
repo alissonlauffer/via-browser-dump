@@ -63,6 +63,7 @@ public class ScriptSettings extends BaseSettings {
             }
         }
 
+        @Override // android.view.View.OnClickListener
         public void onClick(View view) {
             TaoDialog g = TaoDialog.m1134g(((BaseActivity) ScriptSettings.this).f1039b);
             g.mo643u(new String[]{((BaseActivity) ScriptSettings.this).f1039b.getString(R.string.RES_2131558426), ((BaseActivity) ScriptSettings.this).f1039b.getString(R.string.RES_2131558570)}, new C0676w0(this));
@@ -200,6 +201,7 @@ public class ScriptSettings extends BaseSettings {
             this.f1833a = aVar;
         }
 
+        @Override // java.lang.Runnable
         public void run() {
             ScriptSettings.this.f1824d.mo970F(this.f1833a);
         }
@@ -224,6 +226,7 @@ public class ScriptSettings extends BaseSettings {
             this.f1837c = aVar;
         }
 
+        @Override // java.lang.Runnable
         public void run() {
             if (this.f1835a.equalsIgnoreCase("") || this.f1836b.equalsIgnoreCase("")) {
                 ScriptSettings.this.f1824d.mo978e(this.f1837c.mo918b());
@@ -321,7 +324,7 @@ public class ScriptSettings extends BaseSettings {
         g.mo622N();
     }
 
-    @Override // mark.via.ui.settings.BaseSettings, mark.lib.frogsupport.activity.BaseActivity
+    @Override // mark.via.ui.settings.BaseSettings, mark.lib.frogsupport.activity.BaseActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         DatabaseHandler v = DatabaseHandler.m1595v(this.f1039b);

@@ -19,6 +19,7 @@ public final class C0255r2 {
         C0256a() {
         }
 
+        @Override // java.util.TimerTask, java.lang.Runnable
         public final void run() {
             C0255r2.this.mo328c();
             C0199n1.m528a().mo269c(new C0261s2());

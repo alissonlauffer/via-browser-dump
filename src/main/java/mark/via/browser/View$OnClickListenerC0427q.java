@@ -14,6 +14,7 @@ public final /* synthetic */ class View$OnClickListenerC0427q implements View.On
         this.f1251a = httpAuthHandler;
     }
 
+    @Override // android.view.View.OnClickListener
     public final void onClick(View view) {
         this.f1251a.cancel();
     }

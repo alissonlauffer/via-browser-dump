@@ -21,6 +21,7 @@ public final /* synthetic */ class RunnableC0631h0 implements Runnable {
         this.f1906c = str;
     }
 
+    @Override // java.lang.Runnable
     public final void run() {
         this.f1904a.mo1485j0(this.f1905b, this.f1906c);
     }

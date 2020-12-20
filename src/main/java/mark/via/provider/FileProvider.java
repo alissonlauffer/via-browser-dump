@@ -210,6 +210,7 @@ public class FileProvider extends ContentProvider {
         }
     }
 
+    @Override // android.content.ContentProvider
     public void attachInfo(Context context, ProviderInfo providerInfo) {
         super.attachInfo(context, providerInfo);
         if (providerInfo.exported) {
@@ -221,10 +222,12 @@ public class FileProvider extends ContentProvider {
         }
     }
 
+    @Override // android.content.ContentProvider
     public int delete(Uri uri, String str, String[] strArr) {
         return this.f1557a.mo1335a(uri).delete() ? 1 : 0;
     }
 
+    @Override // android.content.ContentProvider
     public String getType(Uri uri) {
         String mimeTypeFromExtension;
         File a = this.f1557a.mo1335a(uri);
@@ -232,10 +235,12 @@ public class FileProvider extends ContentProvider {
         return (lastIndexOf < 0 || (mimeTypeFromExtension = MimeTypeMap.getSingleton().getMimeTypeFromExtension(a.getName().substring(lastIndexOf + 1))) == null) ? "application/octet-stream" : mimeTypeFromExtension;
     }
 
+    @Override // android.content.ContentProvider
     public Uri insert(Uri uri, ContentValues contentValues) {
         throw new UnsupportedOperationException("No external inserts");
     }
 
+    @Override // android.content.ContentProvider
     public boolean onCreate() {
         return true;
     }
@@ -245,6 +250,7 @@ public class FileProvider extends ContentProvider {
         return ParcelFileDescriptor.open(this.f1557a.mo1335a(uri), m2263g(str));
     }
 
+    @Override // android.content.ContentProvider
     public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2) {
         int i;
         File a = this.f1557a.mo1335a(uri);
@@ -273,6 +279,7 @@ public class FileProvider extends ContentProvider {
         return matrixCursor;
     }
 
+    @Override // android.content.ContentProvider
     public int update(Uri uri, ContentValues contentValues, String str, String[] strArr) {
         throw new UnsupportedOperationException("No external updates");
     }

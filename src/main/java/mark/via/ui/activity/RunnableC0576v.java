@@ -18,6 +18,7 @@ public final /* synthetic */ class RunnableC0576v implements Runnable {
         this.f1780b = b0Var;
     }
 
+    @Override // java.lang.Runnable
     public final void run() {
         BrowserActivity.m2455y2(this.f1779a, this.f1780b);
     }

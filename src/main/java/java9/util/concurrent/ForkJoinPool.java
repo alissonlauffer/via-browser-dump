@@ -111,9 +111,10 @@ public class ForkJoinPool extends AbstractExecutorService {
         }
     }
 
+    /* access modifiers changed from: private */
     /* renamed from: java9.util.concurrent.a$b */
     /* compiled from: ForkJoinPool */
-    private static final class C0346b implements AbstractC0348c {
+    public static final class C0346b implements AbstractC0348c {
 
         /* renamed from: a */
         private static final AccessControlContext f992a = ForkJoinPool.m1024f(new RuntimePermission("getClassLoader"));
@@ -156,9 +157,10 @@ public class ForkJoinPool extends AbstractExecutorService {
         ForkJoinWorkerThread mo549a(ForkJoinPool aVar);
     }
 
+    /* access modifiers changed from: private */
     /* renamed from: java9.util.concurrent.a$d */
     /* compiled from: ForkJoinPool */
-    private static final class C0349d implements AbstractC0348c {
+    public static final class C0349d implements AbstractC0348c {
 
         /* renamed from: a */
         private static final AccessControlContext f994a = ForkJoinPool.m1024f(ForkJoinPool.f970m, new RuntimePermission("enableContextClassLoaderOverride"), new RuntimePermission("modifyThreadGroup"), new RuntimePermission("getClassLoader"), new RuntimePermission("setContextClassLoader"));
@@ -1847,6 +1849,7 @@ public class ForkJoinPool extends AbstractExecutorService {
         }
     }
 
+    @Override // java.util.concurrent.Executor
     public void execute(Runnable runnable) {
         ForkJoinTask forkJoinTask;
         Objects.m125a(runnable);
@@ -1957,10 +1960,12 @@ public class ForkJoinPool extends AbstractExecutorService {
         }
     }
 
+    @Override // java.util.concurrent.ExecutorService
     public boolean isShutdown() {
         return (this.f986f & 262144) != 0;
     }
 
+    @Override // java.util.concurrent.ExecutorService
     public boolean isTerminated() {
         return (this.f986f & 524288) != 0;
     }
@@ -2174,6 +2179,7 @@ public class ForkJoinPool extends AbstractExecutorService {
         gVar.f1007e = i2;
     }
 
+    @Override // java.util.concurrent.ExecutorService
     public void shutdown() {
         m1021c();
         m1020K(false, true);
@@ -2218,6 +2224,7 @@ public class ForkJoinPool extends AbstractExecutorService {
         }
     }
 
+    @Override // java.lang.Object
     public String toString() {
         int i;
         long j = this.f982b;

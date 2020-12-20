@@ -13,6 +13,7 @@ public final /* synthetic */ class View$OnLongClickListenerC0415e implements Vie
         this.f1237a = b0Var;
     }
 
+    @Override // android.view.View.OnLongClickListener
     public final boolean onLongClick(View view) {
         return this.f1237a.mo824Y(view);
     }

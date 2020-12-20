@@ -3,6 +3,7 @@ package mark.via.browser;
 import android.view.View;
 import android.webkit.GeolocationPermissions;
 import mark.lib.frogsupport.dialog.TaoDialog;
+import mark.via.browser.TabItem;
 
 /* renamed from: mark.via.browser.o */
 /* compiled from: lambda */
@@ -22,6 +23,6 @@ public final /* synthetic */ class C0425o implements TaoDialog.AbstractC0382j {
     @Override // mark.lib.frogsupport.dialog.TaoDialog.AbstractC0382j
     /* renamed from: a */
     public final void mo659a(View view, TaoDialog.C0384l lVar) {
-        this.f1248a.invoke(this.f1249b, true, true);
+        TabItem.C0410c.m1502a(this.f1248a, this.f1249b, view, lVar);
     }
 }

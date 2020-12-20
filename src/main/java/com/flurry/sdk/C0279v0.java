@@ -55,11 +55,13 @@ public class C0279v0 implements C0275u2.AbstractC0276a {
     /* renamed from: i */
     private Timer f783i = null;
 
+    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.v0$a */
-    class C0280a extends TimerTask {
+    public class C0280a extends TimerTask {
         C0280a() {
         }
 
+        @Override // java.util.TimerTask, java.lang.Runnable
         public final void run() {
             if (C0279v0.this.f777c > 0 && C0279v0.this.f777c < System.currentTimeMillis()) {
                 C0260s1.m686c(4, C0279v0.f771j, "No location received in 90 seconds , stopping LocationManager");
@@ -74,6 +76,7 @@ public class C0279v0 implements C0275u2.AbstractC0276a {
         public C0281b() {
         }
 
+        @Override // android.location.LocationListener
         public final void onLocationChanged(Location location) {
             if (location != null) {
                 C0279v0.this.f780f = location;
@@ -84,12 +87,15 @@ public class C0279v0 implements C0275u2.AbstractC0276a {
             }
         }
 
+        @Override // android.location.LocationListener
         public final void onProviderDisabled(String str) {
         }
 
+        @Override // android.location.LocationListener
         public final void onProviderEnabled(String str) {
         }
 
+        @Override // android.location.LocationListener
         public final void onStatusChanged(String str, int i, Bundle bundle) {
         }
     }

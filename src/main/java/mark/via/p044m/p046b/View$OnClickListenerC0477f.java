@@ -18,6 +18,7 @@ public final /* synthetic */ class View$OnClickListenerC0477f implements View.On
         this.f1437b = dVar;
     }
 
+    @Override // android.view.View.OnClickListener
     public final void onClick(View view) {
         this.f1436a.mo1267m(this.f1437b, view);
     }

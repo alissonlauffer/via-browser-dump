@@ -34,6 +34,7 @@ public class FastView extends WebView {
         return this.f1201e;
     }
 
+    @Override // android.webkit.WebView
     public boolean canGoForward() {
         return this.f1199c && super.canGoForward();
     }
@@ -42,6 +43,7 @@ public class FastView extends WebView {
         return this.f1198b;
     }
 
+    @Override // android.webkit.WebView
     public void loadUrl(String str) {
         HashMap hashMap = new HashMap();
         if (this.f1197a) {
@@ -56,6 +58,7 @@ public class FastView extends WebView {
     }
 
     /* access modifiers changed from: protected */
+    @Override // android.webkit.WebView, android.view.View
     public void onOverScrolled(int i, int i2, boolean z, boolean z2) {
         if (z && getParent() != null) {
             this.f1201e = true;
@@ -64,10 +67,12 @@ public class FastView extends WebView {
     }
 
     /* access modifiers changed from: protected */
+    @Override // android.webkit.WebView, android.view.View
     public void onScrollChanged(int i, int i2, int i3, int i4) {
         super.onScrollChanged(i, i2, i3, i4);
     }
 
+    @Override // android.webkit.WebView, android.view.View
     public boolean onTouchEvent(MotionEvent motionEvent) {
         if (getParent() != null && motionEvent.getAction() == 0) {
             this.f1201e = getUrl() == null;

@@ -22,9 +22,10 @@ public final class Timber {
     /* renamed from: d */
     private static final Tree f945d = new C0339a();
 
+    /* access modifiers changed from: package-private */
     /* renamed from: f.a.a$a */
     /* compiled from: Timber */
-    static class C0339a extends Tree {
+    public static class C0339a extends Tree {
         C0339a() {
         }
 

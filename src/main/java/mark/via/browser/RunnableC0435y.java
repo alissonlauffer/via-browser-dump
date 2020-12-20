@@ -13,6 +13,7 @@ public final /* synthetic */ class RunnableC0435y implements Runnable {
         this.f1260a = permissionRequest;
     }
 
+    @Override // java.lang.Runnable
     public final void run() {
         this.f1260a.deny();
     }

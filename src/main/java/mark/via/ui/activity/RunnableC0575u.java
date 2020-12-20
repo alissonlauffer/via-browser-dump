@@ -11,6 +11,7 @@ public final /* synthetic */ class RunnableC0575u implements Runnable {
         this.f1778a = browserActivity;
     }
 
+    @Override // java.lang.Runnable
     public final void run() {
         this.f1778a.mo1350K2();
     }

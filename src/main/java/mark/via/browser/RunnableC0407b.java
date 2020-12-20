@@ -19,6 +19,7 @@ public final /* synthetic */ class RunnableC0407b implements Runnable {
         this.f1213c = fastView;
     }
 
+    @Override // java.lang.Runnable
     public final void run() {
         this.f1211a.mo826d0(this.f1212b, this.f1213c);
     }

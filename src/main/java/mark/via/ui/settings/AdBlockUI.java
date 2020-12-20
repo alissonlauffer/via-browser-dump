@@ -34,8 +34,9 @@ public class AdBlockUI extends BaseSettings {
     /* renamed from: g */
     private OnFrogSettingsClickListener f1801g = new C0583a();
 
+    /* access modifiers changed from: package-private */
     /* renamed from: mark.via.ui.settings.AdBlockUI$a */
-    class C0583a implements OnFrogSettingsClickListener {
+    public class C0583a implements OnFrogSettingsClickListener {
         C0583a() {
         }
 
@@ -102,7 +103,7 @@ public class AdBlockUI extends BaseSettings {
     }
 
     /* access modifiers changed from: protected */
-    @Override // mark.via.ui.settings.BaseSettings, mark.lib.frogsupport.activity.BaseActivity
+    @Override // mark.via.ui.settings.BaseSettings, mark.lib.frogsupport.activity.BaseActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
         DaggerBlockerComponent.C0447b d = DaggerBlockerComponent.m1665d();
         d.mo1029a(BrowserApp.m1387a(this).f1192a);
@@ -113,6 +114,7 @@ public class AdBlockUI extends BaseSettings {
     }
 
     /* access modifiers changed from: protected */
+    @Override // android.app.Activity
     public void onPause() {
         if (this.f1799e) {
             this.f1800f.mo14n(this.f1803c.mo1163l());

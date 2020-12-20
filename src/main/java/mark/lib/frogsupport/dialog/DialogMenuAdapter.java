@@ -30,6 +30,7 @@ public class DialogMenuAdapter extends ArrayAdapter<TaoDialog.C0381i> {
         super(context, C0367f.d, list);
     }
 
+    @Override // android.widget.ArrayAdapter, android.widget.Adapter
     public long getItemId(int i) {
         TaoDialog.C0381i iVar = (TaoDialog.C0381i) getItem(i);
         if (iVar != null) {
@@ -38,6 +39,7 @@ public class DialogMenuAdapter extends ArrayAdapter<TaoDialog.C0381i> {
         return -1;
     }
 
+    @Override // android.widget.ArrayAdapter, android.widget.Adapter
     public View getView(int i, View view, ViewGroup viewGroup) {
         View view2;
         C0370b bVar;

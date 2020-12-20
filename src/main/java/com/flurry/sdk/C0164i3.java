@@ -22,6 +22,7 @@ public final class C0164i3 {
         private C0165a() {
         }
 
+        @Override // java.lang.Thread.UncaughtExceptionHandler
         public final void uncaughtException(Thread thread, Throwable th) {
             for (Thread.UncaughtExceptionHandler uncaughtExceptionHandler : C0164i3.this.mo237b()) {
                 try {

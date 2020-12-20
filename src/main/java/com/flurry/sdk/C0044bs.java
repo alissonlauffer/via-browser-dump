@@ -68,8 +68,9 @@ public class C0044bs {
         FINISHED
     }
 
+    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.bs$b */
-    class C0046b implements AbstractC0192m1<C0127ec> {
+    public class C0046b implements AbstractC0192m1<C0127ec> {
 
         /* renamed from: com.flurry.sdk.bs$b$a */
         class C0047a extends AbstractRunnableC0040b3 {
@@ -145,6 +146,7 @@ public class C0044bs {
         C0051f(C0044bs bsVar) {
         }
 
+        @Override // java.io.FilenameFilter
         public final boolean accept(File file, String str) {
             return str.startsWith(".flurryagent.");
         }

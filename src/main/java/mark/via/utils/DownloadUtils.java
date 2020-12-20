@@ -68,6 +68,7 @@ public class DownloadUtils {
             this.f1528a = str;
         }
 
+        @Override // java.lang.Runnable
         public void run() {
             try {
                 URL url = new URL(this.f1528a);
@@ -120,6 +121,7 @@ public class DownloadUtils {
         HandlerC0497b() {
         }
 
+        @Override // android.os.Handler
         public void handleMessage(Message message) {
             super.handleMessage(message);
             if (DownloadUtils.this.f1524i) {
@@ -165,6 +167,7 @@ public class DownloadUtils {
         RunnableC0498c() {
         }
 
+        @Override // java.lang.Runnable
         public void run() {
             if (DownloadUtils.this.f1524i && DownloadUtils.this.f1518c.mo634l()) {
                 DownloadUtils.m2132n(DownloadUtils.this);

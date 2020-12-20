@@ -13,6 +13,7 @@ public final /* synthetic */ class View$OnClickListenerC0543c0 implements View.O
         this.f1711a = browserActivity;
     }
 
+    @Override // android.view.View.OnClickListener
     public final void onClick(View view) {
         this.f1711a.mo1353N1(view);
     }

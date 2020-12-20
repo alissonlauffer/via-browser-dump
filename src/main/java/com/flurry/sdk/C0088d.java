@@ -78,6 +78,7 @@ public class C0088d {
             this.f284e = i;
         }
 
+        @Override // java.lang.Enum, java.lang.Object
         public final String toString() {
             return this.f285f;
         }
@@ -90,12 +91,14 @@ public class C0088d {
 
         /*  JADX ERROR: StackOverflowError in pass: MarkFinallyVisitor
             java.lang.StackOverflowError
-            	at jadx.core.dex.instructions.IfNode.isSame(IfNode.java:122)
+            	at jadx.core.dex.nodes.InsnNode.isSame(InsnNode.java:303)
+            	at jadx.core.dex.instructions.InvokeNode.isSame(InvokeNode.java:77)
             	at jadx.core.dex.visitors.MarkFinallyVisitor.sameInsns(MarkFinallyVisitor.java:451)
             	at jadx.core.dex.visitors.MarkFinallyVisitor.compareBlocks(MarkFinallyVisitor.java:436)
             	at jadx.core.dex.visitors.MarkFinallyVisitor.checkBlocksTree(MarkFinallyVisitor.java:408)
             	at jadx.core.dex.visitors.MarkFinallyVisitor.checkBlocksTree(MarkFinallyVisitor.java:411)
             */
+        @Override // java.lang.Runnable
         public final void run() {
             /*
             // Method dump skipped, instructions count: 342

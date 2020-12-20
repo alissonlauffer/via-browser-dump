@@ -66,6 +66,7 @@ public class OperationSettings extends BaseSettings {
         View$OnClickListenerC0589c() {
         }
 
+        @Override // android.view.View.OnClickListener
         public void onClick(View view) {
             switch (view.getId()) {
                 case R.id.RES_2131230777 /* 2131230777 */:
@@ -101,6 +102,7 @@ public class OperationSettings extends BaseSettings {
         View$OnLongClickListenerC0590d() {
         }
 
+        @Override // android.view.View.OnLongClickListener
         public boolean onLongClick(View view) {
             switch (view.getId()) {
                 case R.id.RES_2131230777 /* 2131230777 */:
@@ -245,7 +247,7 @@ public class OperationSettings extends BaseSettings {
     }
 
     /* access modifiers changed from: protected */
-    @Override // mark.via.ui.settings.BaseSettings, mark.lib.frogsupport.activity.BaseActivity
+    @Override // mark.via.ui.settings.BaseSettings, mark.lib.frogsupport.activity.BaseActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(m2751e());

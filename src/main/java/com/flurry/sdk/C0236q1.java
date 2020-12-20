@@ -45,6 +45,7 @@ public class C0236q1<T extends AbstractC0075c3> {
         C0240b() {
         }
 
+        @Override // java.util.concurrent.ThreadPoolExecutor.DiscardPolicy, java.util.concurrent.RejectedExecutionHandler
         public final void rejectedExecution(Runnable runnable, ThreadPoolExecutor threadPoolExecutor) {
             super.rejectedExecution(runnable, threadPoolExecutor);
             AbstractC0075c3 a = C0236q1.m637a(runnable);
@@ -181,6 +182,7 @@ public class C0236q1<T extends AbstractC0075c3> {
         }
 
         /* access modifiers changed from: protected */
+        @Override // java.util.concurrent.ThreadPoolExecutor
         public final void afterExecute(Runnable runnable, Throwable th) {
             super.afterExecute(runnable, th);
             AbstractC0075c3 a = C0236q1.m637a(runnable);
@@ -194,6 +196,7 @@ public class C0236q1<T extends AbstractC0075c3> {
         }
 
         /* access modifiers changed from: protected */
+        @Override // java.util.concurrent.ThreadPoolExecutor
         public final void beforeExecute(Thread thread, Runnable runnable) {
             super.beforeExecute(thread, runnable);
             AbstractC0075c3 a = C0236q1.m637a(runnable);

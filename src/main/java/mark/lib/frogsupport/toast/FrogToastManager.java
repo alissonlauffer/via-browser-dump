@@ -119,6 +119,7 @@ public class FrogToastManager extends Handler {
         }
     }
 
+    @Override // android.os.Handler
     public void handleMessage(Message message) {
         int i = message.what;
         if (i == 1) {

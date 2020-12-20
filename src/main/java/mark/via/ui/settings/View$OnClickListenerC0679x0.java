@@ -19,6 +19,7 @@ public final /* synthetic */ class View$OnClickListenerC0679x0 implements View.O
         this.f2005b = aVar;
     }
 
+    @Override // android.view.View.OnClickListener
     public final void onClick(View view) {
         this.f2004a.mo1515b(this.f2005b, view);
     }

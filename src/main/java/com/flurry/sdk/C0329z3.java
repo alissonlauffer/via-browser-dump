@@ -46,8 +46,9 @@ public class C0329z3 implements AbstractC0282v1 {
     /* renamed from: j */
     private final AbstractC0192m1<C0127ec> f908j = new C0330a();
 
+    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.z3$a */
-    class C0330a implements AbstractC0192m1<C0127ec> {
+    public class C0330a implements AbstractC0192m1<C0127ec> {
         C0330a() {
         }
 

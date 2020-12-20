@@ -14,6 +14,7 @@ public final /* synthetic */ class DialogInterface$OnCancelListenerC0459j implem
         this.f1369a = cVar;
     }
 
+    @Override // android.content.DialogInterface.OnCancelListener
     public final void onCancel(DialogInterface dialogInterface) {
         this.f1369a.mo622N();
     }

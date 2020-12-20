@@ -47,6 +47,7 @@ public class C0060c0 {
         RunnableC0061a() {
         }
 
+        @Override // java.lang.Runnable
         public final void run() {
             C0060c0.this.f197a = C0143g.f437d;
             C0060c0.this.f202f = System.currentTimeMillis();
@@ -79,6 +80,7 @@ public class C0060c0 {
         C0063c() {
         }
 
+        @Override // java.util.TimerTask, java.lang.Runnable
         public final void run() {
             C0060c0.this.m269g();
         }

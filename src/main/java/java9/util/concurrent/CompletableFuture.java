@@ -63,6 +63,7 @@ public class CompletableFuture<T> implements Future<T> {
             return null;
         }
 
+        @Override // java.lang.Runnable
         public void run() {
             Runnable runnable;
             CompletableFuture<Void> completableFuture = this.dep;
@@ -106,6 +107,7 @@ public class CompletableFuture<T> implements Future<T> {
         /* access modifiers changed from: package-private */
         public abstract boolean isLive();
 
+        @Override // java.lang.Runnable
         public final void run() {
             tryFire(1);
         }
@@ -207,6 +209,7 @@ public class CompletableFuture<T> implements Future<T> {
         ExecutorC0343c() {
         }
 
+        @Override // java.util.concurrent.Executor
         public void execute(Runnable runnable) {
             new Thread(runnable).start();
         }
@@ -389,6 +392,7 @@ public class CompletableFuture<T> implements Future<T> {
         return f950f.compareAndSwapObject(this, f952h, completion, completion2);
     }
 
+    @Override // java.util.concurrent.Future
     public boolean cancel(boolean z) {
         boolean z2 = this.f954a == null && mo449i(new C0341a(new CancellationException()));
         mo452k();
@@ -458,11 +462,13 @@ public class CompletableFuture<T> implements Future<T> {
         return f950f.compareAndSwapObject(this, f951g, (Object) null, obj);
     }
 
+    @Override // java.util.concurrent.Future
     public boolean isCancelled() {
         Object obj = this.f954a;
         return (obj instanceof C0341a) && (((C0341a) obj).f957a instanceof CancellationException);
     }
 
+    @Override // java.util.concurrent.Future
     public boolean isDone() {
         return this.f954a != null;
     }
@@ -518,6 +524,7 @@ public class CompletableFuture<T> implements Future<T> {
         return f950f.compareAndSwapObject(this, f952h, completion2, completion);
     }
 
+    @Override // java.lang.Object
     public String toString() {
         String str;
         Object obj = this.f954a;

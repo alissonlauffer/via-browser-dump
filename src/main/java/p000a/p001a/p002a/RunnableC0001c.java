@@ -17,6 +17,7 @@ public final /* synthetic */ class RunnableC0001c implements Runnable {
         this.f5b = list;
     }
 
+    @Override // java.lang.Runnable
     public final void run() {
         this.f4a.mo11j(this.f5b);
     }

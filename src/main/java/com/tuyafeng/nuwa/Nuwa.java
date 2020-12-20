@@ -22,6 +22,7 @@ public final class Nuwa {
         RunnableC0332a() {
         }
 
+        @Override // java.lang.Runnable
         public void run() {
             while (true) {
                 try {
@@ -45,6 +46,7 @@ public final class Nuwa {
         C0333b() {
         }
 
+        @Override // java.lang.Thread.UncaughtExceptionHandler
         public void uncaughtException(Thread thread, Throwable th) {
             if (Nuwa.f912a != null) {
                 Nuwa.f912a.mo381a(thread, th);

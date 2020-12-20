@@ -62,6 +62,7 @@ public class TaoDialog {
         View$OnFocusChangeListenerC0373a(TaoDialog cVar) {
         }
 
+        @Override // android.view.View.OnFocusChangeListener
         public void onFocusChange(View view, boolean z) {
             if (z) {
                 ((AutoCompleteTextView) view).showDropDown();
@@ -110,6 +111,7 @@ public class TaoDialog {
         C0376d() {
         }
 
+        @Override // android.widget.CompoundButton.OnCheckedChangeListener
         public void onCheckedChanged(CompoundButton compoundButton, boolean z) {
             TaoDialog.this.f1056b.f1074e = Boolean.valueOf(z);
         }
@@ -127,6 +129,7 @@ public class TaoDialog {
             this.f1064a = checkBox;
         }
 
+        @Override // android.view.View.OnClickListener
         public void onClick(View view) {
             CheckBox checkBox = this.f1064a;
             checkBox.setChecked(!checkBox.isChecked());
@@ -140,6 +143,7 @@ public class TaoDialog {
         View$OnClickListenerC0378f() {
         }
 
+        @Override // android.view.View.OnClickListener
         public void onClick(View view) {
             if (TaoDialog.this.f1056b.f1080k != null) {
                 C0384l a = C0384l.m1180a();
@@ -183,6 +187,7 @@ public class TaoDialog {
         View$OnClickListenerC0379g() {
         }
 
+        @Override // android.view.View.OnClickListener
         public void onClick(View view) {
             View.OnClickListener onClickListener = TaoDialog.this.f1056b.f1082m;
             if (onClickListener != null) {
@@ -199,6 +204,7 @@ public class TaoDialog {
         View$OnClickListenerC0380h() {
         }
 
+        @Override // android.view.View.OnClickListener
         public void onClick(View view) {
             View.OnClickListener onClickListener = TaoDialog.this.f1056b.f1084o;
             if (onClickListener != null) {

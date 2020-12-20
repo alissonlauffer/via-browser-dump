@@ -558,7 +558,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         mo966A(arrayList);
     }
 
-    @Override // java.lang.AutoCloseable
+    @Override // android.database.sqlite.SQLiteOpenHelper, java.lang.AutoCloseable
     public void close() {
         SQLiteDatabase sQLiteDatabase = f1306a;
         if (sQLiteDatabase != null && sQLiteDatabase.isOpen()) {
@@ -828,6 +828,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         }
     }
 
+    @Override // android.database.sqlite.SQLiteOpenHelper
     public void onCreate(SQLiteDatabase sQLiteDatabase) {
         sQLiteDatabase.execSQL("CREATE TABLE history(id INTEGER PRIMARY KEY,url TEXT,title TEXT)");
         sQLiteDatabase.execSQL("CREATE TABLE ads(id INTEGER PRIMARY KEY,url TEXT,tag TEXT)");
@@ -836,6 +837,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
         sQLiteDatabase.execSQL("CREATE TABLE favorites(f_id INTEGER PRIMARY KEY,f_url TEXT,f_title TEXT,f_order INTEGER)");
     }
 
+    @Override // android.database.sqlite.SQLiteOpenHelper
     public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2) {
         if (i <= 3) {
             if (i <= 1) {

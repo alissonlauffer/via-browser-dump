@@ -9,6 +9,7 @@ public final class C0026a2<T> extends WeakReference<T> {
         super(t);
     }
 
+    @Override // java.lang.Object
     public final boolean equals(Object obj) {
         T t = get();
         if (obj instanceof Reference) {
@@ -17,6 +18,7 @@ public final class C0026a2<T> extends WeakReference<T> {
         return t.equals(obj);
     }
 
+    @Override // java.lang.Object
     public final int hashCode() {
         T t = get();
         if (t == null) {

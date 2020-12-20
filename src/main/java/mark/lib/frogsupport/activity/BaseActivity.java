@@ -13,6 +13,7 @@ public class BaseActivity extends Activity {
     protected Context f1039b;
 
     /* access modifiers changed from: protected */
+    @Override // android.app.Activity
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         this.f1038a = this;

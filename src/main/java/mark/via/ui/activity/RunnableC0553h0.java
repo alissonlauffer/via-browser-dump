@@ -26,6 +26,7 @@ public final /* synthetic */ class RunnableC0553h0 implements Runnable {
         this.f1735d = str2;
     }
 
+    @Override // java.lang.Runnable
     public final void run() {
         BrowserActivity.m2454y1(this.f1732a, this.f1733b, this.f1734c, this.f1735d);
     }

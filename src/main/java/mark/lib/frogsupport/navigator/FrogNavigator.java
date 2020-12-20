@@ -56,6 +56,7 @@ public class FrogNavigator {
         View$OnClickListenerC0396a(FrogNavigator aVar) {
         }
 
+        @Override // android.view.View.OnClickListener
         public void onClick(View view) {
             ((Activity) view.getContext()).onBackPressed();
         }
@@ -73,6 +74,7 @@ public class FrogNavigator {
             this.f1157a = onClickListener;
         }
 
+        @Override // android.view.View.OnClickListener
         public void onClick(View view) {
             View.OnClickListener onClickListener = this.f1157a;
             if (onClickListener != null) {
@@ -93,6 +95,7 @@ public class FrogNavigator {
             this.f1158a = onClickListener;
         }
 
+        @Override // android.view.View.OnClickListener
         public void onClick(View view) {
             View.OnClickListener onClickListener = this.f1158a;
             if (onClickListener != null) {

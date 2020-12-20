@@ -114,14 +114,17 @@ public abstract class TasksAdapter extends BaseAdapter {
         }
     }
 
+    @Override // android.widget.Adapter
     public int getCount() {
         return this.f936a.size();
     }
 
+    @Override // android.widget.Adapter
     public long getItemId(int i) {
         return (long) i;
     }
 
+    @Override // android.widget.Adapter
     public View getView(int i, View view, ViewGroup viewGroup) {
         TaskViewHolder fVar;
         if (view == null) {
@@ -161,6 +164,7 @@ public abstract class TasksAdapter extends BaseAdapter {
         m959b();
     }
 
+    @Override // android.widget.BaseAdapter, android.widget.Adapter
     public boolean isEmpty() {
         return getCount() == 0;
     }

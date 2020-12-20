@@ -15,6 +15,7 @@ public final class ThreadFactoryC0283v2 implements ThreadFactory {
         this.f786a = new ThreadGroup(str);
     }
 
+    @Override // java.util.concurrent.ThreadFactory
     public final Thread newThread(Runnable runnable) {
         Thread thread = new Thread(this.f786a, runnable);
         thread.setName(this.f786a.getName() + ":" + thread.getId());

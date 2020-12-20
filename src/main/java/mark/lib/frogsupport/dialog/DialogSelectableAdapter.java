@@ -169,14 +169,17 @@ public class DialogSelectableAdapter extends BaseAdapter {
         }
     }
 
+    @Override // android.widget.Adapter
     public int getCount() {
         return this.f1047a.size();
     }
 
+    @Override // android.widget.Adapter
     public long getItemId(int i) {
         return (long) i;
     }
 
+    @Override // android.widget.Adapter
     public View getView(int i, View view, ViewGroup viewGroup) {
         C0372b bVar;
         if (view == null) {

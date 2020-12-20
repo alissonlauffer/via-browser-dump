@@ -55,6 +55,7 @@ public final class C0155h1 {
             return !C0155h1.f472d.contains(activity.getClass().getSimpleName());
         }
 
+        @Override // android.app.Application.ActivityLifecycleCallbacks
         public final void onActivityCreated(Activity activity, Bundle bundle) {
             C0260s1.m686c(3, C0155h1.f471c, "onActivityCreated for activity:".concat(String.valueOf(activity)));
             m468a(activity, C0082cn.EnumC0083a.f248a);
@@ -65,16 +66,19 @@ public final class C0155h1 {
             }
         }
 
+        @Override // android.app.Application.ActivityLifecycleCallbacks
         public final void onActivityDestroyed(Activity activity) {
             C0260s1.m686c(3, C0155h1.f471c, "onActivityDestroyed for activity:".concat(String.valueOf(activity)));
             m468a(activity, C0082cn.EnumC0083a.f249b);
         }
 
+        @Override // android.app.Application.ActivityLifecycleCallbacks
         public final void onActivityPaused(Activity activity) {
             C0260s1.m686c(3, C0155h1.f471c, "onActivityPaused for activity:".concat(String.valueOf(activity)));
             m468a(activity, C0082cn.EnumC0083a.f250c);
         }
 
+        @Override // android.app.Application.ActivityLifecycleCallbacks
         public final void onActivityResumed(Activity activity) {
             C0260s1.m686c(3, C0155h1.f471c, "onActivityResumed for activity:".concat(String.valueOf(activity)));
             if (!C0155h1.f474f) {
@@ -83,11 +87,13 @@ public final class C0155h1 {
             m468a(activity, C0082cn.EnumC0083a.f251d);
         }
 
+        @Override // android.app.Application.ActivityLifecycleCallbacks
         public final void onActivitySaveInstanceState(Activity activity, Bundle bundle) {
             C0260s1.m686c(3, C0155h1.f471c, "onActivitySaveInstanceState for activity:".concat(String.valueOf(activity)));
             m468a(activity, C0082cn.EnumC0083a.f254g);
         }
 
+        @Override // android.app.Application.ActivityLifecycleCallbacks
         public final void onActivityStarted(Activity activity) {
             C0260s1.m686c(3, C0155h1.f471c, "onActivityStarted for activity:".concat(String.valueOf(activity)));
             if (m469b(activity)) {
@@ -95,6 +101,7 @@ public final class C0155h1 {
             }
         }
 
+        @Override // android.app.Application.ActivityLifecycleCallbacks
         public final void onActivityStopped(Activity activity) {
             C0260s1.m686c(3, C0155h1.f471c, "onActivityStopped for activity:".concat(String.valueOf(activity)));
             if (m469b(activity)) {
@@ -108,12 +115,15 @@ public final class C0155h1 {
         ComponentCallbacks2C0157b(C0155h1 h1Var) {
         }
 
+        @Override // android.content.ComponentCallbacks
         public final void onConfigurationChanged(Configuration configuration) {
         }
 
+        @Override // android.content.ComponentCallbacks
         public final void onLowMemory() {
         }
 
+        @Override // android.content.ComponentCallbacks2
         public final void onTrimMemory(int i) {
             if (i == 20) {
                 C0155h1.m461c(false);

@@ -47,8 +47,9 @@ public class C0054by extends BroadcastReceiver {
         public static final int f182d = 4;
     }
 
+    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.by$b */
-    class C0056b implements AbstractC0192m1<C0082cn> {
+    public class C0056b implements AbstractC0192m1<C0082cn> {
         C0056b() {
         }
 
@@ -162,6 +163,7 @@ public class C0054by extends BroadcastReceiver {
         return EnumC0055a.f182d;
     }
 
+    @Override // android.content.BroadcastReceiver
     public void onReceive(Context context, Intent intent) {
         boolean b = m255b(context);
         if (this.f176b != b) {

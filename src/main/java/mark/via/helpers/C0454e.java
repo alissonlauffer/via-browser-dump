@@ -17,6 +17,6 @@ public final /* synthetic */ class C0454e implements TaoDialog.AbstractC0382j {
     @Override // mark.lib.frogsupport.dialog.TaoDialog.AbstractC0382j
     /* renamed from: a */
     public final void mo659a(View view, TaoDialog.C0384l lVar) {
-        this.f1359a.mo622N();
+        BookmarkHelper.m1716j(this.f1359a, view, lVar);
     }
 }

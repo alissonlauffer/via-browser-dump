@@ -20,8 +20,9 @@ public abstract class BaseListActivity extends BaseActivity {
     /* renamed from: e */
     protected CommonAdapter f1042e;
 
+    /* access modifiers changed from: package-private */
     /* renamed from: mark.lib.frogsupport.activity.BaseListActivity$a */
-    class C0362a implements CommonAdapter.AbstractC0386b {
+    public class C0362a implements CommonAdapter.AbstractC0386b {
         C0362a() {
         }
 
@@ -43,7 +44,7 @@ public abstract class BaseListActivity extends BaseActivity {
     public abstract CommonAdapter mo595a();
 
     /* access modifiers changed from: protected */
-    @Override // mark.lib.frogsupport.activity.BaseActivity
+    @Override // mark.lib.frogsupport.activity.BaseActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(C0367f.a);

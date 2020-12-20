@@ -23,6 +23,7 @@ public class ClickHandler extends Handler {
         return this;
     }
 
+    @Override // android.os.Handler
     public void handleMessage(Message message) {
         super.handleMessage(message);
         if (this.f1305a != null && !message.getData().isEmpty()) {

@@ -24,6 +24,7 @@ public class C0326z1 {
         private C0327a() {
         }
 
+        @Override // java.util.TimerTask, java.lang.Runnable
         public final void run() {
             C0260s1.m686c(3, C0326z1.f892d, "HttpRequest timed out. Cancelling.");
             C0108dk dkVar = C0326z1.this.f895c;

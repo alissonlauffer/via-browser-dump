@@ -14,6 +14,7 @@ public final /* synthetic */ class View$OnClickListenerC0431u implements View.On
         this.f1255a = sslErrorHandler;
     }
 
+    @Override // android.view.View.OnClickListener
     public final void onClick(View view) {
         this.f1255a.cancel();
     }

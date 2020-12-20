@@ -20,8 +20,9 @@ public final class C0022a1 {
     /* renamed from: d */
     int f80d;
 
+    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.a1$a */
-    static class C0023a implements AbstractC0185l2<C0022a1> {
+    public static class C0023a implements AbstractC0185l2<C0022a1> {
 
         /* renamed from: com.flurry.sdk.a1$a$a */
         class C0024a extends DataOutputStream {

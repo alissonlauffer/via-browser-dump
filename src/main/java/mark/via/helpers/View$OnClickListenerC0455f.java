@@ -28,6 +28,7 @@ public final /* synthetic */ class View$OnClickListenerC0455f implements View.On
         this.f1363d = editText;
     }
 
+    @Override // android.view.View.OnClickListener
     public final void onClick(View view) {
         BookmarkHelper.m1718l(this.f1360a, this.f1361b, this.f1362c, this.f1363d, view);
     }

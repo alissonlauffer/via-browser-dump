@@ -467,6 +467,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
                 this.f1659c = i2;
             }
 
+            @Override // java.lang.Runnable
             public void run() {
                 String str;
                 if (CompatUtils.m1336f(BrowserActivity.this.f1607b, R.string.RES_2131558406).equals(this.f1657a)) {
@@ -591,19 +592,23 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         C0512b() {
         }
 
+        @Override // android.text.TextWatcher
         public void afterTextChanged(Editable editable) {
             BrowserActivity.this.m2357X0(editable.toString());
         }
 
+        @Override // android.text.TextWatcher
         public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
         }
 
+        @Override // android.text.TextWatcher
         public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
         }
     }
 
+    /* access modifiers changed from: package-private */
     /* renamed from: mark.via.ui.activity.BrowserActivity$c */
-    class C0513c extends OnFrogMenusClickListener {
+    public class C0513c extends OnFrogMenusClickListener {
         C0513c() {
         }
 
@@ -861,6 +866,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
             this.f1665a = i;
         }
 
+        @Override // android.view.View.OnClickListener
         public void onClick(View view) {
             BrowserActivity.this.m2350V0(this.f1665a);
         }
@@ -918,8 +924,9 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     /* renamed from: mark.via.ui.activity.BrowserActivity$h */
     public class C0518h implements Downloader.AbstractC0337c {
 
+        /* access modifiers changed from: package-private */
         /* renamed from: mark.via.ui.activity.BrowserActivity$h$a */
-        class C0519a extends OnFrogToastListener {
+        public class C0519a extends OnFrogToastListener {
             C0519a() {
             }
 
@@ -963,13 +970,15 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         C0520i() {
         }
 
+        @Override // android.view.GestureDetector.SimpleOnGestureListener, android.view.GestureDetector.OnGestureListener
         public void onLongPress(MotionEvent motionEvent) {
             BrowserActivity.this.m2358X2();
         }
     }
 
+    /* access modifiers changed from: package-private */
     /* renamed from: mark.via.ui.activity.BrowserActivity$j */
-    class C0521j implements GestureTouchEvent.AbstractC0488a {
+    public class C0521j implements GestureTouchEvent.AbstractC0488a {
         C0521j() {
         }
 
@@ -1052,6 +1061,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         C0523l(BrowserActivity browserActivity) {
         }
 
+        @Override // android.text.TextWatcher
         public void afterTextChanged(Editable editable) {
             if (!(editable == null || editable.length() == 0)) {
                 for (CharacterStyle characterStyle : (CharacterStyle[]) editable.getSpans(0, editable.length(), MetricAffectingSpan.class)) {
@@ -1060,9 +1070,11 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
             }
         }
 
+        @Override // android.text.TextWatcher
         public void beforeTextChanged(CharSequence charSequence, int i, int i2, int i3) {
         }
 
+        @Override // android.text.TextWatcher
         public void onTextChanged(CharSequence charSequence, int i, int i2, int i3) {
         }
     }
@@ -1248,6 +1260,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
             this.f1685f = z3;
         }
 
+        @Override // android.animation.ValueAnimator.AnimatorUpdateListener
         public void onAnimationUpdate(ValueAnimator valueAnimator) {
             int intValue = ((Integer) valueAnimator.getAnimatedValue()).intValue();
             this.f1680a = intValue;
@@ -1277,6 +1290,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         ViewTreeObserver$OnGlobalLayoutListenerC0528q() {
         }
 
+        @Override // android.view.ViewTreeObserver.OnGlobalLayoutListener
         public void onGlobalLayout() {
             if (BrowserActivity.this.f1581K0 == -1) {
                 BrowserActivity browserActivity = BrowserActivity.this;
@@ -1328,6 +1342,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
             browserActivity.f1629m = BrowserUtils.m2098s(browserActivity.f1607b)[0];
         }
 
+        @Override // android.view.View.OnClickListener
         public void onClick(View view) {
             switch (view.getId()) {
                 case R.id.RES_2131230721 /* 2131230721 */:
@@ -1432,6 +1447,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
             this.f1689a = z;
         }
 
+        @Override // java.lang.Runnable
         public void run() {
             if (this.f1689a) {
                 ViewUtils.m2219F(BrowserActivity.this.f1578J, AnimationHelper.m1120b(5));
@@ -1447,6 +1463,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         View$OnLongClickListenerC0531t() {
         }
 
+        @Override // android.view.View.OnLongClickListener
         public boolean onLongClick(View view) {
             int id = view.getId();
             if (id == R.id.RES_2131230725) {
@@ -1501,8 +1518,9 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         }
     }
 
+    /* access modifiers changed from: package-private */
     /* renamed from: mark.via.ui.activity.BrowserActivity$v */
-    class C0533v extends OnFrogToastListener {
+    public class C0533v extends OnFrogToastListener {
 
         /* renamed from: a */
         final /* synthetic */ Message f1693a;
@@ -1537,6 +1555,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         animationAnimation$AnimationListenerC0535x() {
         }
 
+        @Override // android.view.animation.Animation.AnimationListener
         public void onAnimationEnd(Animation animation) {
             if (Build.VERSION.SDK_INT >= 11) {
                 ObjectAnimator ofFloat = ObjectAnimator.ofFloat(BrowserActivity.this.f1615f, "translationY", 0.0f, (float) BrowserActivity.this.f1570F);
@@ -1550,9 +1569,11 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
             BrowserActivity.this.f1615f.setPadding(0, BrowserActivity.this.f1570F, 0, 0);
         }
 
+        @Override // android.view.animation.Animation.AnimationListener
         public void onAnimationRepeat(Animation animation) {
         }
 
+        @Override // android.view.animation.Animation.AnimationListener
         public void onAnimationStart(Animation animation) {
         }
     }
@@ -4357,6 +4378,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     }
 
     /* access modifiers changed from: protected */
+    @Override // android.app.Activity
     public void onActivityResult(int i, int i2, Intent intent) {
         if (i == 911) {
             if (intent != null && intent.hasExtra("data")) {
@@ -4388,6 +4410,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         }
     }
 
+    @Override // android.app.Activity, android.content.ComponentCallbacks
     public void onConfigurationChanged(Configuration configuration) {
         super.onConfigurationChanged(configuration);
         int i = configuration.orientation;
@@ -4404,6 +4427,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     }
 
     /* access modifiers changed from: protected */
+    @Override // android.app.Activity
     public void onCreate(Bundle bundle) {
         long currentTimeMillis = System.currentTimeMillis();
         DaggerBrowserComponent.C0449b b = DaggerBrowserComponent.m1674b();
@@ -4434,6 +4458,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     }
 
     /* access modifiers changed from: protected */
+    @Override // android.app.Activity
     public void onDestroy() {
         this.f1635p.mo1098M0(DataChecker.m1181c().mo663d(1));
         this.f1615f.removeAllViews();
@@ -4454,6 +4479,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         super.onDestroy();
     }
 
+    @Override // android.app.Activity, android.view.KeyEvent.Callback
     public boolean onKeyDown(int i, KeyEvent keyEvent) {
         Timber.m971a("onKeyDown, keyCode: %s", Integer.valueOf(i));
         if (i == 4) {
@@ -4477,6 +4503,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         }
     }
 
+    @Override // android.app.Activity
     public boolean onKeyShortcut(int i, KeyEvent keyEvent) {
         int i2 = Build.VERSION.SDK_INT;
         Timber.m971a("onKeyShortcut, keyCode: %s", Integer.valueOf(i));
@@ -4576,6 +4603,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         return super.onKeyShortcut(i, keyEvent);
     }
 
+    @Override // android.app.Activity, android.view.KeyEvent.Callback
     public boolean onKeyUp(int i, KeyEvent keyEvent) {
         int i2 = Build.VERSION.SDK_INT;
         Timber.m971a("onKeyUp, keyCode: %s", Integer.valueOf(i));
@@ -4680,6 +4708,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         return super.onKeyUp(i, keyEvent);
     }
 
+    @Override // android.app.Activity, android.view.Window.Callback
     public boolean onMenuOpened(int i, Menu menu) {
         if (this.f1601W == 1) {
             m2274A3();
@@ -4689,6 +4718,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     }
 
     /* access modifiers changed from: protected */
+    @Override // android.app.Activity
     public void onNewIntent(Intent intent) {
         if (intent != null) {
             String o = BrowserUtils.m2094o(intent, this.f1629m);
@@ -4701,6 +4731,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     }
 
     /* access modifiers changed from: protected */
+    @Override // android.app.Activity
     public void onPause() {
         super.onPause();
         if (this.f1583L0) {
@@ -4723,6 +4754,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         }
     }
 
+    @Override // android.app.Activity
     public void onRequestPermissionsResult(int i, String[] strArr, int[] iArr) {
         super.onRequestPermissionsResult(i, strArr, iArr);
         if (!AppUtils.m2062j(this.f1607b, i, iArr) && this.f1648v0 != null && strArr.length > 0 && "android.permission.WRITE_EXTERNAL_STORAGE".equals(strArr[0])) {
@@ -4732,6 +4764,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     }
 
     /* access modifiers changed from: protected */
+    @Override // android.app.Activity
     public void onResume() {
         super.onResume();
         TabItem b0Var = this.f1623j;
@@ -4749,12 +4782,14 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     }
 
     /* access modifiers changed from: protected */
+    @Override // android.app.Activity
     public void onStart() {
         this.f1618g0 = true;
         super.onStart();
     }
 
     /* access modifiers changed from: protected */
+    @Override // android.app.Activity
     public void onStop() {
         this.f1618g0 = false;
         this.f1635p.mo1107P0(DataChecker.m1181c().mo662b());

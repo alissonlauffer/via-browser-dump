@@ -19,6 +19,7 @@ public final /* synthetic */ class View$OnKeyListenerC0475d implements View.OnKe
         this.f1433b = dVar;
     }
 
+    @Override // android.view.View.OnKeyListener
     public final boolean onKey(View view, int i, KeyEvent keyEvent) {
         return this.f1432a.mo1268o(this.f1433b, view, i, keyEvent);
     }

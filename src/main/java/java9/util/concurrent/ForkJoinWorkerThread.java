@@ -58,12 +58,14 @@ public class ForkJoinWorkerThread extends Thread {
             TLRandom.m1085b(this);
         }
 
+        @Override // java.lang.Thread
         public void setContextClassLoader(ClassLoader classLoader) {
             if (classLoader != null && ClassLoader.getSystemClassLoader() != classLoader) {
                 throw new SecurityException("setContextClassLoader");
             }
         }
 
+        @Override // java.lang.Thread
         public void setUncaughtExceptionHandler(Thread.UncaughtExceptionHandler uncaughtExceptionHandler) {
         }
     }
@@ -90,6 +92,7 @@ public class ForkJoinWorkerThread extends Thread {
     public void mo573c(Throwable th) {
     }
 
+    @Override // java.lang.Thread, java.lang.Runnable
     public void run() {
         if (this.f1014b.f1010h == null) {
             Throwable th = null;

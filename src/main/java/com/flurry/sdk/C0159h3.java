@@ -39,6 +39,7 @@ public class C0159h3 implements AbstractC0282v1, C0275u2.AbstractC0276a, Thread.
         C0260s1.m686c(6, f479b, "onSettingUpdate internal error!");
     }
 
+    @Override // java.lang.Thread.UncaughtExceptionHandler
     public void uncaughtException(Thread thread, Throwable th) {
         String str;
         th.printStackTrace();

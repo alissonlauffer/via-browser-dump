@@ -41,8 +41,9 @@ public final class C0004b {
     /* renamed from: f */
     private static AbstractC0003a f48f;
 
+    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.android.b$a */
-    class C0005a implements AbstractC0192m1<C0127ec> {
+    public class C0005a implements AbstractC0192m1<C0127ec> {
 
         /* renamed from: com.flurry.android.b$a$a */
         class RunnableC0006a implements Runnable {
@@ -54,6 +55,7 @@ public final class C0004b {
                 this.f49a = ecVar;
             }
 
+            @Override // java.lang.Runnable
             public final void run() {
                 if (C0007b.f50a[this.f49a.f385d - 1] == 1 && C0004b.f44b != null) {
                     C0004b.f44b.mo81a();

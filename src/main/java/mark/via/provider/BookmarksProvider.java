@@ -38,23 +38,28 @@ public class BookmarksProvider extends ContentProvider {
         return this.f1552a.match(uri);
     }
 
+    @Override // android.content.ContentProvider
     public int delete(Uri uri, String str, String[] strArr) {
         return 0;
     }
 
+    @Override // android.content.ContentProvider
     public String getType(Uri uri) {
         return m2256a(uri) == 0 ? f1551d : "";
     }
 
+    @Override // android.content.ContentProvider
     public Uri insert(Uri uri, ContentValues contentValues) {
         return null;
     }
 
+    @Override // android.content.ContentProvider
     public boolean onCreate() {
         this.f1553b = DatabaseHandler.m1595v(getContext());
         return true;
     }
 
+    @Override // android.content.ContentProvider
     public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2) {
         if (m2256a(uri) == 0) {
             return this.f1553b.mo968C(strArr, str, strArr2, str2);
@@ -62,6 +67,7 @@ public class BookmarksProvider extends ContentProvider {
         return null;
     }
 
+    @Override // android.content.ContentProvider
     public int update(Uri uri, ContentValues contentValues, String str, String[] strArr) {
         return 0;
     }

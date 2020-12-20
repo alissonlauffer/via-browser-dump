@@ -25,12 +25,14 @@ public final class C0168j1 extends MessageDigest {
     }
 
     /* access modifiers changed from: protected */
+    @Override // java.security.MessageDigestSpi
     public final byte[] engineDigest() {
         long value = this.f512a.getValue();
         return new byte[]{(byte) ((int) ((-16777216 & value) >> 24)), (byte) ((int) ((16711680 & value) >> 16)), (byte) ((int) ((65280 & value) >> 8)), (byte) ((int) ((value & 255) >> 0))};
     }
 
     /* access modifiers changed from: protected */
+    @Override // java.security.MessageDigestSpi
     public final void engineReset() {
         this.f512a.reset();
     }
@@ -42,6 +44,7 @@ public final class C0168j1 extends MessageDigest {
     }
 
     /* access modifiers changed from: protected */
+    @Override // java.security.MessageDigestSpi
     public final void engineUpdate(byte[] bArr, int i, int i2) {
         this.f512a.update(bArr, i, i2);
     }

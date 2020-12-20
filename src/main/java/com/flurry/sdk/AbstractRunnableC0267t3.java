@@ -58,6 +58,7 @@ public abstract class AbstractRunnableC0267t3 implements Runnable {
         ThreadFactoryC0268a() {
         }
 
+        @Override // java.util.concurrent.ThreadFactory
         public final Thread newThread(Runnable runnable) {
             StringBuilder sb = new StringBuilder("Flurry-Config-Background-");
             int i = this.f758a + 1;
@@ -120,6 +121,7 @@ public abstract class AbstractRunnableC0267t3 implements Runnable {
         return this.f751b;
     }
 
+    @Override // java.lang.Runnable
     public void run() {
         C0143g gVar = C0143g.f436c;
         this.f751b = gVar;

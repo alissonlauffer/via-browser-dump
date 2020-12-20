@@ -11,6 +11,7 @@ public final /* synthetic */ class RunnableC0635i1 implements Runnable {
         this.f1918a = skinSettings;
     }
 
+    @Override // java.lang.Runnable
     public final void run() {
         this.f1918a.mo1533w();
     }

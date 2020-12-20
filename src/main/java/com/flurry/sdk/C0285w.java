@@ -225,8 +225,9 @@ public class C0285w implements C0275u2.AbstractC0276a {
         }
     }
 
+    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.w$f */
-    class C0292f implements AbstractC0192m1<C0259s0> {
+    public class C0292f implements AbstractC0192m1<C0259s0> {
         C0292f() {
         }
 
@@ -238,8 +239,9 @@ public class C0285w implements C0275u2.AbstractC0276a {
         }
     }
 
+    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.w$g */
-    class C0293g implements AbstractC0192m1<C0264t0> {
+    public class C0293g implements AbstractC0192m1<C0264t0> {
         C0293g() {
         }
 
@@ -251,8 +253,9 @@ public class C0285w implements C0275u2.AbstractC0276a {
         }
     }
 
+    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.w$h */
-    class C0294h implements AbstractC0192m1<C0298w0> {
+    public class C0294h implements AbstractC0192m1<C0298w0> {
         C0294h() {
         }
 
@@ -266,8 +269,9 @@ public class C0285w implements C0275u2.AbstractC0276a {
         }
     }
 
+    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.w$i */
-    class C0295i implements AbstractC0201n2<C0269u> {
+    public class C0295i implements AbstractC0201n2<C0269u> {
         C0295i(C0285w wVar) {
         }
 
@@ -278,8 +282,9 @@ public class C0285w implements C0275u2.AbstractC0276a {
         }
     }
 
+    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.w$j */
-    class C0296j implements AbstractC0201n2<List<C0033b0>> {
+    public class C0296j implements AbstractC0201n2<List<C0033b0>> {
         C0296j(C0285w wVar) {
         }
 

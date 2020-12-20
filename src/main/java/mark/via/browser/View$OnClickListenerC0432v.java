@@ -14,6 +14,7 @@ public final /* synthetic */ class View$OnClickListenerC0432v implements View.On
         this.f1256a = message;
     }
 
+    @Override // android.view.View.OnClickListener
     public final void onClick(View view) {
         this.f1256a.sendToTarget();
     }

@@ -17,6 +17,7 @@ public final /* synthetic */ class RunnableC0661r0 implements Runnable {
         this.f1970b = inputStream;
     }
 
+    @Override // java.lang.Runnable
     public final void run() {
         this.f1969a.mo1493t0(this.f1970b);
     }

@@ -87,6 +87,7 @@ public class C0108dk extends AbstractC0075c3 {
         kDelete,
         kHead;
 
+        @Override // java.lang.Enum, java.lang.Object
         public final String toString() {
             int i = C0111c.f350a[ordinal()];
             if (i == 1) {
@@ -114,6 +115,7 @@ public class C0108dk extends AbstractC0075c3 {
         C0110b() {
         }
 
+        @Override // java.lang.Thread, java.lang.Runnable
         public final void run() {
             try {
                 if (C0108dk.this.f330n != null) {

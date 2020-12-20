@@ -11,6 +11,7 @@ public final /* synthetic */ class RunnableC0628g0 implements Runnable {
         this.f1900a = generalSettings;
     }
 
+    @Override // java.lang.Runnable
     public final void run() {
         this.f1900a.mo1492r0();
     }

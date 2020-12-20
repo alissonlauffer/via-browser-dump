@@ -22,6 +22,7 @@ public class BrowserBroadcastReceiver extends BroadcastReceiver {
         this.f1392a = aVar;
     }
 
+    @Override // android.content.BroadcastReceiver
     public void onReceive(Context context, Intent intent) {
         AbstractC0467a aVar = this.f1392a;
         if (aVar != null && intent != null) {

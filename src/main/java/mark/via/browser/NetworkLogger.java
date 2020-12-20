@@ -102,6 +102,7 @@ public class NetworkLogger extends Handler {
         return this;
     }
 
+    @Override // android.os.Handler
     public void handleMessage(Message message) {
         int i = message.what;
         if (i == 1) {

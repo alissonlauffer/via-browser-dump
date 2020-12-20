@@ -71,6 +71,7 @@ public class SkinSettings extends BaseSettings {
         C0599a() {
         }
 
+        @Override // android.webkit.WebViewClient
         public void onPageFinished(WebView webView, String str) {
             SkinSettings.this.m2815E();
         }
@@ -82,6 +83,7 @@ public class SkinSettings extends BaseSettings {
         C0600b() {
         }
 
+        @Override // android.webkit.WebChromeClient
         public void onProgressChanged(WebView webView, int i) {
             if (i > 50) {
                 SkinSettings.this.m2815E();
@@ -103,6 +105,7 @@ public class SkinSettings extends BaseSettings {
                 this.f1849a = str;
             }
 
+            @Override // java.lang.Runnable
             public void run() {
                 SkinSettings.this.f1841e.loadUrl(this.f1849a);
             }
@@ -111,6 +114,7 @@ public class SkinSettings extends BaseSettings {
         RunnableC0601c() {
         }
 
+        @Override // java.lang.Runnable
         public void run() {
             SkinSettings.this.runOnUiThread(new RunnableC0602a(PageManager.m1943g(((BaseActivity) SkinSettings.this).f1039b)));
         }
@@ -143,12 +147,15 @@ public class SkinSettings extends BaseSettings {
         C0604e() {
         }
 
+        @Override // android.widget.SeekBar.OnSeekBarChangeListener
         public void onProgressChanged(SeekBar seekBar, int i, boolean z) {
         }
 
+        @Override // android.widget.SeekBar.OnSeekBarChangeListener
         public void onStartTrackingTouch(SeekBar seekBar) {
         }
 
+        @Override // android.widget.SeekBar.OnSeekBarChangeListener
         public void onStopTrackingTouch(SeekBar seekBar) {
             SkinSettings.this.f1803c.mo1144e1(seekBar.getProgress());
             DataChecker.m1181c().mo667h(1);
@@ -480,6 +487,7 @@ public class SkinSettings extends BaseSettings {
     }
 
     /* access modifiers changed from: protected */
+    @Override // android.app.Activity
     public void onActivityResult(int i, int i2, Intent intent) {
         super.onActivityResult(i, i2, intent);
         if (i2 == -1 && intent != null && intent.getData() != null) {
@@ -493,7 +501,7 @@ public class SkinSettings extends BaseSettings {
         }
     }
 
-    @Override // mark.via.ui.settings.BaseSettings, mark.lib.frogsupport.activity.BaseActivity
+    @Override // mark.via.ui.settings.BaseSettings, mark.lib.frogsupport.activity.BaseActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(m2825h());
@@ -503,6 +511,7 @@ public class SkinSettings extends BaseSettings {
     }
 
     /* access modifiers changed from: protected */
+    @Override // android.app.Activity
     public void onDestroy() {
         this.f1803c.mo1107P0(DataChecker.m1181c().mo662b());
         this.f1840d.removeAllViews();
@@ -511,6 +520,7 @@ public class SkinSettings extends BaseSettings {
     }
 
     /* access modifiers changed from: protected */
+    @Override // android.app.Activity
     public void onPause() {
         WebViewUtil.m2049i(this.f1841e);
         if (this.f1842f) {
@@ -519,12 +529,14 @@ public class SkinSettings extends BaseSettings {
         super.onPause();
     }
 
+    @Override // android.app.Activity
     public void onRequestPermissionsResult(int i, String[] strArr, int[] iArr) {
         super.onRequestPermissionsResult(i, strArr, iArr);
         AppUtils.m2062j(this.f1039b, i, iArr);
     }
 
     /* access modifiers changed from: protected */
+    @Override // android.app.Activity
     public void onResume() {
         super.onResume();
         WebViewUtil.m2050j(this.f1841e);

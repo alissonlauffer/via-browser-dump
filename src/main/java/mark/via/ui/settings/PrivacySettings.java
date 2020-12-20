@@ -83,13 +83,14 @@ public class PrivacySettings extends BaseSettings {
         m2762c(bVar);
     }
 
-    @Override // mark.via.ui.settings.BaseSettings, mark.lib.frogsupport.activity.BaseActivity
+    @Override // mark.via.ui.settings.BaseSettings, mark.lib.frogsupport.activity.BaseActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(m2761b());
         ViewUtils.m2237o(findViewById(FrogNavigator.f1148f));
     }
 
+    @Override // android.app.Activity
     public void onRequestPermissionsResult(int i, String[] strArr, int[] iArr) {
         int i2;
         FrogSettingsBean h;

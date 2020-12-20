@@ -81,10 +81,12 @@ public class ConfDbHelper extends SQLiteOpenHelper implements ConfDataSource {
         return insert;
     }
 
+    @Override // android.database.sqlite.SQLiteOpenHelper
     public void onCreate(SQLiteDatabase sQLiteDatabase) {
         m1909e(sQLiteDatabase);
     }
 
+    @Override // android.database.sqlite.SQLiteOpenHelper
     public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2) {
         if (i == 1) {
             m1910f(sQLiteDatabase);

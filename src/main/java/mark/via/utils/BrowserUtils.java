@@ -37,7 +37,7 @@ public final class BrowserUtils {
 
     /* renamed from: mark.via.n.e$a */
     /* compiled from: BrowserUtils */
-    class RunnableC0494a implements Runnable {
+    public class RunnableC0494a implements Runnable {
 
         /* renamed from: a */
         final /* synthetic */ Context f1514a;
@@ -46,6 +46,7 @@ public final class BrowserUtils {
             this.f1514a = context;
         }
 
+        @Override // java.lang.Runnable
         public void run() {
             DatabaseHandler.m1595v(this.f1514a).mo979f();
             BrowserUtils.m2079J(this.f1514a);
@@ -54,7 +55,7 @@ public final class BrowserUtils {
 
     /* renamed from: mark.via.n.e$b */
     /* compiled from: BrowserUtils */
-    class RunnableC0495b implements Runnable {
+    public class RunnableC0495b implements Runnable {
 
         /* renamed from: a */
         final /* synthetic */ Context f1515a;
@@ -63,6 +64,7 @@ public final class BrowserUtils {
             this.f1515a = context;
         }
 
+        @Override // java.lang.Runnable
         public void run() {
             WebViewDatabase instance = WebViewDatabase.getInstance(this.f1515a);
             instance.clearFormData();
@@ -189,7 +191,6 @@ public final class BrowserUtils {
         }
     }
 
-    /* access modifiers changed from: private */
     /* renamed from: J */
     public static void m2079J(Context context) {
         try {

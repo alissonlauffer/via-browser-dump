@@ -18,6 +18,7 @@ public abstract class AbstractRunnableC0040b3 implements Runnable {
     /* renamed from: a */
     public abstract void mo121a();
 
+    @Override // java.lang.Runnable
     public final void run() {
         try {
             mo121a();

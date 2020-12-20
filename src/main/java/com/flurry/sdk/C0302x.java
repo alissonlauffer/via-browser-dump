@@ -17,8 +17,9 @@ public class C0302x extends AbstractC0066c2<C0310y> {
     /* renamed from: k */
     public static long f834k;
 
+    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.x$a */
-    class C0303a implements AbstractC0201n2<List<C0310y>> {
+    public class C0303a implements AbstractC0201n2<List<C0310y>> {
         C0303a(C0302x xVar) {
         }
 

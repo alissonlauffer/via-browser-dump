@@ -13,6 +13,7 @@ public final /* synthetic */ class View$OnFocusChangeListenerC0542c implements V
         this.f1710a = browserActivity;
     }
 
+    @Override // android.view.View.OnFocusChangeListener
     public final void onFocusChange(View view, boolean z) {
         this.f1710a.mo1362d2(view, z);
     }

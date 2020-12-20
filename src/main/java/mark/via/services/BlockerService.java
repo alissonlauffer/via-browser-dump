@@ -69,6 +69,7 @@ public class BlockerService extends IntentService {
         context.startService(intent);
     }
 
+    @Override // android.app.IntentService, android.app.Service
     public void onCreate() {
         Notification notification;
         super.onCreate();
@@ -91,12 +92,14 @@ public class BlockerService extends IntentService {
         }
     }
 
+    @Override // android.app.IntentService, android.app.Service
     public void onDestroy() {
         super.onDestroy();
         stopForeground(true);
     }
 
     /* access modifiers changed from: protected */
+    @Override // android.app.IntentService
     public void onHandleIntent(Intent intent) {
         Bundle extras = intent.getExtras();
         if (extras != null && extras.containsKey("u") && extras.containsKey("p")) {

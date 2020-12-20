@@ -30,9 +30,10 @@ import timber.log.Timber;
 /* compiled from: ViewUtils */
 public class ViewUtils {
 
+    /* access modifiers changed from: package-private */
     /* renamed from: mark.via.n.y$a  reason: invalid class name */
     /* compiled from: ViewUtils */
-    class animationAnimation$AnimationListenerC0506a implements Animation.AnimationListener {
+    public class animationAnimation$AnimationListenerC0506a implements Animation.AnimationListener {
 
         /* renamed from: a */
         final /* synthetic */ View f1549a;
@@ -41,6 +42,7 @@ public class ViewUtils {
             this.f1549a = view;
         }
 
+        @Override // android.view.animation.Animation.AnimationListener
         public void onAnimationEnd(Animation animation) {
             TranslateAnimation translateAnimation = new TranslateAnimation(0, 0.0f, 0, 0.0f, 1, -0.3f, 1, 0.0f);
             translateAnimation.setDuration(120);
@@ -48,9 +50,11 @@ public class ViewUtils {
             this.f1549a.startAnimation(translateAnimation);
         }
 
+        @Override // android.view.animation.Animation.AnimationListener
         public void onAnimationRepeat(Animation animation) {
         }
 
+        @Override // android.view.animation.Animation.AnimationListener
         public void onAnimationStart(Animation animation) {
         }
     }

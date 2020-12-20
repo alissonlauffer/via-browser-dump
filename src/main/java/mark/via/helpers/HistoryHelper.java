@@ -15,7 +15,6 @@ import mark.via.utils.BrowserUtils;
 /* compiled from: HistoryHelper */
 public class HistoryHelper {
 
-    /* access modifiers changed from: package-private */
     /* renamed from: mark.via.h.o$a */
     /* compiled from: HistoryHelper */
     public class RunnableC0463a implements Runnable {
@@ -35,6 +34,7 @@ public class HistoryHelper {
             this.f1381c = str2;
         }
 
+        @Override // java.lang.Runnable
         public void run() {
             try {
                 DatabaseHandler.m1595v(this.f1379a).mo973I(this.f1380b, this.f1381c);
@@ -43,7 +43,6 @@ public class HistoryHelper {
         }
     }
 
-    /* access modifiers changed from: package-private */
     /* renamed from: mark.via.h.o$b */
     /* compiled from: HistoryHelper */
     public class RunnableC0464b implements Runnable {
@@ -59,6 +58,7 @@ public class HistoryHelper {
             this.f1383b = str;
         }
 
+        @Override // java.lang.Runnable
         public void run() {
             try {
                 DatabaseHandler.m1595v(this.f1382a).mo983j(this.f1383b);

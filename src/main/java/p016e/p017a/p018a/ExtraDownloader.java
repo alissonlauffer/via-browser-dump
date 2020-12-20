@@ -11,9 +11,10 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/* access modifiers changed from: package-private */
 /* renamed from: e.a.a.c */
 /* compiled from: ExtraDownloader */
-class ExtraDownloader {
+public class ExtraDownloader {
 
     /* renamed from: b */
     private static volatile ExtraDownloader f924b;

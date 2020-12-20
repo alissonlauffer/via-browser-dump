@@ -72,6 +72,7 @@ public class BrowserApp extends Application {
         new Handler(Looper.getMainLooper()).post(new RunnableC0404b(this, thread, th));
     }
 
+    @Override // android.app.Application
     public void onCreate() {
         super.onCreate();
         m1390d();

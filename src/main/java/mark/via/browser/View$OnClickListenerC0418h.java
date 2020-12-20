@@ -14,6 +14,7 @@ public final /* synthetic */ class View$OnClickListenerC0418h implements View.On
         this.f1241a = jsResult;
     }
 
+    @Override // android.view.View.OnClickListener
     public final void onClick(View view) {
         this.f1241a.cancel();
     }

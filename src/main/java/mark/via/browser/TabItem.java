@@ -1,7 +1,5 @@
 package mark.via.browser;
 
-import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -169,11 +167,11 @@ public class TabItem {
         void mo864u(boolean z);
     }
 
-    /* access modifiers changed from: private */
     /* renamed from: mark.via.browser.b0$c */
     /* compiled from: TabItem */
     public class C0410c extends WebChromeClient {
         private C0410c() {
+            TabItem.this = r1;
         }
 
         /* renamed from: i */
@@ -186,14 +184,17 @@ public class TabItem {
             }
         }
 
+        @Override // android.webkit.WebChromeClient
         public View getVideoLoadingProgressView() {
             return LayoutInflater.from(TabItem.this.f1217c).inflate(R.layout.RES_2131361798, (ViewGroup) TabItem.this.f1216b.findViewById(16908290), false);
         }
 
+        @Override // android.webkit.WebChromeClient
         public boolean onConsoleMessage(ConsoleMessage consoleMessage) {
             return true;
         }
 
+        @Override // android.webkit.WebChromeClient
         public boolean onCreateWindow(WebView webView, boolean z, boolean z2, Message message) {
             try {
                 TabItem.this.f1226l.mo848e(webView, z2, message);
@@ -204,6 +205,7 @@ public class TabItem {
             }
         }
 
+        @Override // android.webkit.WebChromeClient
         public void onGeolocationPermissionsShowPrompt(String str, GeolocationPermissions.Callback callback) {
             String str2;
             if (str.length() > 50) {
@@ -220,12 +222,14 @@ public class TabItem {
             g.mo622N();
         }
 
+        @Override // android.webkit.WebChromeClient
         public void onHideCustomView() {
             super.onHideCustomView();
             Timber.m971a("onHideCustomView in callback", new Object[0]);
             TabItem.this.f1226l.mo857n();
         }
 
+        @Override // android.webkit.WebChromeClient
         public boolean onJsAlert(WebView webView, String str, String str2, JsResult jsResult) {
             String str3;
             if (!webView.isShown()) {
@@ -248,6 +252,7 @@ public class TabItem {
             return true;
         }
 
+        @Override // android.webkit.WebChromeClient
         public boolean onJsBeforeUnload(WebView webView, String str, String str2, JsResult jsResult) {
             if (!webView.isShown()) {
                 jsResult.confirm();
@@ -263,6 +268,7 @@ public class TabItem {
             return true;
         }
 
+        @Override // android.webkit.WebChromeClient
         public boolean onJsConfirm(WebView webView, String str, String str2, JsResult jsResult) {
             String str3;
             if (!webView.isShown()) {
@@ -285,6 +291,7 @@ public class TabItem {
             return true;
         }
 
+        @Override // android.webkit.WebChromeClient
         public boolean onJsPrompt(WebView webView, String str, String str2, String str3, JsPromptResult jsPromptResult) {
             String str4;
             if (!webView.isShown()) {
@@ -307,6 +314,7 @@ public class TabItem {
             return true;
         }
 
+        @Override // android.webkit.WebChromeClient
         public void onPermissionRequest(PermissionRequest permissionRequest) {
             if (permissionRequest != null) {
                 Activity activity = TabItem.this.f1216b;
@@ -315,6 +323,7 @@ public class TabItem {
             }
         }
 
+        @Override // android.webkit.WebChromeClient
         public void onProgressChanged(WebView webView, int i) {
             if (webView.isShown() && (i == 100 || TabItem.this.f1228n == null || !BrowserUtils.m2101v(TabItem.this.f1217c, TabItem.this.f1228n))) {
                 TabItem.this.f1226l.mo853j(i);
@@ -328,10 +337,12 @@ public class TabItem {
             }
         }
 
+        @Override // android.webkit.WebChromeClient
         public void onReceivedIcon(WebView webView, Bitmap bitmap) {
             TabItem.this.m1432j0();
         }
 
+        @Override // android.webkit.WebChromeClient
         public void onReceivedTitle(WebView webView, String str) {
             if (webView.isShown()) {
                 TabItem.this.f1226l.mo854k();
@@ -340,6 +351,7 @@ public class TabItem {
             TabItem.this.m1432j0();
         }
 
+        @Override // android.webkit.WebChromeClient
         public void onShowCustomView(View view, WebChromeClient.CustomViewCallback customViewCallback) {
             super.onShowCustomView(view, customViewCallback);
             if (Constants.f1301f >= 19) {
@@ -366,7 +378,7 @@ public class TabItem {
             TabItem.this.f1226l.mo846c(valueCallback);
         }
 
-        @Deprecated
+        @Override // android.webkit.WebChromeClient
         public void onShowCustomView(View view, int i, WebChromeClient.CustomViewCallback customViewCallback) {
             super.onShowCustomView(view, i, customViewCallback);
             int i2 = Constants.f1301f;
@@ -376,13 +388,14 @@ public class TabItem {
         }
     }
 
-    /* access modifiers changed from: private */
     /* renamed from: mark.via.browser.b0$d */
     /* compiled from: TabItem */
     public class C0411d implements DownloadListener {
         private C0411d() {
+            TabItem.this = r1;
         }
 
+        @Override // android.webkit.DownloadListener
         public void onDownloadStart(String str, String str2, String str3, String str4, long j) {
             TabItem.this.f1226l.mo851h(str, str2, str3, str4, j);
         }
@@ -405,16 +418,12 @@ public class TabItem {
         throw new NullPointerException("TabItem callback can not be null");
     }
 
-    /* access modifiers changed from: private */
-    /* access modifiers changed from: public */
     /* renamed from: C */
     private boolean m1408C(String str) {
         m1442t(str);
         return true;
     }
 
-    /* access modifiers changed from: private */
-    /* access modifiers changed from: public */
     /* renamed from: E */
     private void m1409E(FastView fastView) {
         if (!this.f1219e && fastView != null) {
@@ -445,7 +454,6 @@ public class TabItem {
         }
     }
 
-    @SuppressLint({"JavascriptInterface", "AddJavascriptInterface", "ClickableViewAccessibility"})
     /* renamed from: R */
     private void m1412R(Activity activity, FastView fastView) {
         this.f1226l.mo855l(fastView);
@@ -462,12 +470,14 @@ public class TabItem {
         mo810D(fastView);
     }
 
+    /* access modifiers changed from: public */
     /* access modifiers changed from: private */
     /* renamed from: T */
     public /* synthetic */ void mo822U(FastView fastView) {
         m1412R(this.f1216b, fastView);
     }
 
+    /* access modifiers changed from: public */
     /* access modifiers changed from: private */
     /* renamed from: V */
     public /* synthetic */ void mo823W(FastView fastView) {
@@ -479,18 +489,21 @@ public class TabItem {
         }
     }
 
+    /* access modifiers changed from: public */
     /* access modifiers changed from: private */
     /* renamed from: X */
     public /* synthetic */ boolean mo824Y(View view) {
         return this.f1226l.mo847d();
     }
 
+    /* access modifiers changed from: public */
     /* access modifiers changed from: private */
     /* renamed from: Z */
     public /* synthetic */ boolean mo825a0(View view, MotionEvent motionEvent) {
         return this.f1226l.mo852i(view, motionEvent);
     }
 
+    /* access modifiers changed from: public */
     /* access modifiers changed from: private */
     /* renamed from: c0 */
     public /* synthetic */ void mo826d0(boolean z, FastView fastView) {
@@ -499,6 +512,7 @@ public class TabItem {
         this.f1216b.runOnUiThread(new RunnableC0414d(fastView, b));
     }
 
+    /* access modifiers changed from: public */
     /* access modifiers changed from: private */
     /* renamed from: e0 */
     public /* synthetic */ void mo827f0(boolean z) {
@@ -534,8 +548,6 @@ public class TabItem {
         }
     }
 
-    /* access modifiers changed from: private */
-    /* access modifiers changed from: public */
     /* renamed from: j0 */
     private void m1432j0() {
         this.f1226l.mo845b(this.f1229o);
@@ -597,8 +609,6 @@ public class TabItem {
         m1441s0(size);
     }
 
-    /* access modifiers changed from: private */
-    /* access modifiers changed from: public */
     /* renamed from: x */
     private void m1443x() {
         int size = this.f1222h.size();
@@ -640,7 +650,6 @@ public class TabItem {
         this.f1230p = false;
     }
 
-    @SuppressLint({"SetJavaScriptEnabled"})
     /* renamed from: D */
     public void mo810D(FastView fastView) {
         this.f1226l.mo856m(fastView);
@@ -847,11 +856,11 @@ public class TabItem {
         this.f1227m.mo797a(this.f1223i);
     }
 
-    /* access modifiers changed from: private */
     /* renamed from: mark.via.browser.b0$e */
     /* compiled from: TabItem */
     public class C0412e extends WebViewClient {
         private C0412e() {
+            TabItem.this = r1;
         }
 
         /* renamed from: c */
@@ -892,6 +901,7 @@ public class TabItem {
             return q;
         }
 
+        @Override // android.webkit.WebViewClient
         public void onFormResubmission(WebView webView, Message message, Message message2) {
             if (!webView.isShown()) {
                 message.sendToTarget();
@@ -906,6 +916,7 @@ public class TabItem {
             g.mo622N();
         }
 
+        @Override // android.webkit.WebViewClient
         public void onPageFinished(WebView webView, String str) {
             if (!TabItem.this.f1218d) {
                 TabItem.this.f1226l.mo861r(webView);
@@ -913,7 +924,7 @@ public class TabItem {
             TabItem.this.m1409E((FastView) webView);
         }
 
-        @SuppressLint({"SetJavaScriptEnabled"})
+        @Override // android.webkit.WebViewClient
         public void onPageStarted(WebView webView, String str, Bitmap bitmap) {
             TabItem.this.f1228n = str;
             String n = BrowserUtils.m2093n(str, false);
@@ -940,6 +951,7 @@ public class TabItem {
             }
         }
 
+        @Override // android.webkit.WebViewClient
         public void onReceivedHttpAuthRequest(WebView webView, HttpAuthHandler httpAuthHandler, String str, String str2) {
             if (!webView.isShown()) {
                 httpAuthHandler.cancel();
@@ -960,6 +972,7 @@ public class TabItem {
             g.mo622N();
         }
 
+        @Override // android.webkit.WebViewClient
         public void onReceivedSslError(WebView webView, SslErrorHandler sslErrorHandler, SslError sslError) {
             if (URLUtil.isFileUrl(webView.getUrl())) {
                 sslErrorHandler.proceed();
@@ -1000,7 +1013,6 @@ public class TabItem {
         }
 
         @Override // android.webkit.WebViewClient
-        @TargetApi(21)
         public WebResourceResponse shouldInterceptRequest(WebView webView, WebResourceRequest webResourceRequest) {
             if (!(Build.VERSION.SDK_INT < 21 || TabItem.this.f1226l == null || webView == null || webResourceRequest == null || webResourceRequest.getUrl() == null)) {
                 String uri = webResourceRequest.getUrl().toString();
@@ -1012,7 +1024,6 @@ public class TabItem {
         }
 
         @Override // android.webkit.WebViewClient
-        @TargetApi(24)
         public boolean shouldOverrideUrlLoading(WebView webView, WebResourceRequest webResourceRequest) {
             if (Build.VERSION.SDK_INT < 24) {
                 return super.shouldOverrideUrlLoading(webView, webResourceRequest);
@@ -1022,7 +1033,6 @@ public class TabItem {
         }
 
         @Override // android.webkit.WebViewClient
-        @TargetApi(11)
         public WebResourceResponse shouldInterceptRequest(WebView webView, String str) {
             int i = Build.VERSION.SDK_INT;
             if (i < 11 || i >= 21 || TabItem.this.f1226l == null || webView == null || TextUtils.isEmpty(str)) {
@@ -1032,7 +1042,6 @@ public class TabItem {
         }
 
         @Override // android.webkit.WebViewClient
-        @TargetApi(11)
         public boolean shouldOverrideUrlLoading(WebView webView, String str) {
             WebView.HitTestResult hitTestResult;
             int i = Build.VERSION.SDK_INT;

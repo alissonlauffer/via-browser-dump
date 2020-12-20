@@ -15,6 +15,7 @@ public final /* synthetic */ class lambda implements Runnable {
         this.f1b = str;
     }
 
+    @Override // java.lang.Runnable
     public final void run() {
         this.f0a.mo10h(this.f1b);
     }

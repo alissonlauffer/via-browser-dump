@@ -11,6 +11,7 @@ public final /* synthetic */ class RunnableC0642l implements Runnable {
         this.f1929a = customFiltersUI;
     }
 
+    @Override // java.lang.Runnable
     public final void run() {
         this.f1929a.mo1465D();
     }

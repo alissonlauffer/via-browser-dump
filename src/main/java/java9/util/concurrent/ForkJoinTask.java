@@ -75,6 +75,7 @@ public abstract class ForkJoinTask<V> implements Future<V>, Serializable {
             return this.result;
         }
 
+        @Override // java.util.concurrent.RunnableFuture, java.lang.Runnable
         public final void run() {
             invoke();
         }
@@ -84,6 +85,7 @@ public abstract class ForkJoinTask<V> implements Future<V>, Serializable {
             this.result = t;
         }
 
+        @Override // java.lang.Object
         public String toString() {
             return super.toString() + "[Wrapped task = " + this.callable + "]";
         }
@@ -112,6 +114,7 @@ public abstract class ForkJoinTask<V> implements Future<V>, Serializable {
             return this.result;
         }
 
+        @Override // java.util.concurrent.RunnableFuture, java.lang.Runnable
         public final void run() {
             invoke();
         }
@@ -121,6 +124,7 @@ public abstract class ForkJoinTask<V> implements Future<V>, Serializable {
             this.result = t;
         }
 
+        @Override // java.lang.Object
         public String toString() {
             return super.toString() + "[Wrapped task = " + this.runnable + "]";
         }
@@ -147,6 +151,7 @@ public abstract class ForkJoinTask<V> implements Future<V>, Serializable {
             return null;
         }
 
+        @Override // java.util.concurrent.RunnableFuture, java.lang.Runnable
         public final void run() {
             invoke();
         }
@@ -154,12 +159,14 @@ public abstract class ForkJoinTask<V> implements Future<V>, Serializable {
         public final void setRawResult(Void r1) {
         }
 
+        @Override // java.lang.Object
         public String toString() {
             return super.toString() + "[Wrapped task = " + this.runnable + "]";
         }
     }
 
-    static final class RunnableExecuteAction extends ForkJoinTask<Void> {
+    /* access modifiers changed from: package-private */
+    public static final class RunnableExecuteAction extends ForkJoinTask<Void> {
         private static final long serialVersionUID = 5232453952276885070L;
         final Runnable runnable;
 
@@ -611,6 +618,7 @@ public abstract class ForkJoinTask<V> implements Future<V>, Serializable {
         objectOutputStream.writeObject(getException());
     }
 
+    @Override // java.util.concurrent.Future
     public boolean cancel(boolean z) {
         return (m1015i(CANCELLED) & -268435456) == CANCELLED;
     }
@@ -729,6 +737,7 @@ public abstract class ForkJoinTask<V> implements Future<V>, Serializable {
         return getRawResult();
     }
 
+    @Override // java.util.concurrent.Future
     public final boolean isCancelled() {
         return (this.status & -268435456) == CANCELLED;
     }
@@ -741,6 +750,7 @@ public abstract class ForkJoinTask<V> implements Future<V>, Serializable {
         return (this.status & -268435456) == -268435456;
     }
 
+    @Override // java.util.concurrent.Future
     public final boolean isDone() {
         return this.status < 0;
     }

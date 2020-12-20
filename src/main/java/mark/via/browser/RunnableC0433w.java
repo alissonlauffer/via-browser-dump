@@ -15,6 +15,7 @@ public final /* synthetic */ class RunnableC0433w implements Runnable {
         this.f1258b = fastView;
     }
 
+    @Override // java.lang.Runnable
     public final void run() {
         this.f1257a.mo823W(this.f1258b);
     }

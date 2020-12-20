@@ -14,6 +14,7 @@ public final /* synthetic */ class View$OnKeyListenerC0555i0 implements View.OnK
         this.f1740a = browserActivity;
     }
 
+    @Override // android.view.View.OnKeyListener
     public final boolean onKey(View view, int i, KeyEvent keyEvent) {
         return this.f1740a.mo1363f2(view, i, keyEvent);
     }

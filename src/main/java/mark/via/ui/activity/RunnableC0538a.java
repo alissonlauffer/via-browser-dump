@@ -30,6 +30,7 @@ public final /* synthetic */ class RunnableC0538a implements Runnable {
         this.f1703e = editText;
     }
 
+    @Override // java.lang.Runnable
     public final void run() {
         this.f1699a.mo1340A1(this.f1700b, this.f1701c, this.f1702d, this.f1703e);
     }

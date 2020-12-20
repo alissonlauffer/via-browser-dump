@@ -36,8 +36,9 @@ public class C0095d0 {
     /* renamed from: d */
     private boolean f299d;
 
+    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.d0$a */
-    class C0096a implements AbstractC0201n2<List<C0114e0>> {
+    public class C0096a implements AbstractC0201n2<List<C0114e0>> {
         C0096a(C0095d0 d0Var) {
         }
 

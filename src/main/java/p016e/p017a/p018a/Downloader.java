@@ -53,6 +53,7 @@ public class Downloader {
             super(handler);
         }
 
+        @Override // android.database.ContentObserver
         public void onChange(boolean z, Uri uri) {
             long j;
             super.onChange(z, uri);
@@ -76,6 +77,7 @@ public class Downloader {
         C0336b() {
         }
 
+        @Override // android.content.BroadcastReceiver
         public void onReceive(Context context, Intent intent) {
             String action;
             if (intent != null && Downloader.this.f918c != null && (action = intent.getAction()) != null) {

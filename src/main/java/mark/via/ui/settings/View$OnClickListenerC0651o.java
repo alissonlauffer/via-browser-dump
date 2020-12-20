@@ -13,6 +13,7 @@ public final /* synthetic */ class View$OnClickListenerC0651o implements View.On
         this.f1951a = customFiltersUI;
     }
 
+    @Override // android.view.View.OnClickListener
     public final void onClick(View view) {
         this.f1951a.mo1467l(view);
     }

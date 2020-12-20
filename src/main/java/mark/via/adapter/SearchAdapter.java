@@ -41,6 +41,7 @@ public class SearchAdapter extends BaseAdapter implements Filterable {
         }
 
         /* access modifiers changed from: protected */
+        @Override // android.widget.Filter
         public Filter.FilterResults performFiltering(CharSequence charSequence) {
             Filter.FilterResults filterResults = new Filter.FilterResults();
             if (charSequence == null) {
@@ -60,6 +61,7 @@ public class SearchAdapter extends BaseAdapter implements Filterable {
         }
 
         /* access modifiers changed from: protected */
+        @Override // android.widget.Filter
         public void publishResults(CharSequence charSequence, Filter.FilterResults filterResults) {
             synchronized (SearchAdapter.this.f1289c) {
                 SearchAdapter dVar = SearchAdapter.this;
@@ -131,6 +133,7 @@ public class SearchAdapter extends BaseAdapter implements Filterable {
         return arrayList;
     }
 
+    @Override // android.widget.Adapter
     public int getCount() {
         List<HistoryItem> list = this.f1289c;
         if (list != null) {
@@ -139,18 +142,22 @@ public class SearchAdapter extends BaseAdapter implements Filterable {
         return 0;
     }
 
+    @Override // android.widget.Filterable
     public Filter getFilter() {
         return new C0439b();
     }
 
+    @Override // android.widget.Adapter
     public Object getItem(int i) {
         return this.f1289c.get(i);
     }
 
+    @Override // android.widget.Adapter
     public long getItemId(int i) {
         return 0;
     }
 
+    @Override // android.widget.Adapter
     public View getView(int i, View view, ViewGroup viewGroup) {
         C0440c cVar;
         if (view == null) {
