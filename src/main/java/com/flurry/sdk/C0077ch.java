@@ -75,8 +75,9 @@ public class C0077ch {
         }
     }
 
+    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.ch$b */
-    class C0080b extends AbstractRunnableC0040b3 {
+    public class C0080b extends AbstractRunnableC0040b3 {
         C0080b(C0077ch chVar) {
         }
 

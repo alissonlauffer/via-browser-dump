@@ -56,17 +56,17 @@ public class DownloaderSlice extends Slice {
             if (b.isEmpty()) {
                 b = eVar.mo413g();
             }
-            fVar.mo417b(R.id.RES_2131230789, b);
-            fVar.mo416a(R.id.RES_2131230760).setVisibility(eVar.mo415i() ? 0 : 8);
+            fVar.mo417b(R.id.b6, b);
+            fVar.mo416a(R.id.ad).setVisibility(eVar.mo415i() ? 0 : 8);
             int e = eVar.mo410e();
             if (e == 2 || e == 4) {
-                fVar.mo417b(R.id.RES_2131230797, String.format("%s/%s", BrowserUtils.m2091l(eVar.mo406a()), BrowserUtils.m2091l(eVar.mo412f())));
+                fVar.mo417b(R.id.bd, String.format("%s/%s", BrowserUtils.m2091l(eVar.mo406a()), BrowserUtils.m2091l(eVar.mo412f())));
             } else if (e == 8) {
-                fVar.mo417b(R.id.RES_2131230797, BrowserUtils.m2091l(eVar.mo412f()));
+                fVar.mo417b(R.id.bd, BrowserUtils.m2091l(eVar.mo412f()));
             } else if (e != 16) {
-                fVar.mo417b(R.id.RES_2131230797, CompatUtils.m1336f(DownloaderSlice.this.f1460b, R.string.RES_2131558542));
+                fVar.mo417b(R.id.bd, CompatUtils.m1336f(DownloaderSlice.this.f1460b, R.string.d5));
             } else {
-                fVar.mo417b(R.id.RES_2131230797, CompatUtils.m1336f(DownloaderSlice.this.f1460b, R.string.RES_2131558538));
+                fVar.mo417b(R.id.bd, CompatUtils.m1336f(DownloaderSlice.this.f1460b, R.string.d1));
             }
         }
     }
@@ -145,21 +145,21 @@ public class DownloaderSlice extends Slice {
             if (i2 == 0) {
                 boolean h = d.mo414h();
                 TaoDialog g = TaoDialog.m1134g(DownloaderSlice.this.f1460b);
-                g.mo620L(R.string.RES_2131558414);
-                g.mo644v(h ? R.string.RES_2131558619 : R.string.RES_2131558620);
-                g.mo638p(h ? CompatUtils.m1336f(DownloaderSlice.this.f1460b, R.string.RES_2131558618) : null, false);
+                g.mo620L(R.string.o);
+                g.mo644v(h ? R.string.f8 : R.string.f9);
+                g.mo638p(h ? CompatUtils.m1336f(DownloaderSlice.this.f1460b, R.string.f7) : null, false);
                 g.mo614F(17039370, new C0473b(this, i, h));
                 g.mo648z(17039360, null);
                 g.mo622N();
             } else if (i2 == 1) {
                 long k = DownloaderSlice.this.f1440e.mo389k(d);
                 if (k == -1) {
-                    QuickUtils.m1382n(DownloaderSlice.this.f1460b, R.string.RES_2131558538);
+                    QuickUtils.m1382n(DownloaderSlice.this.f1460b, R.string.d1);
                 } else {
                     DownloaderSlice.this.f1441f.mo431k(i, DownloaderSlice.this.f1440e.mo388j(k));
                 }
             } else if (i2 == 2) {
-                SupportUtils.m2196b(DownloaderSlice.this.f1460b, d.mo413g(), DownloaderSlice.this.f1459a.getResources().getString(R.string.RES_2131558750));
+                SupportUtils.m2196b(DownloaderSlice.this.f1460b, d.mo413g(), DownloaderSlice.this.f1459a.getResources().getString(R.string.ir));
             } else if (i2 == 3 && AppUtils.m2065m(DownloaderSlice.this.f1460b, 2) && !IntentUtils.m2181h(DownloaderSlice.this.f1460b, d.mo408c())) {
                 IntentUtils.m2179f(DownloaderSlice.this.f1460b, d.mo413g());
             }
@@ -168,7 +168,7 @@ public class DownloaderSlice extends Slice {
         @Override // android.widget.AdapterView.OnItemLongClickListener
         public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long j) {
             TaoDialog g = TaoDialog.m1134g(DownloaderSlice.this.f1460b);
-            g.mo643u(new String[]{DownloaderSlice.this.f1460b.getString(R.string.RES_2131558414), DownloaderSlice.this.f1460b.getString(R.string.RES_2131558436), DownloaderSlice.this.f1460b.getString(R.string.RES_2131558409), DownloaderSlice.this.f1460b.getString(R.string.RES_2131558441)}, new C0472a(this, i));
+            g.mo643u(new String[]{DownloaderSlice.this.f1460b.getString(R.string.o), DownloaderSlice.this.f1460b.getString(R.string.a_), DownloaderSlice.this.f1460b.getString(R.string.j), DownloaderSlice.this.f1460b.getString(R.string.ae)}, new C0472a(this, i));
             g.mo624P(view);
             return true;
         }
@@ -189,7 +189,7 @@ public class DownloaderSlice extends Slice {
                 if (!TextUtils.isEmpty(c)) {
                     File file = new File(c);
                     if (!file.exists()) {
-                        QuickUtils.m1382n(this.f1460b, R.string.RES_2131558556);
+                        QuickUtils.m1382n(this.f1460b, R.string.di);
                         return;
                     }
                     Intent intent = new Intent("android.intent.action.VIEW");
@@ -216,7 +216,7 @@ public class DownloaderSlice extends Slice {
                             z = false;
                         }
                         if (!z) {
-                            QuickUtils.m1382n(this.f1460b, R.string.RES_2131558645);
+                            QuickUtils.m1382n(this.f1460b, R.string.fx);
                             return;
                         }
                         return;
@@ -230,11 +230,11 @@ public class DownloaderSlice extends Slice {
     @Override // mark.via.p044m.p046b.Slice
     /* renamed from: d */
     public View mo1254d() {
-        View inflate = this.f1459a.getLayoutInflater().inflate(R.layout.RES_2131361792, (ViewGroup) this.f1459a.findViewById(16908290), false);
-        ListView listView = (ListView) inflate.findViewById(R.id.RES_2131230756);
-        C0479a aVar = new C0479a(R.layout.RES_2131361812);
+        View inflate = this.f1459a.getLayoutInflater().inflate(R.layout.a, (ViewGroup) this.f1459a.findViewById(16908290), false);
+        ListView listView = (ListView) inflate.findViewById(R.id.a_);
+        C0479a aVar = new C0479a(R.layout.u);
         this.f1441f = aVar;
-        aVar.mo430j(new C0480b(this, (TextView) inflate.findViewById(R.id.RES_2131230788), listView));
+        aVar.mo430j(new C0480b(this, (TextView) inflate.findViewById(R.id.b5), listView));
         if (Build.VERSION.SDK_INT >= 12) {
             SwipeDismissListViewTouchListener aVar2 = new SwipeDismissListViewTouchListener(listView, new C0481c());
             listView.setOnTouchListener(aVar2);

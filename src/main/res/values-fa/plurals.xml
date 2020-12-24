@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <plurals name="RES_2131492864">
+    <plurals name="a">
         <item quantity="one">یک روز پیش</item>
         <item quantity="other">%d روز پیش</item>
     </plurals>
-    <plurals name="RES_2131492865">
+    <plurals name="b">
         <item quantity="zero">بدون فیلتر</item>
         <item quantity="one">یک فیلتر</item>
         <item quantity="other">%d فیلتر</item>
     </plurals>
-    <plurals name="RES_2131492866">
+    <plurals name="c">
         <item quantity="one">یک ساعت پیش</item>
         <item quantity="other">%d ساعت پیش</item>
     </plurals>
-    <plurals name="RES_2131492867">
+    <plurals name="d">
         <item quantity="one">یک دقیقه پیش</item>
         <item quantity="other">%d دقیقه پیش</item>
     </plurals>

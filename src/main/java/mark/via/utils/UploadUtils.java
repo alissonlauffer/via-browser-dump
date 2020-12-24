@@ -117,14 +117,14 @@ public class UploadUtils {
                 int parseInt = Integer.parseInt((String) message.obj);
                 if (parseInt != 0) {
                     if (parseInt != 2) {
-                        QuickUtils.m1380l(UploadUtils.this.f1536b, UploadUtils.this.f1535a.getResources().getString(R.string.RES_2131558528), UploadUtils.this.f1535a.getResources().getString(R.string.RES_2131558489));
+                        QuickUtils.m1380l(UploadUtils.this.f1536b, UploadUtils.this.f1535a.getResources().getString(R.string.cr), UploadUtils.this.f1535a.getResources().getString(R.string.bp));
                     } else {
-                        QuickUtils.m1380l(UploadUtils.this.f1536b, UploadUtils.this.f1535a.getResources().getString(R.string.RES_2131558528), UploadUtils.this.f1535a.getResources().getString(R.string.RES_2131558493));
+                        QuickUtils.m1380l(UploadUtils.this.f1536b, UploadUtils.this.f1535a.getResources().getString(R.string.cr), UploadUtils.this.f1535a.getResources().getString(R.string.bt));
                     }
                 } else if (UploadUtils.this.f1538d != null) {
                     UploadUtils.this.f1538d.mo1317a();
                 } else {
-                    QuickUtils.m1380l(UploadUtils.this.f1536b, UploadUtils.this.f1535a.getResources().getString(R.string.RES_2131558528), UploadUtils.this.f1535a.getResources().getString(R.string.RES_2131558770));
+                    QuickUtils.m1380l(UploadUtils.this.f1536b, UploadUtils.this.f1535a.getResources().getString(R.string.cr), UploadUtils.this.f1535a.getResources().getString(R.string.ja));
                 }
             }
         }
@@ -178,7 +178,7 @@ public class UploadUtils {
     /* renamed from: l */
     private void m2208l() {
         TaoDialog g = TaoDialog.m1134g(this.f1535a);
-        g.mo616H(R.string.RES_2131558754);
+        g.mo616H(R.string.iv);
         g.mo635m(false);
         g.mo636n(false);
         this.f1537c = g;

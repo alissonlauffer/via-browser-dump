@@ -161,11 +161,11 @@ public class SearchAdapter extends BaseAdapter implements Filterable {
     public View getView(int i, View view, ViewGroup viewGroup) {
         C0440c cVar;
         if (view == null) {
-            view = ((Activity) this.f1291e).getLayoutInflater().inflate(R.layout.RES_2131361814, viewGroup, false);
+            view = ((Activity) this.f1291e).getLayoutInflater().inflate(R.layout.w, viewGroup, false);
             cVar = new C0440c();
-            cVar.f1294b = (TextView) view.findViewById(R.id.RES_2131230798);
-            cVar.f1295c = (TextView) view.findViewById(R.id.RES_2131230799);
-            cVar.f1293a = (ImageView) view.findViewById(R.id.RES_2131230751);
+            cVar.f1294b = (TextView) view.findViewById(R.id.be);
+            cVar.f1295c = (TextView) view.findViewById(R.id.bf);
+            cVar.f1293a = (ImageView) view.findViewById(R.id.a5);
             view.setTag(cVar);
         } else {
             cVar = (C0440c) view.getTag();
@@ -174,11 +174,11 @@ public class SearchAdapter extends BaseAdapter implements Filterable {
         cVar.f1294b.setText(bVar.mo940f());
         cVar.f1295c.setText(bVar.mo941g());
         int d = bVar.mo937d();
-        int i2 = R.drawable.RES_2131165213;
-        if (d == R.drawable.RES_2131165203) {
-            i2 = R.drawable.RES_2131165203;
-        } else if (d != R.drawable.RES_2131165213) {
-            i2 = R.drawable.RES_2131165232;
+        int i2 = R.drawable.ad;
+        if (d == R.drawable.a7) {
+            i2 = R.drawable.a7;
+        } else if (d != R.drawable.ad) {
+            i2 = R.drawable.ar;
         }
         cVar.f1293a.setImageDrawable(CompatUtils.m1334d(this.f1291e, i2));
         return view;

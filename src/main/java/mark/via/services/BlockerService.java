@@ -76,10 +76,10 @@ public class BlockerService extends IntentService {
         NotificationManager notificationManager = (NotificationManager) getSystemService("notification");
         if (notificationManager != null) {
             Notification.Builder builder = new Notification.Builder(this);
-            builder.setContentTitle(getString(R.string.RES_2131558769)).setSmallIcon(R.drawable.RES_2131165237);
+            builder.setContentTitle(getString(R.string.j_)).setSmallIcon(R.drawable.a2);
             int i = Build.VERSION.SDK_INT;
             if (i >= 26) {
-                notificationManager.createNotificationChannel(new NotificationChannel("download", getString(R.string.RES_2131558541), 3));
+                notificationManager.createNotificationChannel(new NotificationChannel("download", getString(R.string.d4), 3));
                 builder.setChannelId("download");
                 builder.setProgress(100, 50, true);
             }

@@ -1,104 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <array name="RES_2130837504">
-        <item>@string/RES_2131558514</item>
-        <item>@string/RES_2131558672</item>
+    <array name="a">
+        <item>@string/cd</item>
+        <item>@string/gn</item>
     </array>
-    <array name="RES_2130837505">
-        <item>@string/RES_2131558572</item>
-        <item>@string/RES_2131558485</item>
+    <array name="b">
+        <item>@string/dy</item>
+        <item>@string/bl</item>
     </array>
-    <array name="RES_2130837506">
-        <item>@string/RES_2131558506</item>
-        <item>@string/RES_2131558511</item>
-        <item>@string/RES_2131558512</item>
-        <item>@string/RES_2131558513</item>
-        <item>@string/RES_2131558508</item>
+    <array name="c">
+        <item>@string/c6</item>
+        <item>@string/ca</item>
+        <item>@string/cb</item>
+        <item>@string/cc</item>
+        <item>@string/c8</item>
     </array>
-    <array name="RES_2130837507">
-        <item>@string/RES_2131558567</item>
-        <item>@string/RES_2131558568</item>
-        <item>@string/RES_2131558569</item>
+    <array name="d">
+        <item>@string/dt</item>
+        <item>@string/du</item>
+        <item>@string/dv</item>
     </array>
-    <array name="RES_2130837508">
-        <item>@string/RES_2131558514</item>
-        <item>@string/RES_2131558403</item>
-        <item>@string/RES_2131558406</item>
-        <item>@string/RES_2131558449</item>
+    <array name="e">
+        <item>@string/cd</item>
+        <item>@string/d</item>
+        <item>@string/g</item>
+        <item>@string/am</item>
     </array>
-    <array name="RES_2130837509">
-        <item>@string/RES_2131558723</item>
-        <item>@string/RES_2131558722</item>
-        <item>@string/RES_2131558728</item>
+    <array name="f">
+        <item>@string/i1</item>
+        <item>@string/i0</item>
+        <item>@string/i6</item>
     </array>
-    <array name="RES_2130837510">
-        <item>@string/RES_2131558514</item>
-        <item>@string/RES_2131558672</item>
-        <item>@string/RES_2131558737</item>
-        <item>@string/RES_2131558586</item>
-        <item>@string/RES_2131558642</item>
+    <array name="g">
+        <item>@string/cd</item>
+        <item>@string/gn</item>
+        <item>@string/ie</item>
+        <item>@string/eb</item>
+        <item>@string/fu</item>
     </array>
-    <array name="RES_2130837511">
-        <item>@string/RES_2131558658</item>
-        <item>@string/RES_2131558661</item>
-        <item>@string/RES_2131558662</item>
-        <item>@string/RES_2131558648</item>
-        <item>@string/RES_2131558654</item>
-        <item>@string/RES_2131558656</item>
-        <item>@string/RES_2131558647</item>
-        <item>@string/RES_2131558659</item>
-        <item>@string/RES_2131558660</item>
-        <item>@string/RES_2131558649</item>
-        <item>@string/RES_2131558655</item>
-        <item>@string/RES_2131558657</item>
-        <item>@string/RES_2131558651</item>
-        <item>@string/RES_2131558652</item>
-        <item>@string/RES_2131558650</item>
+    <array name="h">
+        <item>@string/g_</item>
+        <item>@string/gc</item>
+        <item>@string/gd</item>
+        <item>@string/g0</item>
+        <item>@string/g6</item>
+        <item>@string/g8</item>
+        <item>@string/fz</item>
+        <item>@string/ga</item>
+        <item>@string/gb</item>
+        <item>@string/g1</item>
+        <item>@string/g7</item>
+        <item>@string/g9</item>
+        <item>@string/g3</item>
+        <item>@string/g4</item>
+        <item>@string/g2</item>
     </array>
-    <array name="RES_2130837512">
-        <item>@string/RES_2131558532</item>
-        <item>@string/RES_2131558465</item>
-        <item>@string/RES_2131558467</item>
+    <array name="i">
+        <item>@string/cv</item>
+        <item>@string/b2</item>
+        <item>@string/b4</item>
     </array>
-    <array name="RES_2130837513">
-        <item>@string/RES_2131558667</item>
-        <item>@string/RES_2131558664</item>
-        <item>@string/RES_2131558666</item>
-        <item>@string/RES_2131558665</item>
+    <array name="j">
+        <item>@string/gi</item>
+        <item>@string/gf</item>
+        <item>@string/gh</item>
+        <item>@string/gg</item>
     </array>
-    <array name="RES_2130837514">
-        <item>@string/RES_2131558505</item>
-        <item>@string/RES_2131558470</item>
-        <item>@string/RES_2131558573</item>
-        <item>@string/RES_2131558471</item>
-        <item>@string/RES_2131558787</item>
-        <item>@string/RES_2131558730</item>
-        <item>@string/RES_2131558545</item>
+    <array name="k">
+        <item>@string/c5</item>
+        <item>@string/b7</item>
+        <item>@string/dz</item>
+        <item>@string/b8</item>
+        <item>@string/jr</item>
+        <item>@string/i8</item>
+        <item>@string/d8</item>
     </array>
-    <array name="RES_2130837515">
-        <item>@string/RES_2131558717</item>
-        <item>@string/RES_2131558716</item>
-        <item>@string/RES_2131558718</item>
-        <item>@string/RES_2131558719</item>
-        <item>@string/RES_2131558720</item>
+    <array name="l">
+        <item>@string/hv</item>
+        <item>@string/hu</item>
+        <item>@string/hw</item>
+        <item>@string/hx</item>
+        <item>@string/hy</item>
     </array>
-    <array name="RES_2130837516">
-        <item>@string/RES_2131558756</item>
-        <item>@string/RES_2131558761</item>
-        <item>@string/RES_2131558760</item>
-        <item>@string/RES_2131558759</item>
+    <array name="m">
+        <item>@string/ix</item>
+        <item>@string/j2</item>
+        <item>@string/j1</item>
+        <item>@string/j0</item>
     </array>
-    <array name="RES_2130837517">
-        <item>@string/RES_2131558776</item>
-        <item>@string/RES_2131558777</item>
-        <item>@string/RES_2131558775</item>
+    <array name="n">
+        <item>@string/jg</item>
+        <item>@string/jh</item>
+        <item>@string/jf</item>
     </array>
-    <array name="RES_2130837518">
-        <item>@string/RES_2131558514</item>
-        <item>@string/RES_2131558457</item>
-        <item>@string/RES_2131558459</item>
-        <item>@string/RES_2131558460</item>
-        <item>@string/RES_2131558461</item>
-        <item>@string/RES_2131558458</item>
+    <array name="o">
+        <item>@string/cd</item>
+        <item>@string/au</item>
+        <item>@string/aw</item>
+        <item>@string/ax</item>
+        <item>@string/ay</item>
+        <item>@string/av</item>
     </array>
 </resources>

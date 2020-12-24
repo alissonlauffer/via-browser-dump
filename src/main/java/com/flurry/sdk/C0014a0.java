@@ -101,9 +101,8 @@ public class C0014a0 {
         }
     }
 
-    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.a0$d */
-    public class RunnableC0019d implements Runnable {
+    class RunnableC0019d implements Runnable {
         RunnableC0019d() {
         }
 
@@ -113,9 +112,8 @@ public class C0014a0 {
         }
     }
 
-    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.a0$e */
-    public class RunnableC0020e implements Runnable {
+    class RunnableC0020e implements Runnable {
 
         /* renamed from: a */
         final /* synthetic */ C0321z f76a;

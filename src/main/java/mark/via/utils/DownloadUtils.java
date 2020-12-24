@@ -135,25 +135,25 @@ public class DownloadUtils {
                         DownloadUtils.this.f1519d.mo1311a(DownloadUtils.this.f1523h);
                         return;
                     } else if (DownloadUtils.this.f1524i) {
-                        QuickUtils.m1380l(DownloadUtils.this.f1517b, DownloadUtils.this.f1516a.getResources().getString(R.string.RES_2131558528), DownloadUtils.this.f1516a.getResources().getString(R.string.RES_2131558752));
+                        QuickUtils.m1380l(DownloadUtils.this.f1517b, DownloadUtils.this.f1516a.getResources().getString(R.string.cr), DownloadUtils.this.f1516a.getResources().getString(R.string.it));
                         return;
                     } else {
                         return;
                     }
                 case 112:
                     if (DownloadUtils.this.f1524i) {
-                        QuickUtils.m1380l(DownloadUtils.this.f1517b, DownloadUtils.this.f1516a.getResources().getString(R.string.RES_2131558528), DownloadUtils.this.f1516a.getResources().getString(R.string.RES_2131558489));
+                        QuickUtils.m1380l(DownloadUtils.this.f1517b, DownloadUtils.this.f1516a.getResources().getString(R.string.cr), DownloadUtils.this.f1516a.getResources().getString(R.string.bp));
                         return;
                     }
                     return;
                 case 113:
                     if (DownloadUtils.this.f1524i) {
-                        QuickUtils.m1380l(DownloadUtils.this.f1517b, DownloadUtils.this.f1516a.getResources().getString(R.string.RES_2131558528), DownloadUtils.this.f1516a.getResources().getString(R.string.RES_2131558493));
+                        QuickUtils.m1380l(DownloadUtils.this.f1517b, DownloadUtils.this.f1516a.getResources().getString(R.string.cr), DownloadUtils.this.f1516a.getResources().getString(R.string.bt));
                         return;
                     }
                     return;
                 case 114:
-                    QuickUtils.m1382n(DownloadUtils.this.f1516a, R.string.RES_2131558639);
+                    QuickUtils.m1382n(DownloadUtils.this.f1516a, R.string.fr);
                     return;
                 default:
                     return;
@@ -211,7 +211,7 @@ public class DownloadUtils {
     /* renamed from: p */
     private void m2133p() {
         TaoDialog g = TaoDialog.m1134g(this.f1516a);
-        g.mo616H(R.string.RES_2131558754);
+        g.mo616H(R.string.iv);
         g.mo635m(false);
         g.mo636n(false);
         this.f1518c = g;

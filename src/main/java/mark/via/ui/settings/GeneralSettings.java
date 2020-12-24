@@ -77,7 +77,7 @@ public class GeneralSettings extends BaseSettings {
         public /* synthetic */ void mo1497c(FrogSettingsBean bVar, int i, AdapterView adapterView, View view, int i2, long j) {
             GeneralSettings.this.f1803c.mo1079F1(i2 + 1);
             DataChecker.m1181c().mo667h(158);
-            bVar.mo761i(CompatUtils.m1338h(((BaseActivity) GeneralSettings.this).f1039b, R.array.RES_2130837515, i2));
+            bVar.mo761i(CompatUtils.m1338h(((BaseActivity) GeneralSettings.this).f1039b, R.array.l, i2));
             GeneralSettings.this.f1812e.mo749m(i, bVar);
         }
 
@@ -85,7 +85,7 @@ public class GeneralSettings extends BaseSettings {
         /* renamed from: d */
         public /* synthetic */ void mo1498e(FrogSettingsBean bVar, int i, AdapterView adapterView, View view, int i2, long j) {
             GeneralSettings.this.f1803c.mo1067B1(i2 + 1);
-            bVar.mo761i(CompatUtils.m1338h(((BaseActivity) GeneralSettings.this).f1039b, R.array.RES_2130837513, i2));
+            bVar.mo761i(CompatUtils.m1338h(((BaseActivity) GeneralSettings.this).f1039b, R.array.j, i2));
             GeneralSettings.this.f1812e.mo749m(i, bVar);
         }
 
@@ -103,7 +103,7 @@ public class GeneralSettings extends BaseSettings {
         /* renamed from: h */
         public /* synthetic */ void mo1500i(FrogSettingsBean bVar, int i, AdapterView adapterView, View view, int i2, long j) {
             GeneralSettings.this.f1803c.mo1091J1(i2);
-            bVar.mo761i(CompatUtils.m1338h(((BaseActivity) GeneralSettings.this).f1039b, R.array.RES_2130837517, i2));
+            bVar.mo761i(CompatUtils.m1338h(((BaseActivity) GeneralSettings.this).f1039b, R.array.n, i2));
             GeneralSettings.this.f1812e.mo749m(i, bVar);
         }
 
@@ -121,10 +121,10 @@ public class GeneralSettings extends BaseSettings {
         /* renamed from: l */
         public /* synthetic */ void mo1502m(FrogSettingsBean bVar, int i, AdapterView adapterView, View view, int i2, long j) {
             GeneralSettings.this.f1803c.mo1207z1(i2);
-            bVar.mo761i(CompatUtils.m1338h(((BaseActivity) GeneralSettings.this).f1039b, R.array.RES_2130837512, i2));
+            bVar.mo761i(CompatUtils.m1338h(((BaseActivity) GeneralSettings.this).f1039b, R.array.i, i2));
             GeneralSettings.this.f1812e.mo749m(i, bVar);
             if (i2 != 0) {
-                QuickUtils.m1382n(((BaseActivity) GeneralSettings.this).f1039b, R.string.RES_2131558683);
+                QuickUtils.m1382n(((BaseActivity) GeneralSettings.this).f1039b, R.string.gy);
             }
         }
 
@@ -141,36 +141,36 @@ public class GeneralSettings extends BaseSettings {
         /* renamed from: a */
         public void mo764a(FrogSettingsBean bVar, int i) {
             switch (bVar.mo754b()) {
-                case R.string.RES_2131558455 /* 2131558455 */:
+                case R.string.as /* 2131558455 */:
                     TaoDialog g = TaoDialog.m1134g(((BaseActivity) GeneralSettings.this).f1039b);
-                    g.mo620L(R.string.RES_2131558455);
+                    g.mo620L(R.string.as);
                     g.mo619K(GeneralSettings.this.f1813f[1], GeneralSettings.this.f1814g, new C0684z(this, bVar, i));
                     g.mo622N();
                     return;
-                case R.string.RES_2131558456 /* 2131558456 */:
+                case R.string.at /* 2131558456 */:
                     FlurryHelper.m1681a().mo1041j("ua");
                     GeneralSettings.this.m2657H(bVar, i);
                     return;
-                case R.string.RES_2131558473 /* 2131558473 */:
+                case R.string.b_ /* 2131558473 */:
                     GeneralSettings.this.startActivity(new Intent(((BaseActivity) GeneralSettings.this).f1039b, AdBlockUI.class));
                     return;
-                case R.string.RES_2131558486 /* 2131558486 */:
+                case R.string.bm /* 2131558486 */:
                     FlurryHelper.m1681a().mo1041j("clear_data");
                     GeneralSettings.this.m2662K();
                     return;
-                case R.string.RES_2131558487 /* 2131558487 */:
+                case R.string.bn /* 2131558487 */:
                     FlurryHelper.m1681a().mo1041j("clear_data_exit");
                     GeneralSettings.this.m2663L();
                     return;
-                case R.string.RES_2131558490 /* 2131558490 */:
+                case R.string.bq /* 2131558490 */:
                     FlurryHelper.m1681a().mo1041j("color_mode");
                     GeneralSettings.this.f1803c.mo1104O0(bVar.mo757e());
                     return;
-                case R.string.RES_2131558536 /* 2131558536 */:
+                case R.string.cz /* 2131558536 */:
                     FlurryHelper.m1681a().mo1041j("download_dir");
                     String v = GeneralSettings.this.f1803c.mo1193v();
                     if (Build.VERSION.SDK_INT >= 21) {
-                        QuickUtils.m1379k(((BaseActivity) GeneralSettings.this).f1039b, R.string.RES_2131558536, FileUtils.m2149e(v));
+                        QuickUtils.m1379k(((BaseActivity) GeneralSettings.this).f1039b, R.string.cz, FileUtils.m2149e(v));
                         return;
                     }
                     TaoDialog g2 = TaoDialog.m1134g(((BaseActivity) GeneralSettings.this).f1039b);
@@ -179,70 +179,70 @@ public class GeneralSettings extends BaseSettings {
                     g2.mo614F(17039370, new C0609a0(this, bVar, i));
                     g2.mo622N();
                     return;
-                case R.string.RES_2131558554 /* 2131558554 */:
+                case R.string.dg /* 2131558554 */:
                     GeneralSettings.this.m2666O();
                     return;
-                case R.string.RES_2131558566 /* 2131558566 */:
+                case R.string.ds /* 2131558566 */:
                     FlurryHelper.m1681a().mo1041j("bar_hide");
                     GeneralSettings.this.m2668Q(bVar, i);
                     return;
-                case R.string.RES_2131558585 /* 2131558585 */:
+                case R.string.ea /* 2131558585 */:
                     FlurryHelper.m1681a().mo1041j("homepage");
                     GeneralSettings.this.m2670S(bVar, i);
                     return;
-                case R.string.RES_2131558595 /* 2131558595 */:
+                case R.string.ek /* 2131558595 */:
                     FlurryHelper.m1681a().mo1041j("data_import");
                     FileCompat.m1353g(((BaseActivity) GeneralSettings.this).f1038a, "text/plain", 188);
                     return;
-                case R.string.RES_2131558598 /* 2131558598 */:
+                case R.string.en /* 2131558598 */:
                     FlurryHelper.m1681a().mo1041j("bookmark_backup");
                     TaoDialog g3 = TaoDialog.m1134g(((BaseActivity) GeneralSettings.this).f1039b);
-                    g3.mo620L(R.string.RES_2131558598);
-                    g3.mo643u(new String[]{((BaseActivity) GeneralSettings.this).f1039b.getString(R.string.RES_2131558553), ((BaseActivity) GeneralSettings.this).f1039b.getString(R.string.RES_2131558592)}, new C0681y(this));
+                    g3.mo620L(R.string.en);
+                    g3.mo643u(new String[]{((BaseActivity) GeneralSettings.this).f1039b.getString(R.string.df), ((BaseActivity) GeneralSettings.this).f1039b.getString(R.string.eh)}, new C0681y(this));
                     g3.mo622N();
                     return;
-                case R.string.RES_2131558663 /* 2131558663 */:
+                case R.string.ge /* 2131558663 */:
                     FlurryHelper.m1681a().mo1041j("orientation");
                     TaoDialog g4 = TaoDialog.m1134g(((BaseActivity) GeneralSettings.this).f1039b);
-                    g4.mo620L(R.string.RES_2131558663);
-                    g4.mo618J(R.array.RES_2130837513, GeneralSettings.this.f1803c.mo1149g0() - 1, new C0678x(this, bVar, i));
+                    g4.mo620L(R.string.ge);
+                    g4.mo618J(R.array.j, GeneralSettings.this.f1803c.mo1149g0() - 1, new C0678x(this, bVar, i));
                     g4.mo622N();
                     return;
-                case R.string.RES_2131558681 /* 2131558681 */:
+                case R.string.gw /* 2131558681 */:
                     FlurryHelper.m1681a().mo1041j("restore_tabs");
                     TaoDialog g5 = TaoDialog.m1134g(((BaseActivity) GeneralSettings.this).f1039b);
-                    g5.mo620L(R.string.RES_2131558681);
-                    g5.mo618J(R.array.RES_2130837512, GeneralSettings.this.f1803c.mo1140d0(), new C0616c0(this, bVar, i));
+                    g5.mo620L(R.string.gw);
+                    g5.mo618J(R.array.i, GeneralSettings.this.f1803c.mo1140d0(), new C0616c0(this, bVar, i));
                     g5.mo622N();
                     return;
-                case R.string.RES_2131558687 /* 2131558687 */:
+                case R.string.h2 /* 2131558687 */:
                     FlurryHelper.m1681a().mo1041j("search");
                     GeneralSettings.this.m2656G0(bVar, i);
                     return;
-                case R.string.RES_2131558700 /* 2131558700 */:
+                case R.string.he /* 2131558700 */:
                     FlurryHelper.m1681a().mo1041j("cloud");
                     GeneralSettings.this.startActivity(new Intent(((BaseActivity) GeneralSettings.this).f1039b, AccountSettings.class));
                     return;
-                case R.string.RES_2131558702 /* 2131558702 */:
+                case R.string.hg /* 2131558702 */:
                     FlurryHelper.m1681a().mo1041j("operation");
                     GeneralSettings.this.startActivity(new Intent(((BaseActivity) GeneralSettings.this).f1039b, OperationSettings.class));
                     return;
-                case R.string.RES_2131558715 /* 2131558715 */:
+                case R.string.ht /* 2131558715 */:
                     FlurryHelper.m1681a().mo1041j("font_size");
                     TaoDialog g6 = TaoDialog.m1134g(((BaseActivity) GeneralSettings.this).f1039b);
-                    g6.mo620L(R.string.RES_2131558715);
-                    g6.mo618J(R.array.RES_2130837515, GeneralSettings.this.f1803c.mo1170n0() - 1, new C0675w(this, bVar, i));
+                    g6.mo620L(R.string.ht);
+                    g6.mo618J(R.array.l, GeneralSettings.this.f1803c.mo1170n0() - 1, new C0675w(this, bVar, i));
                     g6.mo622N();
                     return;
-                case R.string.RES_2131558757 /* 2131558757 */:
+                case R.string.iy /* 2131558757 */:
                     FlurryHelper.m1681a().mo1041j("layout");
                     GeneralSettings.this.m2660I0(bVar, i);
                     return;
-                case R.string.RES_2131558774 /* 2131558774 */:
+                case R.string.je /* 2131558774 */:
                     FlurryHelper.m1681a().mo1041j("urlbar_content");
                     TaoDialog g7 = TaoDialog.m1134g(((BaseActivity) GeneralSettings.this).f1039b);
-                    g7.mo620L(R.string.RES_2131558774);
-                    g7.mo618J(R.array.RES_2130837517, GeneralSettings.this.f1803c.mo1182r0(), new C0613b0(this, bVar, i));
+                    g7.mo620L(R.string.je);
+                    g7.mo618J(R.array.n, GeneralSettings.this.f1803c.mo1182r0(), new C0613b0(this, bVar, i));
                     g7.mo622N();
                     return;
                 default:
@@ -259,7 +259,7 @@ public class GeneralSettings extends BaseSettings {
             if (f.contains("://")) {
                 this.f1803c.mo1073D1(0);
                 this.f1803c.mo1076E1(f);
-                bVar.mo761i(CompatUtils.m1336f(this.f1039b, R.string.RES_2131558505));
+                bVar.mo761i(CompatUtils.m1336f(this.f1039b, R.string.c5));
                 this.f1812e.mo749m(i, bVar);
             }
         }
@@ -269,7 +269,7 @@ public class GeneralSettings extends BaseSettings {
     /* renamed from: C0 */
     public /* synthetic */ void mo1477D0(FrogSettingsBean bVar, int i, AdapterView adapterView, View view, int i2, long j) {
         this.f1803c.mo1085H1(i2);
-        bVar.mo761i(CompatUtils.m1338h(this.f1039b, R.array.RES_2130837516, i2));
+        bVar.mo761i(CompatUtils.m1338h(this.f1039b, R.array.m, i2));
         this.f1812e.mo749m(i, bVar);
     }
 
@@ -277,7 +277,7 @@ public class GeneralSettings extends BaseSettings {
     private void m2652E0() {
         String[][] d = Downloader.m919e(this.f1039b).mo384d(this.f1038a);
         this.f1813f = d;
-        d[1][0] = CompatUtils.m1336f(this.f1039b, R.string.RES_2131558736);
+        d[1][0] = CompatUtils.m1336f(this.f1039b, R.string.id);
         String w = this.f1803c.mo1196w();
         int length = this.f1813f[0].length;
         for (int i = 0; i < length; i++) {
@@ -295,9 +295,9 @@ public class GeneralSettings extends BaseSettings {
     /* renamed from: G */
     private void m2655G(FrogSettingsBean bVar, int i) {
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo620L(R.string.RES_2131558458);
+        g.mo620L(R.string.av);
         g.mo636n(false);
-        g.mo631f(this.f1803c.mo1188t0(""), getString(R.string.RES_2131558746), 3);
+        g.mo631f(this.f1803c.mo1188t0(""), getString(R.string.in), 3);
         g.mo614F(17039370, new C0646m0(this, bVar, i));
         g.mo648z(17039360, null);
         g.mo622N();
@@ -308,8 +308,8 @@ public class GeneralSettings extends BaseSettings {
     /* renamed from: G0 */
     private void m2656G0(FrogSettingsBean bVar, int i) {
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo620L(R.string.RES_2131558687);
-        g.mo618J(R.array.RES_2130837514, this.f1803c.mo1155i0(), new C0652o0(this, bVar, i));
+        g.mo620L(R.string.h2);
+        g.mo618J(R.array.k, this.f1803c.mo1155i0(), new C0652o0(this, bVar, i));
         g.mo622N();
     }
 
@@ -318,16 +318,16 @@ public class GeneralSettings extends BaseSettings {
     /* renamed from: H */
     private void m2657H(FrogSettingsBean bVar, int i) {
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo620L(R.string.RES_2131558456);
-        g.mo618J(R.array.RES_2130837518, this.f1803c.mo1185s0() - 1, new C0655p0(this, bVar, i));
+        g.mo620L(R.string.at);
+        g.mo618J(R.array.o, this.f1803c.mo1185s0() - 1, new C0655p0(this, bVar, i));
         g.mo622N();
     }
 
     /* renamed from: H0 */
     private void m2658H0(FrogSettingsBean bVar, int i) {
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo620L(R.string.RES_2131558505);
-        g.mo630e(this.f1803c.mo1158j0(), R.string.RES_2131558505, 3);
+        g.mo620L(R.string.c5);
+        g.mo630e(this.f1803c.mo1158j0(), R.string.c5, 3);
         g.mo614F(17039370, new C0667t0(this, bVar, i));
         g.mo622N();
     }
@@ -335,38 +335,38 @@ public class GeneralSettings extends BaseSettings {
     /* renamed from: I */
     private List<FrogSettingsBean> m2659I() {
         ArrayList arrayList = new ArrayList();
-        arrayList.add(FrogSettingsBean.m1292k(this.f1039b, R.string.RES_2131558700));
+        arrayList.add(FrogSettingsBean.m1292k(this.f1039b, R.string.he));
         Context context = this.f1039b;
-        arrayList.add(FrogSettingsBean.m1295n(context, R.string.RES_2131558456, CompatUtils.m1338h(context, R.array.RES_2130837518, this.f1803c.mo1185s0() - 1)));
-        arrayList.add(FrogSettingsBean.m1292k(this.f1039b, R.string.RES_2131558486));
+        arrayList.add(FrogSettingsBean.m1295n(context, R.string.at, CompatUtils.m1338h(context, R.array.o, this.f1803c.mo1185s0() - 1)));
+        arrayList.add(FrogSettingsBean.m1292k(this.f1039b, R.string.bm));
         if (Build.VERSION.SDK_INT >= 11) {
-            arrayList.add(FrogSettingsBean.m1292k(this.f1039b, R.string.RES_2131558473));
+            arrayList.add(FrogSettingsBean.m1292k(this.f1039b, R.string.b_));
         }
         Context context2 = this.f1039b;
-        arrayList.add(FrogSettingsBean.m1295n(context2, R.string.RES_2131558566, CompatUtils.m1338h(context2, R.array.RES_2130837507, this.f1803c.mo1205z())));
+        arrayList.add(FrogSettingsBean.m1295n(context2, R.string.ds, CompatUtils.m1338h(context2, R.array.d, this.f1803c.mo1205z())));
         Context context3 = this.f1039b;
-        arrayList.add(FrogSettingsBean.m1295n(context3, R.string.RES_2131558757, CompatUtils.m1338h(context3, R.array.RES_2130837516, this.f1803c.mo1176p0())));
+        arrayList.add(FrogSettingsBean.m1295n(context3, R.string.iy, CompatUtils.m1338h(context3, R.array.m, this.f1803c.mo1176p0())));
         int F = this.f1803c.mo1077F();
-        arrayList.add(FrogSettingsBean.m1295n(this.f1039b, R.string.RES_2131558585, F == 3 ? this.f1803c.mo1071D() : CompatUtils.m1338h(this.f1039b, R.array.RES_2130837508, F)));
+        arrayList.add(FrogSettingsBean.m1295n(this.f1039b, R.string.ea, F == 3 ? this.f1803c.mo1071D() : CompatUtils.m1338h(this.f1039b, R.array.e, F)));
         Context context4 = this.f1039b;
-        arrayList.add(FrogSettingsBean.m1295n(context4, R.string.RES_2131558687, CompatUtils.m1338h(context4, R.array.RES_2130837514, this.f1803c.mo1155i0())));
+        arrayList.add(FrogSettingsBean.m1295n(context4, R.string.h2, CompatUtils.m1338h(context4, R.array.k, this.f1803c.mo1155i0())));
         Context context5 = this.f1039b;
-        arrayList.add(FrogSettingsBean.m1295n(context5, R.string.RES_2131558715, CompatUtils.m1338h(context5, R.array.RES_2130837515, this.f1803c.mo1170n0() - 1)));
+        arrayList.add(FrogSettingsBean.m1295n(context5, R.string.ht, CompatUtils.m1338h(context5, R.array.l, this.f1803c.mo1170n0() - 1)));
         Context context6 = this.f1039b;
-        arrayList.add(FrogSettingsBean.m1295n(context6, R.string.RES_2131558663, CompatUtils.m1338h(context6, R.array.RES_2130837513, this.f1803c.mo1149g0() - 1)));
-        arrayList.add(FrogSettingsBean.m1295n(this.f1039b, R.string.RES_2131558536, FileUtils.m2149e(this.f1803c.mo1193v())));
+        arrayList.add(FrogSettingsBean.m1295n(context6, R.string.ge, CompatUtils.m1338h(context6, R.array.j, this.f1803c.mo1149g0() - 1)));
+        arrayList.add(FrogSettingsBean.m1295n(this.f1039b, R.string.cz, FileUtils.m2149e(this.f1803c.mo1193v())));
         m2652E0();
-        arrayList.add(FrogSettingsBean.m1295n(this.f1039b, R.string.RES_2131558455, this.f1813f[1][this.f1814g]));
+        arrayList.add(FrogSettingsBean.m1295n(this.f1039b, R.string.as, this.f1813f[1][this.f1814g]));
         Context context7 = this.f1039b;
-        arrayList.add(FrogSettingsBean.m1295n(context7, R.string.RES_2131558774, CompatUtils.m1338h(context7, R.array.RES_2130837517, this.f1803c.mo1182r0())));
-        arrayList.add(FrogSettingsBean.m1294m(this.f1039b, R.string.RES_2131558490, R.string.RES_2131558491, this.f1803c.mo1184s()));
-        arrayList.add(FrogSettingsBean.m1292k(this.f1039b, R.string.RES_2131558487));
-        arrayList.add(FrogSettingsBean.m1293l(this.f1039b, R.string.RES_2131558702, R.string.RES_2131558653));
-        arrayList.add(FrogSettingsBean.m1292k(this.f1039b, R.string.RES_2131558598));
-        arrayList.add(FrogSettingsBean.m1292k(this.f1039b, R.string.RES_2131558595));
-        arrayList.add(FrogSettingsBean.m1292k(this.f1039b, R.string.RES_2131558554));
+        arrayList.add(FrogSettingsBean.m1295n(context7, R.string.je, CompatUtils.m1338h(context7, R.array.n, this.f1803c.mo1182r0())));
+        arrayList.add(FrogSettingsBean.m1294m(this.f1039b, R.string.bq, R.string.br, this.f1803c.mo1184s()));
+        arrayList.add(FrogSettingsBean.m1292k(this.f1039b, R.string.bn));
+        arrayList.add(FrogSettingsBean.m1293l(this.f1039b, R.string.hg, R.string.g5));
+        arrayList.add(FrogSettingsBean.m1292k(this.f1039b, R.string.en));
+        arrayList.add(FrogSettingsBean.m1292k(this.f1039b, R.string.ek));
+        arrayList.add(FrogSettingsBean.m1292k(this.f1039b, R.string.dg));
         Context context8 = this.f1039b;
-        arrayList.add(FrogSettingsBean.m1295n(context8, R.string.RES_2131558681, CompatUtils.m1338h(context8, R.array.RES_2130837512, this.f1803c.mo1140d0())));
+        arrayList.add(FrogSettingsBean.m1295n(context8, R.string.gw, CompatUtils.m1338h(context8, R.array.i, this.f1803c.mo1140d0())));
         return arrayList;
     }
 
@@ -375,16 +375,16 @@ public class GeneralSettings extends BaseSettings {
     /* renamed from: I0 */
     private void m2660I0(FrogSettingsBean bVar, int i) {
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo620L(R.string.RES_2131558757);
-        g.mo618J(R.array.RES_2130837516, this.f1803c.mo1176p0(), new C0664s0(this, bVar, i));
+        g.mo620L(R.string.iy);
+        g.mo618J(R.array.m, this.f1803c.mo1176p0(), new C0664s0(this, bVar, i));
         g.mo622N();
     }
 
     /* renamed from: J */
     private View m2661J() {
         FrogNavigator g = FrogNavigator.m1261g(this.f1039b);
-        g.mo736m(R.string.RES_2131558701);
-        g.mo734k(R.string.RES_2131558517);
+        g.mo736m(R.string.hf);
+        g.mo734k(R.string.cg);
         View p = g.mo738p();
         FrogSettings j = FrogSettings.m1279j(this.f1039b);
         j.mo742d(m2659I());
@@ -408,8 +408,8 @@ public class GeneralSettings extends BaseSettings {
             }
         }
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo620L(R.string.RES_2131558486);
-        g.mo646x(R.array.RES_2130837506, Arrays.copyOf(iArr, i));
+        g.mo620L(R.string.bm);
+        g.mo646x(R.array.c, Arrays.copyOf(iArr, i));
         g.mo614F(17039370, new C0619d0(this));
         g.mo622N();
     }
@@ -428,8 +428,8 @@ public class GeneralSettings extends BaseSettings {
             }
         }
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo620L(R.string.RES_2131558487);
-        g.mo646x(R.array.RES_2130837506, Arrays.copyOf(iArr, i));
+        g.mo620L(R.string.bn);
+        g.mo646x(R.array.c, Arrays.copyOf(iArr, i));
         g.mo614F(17039370, new C0622e0(this));
         g.mo622N();
     }
@@ -440,7 +440,7 @@ public class GeneralSettings extends BaseSettings {
     private void m2664M() {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd", Constants.f1296a);
         Date date = new Date(System.currentTimeMillis());
-        String str = this.f1039b.getResources().getString(R.string.RES_2131558466) + "_" + this.f1039b.getResources().getString(R.string.RES_2131558480) + "_" + simpleDateFormat.format(date);
+        String str = this.f1039b.getResources().getString(R.string.b3) + "_" + this.f1039b.getResources().getString(R.string.bg) + "_" + simpleDateFormat.format(date);
         if (Build.VERSION.SDK_INT < 19) {
             String h = FileUtils.m2152h(str, FileUtils.m2146b(this.f1039b), ".html");
             FileOutputStream fileOutputStream = null;
@@ -466,7 +466,7 @@ public class GeneralSettings extends BaseSettings {
     private void m2666O() {
         FlurryHelper.m1681a().mo1041j("data_export");
         if (Build.VERSION.SDK_INT < 19) {
-            String h = FileUtils.m2152h(CompatUtils.m1336f(this.f1039b, R.string.RES_2131558466) + "_" + CompatUtils.m1336f(this.f1039b, R.string.RES_2131558510), FileUtils.m2146b(this.f1039b), ".txt");
+            String h = FileUtils.m2152h(CompatUtils.m1336f(this.f1039b, R.string.b3) + "_" + CompatUtils.m1336f(this.f1039b, R.string.c_), FileUtils.m2146b(this.f1039b), ".txt");
             FileOutputStream fileOutputStream = null;
             try {
                 fileOutputStream = new FileOutputStream(new File(h));
@@ -476,7 +476,7 @@ public class GeneralSettings extends BaseSettings {
             m2667P(fileOutputStream, h);
             return;
         }
-        FileCompat.m1347a(this.f1038a, CompatUtils.m1336f(this.f1039b, R.string.RES_2131558466) + "_" + CompatUtils.m1336f(this.f1039b, R.string.RES_2131558510) + ".txt", "text/plain", 187);
+        FileCompat.m1347a(this.f1038a, CompatUtils.m1336f(this.f1039b, R.string.b3) + "_" + CompatUtils.m1336f(this.f1039b, R.string.c_) + ".txt", "text/plain", 187);
     }
 
     /* renamed from: P */
@@ -489,8 +489,8 @@ public class GeneralSettings extends BaseSettings {
     /* renamed from: Q */
     private void m2668Q(FrogSettingsBean bVar, int i) {
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo620L(R.string.RES_2131558566);
-        g.mo618J(R.array.RES_2130837507, this.f1803c.mo1205z(), new C0634i0(this, bVar, i));
+        g.mo620L(R.string.ds);
+        g.mo618J(R.array.d, this.f1803c.mo1205z(), new C0634i0(this, bVar, i));
         g.mo622N();
     }
 
@@ -498,8 +498,8 @@ public class GeneralSettings extends BaseSettings {
     private void m2669R(FrogSettingsBean bVar, int i) {
         String D = this.f1803c.mo1077F() == 3 ? this.f1803c.mo1071D() : Constants.f1302g;
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo620L(R.string.RES_2131558739);
-        g.mo631f(D, CompatUtils.m1336f(this.f1039b, R.string.RES_2131558739), 3);
+        g.mo620L(R.string.ig);
+        g.mo631f(D, CompatUtils.m1336f(this.f1039b, R.string.ig), 3);
         g.mo614F(17039370, new C0672v(this, bVar, i));
         g.mo622N();
     }
@@ -509,8 +509,8 @@ public class GeneralSettings extends BaseSettings {
     /* renamed from: S */
     private void m2670S(FrogSettingsBean bVar, int i) {
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo620L(R.string.RES_2131558585);
-        g.mo618J(R.array.RES_2130837508, this.f1803c.mo1077F(), new C0625f0(this, bVar, i));
+        g.mo620L(R.string.ea);
+        g.mo618J(R.array.e, this.f1803c.mo1077F(), new C0625f0(this, bVar, i));
         g.mo622N();
     }
 
@@ -542,7 +542,7 @@ public class GeneralSettings extends BaseSettings {
     public /* synthetic */ void mo1478V(FrogSettingsBean bVar, int i, View view, TaoDialog.C0384l lVar) {
         if (!CompatUtils.m1339i(lVar.f1091c, 1)) {
             this.f1803c.mo1094K1(6);
-            bVar.mo761i(CompatUtils.m1336f(this.f1039b, R.string.RES_2131558458));
+            bVar.mo761i(CompatUtils.m1336f(this.f1039b, R.string.av));
             this.f1812e.mo749m(i, bVar);
             this.f1803c.mo1097L1(lVar.f1091c[0]);
             DataChecker.m1181c().mo667h(158);
@@ -558,7 +558,7 @@ public class GeneralSettings extends BaseSettings {
         }
         this.f1803c.mo1094K1(i2 + 1);
         DataChecker.m1181c().mo667h(158);
-        bVar.mo761i(CompatUtils.m1338h(this.f1039b, R.array.RES_2130837518, i2));
+        bVar.mo761i(CompatUtils.m1338h(this.f1039b, R.array.o, i2));
         this.f1812e.mo749m(i, bVar);
     }
 
@@ -593,7 +593,7 @@ public class GeneralSettings extends BaseSettings {
                 BrowserUtils.m2085f(this.f1039b);
             }
             if ((i & 31) != 0) {
-                QuickUtils.m1384p(this.f1039b, getResources().getString(R.string.RES_2131558507));
+                QuickUtils.m1384p(this.f1039b, getResources().getString(R.string.c7));
             }
         }
         LogUtils.m1368a("Value: " + i);
@@ -622,13 +622,13 @@ public class GeneralSettings extends BaseSettings {
     public /* synthetic */ void mo1482d0(int i, String str) {
         if (i != -1) {
             if (i == 0) {
-                QuickUtils.m1382n(this.f1039b, R.string.RES_2131558637);
+                QuickUtils.m1382n(this.f1039b, R.string.fp);
             } else if (str == null) {
-                QuickUtils.m1382n(this.f1039b, R.string.RES_2131558479);
+                QuickUtils.m1382n(this.f1039b, R.string.bf);
             } else {
                 Context context = this.f1039b;
-                String f = CompatUtils.m1336f(context, R.string.RES_2131558528);
-                QuickUtils.m1380l(context, f, this.f1039b.getString(R.string.RES_2131558477) + " " + str);
+                String f = CompatUtils.m1336f(context, R.string.cr);
+                QuickUtils.m1380l(context, f, this.f1039b.getString(R.string.bd) + " " + str);
             }
         }
     }
@@ -644,10 +644,10 @@ public class GeneralSettings extends BaseSettings {
     public /* synthetic */ void mo1484h0(String str) {
         if (str != null) {
             Context context = this.f1039b;
-            QuickUtils.m1379k(context, R.string.RES_2131558528, context.getString(R.string.RES_2131558555, str));
+            QuickUtils.m1379k(context, R.string.cr, context.getString(R.string.dh, str));
             return;
         }
-        QuickUtils.m1382n(this.f1039b, R.string.RES_2131558509);
+        QuickUtils.m1382n(this.f1039b, R.string.c9);
     }
 
     /* access modifiers changed from: private */
@@ -708,7 +708,7 @@ public class GeneralSettings extends BaseSettings {
     public /* synthetic */ void mo1486l0(FrogSettingsBean bVar, int i, AdapterView adapterView, View view, int i2, long j) {
         this.f1803c.mo1124W0(i2);
         DataChecker.m1181c().mo667h(158);
-        bVar.mo761i(CompatUtils.m1338h(this.f1039b, R.array.RES_2130837507, i2));
+        bVar.mo761i(CompatUtils.m1338h(this.f1039b, R.array.d, i2));
         this.f1812e.mo749m(i, bVar);
     }
 
@@ -734,7 +734,7 @@ public class GeneralSettings extends BaseSettings {
             return;
         }
         this.f1803c.mo1139c1(new String[]{"about:home", "about:blank", "about:bookmarks"}[i2]);
-        bVar.mo761i(CompatUtils.m1338h(this.f1039b, R.array.RES_2130837508, i2));
+        bVar.mo761i(CompatUtils.m1338h(this.f1039b, R.array.e, i2));
         this.f1812e.mo749m(i, bVar);
         DataChecker.m1181c().mo667h(158);
     }
@@ -742,7 +742,7 @@ public class GeneralSettings extends BaseSettings {
     /* access modifiers changed from: private */
     /* renamed from: q0 */
     public /* synthetic */ void mo1492r0() {
-        QuickUtils.m1382n(this.f1039b, R.string.RES_2131558597);
+        QuickUtils.m1382n(this.f1039b, R.string.em);
     }
 
     /* access modifiers changed from: private */
@@ -758,11 +758,11 @@ public class GeneralSettings extends BaseSettings {
     public /* synthetic */ void mo1494v0(int i) {
         if (i > 0) {
             Context context = this.f1039b;
-            QuickUtils.m1384p(context, i + " " + this.f1039b.getString(R.string.RES_2131558625));
+            QuickUtils.m1384p(context, i + " " + this.f1039b.getString(R.string.fd));
             m2654F0();
             return;
         }
-        QuickUtils.m1382n(this.f1039b, R.string.RES_2131558594);
+        QuickUtils.m1382n(this.f1039b, R.string.ej);
     }
 
     /* access modifiers changed from: private */
@@ -779,7 +779,7 @@ public class GeneralSettings extends BaseSettings {
             return;
         }
         this.f1803c.mo1073D1(i2);
-        bVar.mo761i(CompatUtils.m1338h(this.f1039b, R.array.RES_2130837514, i2));
+        bVar.mo761i(CompatUtils.m1338h(this.f1039b, R.array.k, i2));
         this.f1812e.mo749m(i, bVar);
     }
 
@@ -813,7 +813,7 @@ public class GeneralSettings extends BaseSettings {
     }
 
     /* access modifiers changed from: protected */
-    @Override // mark.via.ui.settings.BaseSettings, mark.lib.frogsupport.activity.BaseActivity, android.app.Activity
+    @Override // mark.via.ui.settings.BaseSettings, android.app.Activity
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         this.f1811d = new BookmarkManager(this.f1039b);

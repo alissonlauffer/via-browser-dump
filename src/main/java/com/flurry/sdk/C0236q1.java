@@ -31,8 +31,9 @@ public class C0236q1<T extends AbstractC0075c3> {
     /* renamed from: com.flurry.sdk.q1$b */
     class C0240b extends ThreadPoolExecutor.DiscardPolicy {
 
+        /* access modifiers changed from: package-private */
         /* renamed from: com.flurry.sdk.q1$b$a */
-        class C0241a extends AbstractRunnableC0040b3 {
+        public class C0241a extends AbstractRunnableC0040b3 {
             C0241a(C0240b bVar, AbstractC0075c3 c3Var) {
             }
 
@@ -155,8 +156,9 @@ public class C0236q1<T extends AbstractC0075c3> {
     /* renamed from: com.flurry.sdk.q1$a */
     class C0237a extends ThreadPoolExecutor {
 
+        /* access modifiers changed from: package-private */
         /* renamed from: com.flurry.sdk.q1$a$a */
-        class C0238a extends AbstractRunnableC0040b3 {
+        public class C0238a extends AbstractRunnableC0040b3 {
             C0238a(C0237a aVar, AbstractC0075c3 c3Var) {
             }
 
@@ -166,8 +168,9 @@ public class C0236q1<T extends AbstractC0075c3> {
             }
         }
 
+        /* access modifiers changed from: package-private */
         /* renamed from: com.flurry.sdk.q1$a$b */
-        class C0239b extends AbstractRunnableC0040b3 {
+        public class C0239b extends AbstractRunnableC0040b3 {
             C0239b(C0237a aVar, AbstractC0075c3 c3Var) {
             }
 

@@ -186,7 +186,7 @@ public class TabItem {
 
         @Override // android.webkit.WebChromeClient
         public View getVideoLoadingProgressView() {
-            return LayoutInflater.from(TabItem.this.f1217c).inflate(R.layout.RES_2131361798, (ViewGroup) TabItem.this.f1216b.findViewById(16908290), false);
+            return LayoutInflater.from(TabItem.this.f1217c).inflate(R.layout.g, (ViewGroup) TabItem.this.f1216b.findViewById(16908290), false);
         }
 
         @Override // android.webkit.WebChromeClient
@@ -214,11 +214,11 @@ public class TabItem {
                 str2 = str;
             }
             TaoDialog g = TaoDialog.m1134g(TabItem.this.f1217c);
-            g.mo620L(R.string.RES_2131558611);
-            g.mo645w(str2 + CompatUtils.m1336f(TabItem.this.f1217c, R.string.RES_2131558627));
+            g.mo620L(R.string.f0);
+            g.mo645w(str2 + CompatUtils.m1336f(TabItem.this.f1217c, R.string.ff));
             g.mo635m(false);
-            g.mo614F(R.string.RES_2131558402, new C0425o(callback, str));
-            g.mo648z(R.string.RES_2131558415, new View$OnClickListenerC0417g(callback, str));
+            g.mo614F(R.string.c, new C0425o(callback, str));
+            g.mo648z(R.string.p, new View$OnClickListenerC0417g(callback, str));
             g.mo622N();
         }
 
@@ -238,16 +238,16 @@ public class TabItem {
             }
             String n = BrowserUtils.m2093n(str, false);
             if (TextUtils.isEmpty(n)) {
-                str3 = TabItem.this.f1217c.getString(R.string.RES_2131558528);
+                str3 = TabItem.this.f1217c.getString(R.string.cr);
             } else {
-                str3 = TabItem.this.f1217c.getString(R.string.RES_2131558529, n);
+                str3 = TabItem.this.f1217c.getString(R.string.cs, n);
             }
             TaoDialog g = TaoDialog.m1134g(TabItem.this.f1217c);
             g.mo621M(str3);
             g.mo645w(str2);
             g.mo635m(false);
             g.mo614F(17039370, new C0426p(jsResult));
-            g.mo610B(R.string.RES_2131558564, new View$OnClickListenerC0422l(jsResult));
+            g.mo610B(R.string.dq, new View$OnClickListenerC0422l(jsResult));
             g.mo622N();
             return true;
         }
@@ -259,11 +259,11 @@ public class TabItem {
                 return true;
             }
             TaoDialog g = TaoDialog.m1134g(TabItem.this.f1216b);
-            g.mo620L(R.string.RES_2131558492);
+            g.mo620L(R.string.bs);
             g.mo645w(str2);
             g.mo635m(false);
-            g.mo614F(R.string.RES_2131558610, new C0420j(jsResult));
-            g.mo648z(R.string.RES_2131558731, new View$OnClickListenerC0418h(jsResult));
+            g.mo614F(R.string.ez, new C0420j(jsResult));
+            g.mo648z(R.string.i9, new View$OnClickListenerC0418h(jsResult));
             g.mo622N();
             return true;
         }
@@ -277,9 +277,9 @@ public class TabItem {
             }
             String n = BrowserUtils.m2093n(str, false);
             if (TextUtils.isEmpty(n)) {
-                str3 = TabItem.this.f1217c.getString(R.string.RES_2131558528);
+                str3 = TabItem.this.f1217c.getString(R.string.cr);
             } else {
-                str3 = TabItem.this.f1217c.getString(R.string.RES_2131558529, n);
+                str3 = TabItem.this.f1217c.getString(R.string.cs, n);
             }
             TaoDialog g = TaoDialog.m1134g(TabItem.this.f1217c);
             g.mo621M(str3);
@@ -300,9 +300,9 @@ public class TabItem {
             }
             String n = BrowserUtils.m2093n(str, false);
             if (TextUtils.isEmpty(n)) {
-                str4 = TabItem.this.f1217c.getString(R.string.RES_2131558528);
+                str4 = TabItem.this.f1217c.getString(R.string.cr);
             } else {
-                str4 = TabItem.this.f1217c.getString(R.string.RES_2131558529, n);
+                str4 = TabItem.this.f1217c.getString(R.string.cs, n);
             }
             TaoDialog g = TaoDialog.m1134g(TabItem.this.f1217c);
             g.mo621M(str4);
@@ -457,9 +457,9 @@ public class TabItem {
     /* renamed from: R */
     private void m1412R(Activity activity, FastView fastView) {
         this.f1226l.mo855l(fastView);
-        ViewUtils.m2223a(fastView, CompatUtils.m1334d(activity, R.color.RES_2131034146));
+        ViewUtils.m2223a(fastView, CompatUtils.m1334d(activity, R.color.a8));
         if (Build.VERSION.SDK_INT >= 16) {
-            fastView.setScrollBarSize(CompatUtils.m1333c(this.f1217c, R.dimen.g));
+            fastView.setScrollBarSize(CompatUtils.m1333c(this.f1217c, R.dimen.m));
         }
         fastView.setWebChromeClient(new C0410c());
         fastView.setWebViewClient(new C0412e());
@@ -694,7 +694,7 @@ public class TabItem {
         FastView fastView = this.f1225k;
         String title = fastView == null ? null : fastView.getTitle();
         if (title == null || title.isEmpty()) {
-            return CompatUtils.m1336f(this.f1217c, R.string.RES_2131558764);
+            return CompatUtils.m1336f(this.f1217c, R.string.j5);
         }
         return title;
     }
@@ -908,8 +908,8 @@ public class TabItem {
                 return;
             }
             TaoDialog g = TaoDialog.m1134g(TabItem.this.f1216b);
-            g.mo620L(R.string.RES_2131558744);
-            g.mo644v(R.string.RES_2131558623);
+            g.mo620L(R.string.il);
+            g.mo644v(R.string.fb);
             g.mo635m(true);
             g.mo614F(17039370, new C0430t(message2));
             g.mo648z(17039360, new View$OnClickListenerC0432v(message));
@@ -958,9 +958,9 @@ public class TabItem {
                 return;
             }
             TaoDialog g = TaoDialog.m1134g(TabItem.this.f1217c);
-            g.mo620L(R.string.RES_2131558745);
-            g.mo628c(0, "", R.string.RES_2131558583, 1);
-            g.mo628c(1, "", R.string.RES_2131558579, 1);
+            g.mo620L(R.string.im);
+            g.mo628c(0, "", R.string.e9, 1);
+            g.mo628c(1, "", R.string.e5, 1);
             g.mo635m(false);
             g.mo614F(17039370, new C0428r(httpAuthHandler));
             g.mo648z(17039360, new View$OnClickListenerC0427q(httpAuthHandler));
@@ -983,24 +983,24 @@ public class TabItem {
                 if (!GlobalConf.f1410j) {
                     int primaryError = sslError.getPrimaryError();
                     if (primaryError == 0) {
-                        str = CompatUtils.m1336f(TabItem.this.f1217c, R.string.RES_2131558628);
+                        str = CompatUtils.m1336f(TabItem.this.f1217c, R.string.fg);
                     } else if (primaryError == 1) {
-                        str = CompatUtils.m1336f(TabItem.this.f1217c, R.string.RES_2131558622);
+                        str = CompatUtils.m1336f(TabItem.this.f1217c, R.string.fa);
                     } else if (primaryError == 2) {
-                        str = CompatUtils.m1336f(TabItem.this.f1217c, R.string.RES_2131558624);
+                        str = CompatUtils.m1336f(TabItem.this.f1217c, R.string.fc);
                     } else if (primaryError == 3) {
-                        str = CompatUtils.m1336f(TabItem.this.f1217c, R.string.RES_2131558629);
+                        str = CompatUtils.m1336f(TabItem.this.f1217c, R.string.fh);
                     } else if (primaryError == 4) {
-                        str = CompatUtils.m1336f(TabItem.this.f1217c, R.string.RES_2131558617);
+                        str = CompatUtils.m1336f(TabItem.this.f1217c, R.string.f6);
                     } else if (primaryError == 5) {
-                        str = CompatUtils.m1336f(TabItem.this.f1217c, R.string.RES_2131558626);
+                        str = CompatUtils.m1336f(TabItem.this.f1217c, R.string.fe);
                     }
                 } else if (ChannelUtils.m2108c() && sslError.getPrimaryError() == 3) {
-                    str = CompatUtils.m1336f(TabItem.this.f1217c, R.string.RES_2131558629);
+                    str = CompatUtils.m1336f(TabItem.this.f1217c, R.string.fh);
                 }
                 if (str != null) {
                     TaoDialog g = TaoDialog.m1134g(TabItem.this.f1216b);
-                    g.mo620L(R.string.RES_2131558747);
+                    g.mo620L(R.string.io);
                     g.mo645w(str);
                     g.mo635m(false);
                     g.mo614F(17039370, new C0429s(sslErrorHandler));

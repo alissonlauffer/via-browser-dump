@@ -102,13 +102,13 @@ public class FrogMenu {
 
     /* renamed from: d */
     private void m1233d() {
-        GridView gridView = new GridView(new ContextThemeWrapper(this.f1133a, C0368g.d));
+        GridView gridView = new GridView(new ContextThemeWrapper(this.f1133a, C0368g.j));
         this.f1134b = gridView;
         gridView.setId(79);
         this.f1134b.setNumColumns(5);
         this.f1134b.setSelector(17170445);
         this.f1134b.setLayoutParams(new ViewGroup.LayoutParams(-1, this.f1136d ? -1 : -2));
-        C0393a aVar = new C0393a(this.f1133a, C0367f.f, this.f1135c);
+        C0393a aVar = new C0393a(this.f1133a, C0367f.n, this.f1135c);
         this.f1138f = aVar;
         this.f1134b.setAdapter((ListAdapter) aVar);
         this.f1134b.setOnItemClickListener(new C0394b());
@@ -128,7 +128,7 @@ public class FrogMenu {
         Drawable d;
         int i2;
         if (cVar != null && bVar != null) {
-            int i3 = C0366e.m;
+            int i3 = C0366e.b8;
             TextView textView = (TextView) cVar.mo684b(i3);
             textView.setText(bVar.mo717c());
             int a = bVar.mo715a();
@@ -136,17 +136,17 @@ public class FrogMenu {
                 int a2 = FrogUtils.m1354a(this.f1133a, 20.0f);
                 d.setBounds(0, 0, a2, a2);
                 if (bVar.mo718d()) {
-                    i2 = CompatUtils.m1331a(this.f1133a, C0363b.a);
+                    i2 = CompatUtils.m1331a(this.f1133a, C0363b.q);
                 } else {
-                    i2 = CompatUtils.m1332b(this.f1133a, C0361a.a);
+                    i2 = CompatUtils.m1332b(this.f1133a, C0361a.f);
                 }
                 d.setColorFilter(i2, PorterDuff.Mode.SRC_ATOP);
                 ((TextView) cVar.mo684b(i3)).setCompoundDrawables(null, d, null, null);
             }
             if (bVar.mo718d()) {
-                i = CompatUtils.m1331a(this.f1133a, C0363b.a);
+                i = CompatUtils.m1331a(this.f1133a, C0363b.q);
             } else {
-                i = CompatUtils.m1332b(this.f1133a, C0361a.b);
+                i = CompatUtils.m1332b(this.f1133a, C0361a.h);
             }
             textView.setTextColor(i);
             textView.setEnabled(bVar.mo719e());

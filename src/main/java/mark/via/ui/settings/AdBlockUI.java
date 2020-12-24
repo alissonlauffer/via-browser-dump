@@ -44,25 +44,25 @@ public class AdBlockUI extends BaseSettings {
         /* renamed from: a */
         public void mo764a(FrogSettingsBean bVar, int i) {
             switch (bVar.mo754b()) {
-                case R.string.RES_2131558473 /* 2131558473 */:
+                case R.string.b_ /* 2131558473 */:
                     FlurryHelper.m1681a().mo1041j("adblock");
                     AdBlockUI.this.f1803c.mo1069C0(bVar.mo757e());
                     if (bVar.mo757e()) {
-                        bVar.mo761i(CompatUtils.m1337g(((BaseActivity) AdBlockUI.this).f1039b, R.string.RES_2131558450, Integer.valueOf(AdBlockUI.this.f1803c.mo1145f()), BrowserUtils.m2092m(AdBlockUI.this.f1803c.mo1146f0())));
+                        bVar.mo761i(CompatUtils.m1337g(((BaseActivity) AdBlockUI.this).f1039b, R.string.an, Integer.valueOf(AdBlockUI.this.f1803c.mo1145f()), BrowserUtils.m2092m(AdBlockUI.this.f1803c.mo1146f0())));
                     } else {
-                        bVar.mo761i(CompatUtils.m1336f(((BaseActivity) AdBlockUI.this).f1039b, R.string.RES_2131558531));
+                        bVar.mo761i(CompatUtils.m1336f(((BaseActivity) AdBlockUI.this).f1039b, R.string.cu));
                     }
                     AdBlockUI.this.f1798d.mo749m(i, bVar);
                     return;
-                case R.string.RES_2131558503 /* 2131558503 */:
+                case R.string.c3 /* 2131558503 */:
                     AdBlockUI.this.startActivity(new Intent(((BaseActivity) AdBlockUI.this).f1039b, CustomFiltersUI.class));
                     return;
-                case R.string.RES_2131558550 /* 2131558550 */:
+                case R.string.dc /* 2131558550 */:
                     AdBlockUI.this.f1799e = true;
                     AdBlockUI.this.f1803c.mo1087I0(bVar.mo757e());
                     AdBlockUI.this.f1798d.mo749m(i, bVar);
                     return;
-                case R.string.RES_2131558560 /* 2131558560 */:
+                case R.string.dm /* 2131558560 */:
                     AdBlockUI.this.startActivity(new Intent(((BaseActivity) AdBlockUI.this).f1039b, SubscribedFiltersUI.class));
                     return;
                 default:
@@ -77,22 +77,22 @@ public class AdBlockUI extends BaseSettings {
         ArrayList arrayList = new ArrayList();
         boolean e = this.f1803c.mo1142e();
         if (!e) {
-            str = CompatUtils.m1336f(this.f1039b, R.string.RES_2131558531);
+            str = CompatUtils.m1336f(this.f1039b, R.string.cu);
         } else {
-            str = CompatUtils.m1337g(this.f1039b, R.string.RES_2131558450, Integer.valueOf(this.f1803c.mo1145f()), BrowserUtils.m2092m(this.f1803c.mo1146f0()));
+            str = CompatUtils.m1337g(this.f1039b, R.string.an, Integer.valueOf(this.f1803c.mo1145f()), BrowserUtils.m2092m(this.f1803c.mo1146f0()));
         }
-        arrayList.add(FrogSettingsBean.m1296o(this.f1039b, R.string.RES_2131558473, str, e));
-        arrayList.add(FrogSettingsBean.m1294m(this.f1039b, R.string.RES_2131558550, R.string.RES_2131558551, this.f1803c.mo1163l()));
-        arrayList.add(FrogSettingsBean.m1293l(this.f1039b, R.string.RES_2131558503, R.string.RES_2131558504));
-        arrayList.add(FrogSettingsBean.m1293l(this.f1039b, R.string.RES_2131558560, R.string.RES_2131558561));
+        arrayList.add(FrogSettingsBean.m1296o(this.f1039b, R.string.b_, str, e));
+        arrayList.add(FrogSettingsBean.m1294m(this.f1039b, R.string.dc, R.string.dd, this.f1803c.mo1163l()));
+        arrayList.add(FrogSettingsBean.m1293l(this.f1039b, R.string.c3, R.string.c4));
+        arrayList.add(FrogSettingsBean.m1293l(this.f1039b, R.string.dm, R.string.dn));
         return arrayList;
     }
 
     /* renamed from: h */
     private View m2602h() {
         FrogNavigator g = FrogNavigator.m1261g(this.f1039b);
-        g.mo736m(R.string.RES_2131558473);
-        g.mo734k(R.string.RES_2131558517);
+        g.mo736m(R.string.b_);
+        g.mo734k(R.string.cg);
         View p = g.mo738p();
         FrogSettings j = FrogSettings.m1279j(this.f1039b);
         j.mo742d(m2601g());
@@ -103,7 +103,7 @@ public class AdBlockUI extends BaseSettings {
     }
 
     /* access modifiers changed from: protected */
-    @Override // mark.via.ui.settings.BaseSettings, mark.lib.frogsupport.activity.BaseActivity, android.app.Activity
+    @Override // mark.via.ui.settings.BaseSettings, android.app.Activity
     public void onCreate(Bundle bundle) {
         DaggerBlockerComponent.C0447b d = DaggerBlockerComponent.m1665d();
         d.mo1029a(BrowserApp.m1387a(this).f1192a);

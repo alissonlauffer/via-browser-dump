@@ -66,7 +66,7 @@ public class ScriptSettings extends BaseSettings {
         @Override // android.view.View.OnClickListener
         public void onClick(View view) {
             TaoDialog g = TaoDialog.m1134g(((BaseActivity) ScriptSettings.this).f1039b);
-            g.mo643u(new String[]{((BaseActivity) ScriptSettings.this).f1039b.getString(R.string.RES_2131558426), ((BaseActivity) ScriptSettings.this).f1039b.getString(R.string.RES_2131558570)}, new C0676w0(this));
+            g.mo643u(new String[]{((BaseActivity) ScriptSettings.this).f1039b.getString(R.string.a0), ((BaseActivity) ScriptSettings.this).f1039b.getString(R.string.dw)}, new C0676w0(this));
             g.mo624P(view);
         }
     }
@@ -81,8 +81,8 @@ public class ScriptSettings extends BaseSettings {
         /* access modifiers changed from: protected */
         /* renamed from: h */
         public void mo675b(ViewHolder cVar, AddonItem aVar, int i) {
-            cVar.mo689g(R.id.RES_2131230747, aVar.mo923g());
-            cVar.mo689g(R.id.RES_2131230744, InfoUtils.m2170i(aVar.mo918b()));
+            cVar.mo689g(R.id.a1, aVar.mo923g());
+            cVar.mo689g(R.id.y, InfoUtils.m2170i(aVar.mo918b()));
         }
     }
 
@@ -135,7 +135,7 @@ public class ScriptSettings extends BaseSettings {
         /* access modifiers changed from: private */
         /* renamed from: a */
         public /* synthetic */ void mo1515b(AddonItem aVar, View view) {
-            QuickUtils.m1371c(((BaseActivity) ScriptSettings.this).f1039b, InfoUtils.m2170i(aVar.mo918b()), CompatUtils.m1336f(((BaseActivity) ScriptSettings.this).f1039b, R.string.RES_2131558749));
+            QuickUtils.m1371c(((BaseActivity) ScriptSettings.this).f1039b, InfoUtils.m2170i(aVar.mo918b()), CompatUtils.m1336f(((BaseActivity) ScriptSettings.this).f1039b, R.string.iq));
         }
 
         /* access modifiers changed from: private */
@@ -156,11 +156,11 @@ public class ScriptSettings extends BaseSettings {
                 g.mo621M(aVar.mo923g());
                 g.mo645w(InfoUtils.m2170i(aVar.mo918b()));
                 g.mo614F(17039370, null);
-                g.mo610B(R.string.RES_2131558411, new View$OnClickListenerC0679x0(this, aVar));
+                g.mo610B(R.string.l, new View$OnClickListenerC0679x0(this, aVar));
                 g.mo622N();
             } else if (i2 == 2) {
                 TaoDialog g2 = TaoDialog.m1134g(((BaseActivity) ScriptSettings.this).f1039b);
-                g2.mo620L(R.string.RES_2131558412);
+                g2.mo620L(R.string.m);
                 g2.mo645w(aVar.mo923g() + "\n\n" + InfoUtils.m2170i(aVar.mo918b()));
                 g2.mo614F(17039370, new C0682y0(this, aVar));
                 g2.mo648z(17039360, null);
@@ -171,9 +171,9 @@ public class ScriptSettings extends BaseSettings {
                 } else {
                     String g3 = aVar.mo923g();
                     if ("*".equals(g3)) {
-                        g3 = CompatUtils.m1336f(((BaseActivity) ScriptSettings.this).f1039b, R.string.RES_2131558462);
+                        g3 = CompatUtils.m1336f(((BaseActivity) ScriptSettings.this).f1039b, R.string.az);
                     }
-                    str = ((BaseActivity) ScriptSettings.this).f1039b.getResources().getString(R.string.RES_2131558706, g3 + " (" + aVar.mo921e() + ") ", ScriptSettings.this.f1826f);
+                    str = ((BaseActivity) ScriptSettings.this).f1039b.getResources().getString(R.string.hk, g3 + " (" + aVar.mo921e() + ") ", ScriptSettings.this.f1826f);
                 }
                 if (!TextUtils.isEmpty(str)) {
                     IntentUtils.m2179f(((BaseActivity) ScriptSettings.this).f1039b, str);
@@ -184,7 +184,7 @@ public class ScriptSettings extends BaseSettings {
         @Override // android.widget.AdapterView.OnItemLongClickListener
         public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long j) {
             TaoDialog g = TaoDialog.m1134g(((BaseActivity) ScriptSettings.this).f1039b);
-            g.mo643u(new String[]{((BaseActivity) ScriptSettings.this).f1039b.getString(R.string.RES_2131558417), ((BaseActivity) ScriptSettings.this).f1039b.getString(R.string.RES_2131558435), ((BaseActivity) ScriptSettings.this).f1039b.getString(R.string.RES_2131558412), ((BaseActivity) ScriptSettings.this).f1039b.getString(R.string.RES_2131558441)}, new C0685z0(this, i));
+            g.mo643u(new String[]{((BaseActivity) ScriptSettings.this).f1039b.getString(R.string.r), ((BaseActivity) ScriptSettings.this).f1039b.getString(R.string.a9), ((BaseActivity) ScriptSettings.this).f1039b.getString(R.string.m), ((BaseActivity) ScriptSettings.this).f1039b.getString(R.string.ae)}, new C0685z0(this, i));
             g.mo624P(view);
             return true;
         }
@@ -283,9 +283,9 @@ public class ScriptSettings extends BaseSettings {
     /* renamed from: x */
     private void m2791x() {
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo620L(R.string.RES_2131558453);
-        g.mo630e("", R.string.RES_2131558686, 1);
-        g.mo630e("", R.string.RES_2131558685, 8);
+        g.mo620L(R.string.aq);
+        g.mo630e("", R.string.h1, 1);
+        g.mo630e("", R.string.h0, 8);
         g.mo614F(17039370, new C0610a1(this));
         g.mo622N();
     }
@@ -293,15 +293,15 @@ public class ScriptSettings extends BaseSettings {
     /* renamed from: y */
     private View m2792y() {
         FrogNavigator g = FrogNavigator.m1261g(this.f1039b);
-        g.mo736m(R.string.RES_2131558704);
-        g.mo734k(R.string.RES_2131558517);
-        g.mo729a(R.drawable.RES_2131165200, new View$OnClickListenerC0591a());
+        g.mo736m(R.string.hi);
+        g.mo734k(R.string.cg);
+        g.mo729a(R.drawable.a4, new View$OnClickListenerC0591a());
         View p = g.mo738p();
-        TextView a = LayoutUtils.m1363a(this.f1039b, R.string.RES_2131558547);
-        ListView listView = new ListView(new ContextThemeWrapper(this.f1039b, (int) R.style.d));
+        TextView a = LayoutUtils.m1363a(this.f1039b, R.string.d_);
+        ListView listView = new ListView(new ContextThemeWrapper(this.f1039b, (int) R.style.j));
         listView.setDividerHeight(0);
         listView.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
-        C0592b bVar = new C0592b(this, this.f1039b, R.layout.RES_2131361811, this.f1825e);
+        C0592b bVar = new C0592b(this, this.f1039b, R.layout.t, this.f1825e);
         this.f1827g = bVar;
         bVar.mo670g(new C0593c(this, listView, a));
         listView.setAdapter((ListAdapter) this.f1827g);
@@ -315,16 +315,16 @@ public class ScriptSettings extends BaseSettings {
     /* renamed from: z */
     private void m2793z(AddonItem aVar) {
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo620L(R.string.RES_2131558417);
+        g.mo620L(R.string.r);
         g.mo636n(false);
-        g.mo630e(aVar.mo923g(), R.string.RES_2131558686, 1);
-        g.mo630e(InfoUtils.m2170i(aVar.mo918b()), R.string.RES_2131558685, 8);
+        g.mo630e(aVar.mo923g(), R.string.h1, 1);
+        g.mo630e(InfoUtils.m2170i(aVar.mo918b()), R.string.h0, 8);
         g.mo614F(17039370, new C0614b1(this, aVar));
         g.mo648z(17039360, null);
         g.mo622N();
     }
 
-    @Override // mark.via.ui.settings.BaseSettings, mark.lib.frogsupport.activity.BaseActivity, android.app.Activity
+    @Override // mark.via.ui.settings.BaseSettings, android.app.Activity
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         DatabaseHandler v = DatabaseHandler.m1595v(this.f1039b);

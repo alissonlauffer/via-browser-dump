@@ -74,7 +74,7 @@ public class SubscribedFiltersUI extends BaseSettings {
                 SubscribedFiltersUI.this.m2850H(str, 100);
                 return;
             }
-            QuickUtils.m1384p(((BaseActivity) SubscribedFiltersUI.this).f1039b, SubscribedFiltersUI.this.getString(R.string.RES_2131558766, new Object[]{str}));
+            QuickUtils.m1384p(((BaseActivity) SubscribedFiltersUI.this).f1039b, SubscribedFiltersUI.this.getString(R.string.j7, new Object[]{str}));
         }
 
         @Override // mark.via.receivers.BlockerReceiver.AbstractC0466a
@@ -82,7 +82,7 @@ public class SubscribedFiltersUI extends BaseSettings {
         public void mo1211c() {
             SubscribedFiltersUI.this.f1857h = true;
             Timber.m971a("Update filters finished", new Object[0]);
-            QuickUtils.m1382n(((BaseActivity) SubscribedFiltersUI.this).f1039b, R.string.RES_2131558767);
+            QuickUtils.m1382n(((BaseActivity) SubscribedFiltersUI.this).f1039b, R.string.j8);
         }
     }
 
@@ -114,7 +114,7 @@ public class SubscribedFiltersUI extends BaseSettings {
         FilterSubscription cVar2;
         String str = lVar.f1091c[0];
         if (!WebAdressUtils.m2253e(str)) {
-            QuickUtils.m1382n(this.f1039b, R.string.RES_2131558778);
+            QuickUtils.m1382n(this.f1039b, R.string.ji);
             return;
         }
         if (z) {
@@ -126,7 +126,7 @@ public class SubscribedFiltersUI extends BaseSettings {
         }
         cVar2.mo37m(WebAdressUtils.m2254f(str));
         if (this.f1853d.contains(cVar2)) {
-            QuickUtils.m1382n(this.f1039b, R.string.RES_2131558558);
+            QuickUtils.m1382n(this.f1039b, R.string.dk);
             return;
         }
         if (z) {
@@ -188,57 +188,57 @@ public class SubscribedFiltersUI extends BaseSettings {
         String str;
         int indexOf;
         if (cVar != null) {
-            cVar.mo690h(R.id.n, true);
-            cVar.mo690h(R.id.c, true);
+            cVar.mo690h(R.id.b9, true);
+            cVar.mo690h(R.id.l, true);
             String c = cVar2.mo26c();
             if ((c == null || c.isEmpty()) && (indexOf = (c = cVar2.mo27d()).indexOf("://")) >= 0) {
                 c = c.substring(indexOf + 3);
             }
-            cVar.mo689g(R.id.o, c);
+            cVar.mo689g(R.id.ba, c);
             long g = FileUtils.m2151g(cVar2.mo24a());
-            String quantityString = getResources().getQuantityString(R.plurals.RES_2131492865, cVar2.mo25b(), Integer.valueOf(cVar2.mo25b()));
+            String quantityString = getResources().getQuantityString(R.plurals.b, cVar2.mo25b(), Integer.valueOf(cVar2.mo25b()));
             if (g == 0) {
-                str = getString(R.string.RES_2131558575);
+                str = getString(R.string.e1);
             } else {
                 int currentTimeMillis = (int) (((System.currentTimeMillis() - g) / 1000) / 60);
                 if (currentTimeMillis < 1) {
-                    str = getString(R.string.RES_2131558768, new Object[]{getString(R.string.RES_2131558608)});
+                    str = getString(R.string.j9, new Object[]{getString(R.string.ex)});
                 } else if (currentTimeMillis < 60) {
-                    str = getString(R.string.RES_2131558768, new Object[]{getResources().getQuantityString(R.plurals.RES_2131492867, currentTimeMillis, Integer.valueOf(currentTimeMillis))});
+                    str = getString(R.string.j9, new Object[]{getResources().getQuantityString(R.plurals.d, currentTimeMillis, Integer.valueOf(currentTimeMillis))});
                 } else {
                     int i2 = currentTimeMillis / 60;
                     if (i2 < 24) {
-                        str = getString(R.string.RES_2131558768, new Object[]{getResources().getQuantityString(R.plurals.RES_2131492866, i2, Integer.valueOf(i2))});
+                        str = getString(R.string.j9, new Object[]{getResources().getQuantityString(R.plurals.c, i2, Integer.valueOf(i2))});
                     } else {
                         int i3 = i2 / 24;
                         if (i3 < 8) {
-                            str = getString(R.string.RES_2131558768, new Object[]{getResources().getQuantityString(R.plurals.RES_2131492864, i3, Integer.valueOf(i3))});
+                            str = getString(R.string.j9, new Object[]{getResources().getQuantityString(R.plurals.a, i3, Integer.valueOf(i3))});
                         } else {
-                            str = getString(R.string.RES_2131558768, new Object[]{getString(R.string.RES_2131558615)});
+                            str = getString(R.string.j9, new Object[]{getString(R.string.f4)});
                         }
                     }
                 }
             }
-            cVar.mo689g(R.id.n, getString(R.string.RES_2131558559, new Object[]{quantityString, str}));
-            cVar.mo685c(R.id.c, cVar2.mo28e());
+            cVar.mo689g(R.id.b9, getString(R.string.dl, new Object[]{quantityString, str}));
+            cVar.mo685c(R.id.l, cVar2.mo28e());
         }
     }
 
     /* renamed from: h */
     private View m2858h() {
         FrogNavigator g = FrogNavigator.m1261g(this.f1039b);
-        g.mo736m(R.string.RES_2131558560);
-        g.mo734k(R.string.RES_2131558517);
-        g.mo729a(R.drawable.RES_2131165200, new View$OnClickListenerC0659q1(this));
-        g.mo732d(getString(R.string.RES_2131558765), new View$OnClickListenerC0668t1(this));
+        g.mo736m(R.string.dm);
+        g.mo734k(R.string.cg);
+        g.mo729a(R.drawable.a4, new View$OnClickListenerC0659q1(this));
+        g.mo732d(getString(R.string.j6), new View$OnClickListenerC0668t1(this));
         View p = g.mo738p();
-        TextView a = LayoutUtils.m1363a(this.f1039b, R.string.RES_2131558547);
-        ListView listView = new ListView(new ContextThemeWrapper(this.f1039b, (int) R.style.d));
+        TextView a = LayoutUtils.m1363a(this.f1039b, R.string.d_);
+        ListView listView = new ListView(new ContextThemeWrapper(this.f1039b, (int) R.style.j));
         this.f1856g = listView;
         listView.setDividerHeight(0);
         this.f1856g.setLayoutParams(new ViewGroup.LayoutParams(-1, -1));
         this.f1853d = this.f1858i.mo8d();
-        C0606b bVar = new C0606b(this.f1039b, R.layout.g, this.f1853d);
+        C0606b bVar = new C0606b(this.f1039b, R.layout.p, this.f1853d);
         this.f1854e = bVar;
         bVar.mo670g(new C0662r1(this, a));
         this.f1856g.setOnItemClickListener(new C0650n1(this));
@@ -257,13 +257,13 @@ public class SubscribedFiltersUI extends BaseSettings {
         String str;
         boolean z = i < 0 || cVar == null;
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo620L(z ? R.string.RES_2131558451 : R.string.RES_2131558546);
+        g.mo620L(z ? R.string.ao : R.string.d9);
         if (z) {
             str = "https://";
         } else {
             str = cVar.mo27d();
         }
-        g.mo628c(1, str, R.string.RES_2131558582, 3);
+        g.mo628c(1, str, R.string.e8, 3);
         g.mo636n(false);
         g.mo614F(17039370, new C0644l1(this, cVar, z, i));
         g.mo648z(17039360, null);
@@ -280,7 +280,7 @@ public class SubscribedFiltersUI extends BaseSettings {
             }
         }
         if (i > 0) {
-            QuickUtils.m1382n(this.f1039b, R.string.RES_2131558769);
+            QuickUtils.m1382n(this.f1039b, R.string.j_);
         }
     }
 
@@ -334,9 +334,9 @@ public class SubscribedFiltersUI extends BaseSettings {
         } else if (i2 == 1) {
             m2860j(i, cVar);
         } else if (i2 == 2) {
-            QuickUtils.m1370b(this.f1039b, cVar.mo27d(), R.string.RES_2131558750);
+            QuickUtils.m1370b(this.f1039b, cVar.mo27d(), R.string.ir);
         } else if (i2 == 3) {
-            QuickUtils.m1375g(this.f1039b, R.string.RES_2131558412, cVar.mo27d(), new C0647m1(this, i));
+            QuickUtils.m1375g(this.f1039b, R.string.m, cVar.mo27d(), new C0647m1(this, i));
         }
     }
 
@@ -344,12 +344,12 @@ public class SubscribedFiltersUI extends BaseSettings {
     /* renamed from: x */
     public /* synthetic */ boolean mo1553y(AdapterView adapterView, View view, int i, long j) {
         TaoDialog g = TaoDialog.m1134g(this.f1039b);
-        g.mo643u(new String[]{this.f1039b.getString(R.string.RES_2131558435), this.f1039b.getString(R.string.RES_2131558417), this.f1039b.getString(R.string.RES_2131558408), this.f1039b.getString(R.string.RES_2131558412)}, new C0671u1(this, i));
+        g.mo643u(new String[]{this.f1039b.getString(R.string.a9), this.f1039b.getString(R.string.r), this.f1039b.getString(R.string.i), this.f1039b.getString(R.string.m)}, new C0671u1(this, i));
         g.mo624P(view);
         return true;
     }
 
-    @Override // mark.via.ui.settings.BaseSettings, mark.lib.frogsupport.activity.BaseActivity, android.app.Activity
+    @Override // mark.via.ui.settings.BaseSettings, android.app.Activity
     public void onCreate(Bundle bundle) {
         DaggerBlockerComponent.C0447b d = DaggerBlockerComponent.m1665d();
         d.mo1029a(BrowserApp.m1387a(this).f1192a);

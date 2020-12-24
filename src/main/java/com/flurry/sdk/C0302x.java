@@ -30,8 +30,9 @@ public class C0302x extends AbstractC0066c2<C0310y> {
         }
     }
 
+    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.x$b */
-    class C0304b implements C0315y1.AbstractC0317b<byte[], String> {
+    public class C0304b implements C0315y1.AbstractC0317b<byte[], String> {
 
         /* renamed from: a */
         final /* synthetic */ C0310y f835a;

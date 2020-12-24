@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="@dimen/h" android:textColor="?attr/c" android:ellipsize="end" android:background="@drawable/b" android:paddingLeft="8dp" android:paddingTop="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:id="@+id/as" android:layout_width="match_parent" android:layout_height="@dimen/a">
+    <ImageView android:id="@+id/au" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/a6" android:layout_weight="1" android:contentDescription="@string/cg" style="@style/s"/>
+    <ImageView android:id="@+id/av" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/r" android:layout_weight="1" android:contentDescription="@string/ci" style="@style/s"/>
+    <ImageView android:id="@+id/aw" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/ae" android:layout_weight="1" android:contentDescription="@string/cj" style="@style/s"/>
+    <FrameLayout android:id="@+id/ah" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="11dp" android:textColor="?attr/f" android:gravity="center" android:id="@+id/ay" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/az" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ay" android:contentDescription="@string/co" style="@style/s"/>
+    </FrameLayout>
+    <ImageView android:id="@+id/ax" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/ah" android:layout_weight="1" android:contentDescription="@string/ck" style="@style/s"/>
+</LinearLayout>

@@ -67,21 +67,21 @@ public class SiteConfSlice extends Slice {
     /* renamed from: h */
     public /* synthetic */ void mo1265i(SiteConf dVar, CompoundButton compoundButton, boolean z) {
         switch (compoundButton.getId()) {
-            case R.id.RES_2131230726 /* 2131230726 */:
+            case R.id.g /* 2131230726 */:
                 Timber.m971a("set adblock: %s", Boolean.valueOf(z));
                 dVar.mo1238k(z);
                 break;
-            case R.id.RES_2131230727 /* 2131230727 */:
+            case R.id.h /* 2131230727 */:
                 dVar.mo1239l(z);
                 break;
-            case R.id.RES_2131230728 /* 2131230728 */:
+            case R.id.i /* 2131230728 */:
                 dVar.mo1240n(z);
                 break;
-            case R.id.RES_2131230732 /* 2131230732 */:
+            case R.id.m /* 2131230732 */:
                 dVar.mo1243q(z);
                 break;
-            case R.id.RES_2131230733 /* 2131230733 */:
-                ViewUtils.m2216C((ViewGroup) this.f1461c, z, R.id.RES_2131230733);
+            case R.id.n /* 2131230733 */:
+                ViewUtils.m2216C((ViewGroup) this.f1461c, z, R.id.n);
                 dVar.mo1241o(z);
                 Timber.m971a("set siteconf: %s", dVar.toString());
                 break;
@@ -102,7 +102,7 @@ public class SiteConfSlice extends Slice {
                 i3 = 8;
             }
             view2.setVisibility(i3);
-            this.f1453k.setText(CompatUtils.m1338h(this.f1459a, R.array.RES_2130837518, i));
+            this.f1453k.setText(CompatUtils.m1338h(this.f1459a, R.array.o, i));
             this.f1456n = true;
         }
     }
@@ -111,8 +111,8 @@ public class SiteConfSlice extends Slice {
     /* renamed from: l */
     public /* synthetic */ void mo1267m(SiteConf dVar, View view) {
         TaoDialog g = TaoDialog.m1134g(this.f1459a);
-        g.mo620L(R.string.RES_2131558456);
-        g.mo618J(R.array.RES_2130837518, dVar.mo1231d() - 1, new C0478g(this, dVar));
+        g.mo620L(R.string.at);
+        g.mo618J(R.array.o, dVar.mo1231d() - 1, new C0478g(this, dVar));
         g.mo624P(this.f1453k);
     }
 
@@ -132,15 +132,15 @@ public class SiteConfSlice extends Slice {
     @Override // mark.via.p044m.p046b.Slice
     /* renamed from: d */
     public View mo1254d() {
-        View inflate = this.f1459a.getLayoutInflater().inflate(R.layout.RES_2131361795, (ViewGroup) this.f1459a.findViewById(16908290), false);
-        this.f1448f = (CheckBox) inflate.findViewById(R.id.RES_2131230733);
-        this.f1453k = (TextView) inflate.findViewById(R.id.RES_2131230786);
-        this.f1454l = (EditText) inflate.findViewById(R.id.RES_2131230735);
-        this.f1455m = inflate.findViewById(R.id.RES_2131230736);
-        this.f1449g = (CheckBox) inflate.findViewById(R.id.RES_2131230728);
-        this.f1450h = (CheckBox) inflate.findViewById(R.id.RES_2131230732);
-        this.f1451i = (CheckBox) inflate.findViewById(R.id.RES_2131230727);
-        this.f1452j = (CheckBox) inflate.findViewById(R.id.RES_2131230726);
+        View inflate = this.f1459a.getLayoutInflater().inflate(R.layout.d, (ViewGroup) this.f1459a.findViewById(16908290), false);
+        this.f1448f = (CheckBox) inflate.findViewById(R.id.n);
+        this.f1453k = (TextView) inflate.findViewById(R.id.b3);
+        this.f1454l = (EditText) inflate.findViewById(R.id.p);
+        this.f1455m = inflate.findViewById(R.id.q);
+        this.f1449g = (CheckBox) inflate.findViewById(R.id.i);
+        this.f1450h = (CheckBox) inflate.findViewById(R.id.m);
+        this.f1451i = (CheckBox) inflate.findViewById(R.id.h);
+        this.f1452j = (CheckBox) inflate.findViewById(R.id.g);
         return inflate;
     }
 
@@ -150,11 +150,11 @@ public class SiteConfSlice extends Slice {
         SiteConf d = this.f1447e.mo1219d(this.f1457o);
         Timber.m971a("siteconf: %s", d.toString());
         C0476e eVar = new C0476e(this, d);
-        this.f1448f.setText(this.f1459a.getString(R.string.RES_2131558552, new Object[]{this.f1457o}));
+        this.f1448f.setText(this.f1459a.getString(R.string.de, new Object[]{this.f1457o}));
         this.f1448f.setOnCheckedChangeListener(null);
         this.f1448f.setChecked(d.mo1235h());
         this.f1448f.setOnCheckedChangeListener(eVar);
-        this.f1453k.setText(CompatUtils.m1338h(this.f1459a, R.array.RES_2130837518, d.mo1231d() - 1));
+        this.f1453k.setText(CompatUtils.m1338h(this.f1459a, R.array.o, d.mo1231d() - 1));
         int i = 8;
         this.f1454l.setVisibility(d.mo1231d() == 6 ? 0 : 8);
         View view = this.f1455m;
@@ -165,7 +165,7 @@ public class SiteConfSlice extends Slice {
         this.f1454l.setText(d.mo1230c(""));
         View$OnClickListenerC0477f fVar = new View$OnClickListenerC0477f(this, d);
         this.f1453k.setOnClickListener(fVar);
-        this.f1461c.findViewById(R.id.RES_2131230787).setOnClickListener(fVar);
+        this.f1461c.findViewById(R.id.b4).setOnClickListener(fVar);
         this.f1454l.setOnKeyListener(new View$OnKeyListenerC0475d(this, d));
         this.f1449g.setOnCheckedChangeListener(null);
         this.f1450h.setOnCheckedChangeListener(null);
@@ -179,7 +179,7 @@ public class SiteConfSlice extends Slice {
         this.f1450h.setOnCheckedChangeListener(eVar);
         this.f1451i.setOnCheckedChangeListener(eVar);
         this.f1452j.setOnCheckedChangeListener(eVar);
-        ViewUtils.m2216C((ViewGroup) this.f1461c, d.mo1235h(), R.id.RES_2131230733);
+        ViewUtils.m2216C((ViewGroup) this.f1461c, d.mo1235h(), R.id.n);
         this.f1456n = false;
     }
 

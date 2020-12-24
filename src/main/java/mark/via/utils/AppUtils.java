@@ -196,6 +196,6 @@ public final class AppUtils {
 
     /* renamed from: o */
     private static void m2067o(Context context) {
-        new FrogToast((Activity) context, (int) R.string.RES_2131558484, 17039370, new C0493a(context)).mo773m();
+        new FrogToast((Activity) context, (int) R.string.bk, 17039370, new C0493a(context)).mo773m();
     }
 }

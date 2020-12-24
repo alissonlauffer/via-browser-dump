@@ -43,7 +43,7 @@ public class IntentUtils {
             try {
                 this.f1532a.startActivity(this.f1533b);
             } catch (Exception unused) {
-                QuickUtils.m1382n(this.f1532a, R.string.RES_2131558753);
+                QuickUtils.m1382n(this.f1532a, R.string.iu);
             }
         }
     }
@@ -76,7 +76,7 @@ public class IntentUtils {
             ResolveInfo resolveActivity = activity.getPackageManager().resolveActivity(parseUri, 0);
             if (resolveActivity != null && (str2 = resolveActivity.activityInfo.packageName) != null && !str2.equals(activity.getPackageName())) {
                 try {
-                    activity.startActivity(Intent.createChooser(parseUri, activity.getResources().getString(R.string.RES_2131558646)));
+                    activity.startActivity(Intent.createChooser(parseUri, activity.getResources().getString(R.string.fy)));
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -120,7 +120,7 @@ public class IntentUtils {
                 parseUri.setSelector(null);
             }
             if (parseUri.resolveActivity(activity.getPackageManager()) != null) {
-                new FrogToast(activity, (int) R.string.RES_2131558632, 17039370, new C0500a(activity, parseUri)).mo773m();
+                new FrogToast(activity, (int) R.string.fk, 17039370, new C0500a(activity, parseUri)).mo773m();
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -141,7 +141,7 @@ public class IntentUtils {
             intent.putExtra("title", str);
         }
         intent.putExtra("android.intent.extra.TEXT", str2);
-        context.startActivity(Intent.createChooser(intent, context.getResources().getString(R.string.RES_2131558441)));
+        context.startActivity(Intent.createChooser(intent, context.getResources().getString(R.string.ae)));
     }
 
     /* renamed from: h */
@@ -161,7 +161,7 @@ public class IntentUtils {
                 Timber.m971a("Share %s", uri);
                 intent.setType(MimeTypeUtils.m2186a(str));
                 intent.putExtra("android.intent.extra.STREAM", uri);
-                Intent createChooser = Intent.createChooser(intent, context.getString(R.string.RES_2131558441));
+                Intent createChooser = Intent.createChooser(intent, context.getString(R.string.ae));
                 for (ResolveInfo resolveInfo : context.getPackageManager().queryIntentActivities(createChooser, 65536)) {
                     context.grantUriPermission(resolveInfo.activityInfo.packageName, uri, 1);
                 }

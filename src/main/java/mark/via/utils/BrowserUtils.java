@@ -145,7 +145,7 @@ public final class BrowserUtils {
                         int min = Math.min((measuredHeight / 5) * 4, scrollY);
                         if (i2 >= 11) {
                             ObjectAnimator ofInt = ObjectAnimator.ofInt(webView, "scrollY", scrollY, scrollY - min);
-                            ofInt.setDuration((long) context.getResources().getInteger(R.integer.RES_2131296256));
+                            ofInt.setDuration((long) context.getResources().getInteger(R.integer.a));
                             ofInt.start();
                             return;
                         }
@@ -154,7 +154,7 @@ public final class BrowserUtils {
                         int min2 = Math.min((measuredHeight / 5) * 4, contentHeight);
                         if (i2 >= 11) {
                             ObjectAnimator ofInt2 = ObjectAnimator.ofInt(webView, "scrollY", scrollY, scrollY + min2);
-                            ofInt2.setDuration((long) context.getResources().getInteger(R.integer.RES_2131296256));
+                            ofInt2.setDuration((long) context.getResources().getInteger(R.integer.a));
                             ofInt2.start();
                             return;
                         }
@@ -162,14 +162,14 @@ public final class BrowserUtils {
                     }
                 } else if (i2 >= 11) {
                     ObjectAnimator ofInt3 = ObjectAnimator.ofInt(webView, "scrollY", scrollY, (int) (((float) webView.getContentHeight()) * ViewUtils.m2227e(context)));
-                    ofInt3.setDuration((long) context.getResources().getInteger(R.integer.RES_2131296256));
+                    ofInt3.setDuration((long) context.getResources().getInteger(R.integer.a));
                     ofInt3.start();
                 } else {
                     webView.scrollTo(webView.getScrollX(), (int) (((float) webView.getContentHeight()) * ViewUtils.m2227e(context)));
                 }
             } else if (i2 >= 11) {
                 ObjectAnimator ofInt4 = ObjectAnimator.ofInt(webView, "scrollY", scrollY, 0);
-                ofInt4.setDuration((long) context.getResources().getInteger(R.integer.RES_2131296256));
+                ofInt4.setDuration((long) context.getResources().getInteger(R.integer.a));
                 ofInt4.start();
             } else {
                 webView.scrollTo(webView.getScrollX(), 0);
@@ -183,11 +183,11 @@ public final class BrowserUtils {
         Intent intent = new Intent("android.intent.action.VIEW", Uri.parse(str));
         String str2 = context.getPackageManager().resolveActivity(intent, 0).activityInfo.packageName;
         if (str2.equalsIgnoreCase("android")) {
-            QuickUtils.m1381m(context, context.getString(R.string.RES_2131558695), context.getResources().getString(R.string.RES_2131558693, m2093n(str, true)), new C0492b(context, intent));
+            QuickUtils.m1381m(context, context.getString(R.string.h_), context.getResources().getString(R.string.h8, m2093n(str, true)), new C0492b(context, intent));
         } else if (str2.equalsIgnoreCase(AppUtils.m2054b(context))) {
-            QuickUtils.m1384p(context, context.getString(R.string.RES_2131558464));
+            QuickUtils.m1384p(context, context.getString(R.string.b1));
         } else {
-            QuickUtils.m1381m(context, context.getString(R.string.RES_2131558695), context.getResources().getString(R.string.RES_2131558748), new C0491a(context, new Intent("android.settings.APPLICATION_DETAILS_SETTINGS", Uri.parse("package:" + str2))));
+            QuickUtils.m1381m(context, context.getString(R.string.h_), context.getResources().getString(R.string.ip), new C0491a(context, new Intent("android.settings.APPLICATION_DETAILS_SETTINGS", Uri.parse("package:" + str2))));
         }
     }
 

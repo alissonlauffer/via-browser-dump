@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <plurals name="RES_2131492864">
+    <plurals name="a">
         <item quantity="one">pred %d dnevom</item>
         <item quantity="two">pred %d dnevoma</item>
         <item quantity="few">pred %d dnevi</item>
         <item quantity="other">pred %d dnevi</item>
     </plurals>
-    <plurals name="RES_2131492865">
+    <plurals name="b">
         <item quantity="zero">%d filtrov</item>
         <item quantity="one">%d filter</item>
         <item quantity="two">%d filtra</item>
         <item quantity="few">%d filtri</item>
         <item quantity="other">%d filtrov</item>
     </plurals>
-    <plurals name="RES_2131492866">
+    <plurals name="c">
         <item quantity="one">pred %d uro</item>
         <item quantity="two">pred %d urama</item>
         <item quantity="few">pred %d urami</item>
         <item quantity="other">pred %d urami</item>
     </plurals>
-    <plurals name="RES_2131492867">
+    <plurals name="d">
         <item quantity="one">pred %d minuto</item>
         <item quantity="two">pred %d minutama</item>
         <item quantity="few">pred %d minutami</item>

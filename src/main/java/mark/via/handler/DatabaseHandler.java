@@ -649,7 +649,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                             bVar.mo944i(Integer.parseInt(cursor.getString(0)));
                             bVar.mo948m(cursor.getString(1));
                             bVar.mo947l(cursor.getString(2));
-                            bVar.mo945j(R.drawable.RES_2131165203);
+                            bVar.mo945j(R.drawable.a7);
                             arrayList.add(bVar);
                             i++;
                             if (!cursor.moveToPrevious()) {
@@ -698,7 +698,7 @@ public class DatabaseHandler extends SQLiteOpenHelper {
                     cursor = f1306a.rawQuery("SELECT url,title FROM history WHERE " + m1592E("title", "url", b) + " ORDER BY id LIMIT 25", null);
                     if (cursor.moveToLast()) {
                         do {
-                            arrayList.add(new HistoryItem(cursor.getString(0), cursor.getString(1), (int) R.drawable.RES_2131165213));
+                            arrayList.add(new HistoryItem(cursor.getString(0), cursor.getString(1), (int) R.drawable.ad));
                         } while (cursor.moveToPrevious());
                     }
                 } catch (Exception e) {

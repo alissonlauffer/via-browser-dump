@@ -299,16 +299,16 @@ public class TaoDialog {
     /* renamed from: h */
     private Dialog m1135h(int i, int i2) {
         int i3 = Build.VERSION.SDK_INT;
-        Dialog dialog = new Dialog(this.f1056b.f1070a, C0368g.b);
-        View inflate = LayoutInflater.from(this.f1056b.f1070a).inflate(C0367f.b, (ViewGroup) ((Activity) this.f1056b.f1070a).findViewById(16908290), false);
+        Dialog dialog = new Dialog(this.f1056b.f1070a, C0368g.h);
+        View inflate = LayoutInflater.from(this.f1056b.f1070a).inflate(C0367f.j, (ViewGroup) ((Activity) this.f1056b.f1070a).findViewById(16908290), false);
         this.f1060f = inflate;
         if (this.f1056b.f1071b != null) {
-            TextView textView = (TextView) inflate.findViewById(C0366e.r);
+            TextView textView = (TextView) inflate.findViewById(C0366e.bg);
             textView.setVisibility(0);
             textView.setText(this.f1056b.f1071b);
         }
         if (this.f1056b.f1072c != null) {
-            TextView textView2 = (TextView) this.f1060f.findViewById(C0366e.p);
+            TextView textView2 = (TextView) this.f1060f.findViewById(C0366e.bb);
             textView2.setVisibility(0);
             textView2.setText(this.f1056b.f1072c);
             int b = FrogUtils.m1355b(textView2, i);
@@ -318,12 +318,12 @@ public class TaoDialog {
                     textView2.setMinHeight(FrogUtils.m1354a(kVar.f1070a, 76.0f));
                 }
             } else {
-                this.f1060f.findViewById(C0366e.h).getLayoutParams().height = i2;
+                this.f1060f.findViewById(C0366e.ao).getLayoutParams().height = i2;
             }
         }
         ListAdapter listAdapter = this.f1056b.f1075f;
         if (listAdapter != null && listAdapter.getCount() > 0) {
-            ListView listView = (ListView) this.f1060f.findViewById(C0366e.f);
+            ListView listView = (ListView) this.f1060f.findViewById(C0366e.a9);
             listView.setVisibility(0);
             ListAdapter listAdapter2 = this.f1056b.f1075f;
             if (listAdapter2 instanceof DialogSelectableAdapter) {
@@ -345,27 +345,27 @@ public class TaoDialog {
             }
         }
         if (this.f1056b.f1077h != null) {
-            FrameLayout frameLayout = (FrameLayout) this.f1060f.findViewById(C0366e.d);
+            FrameLayout frameLayout = (FrameLayout) this.f1060f.findViewById(C0366e.w);
             frameLayout.setVisibility(0);
             frameLayout.addView(this.f1056b.f1077h);
         }
         if (this.f1056b.f1073d != null) {
-            TextView textView3 = (TextView) this.f1060f.findViewById(C0366e.l);
+            TextView textView3 = (TextView) this.f1060f.findViewById(C0366e.b7);
             textView3.setVisibility(0);
             textView3.setText(this.f1056b.f1073d);
             if (this.f1056b.f1074e != null) {
-                CheckBox checkBox = (CheckBox) this.f1060f.findViewById(C0366e.a);
+                CheckBox checkBox = (CheckBox) this.f1060f.findViewById(C0366e.j);
                 checkBox.setVisibility(0);
                 checkBox.setChecked(this.f1056b.f1074e == Boolean.TRUE);
                 checkBox.setOnCheckedChangeListener(new C0376d());
-                View findViewById = this.f1060f.findViewById(C0366e.e);
+                View findViewById = this.f1060f.findViewById(C0366e.a7);
                 findViewById.setClickable(true);
                 findViewById.setFocusable(true);
                 findViewById.setOnClickListener(new View$OnClickListenerC0377e(this, checkBox));
             }
         }
         if (this.f1056b.f1079j != null) {
-            TextView textView4 = (TextView) this.f1060f.findViewById(C0366e.k);
+            TextView textView4 = (TextView) this.f1060f.findViewById(C0366e.b2);
             if (i3 >= 14) {
                 textView4.setAllCaps(true);
             }
@@ -374,7 +374,7 @@ public class TaoDialog {
             textView4.setOnClickListener(new View$OnClickListenerC0378f());
         }
         if (this.f1056b.f1081l != null) {
-            TextView textView5 = (TextView) this.f1060f.findViewById(C0366e.i);
+            TextView textView5 = (TextView) this.f1060f.findViewById(C0366e.b0);
             if (i3 >= 14) {
                 textView5.setAllCaps(true);
             }
@@ -383,7 +383,7 @@ public class TaoDialog {
             textView5.setOnClickListener(new View$OnClickListenerC0379g());
         }
         if (this.f1056b.f1083n != null) {
-            TextView textView6 = (TextView) this.f1060f.findViewById(C0366e.j);
+            TextView textView6 = (TextView) this.f1060f.findViewById(C0366e.b1);
             if (i3 >= 14) {
                 textView6.setAllCaps(true);
             }
@@ -400,9 +400,9 @@ public class TaoDialog {
         editText.setId(i);
         editText.setText(str);
         editText.setHint(str2);
-        CompatUtils.m1343m(editText, 0, CompatUtils.m1333c(this.f1056b.f1070a, C0364c.a) / 2);
-        CompatUtils.m1345o(editText, C0368g.c);
-        CompatUtils.m1341k(editText, CompatUtils.m1334d(this.f1056b.f1070a, C0365d.d));
+        CompatUtils.m1343m(editText, 0, CompatUtils.m1333c(this.f1056b.f1070a, C0364c.f) / 2);
+        CompatUtils.m1345o(editText, C0368g.i);
+        CompatUtils.m1341k(editText, CompatUtils.m1334d(this.f1056b.f1070a, C0365d.m));
         editText.setGravity(48);
         editText.setSelectAllOnFocus(true);
         if (i2 > 1) {
@@ -416,10 +416,10 @@ public class TaoDialog {
         editText.setMinLines(i2);
         editText.setLines(i2);
         LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(-1, -2);
-        int c = CompatUtils.m1333c(this.f1056b.f1070a, C0364c.c);
+        int c = CompatUtils.m1333c(this.f1056b.f1070a, C0364c.h);
         layoutParams.topMargin = c;
         layoutParams.bottomMargin = c;
-        int c2 = CompatUtils.m1333c(this.f1056b.f1070a, C0364c.b);
+        int c2 = CompatUtils.m1333c(this.f1056b.f1070a, C0364c.g);
         layoutParams.leftMargin = c2;
         layoutParams.rightMargin = c2;
         editText.setLayoutParams(layoutParams);
@@ -486,14 +486,14 @@ public class TaoDialog {
             linearLayout.setOrientation(0);
             ProgressBar progressBar = new ProgressBar(this.f1056b.f1070a);
             progressBar.setIndeterminate(false);
-            progressBar.setIndeterminateDrawable(CompatUtils.m1334d(this.f1056b.f1070a, C0365d.f));
+            progressBar.setIndeterminateDrawable(CompatUtils.m1334d(this.f1056b.f1070a, C0365d.n));
             TextView textView = new TextView(this.f1056b.f1070a);
             int a = FrogUtils.m1354a(this.f1056b.f1070a, 4.0f);
             int a2 = FrogUtils.m1354a(this.f1056b.f1070a, 16.0f);
             CompatUtils.m1343m(linearLayout, a2, a);
             CompatUtils.m1343m(progressBar, 0, 0);
             CompatUtils.m1344n(textView, a2, 0, 0, 0);
-            CompatUtils.m1345o(textView, C0368g.e);
+            CompatUtils.m1345o(textView, C0368g.l);
             linearLayout.addView(progressBar);
             linearLayout.addView(textView);
             LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) textView.getLayoutParams();
@@ -565,7 +565,7 @@ public class TaoDialog {
                 } else {
                     attributes.gravity = 80;
                 }
-                attributes.windowAnimations = C0368g.a;
+                attributes.windowAnimations = C0368g.d;
                 this.f1055a.getWindow().setAttributes(attributes);
             }
         }
@@ -654,7 +654,7 @@ public class TaoDialog {
             this.f1056b.f1077h = linearLayout2;
             linearLayout = linearLayout2;
         }
-        ArrayAdapter arrayAdapter = new ArrayAdapter(this.f1056b.f1070a, C0367f.e, strArr);
+        ArrayAdapter arrayAdapter = new ArrayAdapter(this.f1056b.f1070a, C0367f.m, strArr);
         AutoCompleteTextView autoCompleteTextView = new AutoCompleteTextView(this.f1056b.f1070a);
         m1136k(autoCompleteTextView, i, str, str2, 1);
         autoCompleteTextView.setThreshold(1);
@@ -771,7 +771,7 @@ public class TaoDialog {
         this.f1056b.f1073d = str;
         View view = this.f1060f;
         if (view != null) {
-            ((TextView) view.findViewById(C0366e.l)).setText(this.f1056b.f1073d);
+            ((TextView) view.findViewById(C0366e.b7)).setText(this.f1056b.f1073d);
         }
         return this;
     }

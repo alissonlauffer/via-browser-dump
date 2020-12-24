@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="@dimen/g" android:paddingRight="@dimen/g" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <CheckBox android:ellipsize="middle" android:id="@+id/k" android:paddingLeft="@dimen/d" android:paddingTop="@dimen/f" android:paddingRight="0dp" android:paddingBottom="@dimen/f" android:layout_width="match_parent" android:layout_height="wrap_content" android:button="@drawable/h" android:singleLine="true" android:drawablePadding="@dimen/g" style="@style/l"/>
+</FrameLayout>

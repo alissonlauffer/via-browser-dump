@@ -156,8 +156,9 @@ public class C0243q2 {
         }
     }
 
+    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.q2$f */
-    class C0249f extends AbstractRunnableC0040b3 {
+    public class C0249f extends AbstractRunnableC0040b3 {
         C0249f() {
         }
 

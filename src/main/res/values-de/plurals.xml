@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <plurals name="RES_2131492864">
+    <plurals name="a">
         <item quantity="one">1 Tag her</item>
         <item quantity="other">%d Tage her</item>
     </plurals>
-    <plurals name="RES_2131492865">
+    <plurals name="b">
         <item quantity="zero">0 Filter</item>
         <item quantity="one">1 Filter</item>
         <item quantity="other">%d Filter</item>
     </plurals>
-    <plurals name="RES_2131492866">
+    <plurals name="c">
         <item quantity="one">1 Stunde her</item>
         <item quantity="other">%d Stunden her</item>
     </plurals>
-    <plurals name="RES_2131492867">
+    <plurals name="d">
         <item quantity="one">1 Minute her</item>
         <item quantity="other">%d Minuten her</item>
     </plurals>

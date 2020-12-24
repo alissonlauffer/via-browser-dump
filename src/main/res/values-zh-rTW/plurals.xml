@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <plurals name="RES_2131492864">
+    <plurals name="a">
         <item quantity="one">1 天前</item>
         <item quantity="other">%d 天前</item>
     </plurals>
-    <plurals name="RES_2131492865">
+    <plurals name="b">
         <item quantity="zero">0 filter</item>
         <item quantity="one">1 filter</item>
         <item quantity="other">%d 條篩選條件</item>
     </plurals>
-    <plurals name="RES_2131492866">
+    <plurals name="c">
         <item quantity="one">1 小時前</item>
         <item quantity="other">%d 小時前</item>
     </plurals>
-    <plurals name="RES_2131492867">
+    <plurals name="d">
         <item quantity="one">1 分鐘前</item>
         <item quantity="other">%d 分鐘前</item>
     </plurals>

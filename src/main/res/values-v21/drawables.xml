@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <drawable name="a">r/i/e.xml</drawable>
-    <drawable name="b">r/i/f.xml</drawable>
-    <drawable name="RES_2131165190">r/i/g.xml</drawable>
+    <drawable name="e">r/i/e.xml</drawable>
+    <drawable name="f">r/i/f.xml</drawable>
+    <drawable name="g">r/i/g.xml</drawable>
 </resources>

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="RES_2131623947">
-        <item name="android:textSize">@dimen/RES_2131099664</item>
-        <item name="android:textColor">?attr/c</item>
+    <style name="k">
+        <item name="android:textSize">@dimen/q</item>
+        <item name="android:textColor">?attr/i</item>
         <item name="android:textAlignment">viewStart</item>
     </style>
-    <style name="e">
-        <item name="android:textSize">@dimen/h</item>
-        <item name="android:textColor">?attr/b</item>
+    <style name="l">
+        <item name="android:textSize">@dimen/p</item>
+        <item name="android:textColor">?attr/h</item>
         <item name="android:textAlignment">viewStart</item>
     </style>
-    <style name="f">
-        <item name="android:textSize">@dimen/RES_2131099661</item>
-        <item name="android:textColor">?attr/b</item>
+    <style name="m">
+        <item name="android:textSize">@dimen/n</item>
+        <item name="android:textColor">?attr/h</item>
         <item name="android:textAlignment">viewStart</item>
     </style>
 </resources>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <xml name="RES_2131689472">r/h/a.xml</xml>
-    <xml name="RES_2131689473">r/h/b.xml</xml>
-    <xml name="RES_2131689474">r/h/c.xml</xml>
-    <xml name="RES_2131689475">r/h/d.xml</xml>
+    <xml name="a">r/h/a.xml</xml>
+    <xml name="b">r/h/b.xml</xml>
+    <xml name="c">r/h/c.xml</xml>
+    <xml name="d">r/h/d.xml</xml>
 </resources>
