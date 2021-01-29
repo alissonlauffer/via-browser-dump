@@ -111,10 +111,9 @@ public class ForkJoinPool extends AbstractExecutorService {
         }
     }
 
-    /* access modifiers changed from: private */
     /* renamed from: java9.util.concurrent.a$b */
     /* compiled from: ForkJoinPool */
-    public static final class C0346b implements AbstractC0348c {
+    private static final class C0346b implements AbstractC0348c {
 
         /* renamed from: a */
         private static final AccessControlContext f992a = ForkJoinPool.m1024f(new RuntimePermission("getClassLoader"));
@@ -157,10 +156,9 @@ public class ForkJoinPool extends AbstractExecutorService {
         ForkJoinWorkerThread mo549a(ForkJoinPool aVar);
     }
 
-    /* access modifiers changed from: private */
     /* renamed from: java9.util.concurrent.a$d */
     /* compiled from: ForkJoinPool */
-    public static final class C0349d implements AbstractC0348c {
+    private static final class C0349d implements AbstractC0348c {
 
         /* renamed from: a */
         private static final AccessControlContext f994a = ForkJoinPool.m1024f(ForkJoinPool.f970m, new RuntimePermission("enableContextClassLoaderOverride"), new RuntimePermission("modifyThreadGroup"), new RuntimePermission("getClassLoader"), new RuntimePermission("setContextClassLoader"));

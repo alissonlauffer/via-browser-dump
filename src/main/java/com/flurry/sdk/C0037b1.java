@@ -37,9 +37,8 @@ public class C0037b1 {
     /* renamed from: d */
     private C0174k1<C0022a1> f124d;
 
-    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.b1$a */
-    public class C0038a implements AbstractC0201n2<C0022a1> {
+    class C0038a implements AbstractC0201n2<C0022a1> {
         C0038a(C0037b1 b1Var) {
         }
 

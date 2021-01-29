@@ -55,9 +55,8 @@ public class SubscribedFiltersUI extends BaseSettings {
     /* renamed from: i */
     Blocker f1858i;
 
-    /* access modifiers changed from: package-private */
     /* renamed from: mark.via.ui.settings.SubscribedFiltersUI$a */
-    public class C0605a implements BlockerReceiver.AbstractC0466a {
+    class C0605a implements BlockerReceiver.AbstractC0466a {
         C0605a() {
         }
 
@@ -349,7 +348,7 @@ public class SubscribedFiltersUI extends BaseSettings {
         return true;
     }
 
-    @Override // mark.via.ui.settings.BaseSettings, android.app.Activity
+    @Override // mark.via.ui.settings.BaseSettings, mark.lib.frogsupport.activity.BaseActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
         DaggerBlockerComponent.C0447b d = DaggerBlockerComponent.m1665d();
         d.mo1029a(BrowserApp.m1387a(this).f1192a);

@@ -3,7 +3,6 @@ package mark.via.browser;
 import android.view.View;
 import android.webkit.JsResult;
 import mark.lib.frogsupport.dialog.TaoDialog;
-import mark.via.browser.TabItem;
 
 /* renamed from: mark.via.browser.p */
 /* compiled from: lambda */
@@ -19,6 +18,6 @@ public final /* synthetic */ class C0426p implements TaoDialog.AbstractC0382j {
     @Override // mark.lib.frogsupport.dialog.TaoDialog.AbstractC0382j
     /* renamed from: a */
     public final void mo659a(View view, TaoDialog.C0384l lVar) {
-        TabItem.C0410c.m1504c(this.f1250a, view, lVar);
+        this.f1250a.confirm();
     }
 }

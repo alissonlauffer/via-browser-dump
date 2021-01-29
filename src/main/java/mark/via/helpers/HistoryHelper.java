@@ -15,6 +15,7 @@ import mark.via.utils.BrowserUtils;
 /* compiled from: HistoryHelper */
 public class HistoryHelper {
 
+    /* access modifiers changed from: package-private */
     /* renamed from: mark.via.h.o$a */
     /* compiled from: HistoryHelper */
     public class RunnableC0463a implements Runnable {
@@ -43,6 +44,7 @@ public class HistoryHelper {
         }
     }
 
+    /* access modifiers changed from: package-private */
     /* renamed from: mark.via.h.o$b */
     /* compiled from: HistoryHelper */
     public class RunnableC0464b implements Runnable {

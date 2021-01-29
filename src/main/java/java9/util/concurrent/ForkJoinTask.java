@@ -165,8 +165,7 @@ public abstract class ForkJoinTask<V> implements Future<V>, Serializable {
         }
     }
 
-    /* access modifiers changed from: package-private */
-    public static final class RunnableExecuteAction extends ForkJoinTask<Void> {
+    static final class RunnableExecuteAction extends ForkJoinTask<Void> {
         private static final long serialVersionUID = 5232453952276885070L;
         final Runnable runnable;
 

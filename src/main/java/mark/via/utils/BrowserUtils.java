@@ -37,7 +37,7 @@ public final class BrowserUtils {
 
     /* renamed from: mark.via.n.e$a */
     /* compiled from: BrowserUtils */
-    public class RunnableC0494a implements Runnable {
+    class RunnableC0494a implements Runnable {
 
         /* renamed from: a */
         final /* synthetic */ Context f1514a;
@@ -55,7 +55,7 @@ public final class BrowserUtils {
 
     /* renamed from: mark.via.n.e$b */
     /* compiled from: BrowserUtils */
-    public class RunnableC0495b implements Runnable {
+    class RunnableC0495b implements Runnable {
 
         /* renamed from: a */
         final /* synthetic */ Context f1515a;
@@ -191,6 +191,7 @@ public final class BrowserUtils {
         }
     }
 
+    /* access modifiers changed from: private */
     /* renamed from: J */
     public static void m2079J(Context context) {
         try {

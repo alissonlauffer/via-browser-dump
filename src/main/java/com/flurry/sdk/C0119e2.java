@@ -15,9 +15,8 @@ public final class C0119e2 {
     /* renamed from: b */
     byte[] f368b;
 
-    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.e2$a */
-    public class C0120a implements AbstractC0201n2<C0119e2> {
+    class C0120a implements AbstractC0201n2<C0119e2> {
         C0120a() {
         }
 

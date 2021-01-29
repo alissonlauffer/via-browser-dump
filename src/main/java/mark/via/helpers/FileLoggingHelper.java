@@ -31,10 +31,9 @@ public class FileLoggingHelper {
     /* renamed from: d */
     private File f1377d = null;
 
-    /* access modifiers changed from: private */
     /* renamed from: mark.via.h.n$b */
     /* compiled from: FileLoggingHelper */
-    public class C0462b extends Timber.Tree {
+    private class C0462b extends Timber.Tree {
         private C0462b() {
         }
 

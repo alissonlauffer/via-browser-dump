@@ -47,9 +47,8 @@ public class C0054by extends BroadcastReceiver {
         public static final int f182d = 4;
     }
 
-    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.by$b */
-    public class C0056b implements AbstractC0192m1<C0082cn> {
+    class C0056b implements AbstractC0192m1<C0082cn> {
         C0056b() {
         }
 

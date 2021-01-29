@@ -22,9 +22,8 @@ public final class C0315y1<RequestObjectType, ResponseObjectType> extends C0108d
     /* renamed from: E */
     public AbstractC0185l2<ResponseObjectType> f870E;
 
-    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.y1$a */
-    public class C0316a implements C0108dk.AbstractC0112d {
+    class C0316a implements C0108dk.AbstractC0112d {
         C0316a() {
         }
 

@@ -324,7 +324,7 @@ public class ScriptSettings extends BaseSettings {
         g.mo622N();
     }
 
-    @Override // mark.via.ui.settings.BaseSettings, android.app.Activity
+    @Override // mark.via.ui.settings.BaseSettings, mark.lib.frogsupport.activity.BaseActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         DatabaseHandler v = DatabaseHandler.m1595v(this.f1039b);

@@ -247,7 +247,7 @@ public class OperationSettings extends BaseSettings {
     }
 
     /* access modifiers changed from: protected */
-    @Override // mark.via.ui.settings.BaseSettings, android.app.Activity
+    @Override // mark.via.ui.settings.BaseSettings, mark.lib.frogsupport.activity.BaseActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(m2751e());

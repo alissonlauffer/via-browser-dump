@@ -39,9 +39,8 @@ public class C0077ch {
     /* renamed from: j */
     private Map<String, String> f242j;
 
-    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.ch$a */
-    public class C0079a implements AbstractC0192m1<C0127ec> {
+    class C0079a implements AbstractC0192m1<C0127ec> {
         C0079a() {
         }
 
@@ -75,9 +74,8 @@ public class C0077ch {
         }
     }
 
-    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.ch$b */
-    public class C0080b extends AbstractRunnableC0040b3 {
+    class C0080b extends AbstractRunnableC0040b3 {
         C0080b(C0077ch chVar) {
         }
 

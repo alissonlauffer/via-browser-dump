@@ -76,10 +76,9 @@ public class SwipeDismissListViewTouchListener implements View.OnTouchListener {
     /* renamed from: r */
     private boolean f1122r = false;
 
-    /* access modifiers changed from: package-private */
     /* renamed from: mark.lib.frogsupport.k.e.a$a */
     /* compiled from: SwipeDismissListViewTouchListener */
-    public class C0387a implements AbsListView.OnScrollListener {
+    class C0387a implements AbsListView.OnScrollListener {
         C0387a() {
         }
 

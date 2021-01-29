@@ -47,9 +47,8 @@ public abstract class AbstractC0066c2<ReportInfo extends AbstractC0039b2> {
         }
     }
 
-    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.c2$b */
-    public class C0068b implements AbstractC0192m1<C0298w0> {
+    class C0068b implements AbstractC0192m1<C0298w0> {
         C0068b() {
         }
 

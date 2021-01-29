@@ -259,7 +259,7 @@ public class CustomFiltersUI extends BaseSettings {
     }
 
     /* access modifiers changed from: protected */
-    @Override // mark.via.ui.settings.BaseSettings, android.app.Activity
+    @Override // mark.via.ui.settings.BaseSettings, mark.lib.frogsupport.activity.BaseActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
         DaggerBlockerComponent.C0447b d = DaggerBlockerComponent.m1665d();
         d.mo1029a(BrowserApp.m1387a(this).f1192a);

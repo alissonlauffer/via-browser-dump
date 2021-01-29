@@ -20,9 +20,8 @@ public abstract class BaseListActivity extends BaseActivity {
     /* renamed from: e */
     protected CommonAdapter f1042e;
 
-    /* access modifiers changed from: package-private */
     /* renamed from: mark.lib.frogsupport.activity.BaseListActivity$a */
-    public class C0362a implements CommonAdapter.AbstractC0386b {
+    class C0362a implements CommonAdapter.AbstractC0386b {
         C0362a() {
         }
 

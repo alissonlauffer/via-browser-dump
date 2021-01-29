@@ -19,9 +19,8 @@ public class C0180l0 extends AbstractC0099d2 implements C0275u2.AbstractC0276a {
     /* renamed from: g */
     private boolean f533g;
 
-    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.l0$a */
-    public class C0181a implements C0315y1.AbstractC0317b<byte[], Void> {
+    class C0181a implements C0315y1.AbstractC0317b<byte[], Void> {
 
         /* renamed from: a */
         final /* synthetic */ String f534a;

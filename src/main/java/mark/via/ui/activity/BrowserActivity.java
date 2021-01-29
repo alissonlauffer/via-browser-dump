@@ -606,9 +606,8 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         }
     }
 
-    /* access modifiers changed from: package-private */
     /* renamed from: mark.via.ui.activity.BrowserActivity$c */
-    public class C0513c extends OnFrogMenusClickListener {
+    class C0513c extends OnFrogMenusClickListener {
         C0513c() {
         }
 
@@ -924,9 +923,8 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     /* renamed from: mark.via.ui.activity.BrowserActivity$h */
     public class C0518h implements Downloader.AbstractC0337c {
 
-        /* access modifiers changed from: package-private */
         /* renamed from: mark.via.ui.activity.BrowserActivity$h$a */
-        public class C0519a extends OnFrogToastListener {
+        class C0519a extends OnFrogToastListener {
             C0519a() {
             }
 
@@ -976,9 +974,8 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         }
     }
 
-    /* access modifiers changed from: package-private */
     /* renamed from: mark.via.ui.activity.BrowserActivity$j */
-    public class C0521j implements GestureTouchEvent.AbstractC0488a {
+    class C0521j implements GestureTouchEvent.AbstractC0488a {
         C0521j() {
         }
 
@@ -1518,9 +1515,8 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
         }
     }
 
-    /* access modifiers changed from: package-private */
     /* renamed from: mark.via.ui.activity.BrowserActivity$v */
-    public class C0533v extends OnFrogToastListener {
+    class C0533v extends OnFrogToastListener {
 
         /* renamed from: a */
         final /* synthetic */ Message f1693a;

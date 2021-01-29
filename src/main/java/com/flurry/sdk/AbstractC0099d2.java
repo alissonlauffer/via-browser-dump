@@ -23,9 +23,8 @@ public abstract class AbstractC0099d2 {
     /* renamed from: e */
     private AbstractC0192m1<C0298w0> f306e = new C0100a();
 
-    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.d2$a */
-    public class C0100a implements AbstractC0192m1<C0298w0> {
+    class C0100a implements AbstractC0192m1<C0298w0> {
         C0100a() {
         }
 

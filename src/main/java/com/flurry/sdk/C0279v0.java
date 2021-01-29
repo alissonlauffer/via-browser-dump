@@ -55,9 +55,8 @@ public class C0279v0 implements C0275u2.AbstractC0276a {
     /* renamed from: i */
     private Timer f783i = null;
 
-    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.v0$a */
-    public class C0280a extends TimerTask {
+    class C0280a extends TimerTask {
         C0280a() {
         }
 

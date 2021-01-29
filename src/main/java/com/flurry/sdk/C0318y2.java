@@ -13,9 +13,8 @@ public final class C0318y2 {
     /* renamed from: a */
     private static String f872a = "y2";
 
-    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.y2$a */
-    public class C0319a implements FilenameFilter {
+    class C0319a implements FilenameFilter {
 
         /* renamed from: a */
         final /* synthetic */ Pattern f873a;

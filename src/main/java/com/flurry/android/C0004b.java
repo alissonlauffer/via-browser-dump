@@ -41,9 +41,8 @@ public final class C0004b {
     /* renamed from: f */
     private static AbstractC0003a f48f;
 
-    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.android.b$a */
-    public class C0005a implements AbstractC0192m1<C0127ec> {
+    class C0005a implements AbstractC0192m1<C0127ec> {
 
         /* renamed from: com.flurry.android.b$a$a */
         class RunnableC0006a implements Runnable {

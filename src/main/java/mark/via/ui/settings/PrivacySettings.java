@@ -83,7 +83,7 @@ public class PrivacySettings extends BaseSettings {
         m2762c(bVar);
     }
 
-    @Override // mark.via.ui.settings.BaseSettings, android.app.Activity
+    @Override // mark.via.ui.settings.BaseSettings, mark.lib.frogsupport.activity.BaseActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(m2761b());

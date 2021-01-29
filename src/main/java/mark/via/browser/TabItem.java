@@ -1,5 +1,7 @@
 package mark.via.browser;
 
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -167,11 +169,11 @@ public class TabItem {
         void mo864u(boolean z);
     }
 
+    /* access modifiers changed from: private */
     /* renamed from: mark.via.browser.b0$c */
     /* compiled from: TabItem */
     public class C0410c extends WebChromeClient {
         private C0410c() {
-            TabItem.this = r1;
         }
 
         /* renamed from: i */
@@ -379,6 +381,7 @@ public class TabItem {
         }
 
         @Override // android.webkit.WebChromeClient
+        @Deprecated
         public void onShowCustomView(View view, int i, WebChromeClient.CustomViewCallback customViewCallback) {
             super.onShowCustomView(view, i, customViewCallback);
             int i2 = Constants.f1301f;
@@ -388,11 +391,11 @@ public class TabItem {
         }
     }
 
+    /* access modifiers changed from: private */
     /* renamed from: mark.via.browser.b0$d */
     /* compiled from: TabItem */
     public class C0411d implements DownloadListener {
         private C0411d() {
-            TabItem.this = r1;
         }
 
         @Override // android.webkit.DownloadListener
@@ -418,12 +421,16 @@ public class TabItem {
         throw new NullPointerException("TabItem callback can not be null");
     }
 
+    /* access modifiers changed from: private */
+    /* access modifiers changed from: public */
     /* renamed from: C */
     private boolean m1408C(String str) {
         m1442t(str);
         return true;
     }
 
+    /* access modifiers changed from: private */
+    /* access modifiers changed from: public */
     /* renamed from: E */
     private void m1409E(FastView fastView) {
         if (!this.f1219e && fastView != null) {
@@ -454,6 +461,7 @@ public class TabItem {
         }
     }
 
+    @SuppressLint({"JavascriptInterface", "AddJavascriptInterface", "ClickableViewAccessibility"})
     /* renamed from: R */
     private void m1412R(Activity activity, FastView fastView) {
         this.f1226l.mo855l(fastView);
@@ -470,14 +478,12 @@ public class TabItem {
         mo810D(fastView);
     }
 
-    /* access modifiers changed from: public */
     /* access modifiers changed from: private */
     /* renamed from: T */
     public /* synthetic */ void mo822U(FastView fastView) {
         m1412R(this.f1216b, fastView);
     }
 
-    /* access modifiers changed from: public */
     /* access modifiers changed from: private */
     /* renamed from: V */
     public /* synthetic */ void mo823W(FastView fastView) {
@@ -489,21 +495,18 @@ public class TabItem {
         }
     }
 
-    /* access modifiers changed from: public */
     /* access modifiers changed from: private */
     /* renamed from: X */
     public /* synthetic */ boolean mo824Y(View view) {
         return this.f1226l.mo847d();
     }
 
-    /* access modifiers changed from: public */
     /* access modifiers changed from: private */
     /* renamed from: Z */
     public /* synthetic */ boolean mo825a0(View view, MotionEvent motionEvent) {
         return this.f1226l.mo852i(view, motionEvent);
     }
 
-    /* access modifiers changed from: public */
     /* access modifiers changed from: private */
     /* renamed from: c0 */
     public /* synthetic */ void mo826d0(boolean z, FastView fastView) {
@@ -512,7 +515,6 @@ public class TabItem {
         this.f1216b.runOnUiThread(new RunnableC0414d(fastView, b));
     }
 
-    /* access modifiers changed from: public */
     /* access modifiers changed from: private */
     /* renamed from: e0 */
     public /* synthetic */ void mo827f0(boolean z) {
@@ -548,6 +550,8 @@ public class TabItem {
         }
     }
 
+    /* access modifiers changed from: private */
+    /* access modifiers changed from: public */
     /* renamed from: j0 */
     private void m1432j0() {
         this.f1226l.mo845b(this.f1229o);
@@ -609,6 +613,8 @@ public class TabItem {
         m1441s0(size);
     }
 
+    /* access modifiers changed from: private */
+    /* access modifiers changed from: public */
     /* renamed from: x */
     private void m1443x() {
         int size = this.f1222h.size();
@@ -650,6 +656,7 @@ public class TabItem {
         this.f1230p = false;
     }
 
+    @SuppressLint({"SetJavaScriptEnabled"})
     /* renamed from: D */
     public void mo810D(FastView fastView) {
         this.f1226l.mo856m(fastView);
@@ -856,11 +863,11 @@ public class TabItem {
         this.f1227m.mo797a(this.f1223i);
     }
 
+    /* access modifiers changed from: private */
     /* renamed from: mark.via.browser.b0$e */
     /* compiled from: TabItem */
     public class C0412e extends WebViewClient {
         private C0412e() {
-            TabItem.this = r1;
         }
 
         /* renamed from: c */
@@ -925,6 +932,7 @@ public class TabItem {
         }
 
         @Override // android.webkit.WebViewClient
+        @SuppressLint({"SetJavaScriptEnabled"})
         public void onPageStarted(WebView webView, String str, Bitmap bitmap) {
             TabItem.this.f1228n = str;
             String n = BrowserUtils.m2093n(str, false);
@@ -1013,6 +1021,7 @@ public class TabItem {
         }
 
         @Override // android.webkit.WebViewClient
+        @TargetApi(21)
         public WebResourceResponse shouldInterceptRequest(WebView webView, WebResourceRequest webResourceRequest) {
             if (!(Build.VERSION.SDK_INT < 21 || TabItem.this.f1226l == null || webView == null || webResourceRequest == null || webResourceRequest.getUrl() == null)) {
                 String uri = webResourceRequest.getUrl().toString();
@@ -1024,6 +1033,7 @@ public class TabItem {
         }
 
         @Override // android.webkit.WebViewClient
+        @TargetApi(24)
         public boolean shouldOverrideUrlLoading(WebView webView, WebResourceRequest webResourceRequest) {
             if (Build.VERSION.SDK_INT < 24) {
                 return super.shouldOverrideUrlLoading(webView, webResourceRequest);
@@ -1033,6 +1043,7 @@ public class TabItem {
         }
 
         @Override // android.webkit.WebViewClient
+        @TargetApi(11)
         public WebResourceResponse shouldInterceptRequest(WebView webView, String str) {
             int i = Build.VERSION.SDK_INT;
             if (i < 11 || i >= 21 || TabItem.this.f1226l == null || webView == null || TextUtils.isEmpty(str)) {
@@ -1042,6 +1053,7 @@ public class TabItem {
         }
 
         @Override // android.webkit.WebViewClient
+        @TargetApi(11)
         public boolean shouldOverrideUrlLoading(WebView webView, String str) {
             WebView.HitTestResult hitTestResult;
             int i = Build.VERSION.SDK_INT;

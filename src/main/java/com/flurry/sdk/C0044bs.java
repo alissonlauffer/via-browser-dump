@@ -68,9 +68,8 @@ public class C0044bs {
         FINISHED
     }
 
-    /* access modifiers changed from: package-private */
     /* renamed from: com.flurry.sdk.bs$b */
-    public class C0046b implements AbstractC0192m1<C0127ec> {
+    class C0046b implements AbstractC0192m1<C0127ec> {
 
         /* renamed from: com.flurry.sdk.bs$b$a */
         class C0047a extends AbstractRunnableC0040b3 {

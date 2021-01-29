@@ -30,10 +30,9 @@ import timber.log.Timber;
 /* compiled from: ViewUtils */
 public class ViewUtils {
 
-    /* access modifiers changed from: package-private */
     /* renamed from: mark.via.n.y$a  reason: invalid class name */
     /* compiled from: ViewUtils */
-    public class animationAnimation$AnimationListenerC0506a implements Animation.AnimationListener {
+    class animationAnimation$AnimationListenerC0506a implements Animation.AnimationListener {
 
         /* renamed from: a */
         final /* synthetic */ View f1549a;
