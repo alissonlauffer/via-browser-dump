@@ -31,7 +31,7 @@ import sun.misc.Unsafe;
 public class ForkJoinPool extends AbstractExecutorService {
 
     /* renamed from: l */
-    public static final AbstractC0348c f969l;
+    public static final AbstractC0348c f969l = new C0346b(null);
 
     /* renamed from: m */
     static final RuntimePermission f970m = new RuntimePermission("modifyThread");
@@ -781,7 +781,6 @@ public class ForkJoinPool extends AbstractExecutorService {
         }
     }
 
-    /* JADX WARN: Type inference failed for: r1v14, types: [java9.util.concurrent.a$a, java.lang.Class<?>] */
     static {
         Unsafe unsafe = UnsafeAccess.f1031a;
         f975r = unsafe;
@@ -801,8 +800,7 @@ public class ForkJoinPool extends AbstractExecutorService {
                 } catch (Exception unused) {
                 }
                 f973p = i;
-                Class<?> cls = 0;
-                f969l = new C0346b(cls);
+                Class<?> cls = null;
                 ForkJoinPool aVar = (ForkJoinPool) AccessController.doPrivileged(new C0345a());
                 f971n = aVar;
                 f972o = Math.max(aVar.f986f & 65535, 1);
@@ -1260,16 +1258,17 @@ public class ForkJoinPool extends AbstractExecutorService {
             if (I != 0) {
                 do {
                     long j = 281474976710656L;
+                    long j2 = 0;
                     try {
                         if (eVar.isReleasable()) {
                             break;
                         }
                     } finally {
-                        long j2 = f976s;
+                        long j3 = f976s;
                         if (I <= 0) {
-                            j = 0;
+                            j = j2;
                         }
-                        m1027l(aVar, j2, j);
+                        m1027l(aVar, j3, j);
                     }
                 } while (!eVar.block());
                 return;
@@ -1989,20 +1988,21 @@ public class ForkJoinPool extends AbstractExecutorService {
                 break;
             }
             C0353g gVar = gVarArr[(length - 1) & c & 126];
+            int i2 = 0;
             if (gVar == null) {
                 String str = this.f988h;
-                int i2 = (c | 1073741824) & -65538;
+                int i3 = (c | 1073741824) & -65538;
                 C0353g gVar2 = new C0353g(this, null);
-                gVar2.f1006d = i2;
+                gVar2.f1006d = i3;
                 gVar2.f1007e = 1073741824;
                 gVar2.f1003a = 1;
                 if (str != null) {
                     synchronized (str) {
                         C0353g[] gVarArr2 = this.f987g;
                         if (gVarArr2 != null && (length4 = gVarArr2.length) > 0) {
-                            int i3 = i2 & (length4 - 1) & 126;
-                            if (gVarArr2[i3] == null) {
-                                gVarArr2[i3] = gVar2;
+                            int i4 = i3 & (length4 - 1) & 126;
+                            if (gVarArr2[i4] == null) {
+                                gVarArr2[i4] = gVar2;
                                 z2 = true;
                                 z = true;
                             }
@@ -2016,17 +2016,17 @@ public class ForkJoinPool extends AbstractExecutorService {
                 }
                 gVar = gVar2;
             } else if (gVar.mo567n()) {
-                int i4 = gVar.f1008f;
-                int i5 = gVar.f1009g;
+                int i5 = gVar.f1008f;
+                int i6 = gVar.f1009g;
                 ForkJoinTask<?>[] forkJoinTaskArr = gVar.f1010h;
                 if (forkJoinTaskArr != null && (length3 = forkJoinTaskArr.length) > 0) {
-                    int i6 = length3 - 1;
-                    int i7 = i4 - i5;
-                    if (i6 + i7 > 0) {
-                        forkJoinTaskArr[i6 & i5] = forkJoinTask;
-                        gVar.f1009g = i5 + 1;
+                    int i7 = length3 - 1;
+                    int i8 = i5 - i6;
+                    if (i7 + i8 > 0) {
+                        forkJoinTaskArr[i7 & i6] = forkJoinTask;
+                        gVar.f1009g = i6 + 1;
                         gVar.f1003a = 0;
-                        if (i7 >= 0 || gVar.f1008f - i5 >= -1) {
+                        if (i8 >= 0 || gVar.f1008f - i6 >= -1) {
                             z = false;
                             z2 = true;
                         } else {
@@ -2044,14 +2044,14 @@ public class ForkJoinPool extends AbstractExecutorService {
                 if (z) {
                     try {
                         gVar.mo555b();
-                        int i8 = gVar.f1009g;
+                        int i9 = gVar.f1009g;
                         ForkJoinTask<?>[] forkJoinTaskArr2 = gVar.f1010h;
                         if (forkJoinTaskArr2 != null && (length2 = forkJoinTaskArr2.length) > 0) {
-                            forkJoinTaskArr2[(length2 - 1) & i8] = forkJoinTask;
-                            gVar.f1009g = i8 + 1;
+                            forkJoinTaskArr2[(length2 - 1) & i9] = forkJoinTask;
+                            gVar.f1009g = i9 + 1;
                         }
                     } finally {
-                        gVar.f1003a = 0;
+                        gVar.f1003a = i2;
                     }
                 }
                 mo519D();

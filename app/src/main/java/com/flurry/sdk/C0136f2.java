@@ -181,14 +181,13 @@ public class C0136f2 {
                     int readUnsignedShort = dataInputStream2.readUnsignedShort();
                     if (readUnsignedShort == 0) {
                         C0328z2.m890e(dataInputStream2);
-                        return arrayList2;
+                        return null;
                     }
                     arrayList = new ArrayList(readUnsignedShort);
                     for (int i = 0; i < readUnsignedShort; i++) {
                         try {
                             int readUnsignedShort2 = dataInputStream2.readUnsignedShort();
-                            String str3 = f423d;
-                            C0260s1.m686c(4, str3, "read iter " + i + " dataLength = " + readUnsignedShort2);
+                            C0260s1.m686c(4, f423d, "read iter " + i + " dataLength = " + readUnsignedShort2);
                             byte[] bArr = new byte[readUnsignedShort2];
                             dataInputStream2.readFully(bArr);
                             arrayList.add(new String(bArr));
@@ -209,7 +208,7 @@ public class C0136f2 {
                     arrayList2 = arrayList;
                 } catch (Throwable th3) {
                     th = th3;
-                    arrayList = arrayList2;
+                    arrayList = null;
                     dataInputStream = dataInputStream2;
                     C0260s1.m687d(6, f423d, "Error when loading persistent file", th);
                     arrayList2 = arrayList;
@@ -217,7 +216,7 @@ public class C0136f2 {
                 }
             } catch (Throwable th4) {
                 th = th4;
-                arrayList = arrayList2;
+                arrayList = null;
                 C0260s1.m687d(6, f423d, "Error when loading persistent file", th);
                 arrayList2 = arrayList;
                 return arrayList2;
@@ -285,11 +284,6 @@ public class C0136f2 {
         return arrayList;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r4v1, types: [byte[]] */
-    /* JADX WARN: Type inference failed for: r4v2, types: [java.io.Closeable] */
-    /* JADX WARN: Type inference failed for: r4v4 */
-    /* JADX WARNING: Unknown variable types count: 1 */
     /* renamed from: n */
     private static byte[] m427n(String str) {
         Throwable th;
@@ -298,42 +292,42 @@ public class C0136f2 {
         String str2 = f423d;
         C0260s1.m686c(5, str2, "Reading block File for " + str + " file name:" + C0118e1.m386a().f361a.getFileStreamPath(".flurrydatasenderblock.".concat(String.valueOf(str))));
         File fileStreamPath = C0118e1.m386a().f361a.getFileStreamPath(".flurrydatasenderblock.".concat(String.valueOf(str)));
-        ?? r4 = 0;
+        DataInputStream dataInputStream = null;
         if (fileStreamPath.exists()) {
             C0260s1.m686c(5, str2, "Reading Index File for " + str + " Found file.");
             try {
-                DataInputStream dataInputStream = new DataInputStream(new FileInputStream(fileStreamPath));
+                DataInputStream dataInputStream2 = new DataInputStream(new FileInputStream(fileStreamPath));
                 try {
-                    int readUnsignedShort = dataInputStream.readUnsignedShort();
+                    int readUnsignedShort = dataInputStream2.readUnsignedShort();
                     if (readUnsignedShort == 0) {
-                        C0328z2.m890e(dataInputStream);
-                        return r4;
+                        C0328z2.m890e(dataInputStream2);
+                        return null;
                     }
                     byte[] bArr2 = new byte[readUnsignedShort];
-                    dataInputStream.readFully(bArr2);
-                    dataInputStream.readUnsignedShort();
-                    C0328z2.m890e(dataInputStream);
+                    dataInputStream2.readFully(bArr2);
+                    dataInputStream2.readUnsignedShort();
+                    C0328z2.m890e(dataInputStream2);
                     return bArr2;
                 } catch (Throwable th2) {
                     th = th2;
-                    r4 = dataInputStream;
-                    bArr = r4;
+                    dataInputStream = dataInputStream2;
+                    bArr = null;
                     try {
                         C0260s1.m687d(6, f423d, "Error when loading persistent file", th);
                         return bArr;
                     } finally {
-                        C0328z2.m890e(r4);
+                        C0328z2.m890e(dataInputStream);
                     }
                 }
             } catch (Throwable th3) {
                 th = th3;
-                bArr = r4;
+                bArr = null;
                 C0260s1.m687d(6, f423d, "Error when loading persistent file", th);
                 return bArr;
             }
         } else {
             C0260s1.m686c(4, str2, "Agent cache file doesn't exist.");
-            return r4;
+            return null;
         }
     }
 
