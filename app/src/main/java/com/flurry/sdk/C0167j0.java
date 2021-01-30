@@ -110,9 +110,9 @@ public final class C0167j0 {
                 throw th;
             }
         } catch (IOException unused2) {
-            byte[] bArr22 = new byte[0];
+            byte[] bArr2 = new byte[0];
             C0328z2.m890e(dataOutputStream);
-            bArr = bArr22;
+            bArr = bArr2;
             return bArr;
         }
         return bArr;

@@ -105,7 +105,7 @@ public class AdBlockUI extends BaseSettings {
     @Override // mark.via.ui.settings.BaseSettings, mark.lib.frogsupport.activity.BaseActivity, android.app.Activity
     public void onCreate(Bundle bundle) {
         DaggerBlockerComponent.C0447b d = DaggerBlockerComponent.m1665d();
-        d.mo1029a(BrowserApp.m1387a(this).f1192a);
+        d.mo1029a(BrowserApp.a(this).f1192a);
         d.mo1030b().mo1020a(this);
         super.onCreate(bundle);
         setContentView(m2602h());

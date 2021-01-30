@@ -43,7 +43,7 @@ public class PreferenceManager {
     }
 
     private PreferenceManager(Context context) {
-        f1386c = BrowserApp.m1387a(context).getSharedPreferences("settings", 0);
+        f1386c = BrowserApp.a(context).getSharedPreferences("settings", 0);
     }
 
     /* renamed from: M */

@@ -25,8 +25,7 @@ public class BrowserApp extends Application {
     /* renamed from: a */
     public AppComponent f1192a;
 
-    /* renamed from: a */
-    public static BrowserApp m1387a(Context context) {
+    public static BrowserApp a(Context context) {
         Context applicationContext = context.getApplicationContext();
         if (applicationContext instanceof BrowserApp) {
             return (BrowserApp) applicationContext;

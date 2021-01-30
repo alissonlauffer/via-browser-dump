@@ -330,8 +330,8 @@ public class C0188m0 {
                 dataOutputStream2.writeShort(0);
                 dataOutputStream2.writeShort(0);
                 dataOutputStream2.writeShort(0);
-                List<String> list32 = n0Var.f574v;
-                dataOutputStream2.writeShort(list32.size());
+                List<String> list3 = n0Var.f574v;
+                dataOutputStream2.writeShort(list3.size());
                 while (r5.hasNext()) {
                 }
                 str = n0Var.f552A;

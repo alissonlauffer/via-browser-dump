@@ -4427,7 +4427,7 @@ public class BrowserActivity extends Activity implements TabItem.AbstractC0409b 
     public void onCreate(Bundle bundle) {
         long currentTimeMillis = System.currentTimeMillis();
         DaggerBrowserComponent.C0449b b = DaggerBrowserComponent.m1674b();
-        b.mo1031a(BrowserApp.m1387a(this).f1192a);
+        b.mo1031a(BrowserApp.a(this).f1192a);
         b.mo1032b(new BrowserModule());
         b.mo1033c().mo1023a(this);
         super.onCreate(bundle);

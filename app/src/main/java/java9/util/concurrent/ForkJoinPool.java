@@ -2369,22 +2369,22 @@ public class ForkJoinPool extends AbstractExecutorService {
             i = 1;
         }
         i = i > 32767 ? 32767 : i;
-        long j3 = (long) (-i);
-        long j22 = ((j3 << 48) & -281474976710656L) | ((j3 << 32) & 281470681743360L);
-        int i22 = ((1 - i) & 65535) | (f973p << 16);
+        long j = (long) (-i);
+        long j2 = ((j << 48) & -281474976710656L) | ((j << 32) & 281470681743360L);
+        int i2 = ((1 - i) & 65535) | (f973p << 16);
         int i7 = i <= 1 ? i - 1 : 1;
-        int i32 = i7 | (i7 >>> 1);
-        int i42 = i32 | (i32 >>> 2);
-        int i52 = i42 | (i42 >>> 4);
-        int i62 = i52 | (i52 >>> 8);
+        int i3 = i7 | (i7 >>> 1);
+        int i4 = i3 | (i3 >>> 2);
+        int i5 = i4 | (i4 >>> 4);
+        int i6 = i5 | (i5 >>> 8);
         this.f988h = "ForkJoinPool.commonPool-worker-";
-        this.f987g = new C0353g[(((i62 | (i62 >>> 16)) + 1) << 1)];
+        this.f987g = new C0353g[(((i6 | (i6 >>> 16)) + 1) << 1)];
         this.f989i = cVar;
         this.f990j = uncaughtExceptionHandler;
         this.f991k = null;
         this.f983c = 60000;
-        this.f985e = i22;
+        this.f985e = i2;
         this.f986f = i;
-        this.f981a = j22;
+        this.f981a = j2;
     }
 }

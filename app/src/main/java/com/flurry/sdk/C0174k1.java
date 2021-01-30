@@ -124,8 +124,8 @@ public class C0174k1<T> {
                 }
             } catch (Exception e3) {
                 e = e3;
-                String str22 = f523c;
-                C0260s1.m687d(3, str22, "Error writing data file:" + this.f524a.getName(), e);
+                String str2 = f523c;
+                C0260s1.m687d(3, str2, "Error writing data file:" + this.f524a.getName(), e);
                 C0328z2.m890e(fileOutputStream);
                 if (z) {
                 }

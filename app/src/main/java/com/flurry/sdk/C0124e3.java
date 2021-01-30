@@ -55,9 +55,9 @@ public final class C0124e3 {
                 throw th;
             }
         } catch (IOException unused2) {
-            byte[] bArr2 = new byte[0];
+            byte[] bArr = new byte[0];
             C0328z2.m890e(dataOutputStream);
-            return bArr2;
+            return bArr;
         }
     }
 

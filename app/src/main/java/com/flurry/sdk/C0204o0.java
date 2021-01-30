@@ -1219,23 +1219,23 @@ public class C0204o0 implements C0275u2.AbstractC0276a {
                     if (!C0254r1.m677a().f714a) {
                     }
                 }
-                float f2 = ((float) i4) / ((float) i);
-                Map<String, String> map52 = this.f605e;
-                StringBuilder sb32 = new StringBuilder("battery.charging");
+                float f = ((float) i4) / ((float) i);
+                Map<String, String> map5 = this.f605e;
+                StringBuilder sb3 = new StringBuilder("battery.charging");
                 if (!z) {
                     str = str3;
                 } else {
                     str = ".end";
                 }
-                sb32.append(str);
-                map52.put(sb32.toString(), Boolean.toString(z2));
-                Map<String, String> map62 = this.f605e;
-                StringBuilder sb42 = new StringBuilder("battery.remaining");
+                sb3.append(str);
+                map5.put(sb3.toString(), Boolean.toString(z2));
+                Map<String, String> map6 = this.f605e;
+                StringBuilder sb4 = new StringBuilder("battery.remaining");
                 if (!z) {
                     str3 = ".end";
                 }
-                sb42.append(str3);
-                map62.put(sb42.toString(), Float.toString(f2));
+                sb4.append(str3);
+                map6.put(sb4.toString(), Float.toString(f));
                 if (!C0254r1.m677a().f714a) {
                     String b = C0254r1.m677a().mo325b();
                     this.f605e.put("instantapp.name", b != null ? b : "instant app");
@@ -1250,36 +1250,36 @@ public class C0204o0 implements C0275u2.AbstractC0276a {
             C0260s1.m686c(5, f591E, "Error getting battery status: ".concat(String.valueOf(e)));
             i4 = i2;
             i = -1;
-            float f22 = ((float) i4) / ((float) i);
-            Map<String, String> map522 = this.f605e;
-            StringBuilder sb322 = new StringBuilder("battery.charging");
+            float f = ((float) i4) / ((float) i);
+            Map<String, String> map5 = this.f605e;
+            StringBuilder sb3 = new StringBuilder("battery.charging");
             if (!z) {
             }
-            sb322.append(str);
-            map522.put(sb322.toString(), Boolean.toString(z2));
-            Map<String, String> map622 = this.f605e;
-            StringBuilder sb422 = new StringBuilder("battery.remaining");
+            sb3.append(str);
+            map5.put(sb3.toString(), Boolean.toString(z2));
+            Map<String, String> map6 = this.f605e;
+            StringBuilder sb4 = new StringBuilder("battery.remaining");
             if (!z) {
             }
-            sb422.append(str3);
-            map622.put(sb422.toString(), Float.toString(f22));
+            sb4.append(str3);
+            map6.put(sb4.toString(), Float.toString(f));
             if (!C0254r1.m677a().f714a) {
             }
         }
         i = -1;
-        float f222 = ((float) i4) / ((float) i);
-        Map<String, String> map5222 = this.f605e;
-        StringBuilder sb3222 = new StringBuilder("battery.charging");
+        float f = ((float) i4) / ((float) i);
+        Map<String, String> map5 = this.f605e;
+        StringBuilder sb3 = new StringBuilder("battery.charging");
         if (!z) {
         }
-        sb3222.append(str);
-        map5222.put(sb3222.toString(), Boolean.toString(z2));
-        Map<String, String> map6222 = this.f605e;
-        StringBuilder sb4222 = new StringBuilder("battery.remaining");
+        sb3.append(str);
+        map5.put(sb3.toString(), Boolean.toString(z2));
+        Map<String, String> map6 = this.f605e;
+        StringBuilder sb4 = new StringBuilder("battery.remaining");
         if (!z) {
         }
-        sb4222.append(str3);
-        map6222.put(sb4222.toString(), Float.toString(f222));
+        sb4.append(str3);
+        map6.put(sb4.toString(), Float.toString(f));
         if (!C0254r1.m677a().f714a) {
         }
     }
